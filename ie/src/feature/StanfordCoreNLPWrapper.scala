@@ -1,4 +1,4 @@
-package com.databricks.spark.corenlp
+package feature
 
 import java.util.Properties
 

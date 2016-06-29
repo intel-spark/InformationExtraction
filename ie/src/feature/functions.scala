@@ -1,18 +1,17 @@
-package com.databricks.spark.corenlp
+package feature
 
 import java.util.Properties
 
-import scala.collection.JavaConverters._
-
 import edu.stanford.nlp.ling.{CoreAnnotations, CoreLabel}
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations
-import edu.stanford.nlp.pipeline.{CleanXmlAnnotator, StanfordCoreNLP}
 import edu.stanford.nlp.pipeline.CoreNLPProtos.Sentiment
+import edu.stanford.nlp.pipeline.{CleanXmlAnnotator, StanfordCoreNLP}
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations
 import edu.stanford.nlp.simple.{Document, Sentence}
 import edu.stanford.nlp.util.Quadruple
-
 import org.apache.spark.sql.functions.udf
+
+import scala.collection.JavaConverters._
 
 /**
  * A collection of Spark SQL UDFs that wrap CoreNLP annotators and simple functions.

@@ -1,22 +1,21 @@
-package com.databricks.spark.corenlp
+package feature
 
-import java.{lang => jl, util => ju}
 import java.util.{Properties, UUID}
-
-import scala.annotation.tailrec
-import scala.collection.JavaConverters._
-
-import com.google.protobuf.{ByteString, MessageOrBuilder}
+import java.{lang => jl, util => ju}
 import com.google.protobuf.Descriptors.{Descriptor, EnumValueDescriptor, FieldDescriptor}
+import com.google.protobuf.{ByteString, MessageOrBuilder}
 import edu.stanford.nlp.pipeline._
-
+import feature.StanfordCoreNLPWrapper
 import org.apache.spark.Logging
 import org.apache.spark.annotation.DeveloperApi
 import org.apache.spark.ml.Transformer
 import org.apache.spark.ml.param._
-import org.apache.spark.sql.{DataFrame, Row}
 import org.apache.spark.sql.functions.{callUDF, col}
 import org.apache.spark.sql.types._
+import org.apache.spark.sql.{DataFrame, Row}
+
+import scala.annotation.tailrec
+import scala.collection.JavaConverters._
 
 /**
  * A Stanford CoreNLP wrapper for Spark ML pipeline API.
@@ -30,7 +29,7 @@ import org.apache.spark.sql.types._
  */
 class CoreNLP(override val uid: String) extends Transformer {
 
-  import CoreNLP._
+  import feature.CoreNLP._
 
   def this() = this("corenlp_" + UUID.randomUUID().toString.takeRight(12))
 
