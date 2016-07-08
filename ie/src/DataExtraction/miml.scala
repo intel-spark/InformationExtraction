@@ -7,7 +7,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by yuhao on 7/8/16.
   */
-class miml {
+object miml {
 
   def main(args: Array[String]) {
 
@@ -18,10 +18,15 @@ class miml {
     )
 
     val text = sc.textFile("/home/yuhao/workspace/github/hhbyyh/InformationExtraction/ie/data/miml/mimlre-2014-07-17-data/annotated_sentences.csv").collect()
-    val titles = text.filter(_.startsWith())
+    val works = text
+      .filter(!_.startsWith("\"key\",\"relation\",\"confidence\","))
+      .filter(_.contains("per:employee_of"))
+      .map(_.split(",")(4))
+      .foreach(println(_))
 
-    val pw = new PrintWriter("data/titles")
-    titles.foreach(pw.println(_))
+
+//    val pw = new PrintWriter("data/titles")
+//    titles.foreach(pw.println(_))
 
   }
 
