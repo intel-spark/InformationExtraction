@@ -18,8 +18,7 @@ class miml {
     )
 
     val text = sc.textFile("/home/yuhao/workspace/github/hhbyyh/InformationExtraction/ie/data/miml/mimlre-2014-07-17-data/annotated_sentences.csv").collect()
-    val titles = text.map(s => s.split("\t")(1))
-      .flatMap(_.split("\\(").map(_.replaceAll("\\)", "").trim))
+    val titles = text.filter(_.startsWith())
 
     val pw = new PrintWriter("data/titles")
     titles.foreach(pw.println(_))
