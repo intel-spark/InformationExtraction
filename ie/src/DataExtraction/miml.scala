@@ -22,12 +22,12 @@ object miml {
       .filter(!_.startsWith("\"key\",\"relation\",\"confidence\","))
       .filter(_.contains("per:employee_of"))
       .map(_.split(",")(4))
-      .foreach(println(_))
+//      .foreach(println(_))
 
-
-//    val pw = new PrintWriter("data/titles")
-//    titles.foreach(pw.println(_))
-
+//
+//    val pw = new PrintWriter("data/miml/work_for")
+//    works.foreach(pw.println(_))
+    println(works.length)
   }
 
 }
