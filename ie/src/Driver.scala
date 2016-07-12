@@ -1,5 +1,5 @@
-import KBP.KBPModel
 import Relation.RelationExtractor
+import edu.stanford.blp.ie.KBPModel
 import feature.{CoreNLP, functions}
 import functions._
 import feature.CoreNLP
@@ -11,9 +11,6 @@ import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.functions._
 import functions._
 
-/**
- * Created by yuhao on 6/29/16.
- */
 object Driver {
 
   def main(args: Array[String]) {
@@ -87,7 +84,7 @@ object Driver {
 //      val t = s.split("::::::::")
 //      (t(0).toDouble, t(1))
 //    }
-    val rdd = sc.textFile("data/miml/work_for", 12).sample(false, 0.01).map(s => (1.0, s)).cache()
+    val rdd = sc.textFile("data/miml/work_for", 12).sample(false, 0.1).map(s => (1.0, s)).cache()
     rdd
   }
 

@@ -1,4 +1,4 @@
-package KBP;
+package edu.stanford.blp.ie;
 
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;
