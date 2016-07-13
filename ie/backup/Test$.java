@@ -1,15 +1,3 @@
-/**
- * Created by yuhao on 6/9/16.
- */
-
-import feature.{functions, CoreNLP}
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.functions._
-import functions._
-
-
-
 object Test {
 
   def main(args: Array[String]) {

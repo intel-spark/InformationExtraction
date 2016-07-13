@@ -15,9 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by yuhao on 7/8/16.
- */
+
 public class KBPModel {
 
     static Properties props = StringUtils.argsToProperties();
