@@ -1,4 +1,4 @@
-import Relation.RelationExtractor
+import relation.RelationExtractor
 import feature.{CoreNLP, functions}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}

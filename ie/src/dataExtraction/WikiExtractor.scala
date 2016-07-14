@@ -1,4 +1,4 @@
-package DataExtraction
+package dataExtraction
 
 import java.io.PrintWriter
 

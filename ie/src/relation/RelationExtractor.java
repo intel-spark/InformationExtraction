@@ -1,4 +1,4 @@
-package Relation;
+package relation;
 
 import edu.stanford.nlp.ie.machinereading.structure.EntityMention;
 import edu.stanford.nlp.ie.machinereading.structure.MachineReadingAnnotations;
