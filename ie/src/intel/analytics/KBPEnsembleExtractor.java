@@ -1,6 +1,9 @@
-package edu.stanford.blp.ie;
+package intel.analytics;
 
 
+import intel.analytics.ie.KBPSemgrexExtractor;
+import intel.analytics.ie.KBPStatisticalExtractor;
+import intel.analytics.ie.KBPTokensregexExtractor;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.ie.KBPRelationExtractor;

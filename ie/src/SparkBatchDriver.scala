@@ -1,5 +1,4 @@
 import Relation.RelationExtractor
-import edu.stanford.blp.ie.KBPModel
 import feature.{CoreNLP, functions}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
@@ -8,6 +7,13 @@ import org.apache.spark.sql.SQLContext
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.functions._
 import functions._
+import intel.analytics.KBPModel
+
+case class RelationLine(
+                         name:String,
+                         title:String,
+                         org: String,
+                         text: String)
 
 object SparkBatchTest {
 
@@ -63,10 +69,3 @@ object SparkBatchTest {
 
 }
 
-case class RelationLine(
-  name:String,
-  title:String,
-  org: String,
-  text: String) {
-
-}

@@ -1,7 +1,6 @@
-package edu.stanford.blp.ie;
+package intel.analytics.ie;
 
 import edu.stanford.nlp.ie.machinereading.structure.Span;
-import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.simple.Sentence;
 import edu.stanford.nlp.stats.ClassicCounter;
 import edu.stanford.nlp.stats.Counter;
@@ -16,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static edu.stanford.blp.ie.KBPRelationExtractor.NERTag.*;
+import static intel.analytics.ie.KBPRelationExtractor.NERTag.*;
 import static edu.stanford.nlp.util.logging.Redwood.Util.endTrack;
 import static edu.stanford.nlp.util.logging.Redwood.Util.forceTrack;
 import static edu.stanford.nlp.util.logging.Redwood.log;

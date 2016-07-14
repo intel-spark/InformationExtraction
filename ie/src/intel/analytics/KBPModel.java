@@ -1,4 +1,4 @@
-package edu.stanford.blp.ie;
+package intel.analytics;
 
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;

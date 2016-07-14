@@ -17,7 +17,8 @@ object PipelineDriver {
     )
 
     val sentences = Seq(
-      "Sushi likes to eat sushi"
+      "Jason Vice President",
+      "Yuhao Vice President"
     )
 
     val rdd = sc.parallelize(sentences).cache()
