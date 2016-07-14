@@ -1,4 +1,4 @@
-package intel.analytics.ie;
+package intel.analytics;
 
 import edu.stanford.nlp.ie.KBPRelationExtractor;
 import edu.stanford.nlp.io.IOUtils;

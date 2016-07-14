@@ -1,4 +1,4 @@
-package intel.analytics.ie;
+package intel.analytics;
 
 
 import edu.stanford.nlp.classify.*;
