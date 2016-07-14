@@ -1,0 +1,27 @@
+# Case insensitive pattern matching (see java.util.regex.Pattern flags)
+ner = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$NamedEntityTagAnnotation" }
+pos = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$PartOfSpeechAnnotation" }
+lemma = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$LemmaAnnotation" }
+tokens = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$TokensAnnotation" }
+kbpentity = { type: "CLASS", value: "edu.stanford.nlp.ie.KBPTokensregexExtractor$Subject" }
+slotvalue = { type: "CLASS", value: "edu.stanford.nlp.ie.KBPTokensregexExtractor$Object" }
+
+$ENTITY = ([ { kbpentity:true } ]+ )
+$ENTITY_PER = ( [ { kbpentity::EXISTS } & { ner:/.*PERSON.*/ } ]+ )
+$ENTITY_ORG = ( [ { kbpentity::EXISTS } & { ner:/.*ORGANIZATION.*/ } ]+ )
+$SLOT_VALUE = ([ { slotvalue:true } ]+ )
+$SLOT_VALUE_ORG = ([ { slotvalue:true; ner:"ORGANIZATION" } ]+ )
+
+$ORG = ( [ { ner:"ORGANIZATION" } ] )
+$PERSON = ( [ { ner:"PERSON" } ] )
+$DATE = ( [ { ner:"DATE" } ] )
+
+$CAPITALIZED = ( [ { kbpentity::NOT_EXISTS } & {word:/[A-Z][a-z]+/} ] )
+$URL = ( [ { slotvalue::EXISTS } & ( { ner:"URL" } | { word:/(([A-Za-z]{3,9}:(?:\\?\/\\?\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\\?\/[\+~%\\?\/.\w_-]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[.\!\\?\/\\w]*))?/ } ) ] )
+#$URL = ( [ { slotvalue::EXISTS } & ( { ner:"URL" } ) ] )
+$AGE = ( [ { slotvalue::EXISTS } & { word:/[0-9]{1,2}(-[Yy]ears?-[Oo]ld)?/ } ] )
+$CRIMINAL_CHARGE = ( [ { slotvalue::EXISTS } & { ner:/.*CRIMINAL_CHARGE.*/ } ]+ )
+$TITLE = ( [ { slotvalue::EXISTS } & { ner:/.*TITLE.*/ } ]+ )
+$TOP_TITLE = ( [ { lemma:/[eE]xecutive|[cC]hairman|[pP]resident|[cC]hief|[hH]ead|[gG]eneral|[cC][eE][oO]|[oO]fficer|[lL]eader|[vV]ice|[kK]ing|[pP]rince|[mM]anager|[mM]inister|[aA]dviser|[bB]oss|[cC]hair|[aA]mbassador|[sS]tar|[gG]overnor|[iI]nvestor|[rR]epresentative|[dD]ean|[cC]ommissioner|[cC]ommander|[mM]idfielder|[sS]peaker|[Rr]esearcher|[eE]ditor|[Cc]hancellor|[fF]ellow|[lL]eadership|[dD]iplomat|[aA]ssociate|[sS]triker|[pP]ilot|[cC]aptain|[bB]anker|[mM]ayor|[pP]remier|[pP]roducer|[aA]rchitect|[dD]esigner|[mM]ajor|[aA]dvisor|[pP]resident|[sS]enator|[sS]pecialist|[fF]aculty|[cC]hairwoman|[mM]ediator|[pP]rosecutor|[eE]ntrepreneur|[cC]reator|[sS]uperstar|[cC]ommentator|[pP]rincipal|[oO]perative|[bB]usinessman|[pP]eacekeeper|[iI]nvestigator|[cC]oordinator|[kK]night|[lL]awmaker|[jJ]ustice|[pP]ublisher|[pP]laymaker|[mM]oderator|[nN]egotiator|[Dd]irector|[Jj]ustice/ } ] )
+
+ENV.defaults.weight = 1.0

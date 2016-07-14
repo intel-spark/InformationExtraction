@@ -1,0 +1,20 @@
+{ result: "org:shareholders", pattern: ( $SLOT_VALUE /,/ [{lemma:/be|have/}] /a/ /primary/ /shareholder|stake|stockholder/ /in|of/ $ENTITY ) }
+{ result: "org:shareholders", pattern: ( $SLOT_VALUE [{lemma:/be|have/}] /a/ /primary/ /shareholder|stake|stockholder/ /in|of/ $ENTITY ) }
+{ result: "org:shareholders", pattern: ( $SLOT_VALUE [{lemma:/be|have/}] /primary/ /shareholder|stake|stockholder/ /in|of/ $ENTITY ) }
+{ result: "org:shareholders", pattern: ( $SLOT_VALUE [{lemma:/be|have/}] /primary/ /shareholder|stake|stockholder/ /in|of/ $ENTITY ) }
+{ result: "org:shareholders", pattern: ( $SLOT_VALUE [{lemma:/be|have/}] /shareholder|stake|stockholder/ /in|of/ $ENTITY ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "'s"  "stakes"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "'"  "stakes"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "'s"  "shares"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "'"  "shares"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "holds"  "stakes"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "holds"  "shares"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "holds"  []{0,4}  "of"  "the"  "stakes"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "holds"  []{0,4}  "of"  "the"  "shares"  "in"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $ENTITY  "is"  "owned"  "by"  $SLOT_VALUE ) }
+{ result: "org:shareholders", pattern: (  $ENTITY  "owner"  $SLOT_VALUE ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "is"  "owner"  "of"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "is"  "majority"  "owner"  "of"  $ENTITY  ) }
+{ result: "org:shareholders", pattern: (  $SLOT_VALUE "holds"  "the"  "majority"  "in"  $ENTITY  ) }
+
