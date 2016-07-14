@@ -10,9 +10,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * Created by yuhao on 7/13/16.
- */
+
 public class InteractiveDriver {
 
     public static void main(String[] args) throws IOException {
