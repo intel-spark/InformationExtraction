@@ -1,3 +1,4 @@
+import dataExtraction.DirectExtraction
 import relation.RelationExtractor
 import feature.{CoreNLP, functions}
 import org.apache.spark.rdd.RDD
@@ -30,14 +31,13 @@ object SparkBatchTest {
     relations.show(false)
   }
 
-
-
   private def getWorkRelation(data: RDD[String]): DataFrame ={
     val relations = data.map { s =>
       val relations = KBPModel.extract(s)
       var name: Option[String] = None
       var title: Option[String] = None
       var organization: Option[String] = None
+      var department: Option[String] = None
       relations.foreach { r =>
         if(r.relationGloss().trim == "per:title"){
           val per = r.subjectGloss()
@@ -55,6 +55,14 @@ object SparkBatchTest {
           organization = Some(r.subjectGloss())
         }
       }
+
+      val directResult = DirectExtraction.extract(s)
+      if(directResult != null){
+        name = Some(directResult._1)
+        title = Some(directResult._2)
+        department = Some(directResult._3)
+      }
+
       RelationLine(name.getOrElse("null"), title.getOrElse("null"), organization.getOrElse("null"), s)
     }
 

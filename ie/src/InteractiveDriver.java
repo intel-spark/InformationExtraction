@@ -20,12 +20,16 @@ public class InteractiveDriver {
         Set<String> interested = Stream.of("per:title", "per:employee_of", "org:top_members/employees").collect(Collectors.toSet());
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         IOUtils.console("sentence> ", line -> {
+
+
+
             Annotation ann = new Annotation(line);
             pipeline.annotate(ann);
             for (CoreMap sentence : ann.get(CoreAnnotations.SentencesAnnotation.class)) {
                 sentence.get(CoreAnnotations.KBPTriplesAnnotation.class).forEach(r -> {
                     String relation = r.relationGloss();
-                    if(interested.contains(relation)){
+                    if(interested.contains(relation)) {
+
                         System.err.println(r);
                     }
                 });
