@@ -1,2 +1,0 @@
-# appos is a very finicky edge
-# {ner:PERSON}=entity  >/appos/ {ner:PERSON}=slot
