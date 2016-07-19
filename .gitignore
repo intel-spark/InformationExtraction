@@ -17,6 +17,8 @@ project/plugins/project/
 .worksheet
 .idea
 ie/.idea/*
+ie/edu/*
+ie/edu
 *.gz
 *.tagger
 ie/META-INF/
