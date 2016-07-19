@@ -38,7 +38,11 @@ object SparkBatchTest {
     Iterator.continually(Console.readLine).foreach { line =>
       Try {
         val data = getDataset(sc, line)
-        processTextFiles(data)
+        if(line.endsWith(".csv")){
+          processCSVFiles(data)
+        } else {
+          processTextFiles(data)
+        }
       }
       print("dataset path>")
     }
@@ -47,6 +51,12 @@ object SparkBatchTest {
 
   private def processTextFiles(data: RDD[String]): Unit ={
     val relations = getWorkRelation(data)
+    relations.show(false)
+    print("dataset path>")
+  }
+
+  private def processCSVFiles(data: RDD[String]): Unit ={
+    val relations = getWorkRelation(data.map(s => s.split("|")(3)))
     relations.show(false)
     print("dataset path>")
   }
