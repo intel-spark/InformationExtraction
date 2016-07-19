@@ -1,4 +1,3 @@
-import dataExtraction.DirectExtraction
 import edu.stanford.nlp.io.IOUtils
 import relation.RelationExtractor
 import feature.{CoreNLP, functions}
@@ -23,6 +22,7 @@ case class RelationLine(
 object SparkBatchTest {
 
   def main(args: Array[String]) {
+    println("0.8 | CNBC | http://www.cnbc.com/2016/06/06/wal-mart-ceo-theres-still-room-to-grow-us-sales.html | Doug McMillon of Wal-Mart. A return to retail basics has been a key driver behind the recent momentum at Wal-Mart U.S., including its first-quarter revenue beat.Yet as the world's largest retailer moves through these fundamentally simple fixes, which include cleaning up its stores and shortening the wait time at checkout, CEO Doug McMillon told CNBC there are more opportunities to improve its in-store operations.One of the most promising of those opportunities, McMillon said, is trimming the amount of inventory it has on hand. By doing so, it can declutter the backroom of its stores (thereby speeding up the amount of time it takes a worker to locate certain products), and focus on keeping key items in stock. \"There's still a lot of upside as it relates to that, and that's kind of like oxygen to a store,\" McMillon said.".split('|').mkString("\n"))
     Logger.getLogger("org").setLevel(Level.WARN)
     Logger.getLogger("edu").setLevel(Level.WARN)
     println("loading models...")
@@ -51,13 +51,16 @@ object SparkBatchTest {
 
   private def processTextFiles(data: RDD[String]): Unit ={
     val relations = getWorkRelation(data)
-    relations.show(false)
+    relations.show(100, false)
     print("dataset path>")
   }
 
   private def processCSVFiles(data: RDD[String]): Unit ={
-    val relations = getWorkRelation(data.map(s => s.split("|")(3)))
-    relations.show(false)
+    val text = data.filter(!_.startsWith("//"))map(s =>
+      s.split('|')(3)
+    )
+    val relations = getWorkRelation(text)
+    relations.show(100, false)
     print("dataset path>")
   }
   
