@@ -34,8 +34,7 @@ public class KBPModel {
 
         IOUtils.console("sentence> ", line -> {
             HashMap<RelationTriple, String> triple = extract(line);
-            for(RelationTriple s: triple.keySet()){
-
+            for (RelationTriple s: triple.keySet()){
                 System.out.println(s);
             }
         });
@@ -66,6 +65,4 @@ public class KBPModel {
         }
         return str;
     }
-
-
 }

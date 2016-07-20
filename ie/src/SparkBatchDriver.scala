@@ -1,16 +1,13 @@
-import edu.stanford.nlp.io.IOUtils
-import relation.RelationExtractor
-import feature.{CoreNLP, functions}
+import java.io.File
+
+import intel.analytics.KBPModel
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.{SparkConf, SparkContext}
-import intel.analytics.KBPModel
-import org.apache.log4j.{Level, Logger}
-import scala.collection.JavaConverters._
+import relation.RelationExtractor
 
-import scala.io.Source
+import scala.collection.JavaConverters._
 import scala.util.Try
 
 case class RelationLine(
@@ -34,16 +31,19 @@ object SparkBatchTest {
 
     println("Initilization finished:")
     print("dataset path>")
-    Iterator.continually(Console.readLine).foreach { line =>
-      Try {
-        val data = getDataset(sc, line)
-        if(line.endsWith(".csv")){
-          processCSVFiles(data)
+    Iterator.continually(scala.io.StdIn.readLine("dataset path>")).foreach { line =>
+      if (line.nonEmpty) Try {
+        if(new File(line).exists()){
+          val data = getDataset(sc, line)
+          if(line.endsWith(".csv")){
+            processCSVFiles(data)
+          } else {
+            processTextFiles(data)
+          }
         } else {
-          processTextFiles(data)
+          KBPModel.extract(line).asScala.foreach(t => println(t._1))
         }
       }
-      print("dataset path>")
     }
   }
 
