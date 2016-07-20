@@ -5,14 +5,15 @@ import java.{lang => jl, util => ju}
 import com.google.protobuf.Descriptors.{Descriptor, EnumValueDescriptor, FieldDescriptor}
 import com.google.protobuf.{ByteString, MessageOrBuilder}
 import edu.stanford.nlp.pipeline._
-import feature.StanfordCoreNLPWrapper
-import org.apache.spark.Logging
 import org.apache.spark.annotation.DeveloperApi
 import org.apache.spark.ml.Transformer
 import org.apache.spark.ml.param._
 import org.apache.spark.sql.functions.{callUDF, col}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{DataFrame, Row}
+import org.apache.spark.sql.{DataFrame, Dataset}
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types._
 
 import scala.annotation.tailrec
 import scala.collection.JavaConverters._
@@ -21,7 +22,6 @@ import scala.collection.JavaConverters._
  * A Stanford CoreNLP wrapper for Spark ML pipeline API.
  * It reads a string column representing documents, and applies CoreNLP annotators to each document.
  * The output column is a nested column with schema mapped from the CoreNLP Document proto
- * ([[com.databricks.spark.corenlp.CoreNLP$.docSchema]]).
  * Further pruning and filtering could be done via SQL statements.
  * This requires Java 8 and CoreNLP version > 3.5.2 (not yet released) to run.
  * Users must include CoreNLP model jars as dependencies to use language models.
@@ -65,18 +65,18 @@ class CoreNLP(override val uid: String) extends Transformer {
 
   override def copy(extra: ParamMap): Transformer = defaultCopy(extra)
 
-  override def transform(dataset: DataFrame): DataFrame = {
+  override def transform(dataset:  Dataset[_]): DataFrame = {
     val props = new Properties()
     props.setProperty(annotators.name, $(annotators).mkString(","))
     val wrapper = new StanfordCoreNLPWrapper(props)
-    val f = { text: String =>
+    val f = udf { (text: String) =>
       val doc = new Annotation(text)
       wrapper.get.annotate(doc)
       val serializer = new ProtobufAnnotationSerializer()
       val row = CoreNLP.convertMessage(serializer.toProto(doc), docSchema)
       Row(row.toSeq ++ $(flattenNestedFields).map(flatten(row, docSchema, _)): _*)
     }
-    dataset.withColumn($(outputCol), callUDF(f, outputSchema, col($(inputCol))))
+    dataset.withColumn($(outputCol), f(col($(inputCol))))
   }
 
   @DeveloperApi
@@ -92,14 +92,13 @@ class CoreNLP(override val uid: String) extends Transformer {
   }
 }
 
-object CoreNLP extends Logging {
+object CoreNLP {
 
   /**
    * Spark SQL schema mapped from Stanford CoreNLP Document proto with depth limited to 2.
    */
   lazy val docSchema: StructType = {
     val schema = parseDescriptor(CoreNLPProtos.Document.getDescriptor, DEFAULT_DEPTH)
-    logInfo(s"CoreNLP Document schema:\ns ${schema.treeString}")
     schema
   }
 
