@@ -30,7 +30,7 @@ object SparkBatchTest {
     RelationExtractor.init()
 
     println("Initilization finished:")
-    print("dataset path>")
+
     Iterator.continually(scala.io.StdIn.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
         if(new File(line).exists()){
@@ -41,7 +41,7 @@ object SparkBatchTest {
             processTextFiles(data)
           }
         } else {
-          KBPModel.extract(line).asScala.foreach(t => println(t._1))
+          processSentence(line)
         }
       }
     }
@@ -62,7 +62,16 @@ object SparkBatchTest {
     relations.show(100, false)
     print("dataset path>")
   }
-  
+
+  private def processSentence(line: String): Unit ={
+    KBPModel.extract(line).asScala.foreach(t => println(t._1))
+//    val relations = getWorkRelation(text)
+//    relations.show(100, false)
+//    print("dataset path>")
+  }
+
+
+
   private def getWorkRelation(data: RDD[String]): DataFrame ={
     val relations = data.flatMap { s =>
       val raw = KBPModel.extract(s)

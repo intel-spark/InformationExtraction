@@ -40,6 +40,24 @@ public class KBPModel {
         });
     }
 
+    public static HashMap<RelationTriple, String> getNER(String doc) {
+
+        Annotation ann = new Annotation(doc);
+        pipeline.annotate(ann);
+        HashMap<RelationTriple, String> relations = new HashMap<RelationTriple, String>();
+
+        for (CoreMap sentence : ann.get(CoreAnnotations.SentencesAnnotation.class)) {
+            for(RelationTriple r : sentence.get(CoreAnnotations.KBPTriplesAnnotation.class)){
+                if(r.relationGloss().trim().equals("per:title")
+                        || r.relationGloss().trim().equals("per:employee_of")
+                        || r.relationGloss().trim().equals("org:top_members/employees")){
+                    relations.put(r, sentence.toString());
+                }
+            }
+        }
+        return relations;
+    }
+
     public static HashMap<RelationTriple, String> extract(String doc) {
 
         Annotation ann = new Annotation(doc);
