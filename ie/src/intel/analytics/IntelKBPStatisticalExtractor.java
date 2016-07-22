@@ -545,8 +545,8 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
     public static Counter<String> features(KBPInput input) {
         // Ensure RegexNER Tags!
-        input.sentence.regexner(DefaultPaths.DEFAULT_KBP_REGEXNER_CASED, false);
-        input.sentence.regexner(DefaultPaths.DEFAULT_KBP_REGEXNER_CASELESS, true);
+        input.sentence.regexner(IntelPaths.Regex_NER_caseless, false);
+        input.sentence.regexner(IntelPaths.Regex_NER_cased, true);
 
         // Get useful variables
         ClassicCounter<String> feats = new ClassicCounter<>();

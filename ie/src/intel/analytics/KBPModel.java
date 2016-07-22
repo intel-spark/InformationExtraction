@@ -25,7 +25,7 @@ public class KBPModel {
 
     static {
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
-        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*,edu/stanford/nlp/models/kbp/regexner_caseless.tab;edu/stanford/nlp/models/kbp/regexner_cased.tab");
+        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*, " + IntelPaths.Regex_NER_caseless + ";" + IntelPaths.Regex_NER_cased);
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
     }
