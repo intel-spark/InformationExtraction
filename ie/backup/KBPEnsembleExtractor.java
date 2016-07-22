@@ -82,16 +82,16 @@ public class KBPEnsembleExtractor implements edu.stanford.nlp.ie.KBPRelationExtr
     edu.stanford.nlp.ie.KBPRelationExtractor statisticalExtractor;
     if (object instanceof LinearClassifier) {
       //noinspection unchecked
-      statisticalExtractor = new KBPStatisticalExtractor((Classifier<String, String>) object);
-    } else if (object instanceof KBPStatisticalExtractor) {
-      statisticalExtractor = (KBPStatisticalExtractor) object;
+      statisticalExtractor = new IntelKBPStatisticalExtractor((Classifier<String, String>) object);
+    } else if (object instanceof IntelKBPStatisticalExtractor) {
+      statisticalExtractor = (IntelKBPStatisticalExtractor) object;
     } else {
-      throw new ClassCastException(object.getClass() + " cannot be cast into a " + KBPStatisticalExtractor.class);
+      throw new ClassCastException(object.getClass() + " cannot be cast into a " + IntelKBPStatisticalExtractor.class);
     }
     logger.info("Read statistical model from " + STATISTICAL_MODEL);
     edu.stanford.nlp.ie.KBPRelationExtractor extractor = new edu.stanford.nlp.ie.KBPEnsembleExtractor(
-        new KBPTokensregexExtractor(TOKENSREGEX_DIR),
-        new KBPSemgrexExtractor(SEMGREX_DIR),
+        new IntelKBPTokensregexExtractor(TOKENSREGEX_DIR),
+        new IntelKBPSemgrexExtractor(SEMGREX_DIR),
         statisticalExtractor
     );
 
