@@ -25,7 +25,7 @@ public class KBPModel {
 
     static {
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
-        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*, " + IntelPaths.Regex_NER_caseless + ";" + IntelPaths.Regex_NER_cased);
+        props.setProperty("regexner.mapping", "" + IntelPaths.Regex_NER_caseless + "," + IntelPaths.Regex_NER_cased + "," + IntelPaths.Regex_NER_department_caseless);
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
     }
@@ -38,24 +38,6 @@ public class KBPModel {
                 System.out.println(s);
             }
         });
-    }
-
-    public static HashMap<RelationTriple, String> getNER(String doc) {
-
-        Annotation ann = new Annotation(doc);
-        pipeline.annotate(ann);
-        HashMap<RelationTriple, String> relations = new HashMap<RelationTriple, String>();
-
-        for (CoreMap sentence : ann.get(CoreAnnotations.SentencesAnnotation.class)) {
-            for(RelationTriple r : sentence.get(CoreAnnotations.KBPTriplesAnnotation.class)){
-                if(r.relationGloss().trim().equals("per:title")
-                        || r.relationGloss().trim().equals("per:employee_of")
-                        || r.relationGloss().trim().equals("org:top_members/employees")){
-                    relations.put(r, sentence.toString());
-                }
-            }
-        }
-        return relations;
     }
 
     public static HashMap<RelationTriple, String> extract(String doc) {
