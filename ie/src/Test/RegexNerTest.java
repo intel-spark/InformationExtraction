@@ -32,7 +32,7 @@ public class RegexNerTest {
 
     public static void main(String[] args){
 
-        String doc = "Angela Ahrendts Senior Vice President Retail and Online Stores";
+        String doc = "Johny Srouji Senior Vice President Hardware Technologies";
         Annotation document = new Annotation(doc);
 
         pipeline.annotate(document);
