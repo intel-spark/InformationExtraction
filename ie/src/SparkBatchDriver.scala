@@ -1,69 +1,95 @@
-import relation.RelationExtractor
-import feature.{CoreNLP, functions}
+import java.io.File
+
+import Test.RegexNerTest
+import intel.analytics.KBPModel
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.functions._
-import functions._
-import intel.analytics.KBPModel
+import relation.RelationExtractor
+
+import scala.collection.JavaConverters._
+import scala.util.Try
 
 case class RelationLine(
-                         name:String,
-                         title:String,
-                         org: String,
-                         text: String)
+  name:String,
+  relation:String,
+  entity: String,
+  text: String)
 
 object SparkBatchTest {
 
   def main(args: Array[String]) {
+    Logger.getLogger("org").setLevel(Level.WARN)
+    Logger.getLogger("edu").setLevel(Level.WARN)
+    println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[6]")
+        .setMaster("local")
         .setAppName(this.getClass.getSimpleName)
     )
     RelationExtractor.init()
-    val data = getDataset(sc)
 
-    val relations = getWorkRelation(data)
-    relations.show(false)
-  }
+    println("Initilization finished:")
 
-
-
-  private def getWorkRelation(data: RDD[String]): DataFrame ={
-    val relations = data.map { s =>
-      val relations = KBPModel.extract(s)
-      var name: Option[String] = None
-      var title: Option[String] = None
-      var organization: Option[String] = None
-      relations.foreach { r =>
-        if(r.relationGloss().trim == "per:title"){
-          val per = r.subjectGloss()
-          name = Some(per)
-          title = Some(r.objectGloss())
-        }
-        if(r.relationGloss().trim == "per:employee_of"){
-          val per = r.subjectGloss()
-          name = Some(per)
-          organization = Some(r.objectGloss())
-        }
-        if(r.relationGloss().trim == "org:top_members/employees"){
-          val per = r.objectGloss()
-          name = Some(per)
-          organization = Some(r.subjectGloss())
+    Iterator.continually(scala.io.StdIn.readLine("dataset path>")).foreach { line =>
+      if (line.nonEmpty) Try {
+        if(new File(line).exists()){
+          val data = getDataset(sc, line)
+          if(line.endsWith(".csv")){
+            processCSVFiles(data)
+          } else {
+            processTextFiles(data)
+          }
+        } else {
+          processSentence(line)
         }
       }
-      RelationLine(name.getOrElse("null"), title.getOrElse("null"), organization.getOrElse("null"), s)
+    }
+  }
+
+  private def processTextFiles(data: RDD[String]): Unit ={
+    val relations = getWorkRelation(data)
+    relations.show(100, false)
+  }
+
+  private def processCSVFiles(data: RDD[String]): Unit ={
+    val text = data.filter(!_.startsWith("//"))map(s =>
+      s.split('|')(3)
+    )
+    val relations = getWorkRelation(text)
+    relations.show(100, false)
+  }
+
+  private def processSentence(line: String): Unit = {
+    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
+    KBPModel.extract(line).asScala.foreach(t => println(t._1))
+//    val relations = getWorkRelation(text)
+//    relations.show(100, false)
+//    print("dataset path>")
+  }
+
+  private def getWorkRelation(data: RDD[String]): DataFrame ={
+    val relations = data.flatMap { s =>
+      val raw = KBPModel.extract(s)
+      raw.asScala.toSeq.map { case (r, sen) =>
+        if(r.relationGloss() == "org:top_members/employees") {
+          RelationLine(r.objectGloss(), "top member of", r.subjectGloss(), sen)
+        } else {
+          RelationLine(r.subjectGloss(), r.relationGloss().split(":")(1), r.objectGloss(), sen)
+        }
+      }
     }
 
     val sqlContext = SQLContext.getOrCreate(data.sparkContext)
     sqlContext.createDataFrame(relations)
   }
 
-  private def getDataset(sc: SparkContext): RDD[String] = {
-    val rdd = sc.textFile("data/sample.txt", 12).cache()
+  private def getDataset(sc: SparkContext, path: String): RDD[String] = {
+
+    val rdd = sc.textFile(path)
+    rdd.unpersist(true)
+    rdd.count()
     rdd
   }
 

@@ -17,7 +17,13 @@ project/plugins/project/
 .worksheet
 .idea
 ie/.idea/*
+ie/edu/*
+ie/edu
 *.gz
 *.tagger
 ie/META-INF/
 *.ser
+ie/backup/stanford-corenlp-full-2015-12-09.zip
+ie/backup/stanford-english-corenlp-models-current.jar
+ie/out/
+
