@@ -1,5 +1,6 @@
 import java.io.File
 
+import Test.RegexNerTest
 import intel.analytics.KBPModel
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
@@ -47,11 +48,9 @@ object SparkBatchTest {
     }
   }
 
-
   private def processTextFiles(data: RDD[String]): Unit ={
     val relations = getWorkRelation(data)
     relations.show(100, false)
-    print("dataset path>")
   }
 
   private def processCSVFiles(data: RDD[String]): Unit ={
@@ -60,17 +59,15 @@ object SparkBatchTest {
     )
     val relations = getWorkRelation(text)
     relations.show(100, false)
-    print("dataset path>")
   }
 
-  private def processSentence(line: String): Unit ={
+  private def processSentence(line: String): Unit = {
+    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
     KBPModel.extract(line).asScala.foreach(t => println(t._1))
 //    val relations = getWorkRelation(text)
 //    relations.show(100, false)
 //    print("dataset path>")
   }
-
-
 
   private def getWorkRelation(data: RDD[String]): DataFrame ={
     val relations = data.flatMap { s =>
