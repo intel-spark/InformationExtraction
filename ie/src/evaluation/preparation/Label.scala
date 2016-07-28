@@ -35,22 +35,6 @@ object Label {
   props.setProperty("regexner.mapping", options2)
   pipeline = new StanfordCoreNLP(props)
 
-//  def main(args: Array[String]): Unit = {
-//    val urlMap = CrawlerHelper.getUrlMap()
-//    val label = "Walmart"
-//    val result = labelCompany(label, 0)
-//    val bw = new BufferedWriter(new FileWriter(CrawlerHelper.getLabeledFile()))
-//    bw.write(wd.title + "\n\n" + wd.body)
-//    bw.close()
-////    for ((label, urlStr) <- urlMap) {
-////      val urls = urlStr.split("\t")
-////      var i = 0;
-////      for (url <- urls) {
-////        println(labelCompany(label, i))
-////        i += 1
-////      }
-////    }
-//  }
 
   def main(args: Array[String]): Unit = {
     val urlMap = CrawlerHelper.getUrlMap()
@@ -59,14 +43,6 @@ object Label {
     val bw = new BufferedWriter(new FileWriter(CrawlerHelper.getLabeledFile(label)))
     bw.write(result)
     bw.close()
-    //    for ((label, urlStr) <- urlMap) {
-    //      val urls = urlStr.split("\t")
-    //      var i = 0;
-    //      for (url <- urls) {
-    //        println(labelCompany(label, i))
-    //        i += 1
-    //      }
-    //    }
   }
 
   def labelCompany2(company: String, index: Int): String = {
