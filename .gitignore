@@ -26,4 +26,5 @@ ie/META-INF/
 ie/backup/stanford-corenlp-full-2015-12-09.zip
 ie/backup/stanford-english-corenlp-models-current.jar
 ie/out/
+ie/src/log4j.properties
 

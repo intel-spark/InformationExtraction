@@ -1,0 +1,14 @@
+Walmart	http://corporate.walmart.com/our-story/leadership
+Apple	http://www.apple.com/pr/bios/
+AT&T	http://www.att.com/gen/investor-relations?pid=7811
+Samsung	http://www.samsung.com/us/aboutsamsung/samsung_electronics/management/president.html	http://www.samsung.com/us/aboutsamsung/samsung_electronics/management/usexecutiveteam.html	http://www.samsung.com/us/aboutsamsung/samsung_electronics/management/boardofdirectors.html
+Microsoft	https://news.microsoft.com/microsoft-board-of-directors/#sm.0001661mdj561djcy482eq42f5bpr	https://news.microsoft.com/microsoft-senior-leaders/#sm.0001661mdj561djcy482eq42f5bpr
+AXA	https://us.axa.com/news/executive-bios.html
+general electric	http://www.ge.com/about-us/leadership/corporate-executives	http://www.ge.com/about-us/leadership/business-executives	http://www.ge.com/about-us/leadership/board-of-directors
+Volkswagen	http://www.volkswagenag.com/content/vwcorp/content/en/the_group/senior_management.html
+Berkshire Hathaway	https://www.berkshirehathawayenergyco.com/about-us/leadership/
+McKesson	http://www.mckesson.com/about-mckesson/our-company/executive-officers/
+Glencore	http://www.glencore.com/who-we-are/board-of-directors/
+Daimler	https://www.daimler.com/company/corporate-governance/board-of-management/
+UnitedHealth Group	http://www.unitedhealthgroup.com/About/Executives.aspx
+CVS Health	https://cvshealth.com/about/leadership
