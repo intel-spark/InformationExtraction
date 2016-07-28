@@ -25,9 +25,15 @@ object CrawlerHelper {
     *
     * @return a map that map url label to url
     */
-  def getUrlMap() : Map[String, String] = Source.fromFile(prop.getProperty("urls-path")).getLines.map(line => {
-    val split = line.split("\t", 2)
-    split(0) -> split(1)
-  }).toMap
+  def getUrlMap(): Map[String, String] = {
+    val lines = Source.fromFile(prop.getProperty("urls-path")).getLines
+    var map = Map[String, String]()
+    for (line <- lines) {
+      val split = line.split("\t", 2)
+      if (split.length > 1) map += split(0) -> split(1)
+    }
+    return map
+  }
+
 
 }

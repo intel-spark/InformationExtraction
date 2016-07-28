@@ -3,17 +3,15 @@ package evaluation.preparation
 /**
   * Created by xianyan on 16-7-25.
   */
+
 import java.io._
+import java.net.{MalformedURLException, URL}
 
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
-import org.jsoup.nodes.Element
-import org.jsoup.select.Elements
 
 import scala.collection.JavaConversions._
-import java.net.{HttpURLConnection, InetSocketAddress, MalformedURLException, URL}
-
 import scala.util.control.Exception._
+
 
 sealed case class Link(title: String, href: String)
 
@@ -22,11 +20,10 @@ case class WebDocument(title: String,
                        links: Seq[Link],
                        metaDescription: String)
 
-class Crawler (proxy: ProxyConfig) {
+class Crawler(proxy: ProxyConfig) {
 
 
-
-  if(proxy != null) {
+  if (proxy != null) {
     System.setProperty("http.proxyHost", proxy.host)
     System.setProperty("http.proxyPort", proxy.port)
     System.setProperty("https.proxyHost", proxy.host)
@@ -35,7 +32,7 @@ class Crawler (proxy: ProxyConfig) {
 
   type JDoc = org.jsoup.nodes.Document
 
-  def get(url: String): JDoc= {
+  def get(url: String): JDoc = {
     Jsoup.connect(url)
       .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
       .get()
@@ -48,8 +45,8 @@ class Crawler (proxy: ProxyConfig) {
 
     val elements = doc.body().select("*")
     var text = ""
-    for(ele <- elements) {
-      if(!ele.ownText().isEmpty) {
+    for (ele <- elements) {
+      if (!ele.ownText().isEmpty) {
         text += ele.ownText() + "\n"
       }
 
@@ -88,12 +85,11 @@ class Crawler (proxy: ProxyConfig) {
     val links: Seq[Link] = linkSequence(doc)
     val desc: String = metaDescription(doc)
 
-//    println(title)
-//    println(doc.select("body").text())
-//    println(body)
+    //    println(title)
+    //    println(doc.select("body").text())
+    //    println(body)
     return WebDocument(title, body, links, desc)
   }
-
 
 
   def safeURL(url: String): Option[String] = {
@@ -115,30 +111,30 @@ class Crawler (proxy: ProxyConfig) {
 
   def save2File(path: File, wd: WebDocument) = {
     val bw = new BufferedWriter(new FileWriter(path))
-    bw.write(wd.title + "\n\n" + wd.body)
+    bw.write(wd.title + "\n\n" + Cleaner.clean(wd.body))
     bw.close()
   }
 
-  def crawlAndSave(url: String, label: String, i: Int) = {
+  def crawlAndSave(url: String, label: String, i: Int): Boolean = {
     try {
       val saveFile = new File(CrawlerHelper.getWebContentPath(label, i))
-      if(!saveFile.exists()) {
+      if (!saveFile.exists()) {
         val wd = crawl(url)
         save2File(saveFile, wd)
         println(url + " done")
+        return true
       }
     } catch {
-      case ex: InterruptedException =>{
-        println("error with " + url)
-        println(ex.toString)
-      }
 
-      case ex: IOException => {
+      case ex: Exception => {
         println("error with " + url)
         println(ex.toString)
       }
     }
+    return false
   }
+
+
 }
 
 

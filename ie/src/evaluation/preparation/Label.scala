@@ -27,13 +27,7 @@ object Label {
   val endTitle = "</TITLE>"
   val startOrganization = "<ORGANIZATION>"
   val endOrganization = "</ORGANIZATION>"
-  private val props: Properties = new Properties
-  private var pipeline: StanfordCoreNLP = null
-  props.put("annotators", "tokenize, ssplit, pos, lemma, ner, regexner")
-  val options2 = "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.Regex_NER_caseless + ";" + IntelPaths.Regex_NER_cased + ";" + IntelPaths.Regex_NER_department_caseless
 
-  props.setProperty("regexner.mapping", options2)
-  pipeline = new StanfordCoreNLP(props)
 
 
   def main(args: Array[String]): Unit = {
@@ -51,7 +45,7 @@ object Label {
     for (line <- lines) {
       println(line)
       val document: Annotation = new Annotation(line)
-      pipeline.annotate(document)
+      NerHelper.pipeline.annotate(document)
       val sentences: java.util.List[CoreMap] = document.get(classOf[CoreAnnotations.SentencesAnnotation])
       val result: java.util.List[String] = new java.util.ArrayList[String]
       import scala.collection.JavaConversions._
