@@ -1,0 +1,46 @@
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/a/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY "," [{lemma:/a/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/be/}] [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/affiliate/}] [{lemma:/with/}] [{lemma:/the/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/affiliate/}] [{lemma:/with/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/break/}] [{lemma:/with/}] /the/ [{lemma:/orthodox/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/break/}] [{lemma:/with/}] [{lemma:/orthodox/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/break/}] [{lemma:/with/}] [{lemma:/orthodox/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/break/}] [{lemma:/with/}] $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY /,/ [{lemma:/be/}] [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/run/}] /by/ /the/ $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: ( $ENTITY [{lemma:/run/}] /by/ $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "affiliated"  "with"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "affiliated"  "with"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "connected"  "to"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "connected"  "to"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "strongly"  "connected"  "to"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "strongly"  "connected"  "to"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "tightly"  "connected"  "to"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "tightly"  "connected"  "to"  $SLOT_VALUE ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "organization"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "organization"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "group"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "group"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "as"  "a"  $SLOT_VALUE "organization"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "as"  "an"  $SLOT_VALUE "organization"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "as"  "a"  $SLOT_VALUE "group"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "as"  "an"  $SLOT_VALUE "group"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "a"  $SLOT_VALUE "organization"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "an"  $SLOT_VALUE "organization"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "a"  $SLOT_VALUE "group"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  ","  "an"  $SLOT_VALUE "group"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "and"  "other"  $SLOT_VALUE "organizations"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "and"  "other"  $SLOT_VALUE "groups"  ) }
+{ result: "org:political/religious_affiliation", pattern: (  $ENTITY  "is"  "an"  "affiliate"  "of"  $SLOT_VALUE ) }

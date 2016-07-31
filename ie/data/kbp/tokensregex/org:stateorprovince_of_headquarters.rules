@@ -1,0 +1,122 @@
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "'s"  $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "of"  $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE [{pos:/NN./}]+ $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  [{lemma:/a|the/}] $SLOT_VALUE [{tag:/JJ|NN./}] ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  [{lemma:/a|the/}] $SLOT_VALUE [{tag:/JJ|NN./}] ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE [{tag:/JJ|NN./}]+ $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY "," /a|the/  $SLOT_VALUE [{tag:/NN./}] ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY "," /a|the/  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY "in" $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE [{tag:/NN.?/}] $ENTITY ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE [{tag:/NN.?/}] [{tag:/NN.?/}] $ENTITY ) }
+
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "complex"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "campus"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "head"  "office"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "office"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "offices"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "headquarters"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "complex"  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "campus"  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "head"  "office"  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "office"  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "offices"  "are"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "headquarters"  "are"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "complex"  "of"  $ENTITY  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "campus"  "of"  $ENTITY  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "head"  "office"  "of"  $ENTITY  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "office"  "of"  $ENTITY  "is"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "offices"  "of"  $ENTITY  "are"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "headquarters"  "of"  $ENTITY  "are"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "complex"  "of"  $ENTITY  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "campus"  "of"  $ENTITY  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "head"  "office"  "of"  $ENTITY  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "office"  "of"  $ENTITY  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "offices"  "of"  $ENTITY  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "headquarters"  "of"  $ENTITY  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "headquartered"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "based"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "located"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "headquartered"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "based"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "located"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "headquartered"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "based"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "located"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "main"  "complex"  "of"  $ENTITY  ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "main"  "campus"  "of"  $ENTITY  ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "head"  "office"  "of"  $ENTITY  ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "main"  "office"  "of"  $ENTITY  ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "main"  "offices"  "of"  $ENTITY  ) }
+{ result: "org:city_of_headquarters", pattern: (  $SLOT_VALUE "headquarters"  "of"  $ENTITY  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "main"  "campus"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "head"  "office"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "main"  "office"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "main"  "offices"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "headquarters"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "a"  $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "a"  $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "an"  $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "an"  $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "a"  []{0,4}  "based"  "in"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "based"  "in"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "based"  "in"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "based"  "in"  "the"  "town"  "of"  $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "based"  "in"  "the"  "town"  "of"  $SLOT_VALUE ) }
+
+// Also allow for location to interject
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "complex"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "campus"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "head"  "office"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "office"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "offices"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "headquarters"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "complex"  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "campus"  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "head"  "office"  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "office"  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "main"  "offices"  "are"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "'s"  "headquarters"  "are"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "complex"  "of"  $ENTITY  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "campus"  "of"  $ENTITY  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "head"  "office"  "of"  $ENTITY  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "office"  "of"  $ENTITY  "is"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "offices"  "of"  $ENTITY  "are"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "headquarters"  "of"  $ENTITY  "are"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "complex"  "of"  $ENTITY  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "campus"  "of"  $ENTITY  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "head"  "office"  "of"  $ENTITY  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "office"  "of"  $ENTITY  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "main"  "offices"  "of"  $ENTITY  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  "headquarters"  "of"  $ENTITY  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "headquartered"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "based"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "located"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "headquartered"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "based"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "located"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "main"  "campus"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "head"  "office"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "main"  "office"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "main"  "offices"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "has"  "its"  "headquarters"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "a"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "a"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "an"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "an"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "a"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "a"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "an"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "-" "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "an"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE "based"  ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "a"  []{0,4}  "based"  "in"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "based"  "in"  "the"  "city"  "of"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "based"  "in"  "the"  "city"  "of"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  "is"  "based"  "in"  "the"  "town"  "of"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }
+{ result: "org:city_of_headquarters", pattern: (  $ENTITY  ","  "based"  "in"  "the"  "town"  "of"  [{ner:/STATE_OR_PROVINCE|LOCATION/}] "," $SLOT_VALUE ) }

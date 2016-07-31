@@ -1,0 +1,8 @@
+//{ result: "org:website",  pattern: ( $URL ) }
+{ result: "org:website", pattern: (  $ENTITY  /[:,]/  $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:website", pattern: (  "the"  $ENTITY  "website"  $SLOT_VALUE ) }
+{ result: "org:website", pattern: (  "the"  $ENTITY  "website"  "at"  $SLOT_VALUE ) }
+{ result: "org:website", pattern: (  "the"  $ENTITY  "website:"  $SLOT_VALUE ) }
+{ result: "org:website", pattern: (  "the"  $ENTITY  "website"  "("  $SLOT_VALUE ")"  ) }
+{ result: "org:website", pattern: (  $ENTITY  "("  $SLOT_VALUE ")"  ) }

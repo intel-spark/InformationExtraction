@@ -351,8 +351,6 @@ chess-player	TITLE	MISC	2
 cheesemaker	TITLE	MISC	1
 chef	TITLE	MISC	1
 chemist	TITLE	MISC	1
-chief risk officer	TITLE	MISC	3
-chief design officer	TITLE	MISC	3
 chief compliance officer	TITLE	MISC	3
 chief-compliance-officer	TITLE	MISC	3
 chief engineer	TITLE	MISC	2
@@ -112823,4 +112821,3 @@ west-sussex	STATE_OR_PROVINCE	LOCATION	1
 worcestershire	STATE_OR_PROVINCE	LOCATION	1
 beverly hills	CITY	LOCATION	1
 beverly-hills	CITY	LOCATION	1
-senior vice president	TITLE	MISC	2

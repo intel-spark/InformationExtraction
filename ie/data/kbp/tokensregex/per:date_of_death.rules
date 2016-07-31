@@ -1,0 +1,22 @@
+{ result: "per:date_of_death", pattern: ( $ENTITY /passed/ /away/ /on/ $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY /died/ /on/ $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY [{lemma:"die"}] "on" $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY [{lemma:"die"}] $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY [{lemma:"death"}] "on" $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY [{lemma:"death"}] $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY /died/ /on/ $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: ( $ENTITY /died/ $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:date_of_death", pattern: (  $ENTITY  "died"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "," "died"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "("  "died"  $SLOT_VALUE ")"  ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "succumbed"  "to"  []{0,4}  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "passed"  "away"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "who"  "died"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "who"  "succumbed"  "to"  []{0,4}  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "who"  "passed"  "away"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  ","  "who"  "died"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  ","  "who"  "succumbed"  "to"  []{0,4}  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  ","  "who"  "passed"  "away"  $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "was"  "pronounced"  "dead" $SLOT_VALUE ) }
+{ result: "per:date_of_death", pattern: (  $ENTITY  "was"  "pronounced"  "dead" /on|in/ $SLOT_VALUE ) }

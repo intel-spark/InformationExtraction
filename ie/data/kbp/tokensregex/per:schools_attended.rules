@@ -1,0 +1,62 @@
+{ result: "per:schools_attended", pattern: ( $ENTITY /attended/ /the/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /attended/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /attended/ /the/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /attended/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ /in/ /the/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ /in/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ /in/ /the/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ /in/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ []{0,5} /degree|major|program/ /at/ /the/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ []{0,5} /degree|major|program/ /at/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ []{0,5} /degree|major|program/ /at/ /the/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /enrolled/ []{0,5} /degree|major|program/ /at/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /educated/ /at/ /the/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /educated/ /at/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /educated/ /at/ /the/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /educated/ /at/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /graduated/ /from/ /the/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /graduated/ /from/ $SLOT_VALUE /[Cc]ollege|[Uu]niversity|[Ss]chool/ ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /graduated/ /from/ /the/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: ( $ENTITY /graduated/ /from/ /[Cc]ollege|[Uu]niversity|[Ss]chool/ $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:schools_attended", pattern: (  $ENTITY  "graduated"  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "graduated"  "in"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "attended"  []{0,4}  "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "attended"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "earned"  "his"  []{0,4}  "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "holds"  "a"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "holds"  "a"  []{0,4}  "in"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  ","  "who"  "holds"  "a"  []{0,4}  "in"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  ","  "who"  "holds"  "a"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "has"  "a"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "has"  "a"  []{0,4}  "in"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  ","  "who"  "has"  "a"  []{0,4}  "in"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  ","  "who"  "has"  "a"  []{0,4}  "from"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "studied"  "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "studied"  [] "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "studied"  [] [] "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "studied"  [] [] [] "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "studied"  [] [] [] [] "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "a"  "student"  "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "was"  "a"  "student"  "at"  $SLOT_VALUE ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "student"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY ","  "a"  $SLOT_VALUE "student"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "a"  $SLOT_VALUE "student"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "student"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY ","  "an"  $SLOT_VALUE "student"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "an"  $SLOT_VALUE "student"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "graduate"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY ","  "a"  $SLOT_VALUE "graduate"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "a"  $SLOT_VALUE "graduate"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "graduate"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY ","  "an"  $SLOT_VALUE "graduate"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "an"  $SLOT_VALUE "graduate"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "alumnus"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY ","  "a"  $SLOT_VALUE "alumnus"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "a"  $SLOT_VALUE "alumnus"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "alumnus"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY ","  "an"  $SLOT_VALUE "alumnus"  ) }
+{ result: "per:schools_attended", pattern: (  $ENTITY  "an"  $SLOT_VALUE "alumnus"  ) }
+{ result: "per:schools_attended", pattern: (  $SLOT_VALUE "gradute"  $ENTITY  ) }
+{ result: "per:schools_attended", pattern: (  $SLOT_VALUE "student"  $ENTITY  ) }
+{ result: "per:schools_attended", pattern: (  $SLOT_VALUE "alumnus"  $ENTITY  ) }

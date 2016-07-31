@@ -37,10 +37,10 @@ public class IntelKBPAnnotator implements Annotator {
     private String model = DefaultPaths.DEFAULT_KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name="semgrex", gloss="Semgrex patterns directory")
-    private String semgrexdir = DefaultPaths.DEFAULT_KBP_SEMGREX_DIR;
+    private String semgrexdir = IntelPaths.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name="tokensregex", gloss="Tokensregex patterns directory")
-    private String tokensregexdir = DefaultPaths.DEFAULT_KBP_TOKENSREGEX_DIR;
+    private String tokensregexdir = IntelPaths.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name="regexner.cased", gloss="The tokensregexner cased path")
     private String regexnerCasedPath = DefaultPaths.DEFAULT_KBP_REGEXNER_CASED;

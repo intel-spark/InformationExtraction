@@ -1,0 +1,78 @@
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /,/ [] /brother|sister|sibling/ /of/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /of/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $ENTITY /,/ [] /brother|sister|sibling/ /of/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $ENTITY /,/ /brother|sister|sibling/ /of/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /is/ /the/ [] /brother|sister|sibling/ /of/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /of/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $ENTITY /is/ /the/ [] /brother|sister|sibling/ /of/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $ENTITY /is/ /the/ /brother|sister|sibling/ /of/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $ENTITY /'s/ /brother|sister|sibling/ /,/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $ENTITY /brother|sister|sibling/ /,/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $ENTITY /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $ENTITY /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /'s/ /brother|sister|sibling/ /,/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /,/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /,/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /brother|sister|sibling/ $ENTITY ) }
+{ result: "per:siblings", pattern: ( $ENTITY /and/ $SLOT_VALUE /are/ /brothers|sisters|siblings/ ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /and/ $ENTITY /are/ /brothers|sisters|siblings/ ) }
+{ result: "per:siblings", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/ /brother|sister|sibling/ ) }
+{ result: "per:siblings", pattern: ( $ENTITY /is/ $SLOT_VALUE /'s/ /brother|sister|sibling/ ) }
+
+// From Ce's Features
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/brother/}] $SLOT_VALUE ), weight: 0.0727903}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/brother/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.0652174}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/half-brother/}] $SLOT_VALUE ), weight: 0.454545}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/half-sister/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.0555556}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/older/}] [{lemma:/brother/}] $SLOT_VALUE ), weight: 0.230769}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/older/}] [{lemma:/brother/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.136364}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/sister/}] $SLOT_VALUE ), weight: 0.178571}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/younger/}] [{lemma:/brother/}] $SLOT_VALUE ), weight: 0.142857}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/he/}] [{lemma:/brother/}] $SLOT_VALUE ), weight: 0.235294}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/brother/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.266667}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/brother/}] [{lemma:/of/}] [{lemma:/president/}] $SLOT_VALUE ), weight: 0.5}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/sister/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.37037}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/younger/}] [{lemma:/brother/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.25}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he/}] [{lemma:/brother/}] $SLOT_VALUE ), weight: 0.225}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/sister/}] $SLOT_VALUE ), weight: 0.235294}
+{ result:"per:siblings", pattern: ( $ENTITY [{lemma:/sister/}] [{lemma:/--/}] $SLOT_VALUE ), weight: 0.333333}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/brother/}] $ENTITY ), weight: 0.0765027}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/brother/}] [{lemma:/,/}] $ENTITY ), weight: 0.0584192}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/half-brother/}] $ENTITY ), weight: 0.416667}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/half-sister/}] [{lemma:/,/}] $ENTITY ), weight: 0.9}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/older/}] [{lemma:/brother/}] [{lemma:/,/}] $ENTITY ), weight: 0.222222}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/sister/}] $ENTITY ), weight: 0.213483}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/sister/}] [{lemma:/,/}] $ENTITY ), weight: 0.179191}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/younger/}] [{lemma:/brother/}] $ENTITY ), weight: 0.428571}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/younger/}] [{lemma:/brother/}] [{lemma:/,/}] $ENTITY ), weight: 0.25}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/and/}] [{lemma:/brother/}] $ENTITY ), weight: 0.0952381}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/the/}] [{lemma:/brother/}] [{lemma:/of/}] [{lemma:/president/}] $ENTITY ), weight: 0.642857}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/who/}] [{lemma:/succeed/}] [{lemma:/he/}] [{lemma:/brother/}] $ENTITY ), weight: 0.444444}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/he/}] [{lemma:/brother/}] $ENTITY ), weight: 0.228571}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/beat/}] [{lemma:/sister/}] $ENTITY ), weight: 0.833333}
+{ result:"per:siblings", pattern: ( $SLOT_VALUE [{lemma:/will/}] [{lemma:/be/}] [{lemma:/introduce/}] [{lemma:/by/}] [{lemma:/she/}] [{lemma:/brother/}] [{lemma:/,/}] $ENTITY ), weight: 0.75}
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "the"  "brother"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "a"  "brother"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "brother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "brother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "brother"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "brother"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "the"  "younger"  "brother"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "younger"  "brother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "younger"  "brother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "the"  "older"  "brother"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "older"  "brother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "older"  "brother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "the"  "sister"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "a"  "sister"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "sister"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "sister"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "sister"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "sister"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "the"  "younger"  "sister"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "younger"  "sister"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "younger"  "sister"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "is"  "the"  "older"  "sister"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY"  "'s"  "older"  "sister"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:siblings", pattern: (  "$ENTITY'"  "older"  "sister"  ","  "$SLOT_VALUE"  ) }

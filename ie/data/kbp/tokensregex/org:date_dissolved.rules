@@ -1,0 +1,52 @@
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "ceased"  "to"  "exist"  $SLOT_VALUE  ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "dissolved"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  []{0,4}  "dissolved"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "dissolved"  []{0,4}  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "wound"  "up"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  []{0,4}  "wound"  "up"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "wound"  "up"  []{0,4}  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "liquidated"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  []{0,4}  "liquidated"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "liquidated"  []{0,4}  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "disbanded"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  []{0,4}  "disbanded"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "was"  "disbanded"  []{0,4}  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  "dissolved"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  "wound"  "up"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "ceased"  "to"  "exist"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  "liquidated"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  "disbanded"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  []{0,4}  "dissolved"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  []{0,4}  "wound"  "up"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  []{0,4}  "liquidated"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE $ENTITY  "was"  []{0,4}  "disbanded"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "ceased"  "to"  "exist"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  "dissolved"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  "wound"  "up"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  "liquidated"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  "disbanded"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  []{0,4}  "dissolved"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  []{0,4}  "wound"  "up"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  []{0,4}  "liquidated"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE ","  $ENTITY  "was"  []{0,4}  "disbanded"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  "dissolved"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  "wound"  "up"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "ceased"  "to"  "exist"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  "liquidated"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  "disbanded"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  []{0,4}  "dissolved"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  []{0,4}  "wound"  "up"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  []{0,4}  "liquidated"  ) }
+{ result: "org:date_dissolved", pattern: (  $SLOT_VALUE "when"  $ENTITY  "was"  []{0,4}  "disbanded"  ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "dissolved"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "officially"  "dissolved"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "disbanded"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "officially"  "disbanded"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "liquidated"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "wound"  "up"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  ","  "officially"  "liquidated"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "existed"  "until"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "'s"  "liquidation"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "'s"  "dissolution"  $SLOT_VALUE ) }
+{ result: "org:date_dissolved", pattern: (  $ENTITY  "'s"  "end"  $SLOT_VALUE ) }
