@@ -6,7 +6,6 @@ import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.IndexedWord;
-import edu.stanford.nlp.pipeline.DefaultPaths;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
 import edu.stanford.nlp.semgraph.semgrex.SemgrexBatchParser;
@@ -31,7 +30,7 @@ public class IntelKBPSemgrexExtractor implements IntelKBPRelationExtractor {
     protected final Redwood.RedwoodChannels logger = Redwood.channels(IntelKBPSemgrexExtractor.class);
 
     @ArgumentParser.Option(name="dir", gloss="The tokensregex directory")
-    public static String DIR = DefaultPaths.DEFAULT_KBP_SEMGREX_DIR;
+    public static String DIR = IntelPaths.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name="test", gloss="The dataset to test on")
     public static File TEST_FILE = new File("test.conll");

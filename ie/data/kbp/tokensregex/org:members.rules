@@ -1,0 +1,20 @@
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:members", pattern: (  $SLOT_VALUE "is"  "a"  "member"  "organization"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "as"  "a"  "member"  "organization"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE ","  "as"  "a"  "member"  "organization"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE ","  "a"  "member"  "organization"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "is"  "a"  "member"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "are"  "member"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "as"  "a"  "member"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE ","  "as"  "a"  "member"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE ","  "a"  "member"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "is"  "part"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "are"  "part"  "of"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "plays"  "in"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "play"  "in"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "is"  "relegated"  "to"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "are"  "relegated"  "to"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "is"  "promoted"  "to"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "are"  "promoted"  "to"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "joined"  $ENTITY  ) }
+{ result: "org:members", pattern: (  $SLOT_VALUE "and"  "other"  "members"  "of"  $ENTITY  ) }

@@ -1,0 +1,12 @@
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:member_of", pattern: (  $ENTITY  "is"  "a"  "member"  "of"  $SLOT_VALUE ) }
+{ result: "per:member_of", pattern: (  $SLOT_VALUE "member"  $ENTITY  ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "is"  "a"  "fellow"  "of"  $SLOT_VALUE ) }
+{ result: "per:member_of", pattern: (  $SLOT_VALUE "fellow"  $ENTITY  ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "became"  "a"  "member"  "of"  $SLOT_VALUE ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "became"  $SLOT_VALUE "member"  ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "became"  "a"  "fellow"  "of"  $SLOT_VALUE ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "became"  $SLOT_VALUE "fellow"  ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "joined"  $SLOT_VALUE ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "is"  "leaving"  $SLOT_VALUE_ORG ) }
+{ result: "per:member_of", pattern: (  $ENTITY  "left"  $SLOT_VALUE_ORG ) }

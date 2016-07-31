@@ -1,14 +1,4 @@
-package dataExtraction
-
-import java.io.PrintWriter
-
-import feature.functions
-import functions._
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.functions._
-import org.apache.spark.{SparkConf, SparkContext}
-
-import scala.io.Source
+package dataExtraction;
 
 /**
  * Created by yuhao on 6/29/16.
