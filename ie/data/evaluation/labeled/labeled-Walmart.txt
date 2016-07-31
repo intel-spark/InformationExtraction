@@ -1,0 +1,51 @@
+Doug/PERSON	McMillon/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Wal-Mart/ORGANIZATION	Stores/ORGANIZATION	,/O	Inc./ORGANIZATION	./O
+Greg/PERSON	Foran/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+David/PERSON	Cheesewright/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Walmart/ORGANIZATION	International/ORGANIZATION
+Rosalind/PERSON	Brewer/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Sam/ORGANIZATION	's/ORGANIZATION	Club/ORGANIZATION
+Neil/PERSON	M./PERSON	Ashe/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Global/ORGANIZATION	eCommerce/ORGANIZATION	and/O	Technology/ORGANIZATION
+Claire/PERSON	Babineaux-Fontenot/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	and/O	Treasurer/TITLE
+Andy/PERSON	Barron/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Softlines/ORGANIZATION	and/O	General/ORGANIZATION	Merchandise/ORGANIZATION	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Dan/PERSON	Bartlett/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/ORGANIZATION	Corporate/ORGANIZATION	Affairs/ORGANIZATION
+Michael/PERSON	J./PERSON	Bender/PERSON	,/O	Chief/TITLE	Operating/TITLE	Officer/TITLE	,/O	Global/ORGANIZATION	eCommerce/ORGANIZATION
+Brett/PERSON	Biggs/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	and/O	Chief/TITLE	Financial/TITLE	Officer/TITLE
+Steve/PERSON	Bratspies/PERSON	,/O	Chief/TITLE	Merchandising/TITLE	Officer/TITLE	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Jacqui/PERSON	Canney/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Global/ORGANIZATION	People/ORGANIZATION	Division/ORGANIZATION
+Michael/PERSON	Dastugue/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	and/O	Chief/TITLE	Financial/TITLE	Officer/TITLE	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Rollin/PERSON	L./PERSON	Ford/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Chief/TITLE	Administrative/TITLE	Officer/TITLE
+Don/PERSON	Frieson/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Operations/ORGANIZATION	,/O	Sam/ORGANIZATION	's/ORGANIZATION	Club/ORGANIZATION
+John/PERSON	Furner/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE - Merchandising/ORGANIZATION	,/O	Sam/ORGANIZATION	's/ORGANIZATION	Club/ORGANIZATION
+Jeffrey/PERSON	J./PERSON	Gearhart/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Global/ORGANIZATION	Governance/ORGANIZATION	and/O	Corporate/ORGANIZATION	Secretary/ORGANIZATION
+Michelle/PERSON	Gloeckler/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Consumables/ORGANIZATION	and/O	Health/ORGANIZATION	and/O	Wellness/ORGANIZATION	and/O	U.S./ORGANIZATION	Manufacturing/ORGANIZATION	Lead/PERSON
+Scott/PERSON	Huff/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Merchandising/ORGANIZATION	Operations/ORGANIZATION	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Jamie/PERSON	Iannone/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Samsclub.com/ORGANIZATION
+Mark/PERSON	Ibbotson/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Central/ORGANIZATION	Operations/ORGANIZATION
+Jay/PERSON	T./PERSON	Jorgensen/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Global/TITLE	Chief/TITLE	Ethics/TITLE	and/O	Compliance/TITLE	Officer/TITLE
+Fernando/PERSON	Madeira/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Walmart.com/ORGANIZATION
+Richard/PERSON	Mayfield/PERSON	,/O	Senior/TITLE	Vice/TITLE	President/TITLE	and/O	Chief/TITLE	Financial/TITLE	Officer/TITLE	,/O	EMEA/ORGANIZATION	Region/ORGANIZATION
+Judith/PERSON	McKenna/PERSON	,/O	Chief/TITLE	Operating/TITLE	Officer/TITLE	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Michael/PERSON	S./PERSON	Moore/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Supercenters/ORGANIZATION	--/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Julie/PERSON	Murphy/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Neighborhood/ORGANIZATION	Markets/ORGANIZATION	--/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Enrique/PERSON	Ostalé/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	and/O	CEO/TITLE	--/O	Walmart/ORGANIZATION	Latin/ORGANIZATION	America/ORGANIZATION	,/O	India/ORGANIZATION	and/O	Africa/ORGANIZATION	;/O	Chairman/TITLE	of/O	the/O	Board/ORGANIZATION	of/ORGANIZATION	Directors/ORGANIZATION	,/O	Walmart/ORGANIZATION	Mexico/ORGANIZATION	and/O	Central/ORGANIZATION	America/ORGANIZATION	./O
+Scott/PERSON	Price/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Walmart/ORGANIZATION	Asia/ORGANIZATION	and/O	Chief/TITLE	Administrative/TITLE	Officer/TITLE	--/O	Walmart/ORGANIZATION	International/ORGANIZATION
+Charles/PERSON	Redfield/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Food/ORGANIZATION	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Karen/PERSON	Roberts/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	and/O	General/TITLE	Counsel/TITLE	,/O	Wal-Mart/ORGANIZATION	Stores/ORGANIZATION	,/O	Inc./ORGANIZATION	./O
+Tony/PERSON	Rogers/PERSON	,/O	Senior/TITLE	Vice/TITLE	President/TITLE	and/O	Chief/TITLE	Marketing/TITLE	Officer/TITLE	of/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Gisel/PERSON	Ruiz/PERSON	,/TITLE	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	International/ORGANIZATION	People/ORGANIZATION	Division/ORGANIZATION
+Linda/PERSON	Simon/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION	People/ORGANIZATION
+Chris/PERSON	Sultemeier/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Logistics/ORGANIZATION	,/O	Walmart/ORGANIZATION	U.S./ORGANIZATION
+Karenann/PERSON	Terrell/PERSON	,/O	Executive/TITLE	Vice/TITLE	President/TITLE	,/O	Chief/TITLE	Information/TITLE	Officer/TITLE
+Steven/PERSON	P./PERSON	Whaley/PERSON	,/O	Senior/TITLE	Vice/TITLE	President/O	and/O	Controller/TITLE
+Board/O	of/O	Directors/O	,/O	Strong/O	corporate/O	governance/O	is/O	essential/O	for/O	a/O	successful/O	business/O	,/O	and/O	our/O	board/O	members/O	ensure/O	Walmart/O	operates/O	with/O	integrity/O	and/O	accountability/O	./O	Learn/O	more/O	about/O	our/O	and/O	read/O	our/O	./O
+corporate/O	governance/O	policies/O	,/O	Statement/O	of/O	Ethics/O
+Gregory/PERSON	B./PERSON	Penner/PERSON	,/O	Chairman/TITLE	Walmart/ORGANIZATION	Board/ORGANIZATION	of/ORGANIZATION	Directors/ORGANIZATION	-/O	General/O	Partner/O	of/O	Madrone/O	Capital/O	Partners/O
+James/PERSON	I./PERSON	Cash/PERSON	,/O	Jr./PERSON	,/TITLE	Lead/TITLE	Independent/TITLE	Director/TITLE
+Pamela/PERSON	J./PERSON	Craig/PERSON	,/O	Retired/TITLE	Chief/TITLE	Financial/TITLE	Officer/TITLE	of/O	Accenture/ORGANIZATION	plc/ORGANIZATION
+Timothy/PERSON	P./PERSON	Flynn/PERSON	,/O	Retired/TITLE	Chairman/TITLE	of/O	KPMG/ORGANIZATION	International/ORGANIZATION
+Tom/PERSON	Horton/PERSON	,/O	Senior/TITLE	Advisor/TITLE	,/O	Warburg/ORGANIZATION	Pincus/ORGANIZATION	and/O	Former/TITLE	Chairman/TITLE	and/O	CEO/TITLE	of/O	American/ORGANIZATION	Airlines/ORGANIZATION
+Marissa/PERSON	A./PERSON	Mayer/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	of/O	Yahoo!/ORGANIZATION	,/O	Inc./ORGANIZATION	./O
+Doug/PERSON	McMillon/PERSON	,/O	President/TITLE	and/O	CEO/TITLE	,/O	Wal-Mart/ORGANIZATION	Stores/ORGANIZATION	,/O	Inc./ORGANIZATION	./O
+Steven/PERSON	S/PERSON	Reinemund/PERSON	,/O	Retired/TITLE	Dean/TITLE	of/O	Business/ORGANIZATION	and/O	Professor/TITLE	of/O	Leadership/ORGANIZATION	and/O	Strategy/ORGANIZATION	at/O	Wake/ORGANIZATION	Forest/ORGANIZATION	University/ORGANIZATION
+Kevin/PERSON	Systrom/PERSON	,/O	CEO/TITLE	and/O	Co-Founder/TITLE	,/O	Instagram/ORGANIZATION
+S./PERSON	Robson/PERSON	Walton/PERSON	-LRB-/O	Rob/PERSON	Walton/PERSON	-RRB-/O	,/O	Retired/TITLE	Chairman/TITLE	of/O	the/O	Board/ORGANIZATION	of/ORGANIZATION	Directors/ORGANIZATION	of/O	Wal-Mart/ORGANIZATION	Stores/ORGANIZATION	,/O	Inc./ORGANIZATION	./O
+Steuart/PERSON	Walton/PERSON	,/O	CEO/TITLE	,/O	Game/ORGANIZATION	Composites/ORGANIZATION	Ltd./ORGANIZATION	./O
+Linda/PERSON	S./PERSON	Wolf/PERSON	,/O	Former/TITLE	Chairman/TITLE	and/O	CEO/TITLE	of/O	Leo/ORGANIZATION	Burnett/ORGANIZATION	Worldwide/ORGANIZATION	,/O	Inc./ORGANIZATION	-LRB-/O	``/O	Leo/ORGANIZATION	Burnett/ORGANIZATION	''/O	-RRB-/O
