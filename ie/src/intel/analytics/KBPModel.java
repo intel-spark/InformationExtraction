@@ -4,8 +4,7 @@ import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.pipeline.*;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 
@@ -25,6 +24,20 @@ public class KBPModel {
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
+
+//        props.setProperty("annotators", "tokenize,ssplit,pos,lemma");
+//        pipeline = new StanfordCoreNLP(props);
+//        props.setProperty("ner.model","edu/stanford/nlp/models/ner/department-model.ser.gz,edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz," +
+//                "edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz,edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz");
+//        pipeline.addAnnotator(new NERCombinerAnnotator("ner", props));
+//
+//        String options2 = "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.Regex_NER_caseless + ";" + IntelPaths.Regex_NER_cased;
+//        props.setProperty("regexner.mapping", options2);
+//        pipeline.addAnnotator(new RegexNERAnnotator("regexNer", props));
+//        pipeline.addAnnotator(new ParserAnnotator("parse", props));
+//        pipeline.addAnnotator(new MentionAnnotator(props));
+//        pipeline.addAnnotator(new CorefAnnotator(props));
+//        pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
     }
 
     public static void main(String[] args) throws IOException {
