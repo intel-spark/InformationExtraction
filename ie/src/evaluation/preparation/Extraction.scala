@@ -15,7 +15,7 @@ object Extraction {
   def extract( labeledFile: String, saveFile: String): Unit = {
     val lines = Source.fromFile(labeledFile).getLines()
     val writer = new CSVWriter(new BufferedWriter(new FileWriter(saveFile)));
-
+    writer.writeNext(Array(Label.person, Label.title, Label.organization))
     for(line <- lines) {
       val res = extractOneLine(line)
       if( res != null ) writer.writeNext( res )
