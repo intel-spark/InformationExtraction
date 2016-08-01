@@ -1,0 +1,43 @@
+{ result: "per:charges", pattern: ( $ENTITY [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [] [] [] [] /[Aa]rrested|[Cc]onvicted|[Cc]harged|[Ii]ndicted/ [] [] [] $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( /filed/ $CRIMINAL_CHARGE [ { lemma:/charge/ } ] $ENTITY ) }
+{ result: "per:charges", pattern: ( /filed/ $CRIMINAL_CHARGE [ { lemma:/charge/ } ] [] $ENTITY ) }
+{ result: "per:charges", pattern: ( /filed/ $CRIMINAL_CHARGE [ { lemma:/charge/ } ] [] [] $ENTITY ) }
+{ result: "per:charges", pattern: ( /filed/ $CRIMINAL_CHARGE [ { lemma:/charge/ } ] [] [] [] $ENTITY ) }
+{ result: "per:charges", pattern: ( /filed/ $CRIMINAL_CHARGE [ { lemma:/charge/ } ] [] [] [] [] $ENTITY ) }
+{ result: "per:charges", pattern: ( /filed/ $CRIMINAL_CHARGE [ { lemma:/charge/ } ] [] [] [] [] [] $ENTITY ) }
+{ result: "per:charges", pattern: ( $ENTITY [{lemma:"face"}] [{lemma:"charge"}] "including" $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [{lemma:"face"}] [{lemma:"charge"}] "of" $CRIMINAL_CHARGE ) }
+{ result: "per:charges", pattern: ( $ENTITY [{lemma:"face"}] $CRIMINAL_CHARGE [{lemma:"charge"}] ) }
+{ result: "per:charges", pattern: ( $CRIMINAL_CHARGE [ { lemma:/convict/ } ] "of" $ENTITY ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:charges", pattern: (  $ENTITY  "accused"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "convicted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "convicted"  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "acquitted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "sentenced"  "to"  []{0,4}  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "is"  "accused"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "is"  "convicted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "is"  "convicted"  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "is"  "acquitted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "is"  "sentenced"  "to"  []{0,4}  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "was"  "accused"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "was"  "convicted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "was"  "convicted"  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "was"  "acquitted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "was"  "sentenced"  "to"  []{0,4}  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "has"  "been"  "accused"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "has"  "been"  "convicted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "has"  "been"  "convicted"  "for"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "has"  "been"  "acquitted"  "of"  $SLOT_VALUE ) }
+{ result: "per:charges", pattern: (  $ENTITY  "has"  "been"  "sentenced"  "to"  []{0,4}  "for"  $SLOT_VALUE ) }

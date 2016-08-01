@@ -35,10 +35,10 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     private static String STATISTICAL_MODEL = DefaultPaths.DEFAULT_KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name="semgrex", gloss="Semgrex patterns directory")
-    private static String SEMGREX_DIR = DefaultPaths.DEFAULT_KBP_SEMGREX_DIR;
+    private static String SEMGREX_DIR = IntelPaths.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name="tokensregex", gloss="Tokensregex patterns directory")
-    private static String TOKENSREGEX_DIR = DefaultPaths.DEFAULT_KBP_TOKENSREGEX_DIR;
+    private static String TOKENSREGEX_DIR = IntelPaths.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name="predictions", gloss="Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();
@@ -64,6 +64,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
             Pair<String, Double> classifierPrediction = extractor.classify(input);
+            logger.info(extractor  + ": " + classifierPrediction);
             if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
                     (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
                             classifierPrediction.second > prediction.second)

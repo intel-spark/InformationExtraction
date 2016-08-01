@@ -7,6 +7,8 @@ class RelationExtractorTest {
 
   def main(args: Array[String]) {
 
+
+
   }
 
 }

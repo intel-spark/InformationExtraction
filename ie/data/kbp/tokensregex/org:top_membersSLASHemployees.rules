@@ -1,0 +1,293 @@
+{ result: "org:top_members/employees", pattern: ( $ENTITY /'s/ $TOP_TITLE /,/ $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY /'s/ "chief" $TOP_TITLE /,/ $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY $TOP_TITLE /,/ $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY "chief" $TOP_TITLE /,/ $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY /'s/ $TOP_TITLE $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY /'s/ "chief" $TOP_TITLE $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY $TOP_TITLE $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $ENTITY "chief" $TOP_TITLE $SLOT_VALUE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE /,/ $ENTITY /'s/ $TOP_TITLE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE /,/ $ENTITY /'s/ "chief" $TOP_TITLE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE $ENTITY /'s/ "chief" $TOP_TITLE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE /,/ $ENTITY "chief" $TOP_TITLE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE $ENTITY "chief" $TOP_TITLE ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/,/}] $TOP_TITLE [{lemma:/of/}] /the/ $ENTITY /[^'].*/ ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/,/}] /the/ $TOP_TITLE [{lemma:/of/}] /the/ $ENTITY /[^'].*/  ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/,/}] $TOP_TITLE [{lemma:/of/}] $ENTITY /[^'].*/ ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/,/}] $TOP_TITLE [{lemma:/of/}] /the/ $ENTITY /[^'].*/  ) , weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/,/}] $TOP_TITLE [{lemma:/of/}] $ENTITY /[^'].*/  ) , weight: 1.0}
+//{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/join/}] $ENTITY ) , weight: 1.0}
+//{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE /'s/ $ENTITY ) , weight: 1.0}
+
+// From Ce's Rules
+//{ result:"org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/who/}] [{lemma:/join/}] $ENTITY ), weight: 0.0860927}
+//{ result:"org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/join/}] $ENTITY ), weight: 0.0137444}
+//{ result:"org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/lead/}] $ENTITY ), weight: 0.00139}
+//{ result:"org:top_members/employees", pattern: ( $SLOT_VALUE [{lemma:/lead/}] [{lemma:/the/}] $ENTITY ), weight: 0.0145429}
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "leads"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "commands"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "oversees"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "commanded"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "board"  "member"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  [{lemma:/C.O/}]  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "CEO"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "chief"  "executive"  "officer"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "managing"  "director"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "MD"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "executive"  "director"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "ED"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "president"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "vice"  "president"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "director"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "chairman"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "executive"  "vice"  "president"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "provost"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $ENTITY  "dean"  $SLOT_VALUE ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "a"  "board"  "member"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "CFO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "CEO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "director"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "chairman"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "executive"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "provost"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE "is"  "the"  "dean"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "board"  "member"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "CFO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "CEO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "director"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "chairman"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "executive"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "provost"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "dean"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "a"  "board"  "member"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "CFO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "CEO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "director"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "chairman"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "executive"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "provost"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "the"  "dean"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "board"  "member"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "CFO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "CEO"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "director"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "chairman"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "executive"  "vice"  "president"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "provost"  "of"  $ENTITY  ) }
+{ result: "org:top_members/employees", pattern: (  $SLOT_VALUE ","  "former"  "dean"  "of"  $ENTITY  ) }
+// JB created rules from ngrams - /scr/nlp/data/tackbp2015/data/job_per_org_analysis/3-gram-org-top-member.txt
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "commander" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "manager" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "President" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "dean" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "leader" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "director" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "VP" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairwoman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "governor" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Commander" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Dean" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "CEO" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Governor" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "CEO" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+// JB created rules from ngrams - /scr/nlp/data/tackbp2015/data/job_per_org_analysis/4-gram-org-top-member.txt
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chief" "executive" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "leader" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "commander" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "managing" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairwoman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "dean" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chair" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "President" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "CEO" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "governor" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "managing" "director" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "secretary" "general" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "director" "general" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "leader" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chief" "executive" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Executive" "Director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "general" "secretary" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "former" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "managing" "director" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "general" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Vice" "President" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Managing" "Director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "director" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Commander" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chair" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "President" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Governor" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "Director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chief" "Executive" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "commanding" "general" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "acting" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Deputy" "Minister" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "Head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "governor" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "national" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Leader" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "as" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "also" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "also" "leader" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "also" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "with" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Vice" "President" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "currently" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairman" "for" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "acting" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Vice" "President" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Executive" "Director" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "officer" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "currently" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "currently" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "USA" "President" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "governor" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+// JB created rules from ngrams - /scr/nlp/data/tackbp2015/data/job_per_org_analysis/5-gram-org-top-member.txt
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "chief" "executive" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chief" "executive" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "director" "general" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "leader" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "former" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "vice" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "and" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "senior" "vice" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "senior" "vice" "president" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "executive" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairman" "and" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "a" "vice" "president" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Executive" "Director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "a" "vice" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "vice" "president" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "acting" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "governor" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "founder" "and" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "senior" "vice" "president" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "director" "for" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "national" "director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "former" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "vice" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "also" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "former" "chief" "executive" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "then" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "also" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Vice" "President" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "then" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "Chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chief" "Executive" "Officer" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "a" "vice" "president" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "CEO" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chairman" "and" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "founder" "and" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "vice" "president" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chief" "executive" "officer" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "President" "and" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "acting" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "a" "vice" "president" "with" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "senior" "managing" "director" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "President" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Managing" "Director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "director" "general" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "and" "founder" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "as" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "founder" "and" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "executive" "director" "at" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "current" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Chief" "Executive" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "chief" "executive" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "national" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "acting" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "top" "leader" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "a" "former" "CEO" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "for" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "Director" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "senior" "vice" "president" "with" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "in" "charge" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "national" "chairman" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "CEO" "and" "founder" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Assistant" "Attorney" "General" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "vice" "president" "at" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "president" "and" "owner" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "CEO" "and" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chief" "executive" "at" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "an" "executive" "director" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "top" "commander" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "prime" "minister" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chairman" "and" "founder" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "executive" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Executive" "Vice" "President" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "senior" "director" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "new" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "the" "president" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "incoming" "president" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "chief" "executive" "officer" "for" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "acting" "chief" "executive" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "Deputy" "Director" "General" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "top" "official" "at" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "new" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "now" "in" "charge" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "current" "chairman" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "the" "acting" "director" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+// JB created rules from ngrams - /scr/nlp/data/tackbp2015/data/job_per_org_analysis/misc-org-top-member.txt
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "heads" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "heads" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "heads" "up" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "heads" "up" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "leads" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "leads" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "in" "charge" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "in" "charge" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "heads" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "the" "head" "of" $ENTITY /[^'].*/ ), weight: 1.0}
+{ result: "org:top_members/employees", pattern: ( $SLOT_VALUE "," "who" "is" "the" "head" "of" "the" $ENTITY /[^'].*/ ), weight: 1.0}

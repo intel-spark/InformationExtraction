@@ -1,0 +1,39 @@
+{ result: "org:number_of_employees/members", pattern: ( $ENTITY [{lemma:/have|employ/}] [{lemma:/over|around/}] $SLOT_VALUE ) }
+{ result: "org:number_of_employees/members", pattern: ( $ENTITY [{lemma:/have|employ/}] $SLOT_VALUE ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [] [{lemma:/be/}] [{lemma:/work|employ/}] [{lemma:/at|by/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [{lemma:/be/}] [{lemma:/work|employ/}] [{lemma:/at|by/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [{lemma:/work|employ/}] [{lemma:/at|by/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [{lemma:/work|employ/}] [{lemma:/at|by/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [] [{lemma:/be/}] [{lemma:/work|employ/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [{lemma:/be/}] [{lemma:/work|employ/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [{lemma:/work|employ/}] $ENTITY ) }
+{ result: "org:number_of_employees/members", pattern: ( $SLOT_VALUE [{lemma:/work|employ/}] $ENTITY ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "had"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "counted"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "counts"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  "with"  $SLOT_VALUE "members"  ","  $ENTITY  ) }
+{ result: "org:number_of_employees/members", pattern: (  "having"  $SLOT_VALUE "members"  ","  $ENTITY  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "around"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "nearly"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "approximately"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "exactly"  $SLOT_VALUE "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  $SLOT_VALUE "employees"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "around"  $SLOT_VALUE "employees"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "nearly"  $SLOT_VALUE "employees"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "has"  "approximately"  $SLOT_VALUE "employees"  ) }
+{ result: "org:number_of_employees/members", pattern: (  "all"  $SLOT_VALUE "employees"  "of"  $ENTITY  ) }
+{ result: "org:number_of_employees/members", pattern: (  "all"  $SLOT_VALUE "members"  "of"  $ENTITY  ) }
+{ result: "org:number_of_employees/members", pattern: (  "all"  $SLOT_VALUE $ENTITY  "employees"  ) }
+{ result: "org:number_of_employees/members", pattern: (  "all"  $SLOT_VALUE $ENTITY  "members"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "is"  "employer"  "of"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "employer"  "of"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "employs"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "employed"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  "employing"  $SLOT_VALUE "people,"  $ENTITY  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "employs"  "around"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "employs"  "nearly"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  $ENTITY  "employs"  "approximately"  $SLOT_VALUE "people"  ) }
+{ result: "org:number_of_employees/members", pattern: (  "there"  "are"  $SLOT_VALUE "employees"  "of"  $ENTITY  ) }
+{ result: "org:number_of_employees/members", pattern: (  "there"  "are"  $SLOT_VALUE "members"  "of"  $ENTITY  ) }

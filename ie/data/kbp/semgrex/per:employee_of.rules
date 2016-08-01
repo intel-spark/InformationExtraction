@@ -1,0 +1,68 @@
+macro JOB = lemma:/(p|P)resident|(E|e)x\-president|ceo|CEO|(S|s)tar|(P|p)rofessor|(o|O)rganizer|(m|M)anager|(c|C)oach|(E|e)mployee|(n|N)egotiator|(m|M)inister|(H|h)ead|(E|e)mployee|(S|s)enator|(G|g)overnor|(F|f)ounder|(C|c)o\-founder|(O|o)wner|(C|c)hancell?or|(V|v)ice-chancell?or|(M|m)ayor|(L|l)eader|(P|p)remier|(S|s)ecretary|(R|r)uler|[Mm]ember/
+macro ORG = ner:/ORGANIZATION|LOCATION|COUNTRY|STATE_OR_PROVINCE|CITY/
+macro EMPLOY = lemma:/(S|s)ign|(E|e)mploy|(E|e)elect|(R|r)e\-elect/
+
+# Joe, CEO of IBM.
+{}=entity >appos ( ({ner:/TITLE/} >/(nmod:|prep_)of/ {${ORG}}=slot) )
+{}=entity >appos ( ({${JOB}} >/(nmod:|prep_)of/ {${ORG}}=slot) )
+# ^ from Jason's: {}=entity >appos ({${JOB}} >/nn|poss|amod|prep_from|nmod:from|prep_of|nmod:of|prep_at|nmod:at/ {${ORG}}=slot)S
+
+# Joe is CEO of IBM.
+{ner:/TITLE/} >nsubj {}=entity >cop {lemma:/be/} >/(prep_|nmod:)(of|at|from|for)/ {${ORG}}=slot
+{${JOB}} >nsubj {}=entity >cop {lemma:/be/} >/(prep_|nmod:)(of|at|from|for)/ {${ORG}}=slot
+# ^ from Jason's: {${JOB}} >nsubj {}=entity >cop {lemma:/be/} >>/prep_at|nmod:at|prep_of|nmod:of|prep_from|nmod:from/ {${ORG}}=slot
+
+# Joe is working at IBM / Joe is working at IBM
+{lemma:/work|write|play|consult|serve/} >nsubj {}=entity ?>cop {lemma:/be/} >/(prep_|nmod:)(at|for)/ {${ORG}}=slot
+
+# Joe is a research scientist working at IBM
+{ner:/TITLE/} >nsubj {}=entity ?>cop {lemma:/be/} >/acl/ ( {lemma:/work|write|play|consult/} >/(prep_|nmod:)(at|for)/ {${ORG}}=slot )
+{${JOB}} >nsubj {}=entity ?>cop {lemma:/be/} >/acl/ ( {lemma:/work|write|play|consult/} >/(prep_|nmod:)(at|for)/ {${ORG}}=slot )
+
+
+# Joe's company, IBM
+{lemma:/company|firm|business|store|club|group|team|band/} >/nmod:poss/ {}=entity >appos {${ORG}}=slot
+
+# Joe of IBM 's XYZ
+{ner:PERSON}=entity >/(prep_|nmod:)of/ ( {} >/nmod:poss/ {${ORG}} )
+
+##{}=entity >appos ({${JOB}} >/prep_from|prep_of|prep_at/ {${ORG}}=slot)
+##too generic
+#{}=entity >nn {${ORG}}=slot >nn {${JOB}}
+##too generic
+#{}=entity >dep ({${JOB}} >/prep_of|nmod:of|prep_from|nmod:from/ {${ORG}}=slot)
+##too generic
+#{}=entity >/amod|poss/ {${ORG}}=slot >nn {${JOB}}
+#{}=entity >/abbrev/ {${ORG}}=slot
+#{${JOB}} >poss {${ORG}}=slot >tmod {}=entity
+##too generic
+#{${JOB}} >/(prep_|nmod:)of/ ({}=entity >nn {${ORG}}=slot)
+#{tag:/VB.*/} >dep ({${JOB}} >poss {${ORG}}=slot) >nsubj {}=entity
+#{${EMPLOY}} >nsubjpass {}=entity >/prep_to|nmod:to|prep_by|nmod:by/ {${ORG}}=slot
+#{${EMPLOY}} >nsubj {}=entity >/dobj|prep_as|nmod:as/ ({${JOB}} >/(prep_|nmod:)of/ {${ORG}}=slot)
+
+### COPIED FROM top_employees ###
+{ner:PERSON}=entity >/nn|compound|amod|appos/ ( {ner:TITLE} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot )
+{ner:PERSON}=entity >/nn|compound|amod|appos/ ( {ner:TITLE} >/(prep_|nmod:).*/ ({} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot ) )
+{ner:TITLE} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity
+{ner:TITLE} >/(prep_|nmod:)(of|at)/ ( {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity )
+( {ner:TITLE} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot ) >/nsubj.*/ {ner:PERSON}=entity >cop {}
+{tag:/VB.*/} >nsubj {ner:PERSON}=entity >/(prep_|nmod:)as/ ( {ner:TITLE} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot )
+{}=entity >/acl:relclause/ ({tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:)as/ ( {ner:TITLE} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot ) )
+{ner:TITLE} >/nmod:poss/ {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity
+{ner:PERSON}=entity >appos ( {ner:TITLE} >/nmod:(poss|of|at)/ {ner:ORGANIZATION}=slot )
+{ner:TITLE} >/(prep_|nmod:)(of|at|poss)/ {ner:ORGANIZATION}=slot >/nn|compound|amod|appos/ {ner:PERSON}=entity
+# Variants with things that aren't titles, but are good for employee relationships
+{ner:PERSON}=entity >/nn|compound|amod|appos/ ( {lemma:/speaker|head|chief/} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot )
+{lemma:/speaker|head|chief/} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity
+{lemma:/speaker|head|chief/} >/(prep_|nmod:)(of|at)/ ( {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity )
+( {lemma:/speaker|head|chief/} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot ) >/nsubj.*/ {ner:PERSON}=entity >cop {}
+{tag:/VB.*/} >nsubj {ner:PERSON}=entity >/(prep_|nmod:)as/ ( {lemma:/speaker|head|chief/} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot )
+{}=entity >/acl:relclause/ ({tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:)as/ ( {lemma:/speaker|head|chief/} >/(prep_|nmod:)(of|at)/ {ner:ORGANIZATION}=slot ) )
+{ner:ORGANIZATION}=slot >/nmod:poss/ ( {lemma:/speaker|head|chief/} >/appos/ {ner:PERSON}=entity )
+# entity's firm, slot
+{lemma:/firm|company|business|association|corporation|organization|society/}  >/nmod:poss/ {ner:PERSON}=entity >/appos/ {ner:ORGANIZATION}=slot
+# TITLE of ORG, slot / ORG 's TITLE, slot
+{ner:TITLE}  >/(prep_|nmod:)(of|poss)/ {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity
+{lemma:/speaker|head|chief/}  >/(prep_|nmod:)(of|poss)/ {ner:ORGANIZATION}=slot >/appos/ {ner:PERSON}=entity
+

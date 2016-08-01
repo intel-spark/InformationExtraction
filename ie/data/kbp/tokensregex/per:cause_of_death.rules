@@ -1,0 +1,30 @@
+{ result: "per:cause_of_death", pattern: ( $ENTITY /died/ /of|from/ $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: ( $ENTITY /passed/ /away/ /of|from/ $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "of"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "who" "died"  "of"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "," "who" "died"  "of"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "of" [{lemma:"a"}]  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "from"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "from" [{pos:/JJ|NN./}] $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "from" [{pos:/JJ|NN./}] [{pos:/JJ|NN./}] $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "from" [{pos:/JJ|NN./}] [{pos:"IN"}] $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "from" [{pos:/JJ|NN./}] [{pos:/JJ|NN./}] [{pos:"IN"}] $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "in"  [{lemma:"a"}]  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "died"  "because"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "who" "died"  "of" [{lemma:"a"}]  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "who" "died"  "from"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "who" "died"  "in"  [{lemma:"a"}]  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "who" "died"  "because"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "," "who" "died"  "of" [{lemma:"a"}]  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "," "who" "died"  "from"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "," "who" "died"  "in"  [{lemma:"a"}]  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "," "who" "died"  "because"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "passed"  "away"  "of"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "succumbed"  "to"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "was"  "diagnosed"  "with"  $SLOT_VALUE "and"  "died"  ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "committed"  "suicide"  "with"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "committed"  "suicide"  "by"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "was"  "killed"  "with"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "was"  "killed"  "by"  $SLOT_VALUE ) }
+{ result: "per:cause_of_death", pattern: (  $ENTITY  "was"  "killed"  "in"  [{lemma:"a"}]  $SLOT_VALUE ) }

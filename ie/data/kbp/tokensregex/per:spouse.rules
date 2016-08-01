@@ -1,0 +1,185 @@
+{ result: "per:spouse", pattern: ( $ENTITY [ { lemma:/marry/ } ] $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $ENTITY [ { lemma:/be/ } ] [ { lemma:/marry/ } ] /to|with/ $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $ENTITY [ { lemma:/marry/ } ] /to|with/ $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $ENTITY [ { lemma:/be/ } ] [ { lemma:/marry/ } ] $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $ENTITY /and/ $SLOT_VALUE [ { lemma:/be/ } | { lemma:/get/ } ] [ { lemma:/marry/ } ] ) }
+{ result: "per:spouse", pattern: ( $SLOT_VALUE /and/ $ENTITY [ { lemma:/be/ } | { lemma:/get/ } ] [ { lemma:/marry/ } ] ) }
+{ result: "per:spouse", pattern: ( $ENTITY /'s/ /husband|wife|spouse/ $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $ENTITY /husband|wife|spouse/ $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $ENTITY /husband|wife|spouse/ "," $SLOT_VALUE ) }
+{ result: "per:spouse", pattern: ( $SLOT_VALUE /'s/ /husband|wife|spouse/ $ENTITY ) }
+{ result: "per:spouse", pattern: ( $SLOT_VALUE /husband|wife|spouse/ $ENTITY ) }
+
+// From Ce's Features
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/ex-husband/}] $SLOT_VALUE ), weight: 0.48}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/ex-wife/}] $SLOT_VALUE ), weight: 0.272727}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband/}] $SLOT_VALUE ), weight: 0.197917}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.144}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 0.105386}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/be/}] $SLOT_VALUE ), weight: 0.2}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/late/}] [{lemma:/husband/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.13}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/wife/}] $SLOT_VALUE ), weight: 0.0796767}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.129496}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/ex-husband/}] $SLOT_VALUE ), weight: 0.48}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/ex-wife/}] $SLOT_VALUE ), weight: 0.272727}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/husband/}] $SLOT_VALUE ), weight: 0.197917}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/husband/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.144}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 0.105386}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/husband/}] [{lemma:/be/}] $SLOT_VALUE ), weight: 0.2}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/late/}] [{lemma:/husband/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.13}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/wife/}] $SLOT_VALUE ), weight: 0.0796767}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [] [{lemma:/wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.129496}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/former/}] [{lemma:/president/}] $SLOT_VALUE ), weight: 0.642857}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/husband/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.292683}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/husband/}] [{lemma:/of/}] [{lemma:/queen/}] $SLOT_VALUE ), weight: 0.255319}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/husband/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.166667}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/husband/}] [{lemma:/of/}] [{lemma:/queen/}] $SLOT_VALUE ), weight: 0.143678}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/husband/}] [{lemma:/of/}] [{lemma:/the/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 0.409091}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.242424}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/wife/}] [{lemma:/of/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 0.225}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/wife/}] [{lemma:/of/}] [{lemma:/former/}] [{lemma:/president/}] $SLOT_VALUE ), weight: 0.310345}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.226415}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/marry/}] $SLOT_VALUE ), weight: 0.266667}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/whose/}] [{lemma:/wife/}] $SLOT_VALUE ), weight: 0.461538}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/whose/}] [{lemma:/wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.142857}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.131148}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/wife/}] [{lemma:/of/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 0.0992063}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/wife/}] [{lemma:/of/}] [{lemma:/former/}] [{lemma:/president/}] $SLOT_VALUE ), weight: 0.19084}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he/}] [{lemma:/wife/}] $SLOT_VALUE ), weight: 0.105911}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he/}] [{lemma:/wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.107595}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/husband/}] $SLOT_VALUE ), weight: 0.344828}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/she/}] [{lemma:/ex-president/}] [{lemma:/husband/}] $SLOT_VALUE ), weight: 0.25}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] $SLOT_VALUE ), weight: 0.238532}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.202899}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 0.0789916}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/former/}] [{lemma:/president/}] $SLOT_VALUE ), weight: 0.25}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/wife/}] $SLOT_VALUE ), weight: 0.512195}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/wife/}] [{lemma:/of/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 0.134831}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/wife/}] [{lemma:/of/}] [{lemma:/former/}] [{lemma:/president/}] $SLOT_VALUE ), weight: 0.176471}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.26087}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/marry/}] $SLOT_VALUE ), weight: 0.111304}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/marry/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 0.8}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/marry/}] [{lemma:/he/}] $SLOT_VALUE ), weight: 0.636364}
+{ result:"per:spouse", pattern: ( $ENTITY [{lemma:/reportedly/}] [{lemma:/marry/}] $SLOT_VALUE ), weight: 0.684211}
+// Reflexive rules handled in evaluate script
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'/}] [{lemma:/wife/}] $ENTITY ), weight: 0.692308}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.38}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/estrange/}] [{lemma:/wife/}] $ENTITY ), weight: 0.833333}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/ex-wife/}] $ENTITY ), weight: 0.461538}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/husband/}] $ENTITY ), weight: 0.268293}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/,/}] $ENTITY ), weight: 0.0846774}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/former/}] [{lemma:/president/}] $ENTITY ), weight: 0.466667}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/prince/}] $ENTITY ), weight: 0.432432}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/husband/}] [{lemma:/prince/}] $ENTITY ), weight: 0.1875}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/second/}] [{lemma:/wife/}] $ENTITY ), weight: 0.5}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/third/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.4}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/wife/}] $ENTITY ), weight: 0.114573}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.0594286}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/accompany/}] [{lemma:/by/}] [{lemma:/he/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.0869565}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/and/}] [{lemma:/he/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.166667}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/,/}] $ENTITY ), weight: 0.0689655}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/he/}] [{lemma:/wife/}] $ENTITY ), weight: 0.0714286}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/he/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.294118}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/the/}] [{lemma:/wife/}] [{lemma:/of/}] $ENTITY ), weight: 0.5}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/who/}] [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $ENTITY ), weight: 0.230769}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/who/}] [{lemma:/marry/}] $ENTITY ), weight: 0.416667}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/whose/}] [{lemma:/husband/}] [{lemma:/,/}] $ENTITY ), weight: 0.217391}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/whose/}] [{lemma:/wife/}] $ENTITY ), weight: 0.470588}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/whose/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.727273}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/he/}] [{lemma:/wife/}] $ENTITY ), weight: 0.231132}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/he/}] [{lemma:/wife/}] [{lemma:/,/}] $ENTITY ), weight: 0.174923}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/he/}] [{lemma:/wife/}] [{lemma:/,/}] [{lemma:/sen./}] $ENTITY ), weight: 0.823529}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] $ENTITY ), weight: 0.526316}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/,/}] $ENTITY ), weight: 0.293103}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/she/}] [{lemma:/husband/}] [{lemma:/,/}] [{lemma:/prince/}] $ENTITY ), weight: 0.4}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/wife/}] $ENTITY ), weight: 0.722222}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $ENTITY ), weight: 0.26087}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/marry/}] $ENTITY ), weight: 0.231111}
+//{ result:"per:spouse", pattern: ( $SLOT_VALUE [{lemma:/marry/}] [{lemma:/he/}] $ENTITY ), weight: 0.615385}
+                          
+// From my Snowball
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/marry/}] $SLOT_VALUE ), weight: 0.047654120939824705}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.027472932164690284}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 0.009648670545775945}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 0.006628857626868969}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.005008470206967666}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.004861162259703911}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 0.004345584444280769}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/actor/}] $SLOT_VALUE ), weight: 0.0037195256684098106}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 0.0029461589452750977}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/marry/}] [{ner:/TITLE/}]+ $SLOT_VALUE ), weight: 0.002209619208956323}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.0020623112616925685}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/have/}] [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.0019518303012447521}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.0019518303012447521}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/the/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 0.0017308683803491198}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/husband|wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.0016203874199013037}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 0.00143625248582161}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/widow/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 0.0013994254990056714}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/the/}] [{lemma:/husband|wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 9.943286440303454E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/marriage/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 9.575016572144067E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/married/}] $SLOT_VALUE ), weight: 9.575016572144067E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/husband|wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 9.20674670398468E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/divorce/}] $SLOT_VALUE ), weight: 9.20674670398468E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/later/}] [{lemma:/marry/}] $SLOT_VALUE ), weight: 8.838476835825292E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/marry/}] [{lemma:/the/}] [{ner:/TITLE/}]+ $SLOT_VALUE ), weight: 8.470206967665906E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 8.470206967665906E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 8.101937099506518E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/first/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 8.101937099506518E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 7.733667231347131E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 7.733667231347131E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/the/}] [{lemma:/actor/}] $SLOT_VALUE ), weight: 7.365397363187744E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/second/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 7.365397363187744E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/second/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 6.997127495028357E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/meet/}] [{lemma:/he|she/}] [{lemma:/future/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 6.997127495028357E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/married/}] $SLOT_VALUE ), weight: 6.260587758709583E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/marry/}] $SLOT_VALUE ), weight: 5.892317890550195E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/first/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 5.892317890550195E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 5.892317890550195E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/widow/}] $SLOT_VALUE ), weight: 5.892317890550195E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/have/}] [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 5.892317890550195E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/survive/}] [{lemma:/by/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 5.892317890550195E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/survive/}] [{lemma:/by/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 5.524048022390808E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/husband|wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 5.524048022390808E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/the/}] [{lemma:/widow/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 5.524048022390808E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/to/}] [{lemma:/whom/}] $SLOT_VALUE ), weight: 5.155778154231421E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/widow/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 5.155778154231421E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/meet/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 4.7875082860720337E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/engage/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 4.7875082860720337E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/have/}] [{lemma:/marry/}] $SLOT_VALUE ), weight: 4.7875082860720337E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/the/}] [{lemma:/former/}] $SLOT_VALUE ), weight: 4.7875082860720337E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/the/}] [{lemma:/husband|wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 4.7875082860720337E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/screenwriter/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/husband|wife/}] [{lemma:/be/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/-lrb-/}] [{lemma:/husband|wife/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/then/}] [{lemma:/marry/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/now/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/first/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/first/}] [{lemma:/husband|wife/}] [{lemma:/,/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 4.419238417912646E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/previously/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 4.050968549753259E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{ner:/TITLE/}]+ [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 4.050968549753259E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/and/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] [{lemma:/,/}] [{lemma:/actress/}] $SLOT_VALUE ), weight: 4.050968549753259E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/propose/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 4.050968549753259E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/he|she/}] [{lemma:/husband|wife/}] $SLOT_VALUE ), weight: 4.050968549753259E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/have/}] [{lemma:/be/}] [{lemma:/marry/}] [{lemma:/to/}] [{lemma:/actor/}] $SLOT_VALUE ), weight: 3.682698681593872E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/meet/}] [{lemma:/he|she/}] [{lemma:/future/}] [{lemma:/husband|wife/}] [{lemma:/,/}] $SLOT_VALUE ), weight: 3.682698681593872E-4}
+{ result: "per:spouse", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/once/}] [{lemma:/marry/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 3.682698681593872E-4}
+{ result: "per:spouse", pattern: (  $ENTITY  "," "and"  "his"  "wife"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  "his"  "wife"  $SLOT_VALUE  ) }
+
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:spouse", pattern: (  $ENTITY  "and"  $SLOT_VALUE  "are"  "married"  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "is"  "married"  "to"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "is"  "the"  "wife"  "of"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "'s"  "wife"  ","  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "wife"  ","  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  $SLOT_VALUE  "'s"  "wife"  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  "$SLOT_VALUE'"  "wife"  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  "the"  "wife"  "of"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "and"  "his"  "wife"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "is"  "the"  "husband"  "of"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "'s"  "husband"  ","  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "husband"  ","  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  $SLOT_VALUE  "'s"  "husband"  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  "$SLOT_VALUE'"  "husband"  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  ","  "the"  "husband"  "of"  $SLOT_VALUE  ) }
+{ result: "per:spouse", pattern: (  $ENTITY  "and"  "her"  "husband"  $SLOT_VALUE  ) }

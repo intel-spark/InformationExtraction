@@ -1,0 +1,189 @@
+{ result: "per:other_family", pattern: ( $ENTITY "," [] /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "," [] /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "," /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY [] /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY [] /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY [] /great/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY [] /great/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /great/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "," /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "," /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "," /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ []  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ [] /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /'s/ /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /'s/ /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /'s/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /'s/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ $SLOT_VALUE /'s/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ [] /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ /brother|sister|sibling/ /-/ /in/ /-/ /law/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ [] /brother|sister|sibling/ /-/ /in/ /-/ /law/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ [] /brother|sister|sibling/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ /brother|sister|sibling/ /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ [] /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /,/ /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "'s" /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "'s" [] /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "'s" /brother|sister|sibling/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "'s" /brother|sister|sibling/ "," $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "'s" [] /brother|sister|sibling/ "," $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY "'s" /brother|sister|sibling/ "," $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /brother|sister|sibling/ /in/ /-/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /brother|sister|sibling/ /in/ /-/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ /the/ /brother|sister|sibling/ /in/ /law/  /of/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /'s/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /-/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /law/  /,/ $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /brother|sister|sibling/ /in/ /law/  $SLOT_VALUE ) }
+{ result: "per:other_family", pattern: ( $ENTITY /and/ $SLOT_VALUE /are/ /brothers|sisters|siblings/ /-/ /in/ /-/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /and/ $SLOT_VALUE /are/ /brothers|sisters|siblings/ /in/ /-/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /and/ $SLOT_VALUE /are/ /brothers|sisters|siblings/ /in/ /-/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /and/ $SLOT_VALUE /are/ /brothers|sisters|siblings/ /in/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ $SLOT_VALUE /'s/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ $SLOT_VALUE /'s/ /brother|sister|sibling/ /in/ /-/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ $SLOT_VALUE /'s/ /brother|sister|sibling/ /in/ /-/ /law/  ) }
+{ result: "per:other_family", pattern: ( $ENTITY /is/ $SLOT_VALUE /'s/ /brother|sister|sibling/ /in/ /law/  ) }
+// Reflexive rules handled in evaluate script
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ []  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ []  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /'s/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/  /great/ /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/  /-/ /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/  /grandmother|grandfather|grandson|granddaughter|uncle|aunt|cousin|nephew|niece/ ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ [] /brother|sister|sibling/ /-/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /-/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /-/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /-/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /in/ /-/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /,/ /brother|sister|sibling/ /in/ /law/ /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ [] /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /in/ /-/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ /the/ /brother|sister|sibling/ /in/ /law/  /of/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /'s/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /-/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /-/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /law/  /,/ $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /brother|sister|sibling/ /in/ /law/  $ENTITY ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /and/ $ENTITY /are/ /brothers|sisters|siblings/ /-/ /in/ /-/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /and/ $ENTITY /are/ /brothers|sisters|siblings/ /in/ /-/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /and/ $ENTITY /are/ /brothers|sisters|siblings/ /in/ /-/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /and/ $ENTITY /are/ /brothers|sisters|siblings/ /in/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/ /brother|sister|sibling/ /-/ /in/ /-/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/ /brother|sister|sibling/ /in/ /-/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/ /brother|sister|sibling/ /in/ /-/ /law/  ) }
+//{ result: "per:other_family", pattern: ( $SLOT_VALUE /is/ $ENTITY /'s/ /brother|sister|sibling/ /in/ /law/  ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "grandson"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "granddaughter"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "grandfather"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "grandmother"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "uncle"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "aunt"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "cousin"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "nephew"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "relative"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "grandson"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "granddaughter"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "grandfather"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "grandmother"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "uncle"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "aunt"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "cousin"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "nephew"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "'s"  "relative"  ","  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "a"  "grandson"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "grandson"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "a"  "granddaughter"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "granddaughter"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "grandfather"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "grandmother"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "uncle"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "aunt"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "cousin"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "a"  "cousin"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "the"  "nephew"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "a"  "nephew"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "a"  "relative"  "of"  "$SLOT_VALUE"  ) }
+{ result: "per:other_family", pattern: (  "$ENTITY"  "is"  "related"  "to"  "$SLOT_VALUE"  ) }

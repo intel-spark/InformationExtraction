@@ -1,0 +1,2 @@
+{lemma: /\Qdaughter\E/}=null  >nsubj=E1 {}=entity  >/(prep_|nmod:)of/=E2 {}=slot
+{}=entity >/acl:relclause/ ({lemma: /\Qdaughter\E/}=null  >nsubj=E1 {lemma:who} >/(prep_|nmod:)of/=E2 {}=slot)

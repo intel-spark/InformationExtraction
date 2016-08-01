@@ -1,0 +1,30 @@
+{ result: "per:age", pattern: ( $ENTITY "," $AGE /[,;:]/ ) }
+{ result: "per:age", pattern: ( $ENTITY "," $AGE "." ) }
+{ result: "per:age", pattern: ( $ENTITY [{lemma:"be"}] $AGE /[,\.;]/ ) }
+{ result: "per:age", pattern: ( $ENTITY "," [{pos:"RB"}] $AGE "," ) }
+{ result: "per:age", pattern: ( $ENTITY /\(/ $AGE /\)/ ) }
+{ result: "per:age", pattern: ( $ENTITY [] $AGE /years?/ /-/ /old/ ) }
+{ result: "per:age", pattern: ( $ENTITY [] $AGE /years?/ /old/ ) }
+{ result: "per:age", pattern: ( $ENTITY $AGE /years?/ /-/ /old/ ) }
+{ result: "per:age", pattern: ( $ENTITY $AGE /years?/ /old/ ) }
+{ result: "per:age", pattern: ( $ENTITY [] $AGE /years?/ /of/ /age/ ) }
+{ result: "per:age", pattern: ( $ENTITY $AGE /years?/ /of/ /age/ ) }
+{ result: "per:age", pattern: ( $ENTITY /will/ [ { lemma:/be/ } ] $AGE ) }
+{ result: "per:age", pattern: ( $ENTITY [ { lemma:/be/ } ] $AGE [{ner:"DATE"}] ) }
+{ result: "per:age", pattern: ( $AGE /-/ /-?years?/ /-/ /-?old/ $ENTITY) }
+{ result: "per:age", pattern: ( $AGE /-?years?/ /-?old/ $ENTITY) }
+{ result: "per:age", pattern: ( $ENTITY [{lemma:/turn/}] $AGE ) }
+{ result: "per:age", pattern: ( $ENTITY [{lemma:/'s/}] $AGE [{lemma:/birthday/}] ) }
+{ result: "per:age", pattern: ( $ENTITY [{lemma:/'s/}] $AGE [] [{lemma:/birthday/}] ) }
+{ result: "per:age", pattern: (  $ENTITY  "died"  "at"  $SLOT_VALUE ) }
+//{ result: "per:age", pattern: ( $AGE [{ner:/..+/}] $ENTITY) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:age", pattern: (  $ENTITY  "died"  "at"  "the"  "age"  "of"  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  "," "who" "died"  "at"  "the"  "age"  "of"  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  "who" "died"  "at"  "the"  "age"  "of"  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  ","  "who"  [{lemma:"turn"}]  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  ","  "who"  [{lemma:"be"}]  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  "turned"  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  "turns"  $SLOT_VALUE ) }
+{ result: "per:age", pattern: (  $ENTITY  "is"  $SLOT_VALUE "years"  "old"  ) }
+{ result: "per:age", pattern: (  $ENTITY  ","  $SLOT_VALUE ","  ) }

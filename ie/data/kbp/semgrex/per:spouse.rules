@@ -1,0 +1,29 @@
+#Obama married Michelle
+{lemma:/marry|wed/;tag:/VB.*/} >nsubj {ner:PERSON}=entity >dobj {ner:PERSON}=slot
+#Obama is married to Michelle.
+{lemma:/marry|wed/;tag:/VB.*/} >nsubjpass {}=entity >/(prep_|nmod:)to/ {ner:PERSON}=slot
+{}=entity >/acl:relclause/ ({lemma:/marry|wed/;tag:/VB.*/} >nsubjpass {lemma:who} >/(prep_|nmod:)to/ {ner:PERSON}=slot)
+#Michelle is married to Obama.
+{lemma:/marry|wed/;tag:/VB.*/} >nsubjpass {ner:PERSON}=slot >/(prep_|nmod:)to/ {}=entity
+{}=entity >/acl:relclause/ ({lemma:/marry|wed/;tag:/VB.*/} >nsubjpass {ner:PERSON}=slot >/(prep_|nmod:)to/ {lemma:who})
+#John married Laura in July. (removed tag:/V.*/ since sometimes POS tagging is incorrect and cannot tag "marry" right!)
+{lemma:/marry|wed/} >nsubj {}=entity >dobj {ner:PERSON}=slot
+{}=entity >/acl:relclause/ ({lemma:/marry|wed/} >nsubj {lemma:who} >dobj {ner:PERSON}=slot)
+#Laura is marrying John in July
+{lemma:/marry|wed/} >nsubj {ner:PERSON}=slot >dobj {}=entity
+{}=entity >/acl:relclause/ ({lemma:/marry|wed/} >nsubj {ner:PERSON}=slot >dobj {lemma:who})
+#Michelle, who is married to Obama, ...
+{ner:PERSON}=entity  >/rcmod|acl:relclause/ ( {lemma:/marry|wed/} >/(prep_|nmod:)to/ {ner:PERSON}=slot)
+#Michelle, who is married to Obama, ...
+{ner:PERSON}=slot  >/rcmod|acl:relclause/ ( {lemma:/marry|wed/} >/(prep_|nmod:)to/ {ner:PERSON}=entity )
+#John, the husband of Judy, ...
+{ner:PERSON}=entity >appos ( {word:/wife|husband|spouse/}  >/(prep_|nmod:)of/ {ner:PERSON}=slot )
+#Judy, the wife of John, ...
+{ner:PERSON}=slot >appos ( {word:/wife|husband|spouse/} >/(prep_|nmod:)of/ {ner:PERSON}=entity)
+#John tied knot with Judy in July.
+{word:tied} >nsubj {ner:PERSON}=entity >dobj {word:knot} >/(prep_|nmod:)with/ {ner:PERSON}=slot
+{}=entity >/acl:relclause/ ({word:tied} >nsubj {lemma:who} >dobj {word:knot} >/(prep_|nmod:)with/ {ner:PERSON}=slot)
+#Judy tied knot with John in July.
+{word:tied} >nsubj {ner:PERSON}=slot >dobj {word:knot} >/(prep_|nmod:)with/ {ner:PERSON}=entity
+# His wife, Michelle
+{ner:PERSON} >/nmod:poss/ ( {lemma:/wife|husband|spouse/} >appos {ner:PERSON}=slot )

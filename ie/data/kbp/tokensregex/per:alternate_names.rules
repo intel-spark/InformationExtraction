@@ -1,0 +1,38 @@
+{ result: "per:alternate_names", pattern: ( $ENTITY [{lemma:/,|be/}] /more|also/ /commonly/ /known/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY [{lemma:/,|be/}] /more|also/ /known/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY [{lemma:/,|be/}] /known/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /commonly/ /known/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /,/ /commonly/ /known/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /-LRB-|,/ /([nN]ow)|([Aa]lso)/ /known|called/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /-LRB-|,/ /([nN]ow)|([Aa]lso)/ /known|called/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /maiden/ /name/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE /maiden/ /name/ $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE [] /maiden/ /name/ [] $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE [] /maiden/ /name/ $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE /maiden/ /name/ [] $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE [] /maiden/ /name/ [] [] $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE [] [] /maiden/ /name/ [] $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $SLOT_VALUE [] [] /maiden/ /name/ [] [] $ENTITY ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /,/ /born/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /,/ /born/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY [{lemma:"be"}] /born/ /as/ $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /'s/ /real|given|birth|former|original/ /name/ [{lemma:"be"}] $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: ( $ENTITY /'s/ /name/ [{lemma:"be"}] $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:alternate_names", pattern: (  $ENTITY  "formerly"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "aka"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "a.k.a."  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "a."  "k."  "a."  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  [{lemma:"be"}]  "also"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  [{lemma:"be"}]  "known"  "as"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  ","  "also"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  ","  "better"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  ","  "best"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  ","  "aka"  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  ","  "a.k.a."  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  ","  "a."  "k."  "a."  $SLOT_VALUE ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "-LRB-"  "also"  "known"  "as"  $SLOT_VALUE "-RRB-"  ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "-LRB-"  "better"  "known"  "as"  $SLOT_VALUE "-RRB-"  ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "-LRB-"  "aka"  $SLOT_VALUE "-RRB-"  ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "-LRB-"  "a.k.a."  $SLOT_VALUE "-RRB-"  ) }
+{ result: "per:alternate_names", pattern: (  $ENTITY  "-LRB-"  "a."  "k."  "a."  $SLOT_VALUE "-RRB-"  ) }

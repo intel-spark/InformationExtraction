@@ -1,0 +1,22 @@
+{ result:"per:title", pattern: ( $TITLE $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $ORG [{lemma:/,/}] $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $ORG [{lemma:/,/}] $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $ORG $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $ORG $ENTITY_PER ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:title", pattern: ( $ENTITY  "was"  "appointed"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  "was"  "nominated"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  "was"  "elected"  "as"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  "a"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  "an"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  "a"  "former"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  "an"  "a"  "former"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  "is"  "a"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  "is"  "an"  $TITLE ) }
+{ result: "per:title", pattern: ( $TITLE "works"  "as"  "a"  $ENTITY  ) }
+{ result: "per:title", pattern: ( $TITLE "works"  "as"  "an"  $ENTITY  ) }
+{ result: "per:title", pattern: ( $ENTITY  "was"  "a"  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  "was"  "an"  $TITLE ) }
+{ result: "per:title", pattern: ( $TITLE "worked"  "as"  "a"  $ENTITY  ) }
+{ result: "per:title", pattern: ( $TITLE "worked"  "as"  "an"  $ENTITY  ) }
+{ result: "per:title", pattern: ( $TITLE $ENTITY  ) }
