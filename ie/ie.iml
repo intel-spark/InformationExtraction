@@ -11,6 +11,5 @@
     <orderEntry type="library" name="lib1" level="project" />
     <orderEntry type="library" name="sparkjars" level="project" />
     <orderEntry type="library" name="scala-sdk-2.11.6" level="application" />
-    <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
   </component>
 </module>
