@@ -862,6 +862,8 @@ nutritionist	TITLE	MISC	1
 oboist	TITLE	MISC	1
 obstetrician	TITLE	MISC	1
 oceanographer	TITLE	MISC	1
+chief design officer	TITLE	MISC	1
+senior vice president	TITLE	MISC	3
 occupational therapist	TITLE	MISC	2
 occupational-therapist	TITLE	MISC	2
 ocularist	TITLE	MISC	1
@@ -103160,7 +103162,6 @@ tiksi	CITY	LOCATION	1
 tilichiki	CITY	LOCATION	1
 timiryazevskiy	CITY	LOCATION	1
 timiryazevskoye	CITY	LOCATION	1
-tim	CITY	LOCATION	1
 tinskoy	CITY	LOCATION	1
 tirlyanskiy	CITY	LOCATION	1
 tishchenskoye	CITY	LOCATION	1
@@ -112821,3 +112822,8 @@ west-sussex	STATE_OR_PROVINCE	LOCATION	1
 worcestershire	STATE_OR_PROVINCE	LOCATION	1
 beverly hills	CITY	LOCATION	1
 beverly-hills	CITY	LOCATION	1
+angela ahrendts	PERSON	MISC	1
+Eddy Cue	PERSON	MISC	1
+Craig Federighi	PERSON	MISC	1
+Bruce Sewell	PERSON	MISC	1
+Johny Srouji	PERSON	MISC	1
