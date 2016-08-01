@@ -1,0 +1,1 @@
+{lemma:sell}=entity >nsubj {ner:ORGANIZATION}=entity >dobj {lemma:share} >/(nmod:|prep_)to/ {ner:PERSON}=slot

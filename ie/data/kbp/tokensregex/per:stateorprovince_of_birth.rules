@@ -1,0 +1,20 @@
+// From Ce's features
+{ result:"per:city_of_birth", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/bear/}] [{lemma:/in/}] $SLOT_VALUE ), weight: 0.0617075}
+{ result:"per:city_of_birth", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/be/}] [{lemma:/bear/}] [{lemma:/in/}] $SLOT_VALUE ), weight: 0.0637513}
+{ result:"per:city_of_birth", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/be/}] [{lemma:/bear/}] [{lemma:/in/}] [{lemma:/the/}] $SLOT_VALUE ), weight: 0.24}
+{ result:"per:city_of_birth", pattern: ( $ENTITY [{lemma:/bear/}] [{lemma:/in/}] $SLOT_VALUE ), weight: 0.0981595}
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "was"  "born"  "in"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "is"  "born"  "in"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  ","  "born"  "in"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "'s"  "birthplace"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "'"  "birthplace"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $SLOT_VALUE ","  $ENTITY  "'s"  "birthplace"  ) }
+{ result: "per:city_of_birth", pattern: (  $SLOT_VALUE ","  $ENTITY  "'"  "birthplace"  ) }
+{ result: "per:city_of_birth", pattern: (  $SLOT_VALUE ","  "the"  "birthplace"  "of"  $ENTITY  ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "was"  "born"  []{0,4}  "in"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "was"  "born"  "in"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  "was"  "born"  "in"  "the"  "town"  "of"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  ","  "born"  []{0,4}  "in"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  ","  "born"  "in"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "per:city_of_birth", pattern: (  $ENTITY  ","  "born"  "in"  "the"  "town"  "of"  $SLOT_VALUE ) }

@@ -1,0 +1,4 @@
+#example: Obama was born in Hawaii.
+{lemma:bear;tag:/VB.*/} >nsubj {}=entity >/(prep_|nmod:)(at|in)/ {ner:/COUNTRY|LOCATION/}=slot
+# X, who rel Y
+{}=entity >/acl:relclause/ ({lemma:bear;tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:)(at|in)/ {ner:/COUNTRY|LOCATION/}=slot)

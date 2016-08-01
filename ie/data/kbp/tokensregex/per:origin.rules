@@ -1,0 +1,30 @@
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:origin", pattern: (  $ENTITY  ","  "who" [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}]  [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  ","  "who" [{lemma:"be"}] [{lemma:/a|the/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "who" [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}]  [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}]  [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "," [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}]  [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "," [{lemma:/a|the/}] [{pos:/JJ|NN.?/}]  [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "who" [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "," [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "," [{lemma:/a|the/}] [{pos:/JJ|NN.?/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "who" [{lemma:"be"}] [{lemma:/a|the/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  [{lemma:"be"}] [{lemma:/a|the/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  [{lemma:"be"}] [{lemma:/a|the/}] [{pos:/JJ|NN.?/}]+ $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "," [{lemma:"be"}] [{lemma:/a|the/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "," [{lemma:/a|the/}] $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE [{pos:/JJ|NN.?/}]+ [{ner:"TITLE"}]+ "," $ENTITY ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE [{pos:/JJ|NN.?/}]+ [{ner:"TITLE"}]+ $ENTITY ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE [{pos:/JJ|NN.?/}]+ "," $ENTITY ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE [{pos:/JJ|NN.?/}]+ $ENTITY ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE [{ner:"TITLE"}]+ "," $ENTITY ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE [{ner:"TITLE"}]+ $ENTITY ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE $ENTITY ) }
+{ result: "per:origin", pattern: (  $ENTITY  ","  "originally"  "from"  $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE "'s" $ENTITY  ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE "'s" [{pos:/JJ|NN.?/}]+ [{ner:"TITLE"}]+ $ENTITY  ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE "'s"  [{ner:"TITLE"}]+ $ENTITY  ) }
+{ result: "per:origin", pattern: (  $SLOT_VALUE "-" "born"  $ENTITY  ) }
+{ result: "per:origin", pattern: (  $ENTITY  ","  "born"  "in"  $SLOT_VALUE ) }
+{ result: "per:origin", pattern: (  $ENTITY  "was"  "born"  "in"  $SLOT_VALUE ) }

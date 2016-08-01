@@ -1,0 +1,12 @@
+{ result: "org:founded", pattern: ( $ENTITY [{lemma:/be|,/}] [{lemma:/found/}] [{lemma:/in/}] $DATE ) }
+{ result: "org:founded", pattern: ( $ENTITY [{lemma:/found/}] [{lemma:/in/}] $DATE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:founded", pattern: (  $ENTITY  ","  "established"  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  $ENTITY  ","  "founded"  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  $ENTITY  ","  "incorporated"  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  $ENTITY  "was"  "established"  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  $ENTITY  "was"  "founded"  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  $ENTITY  "was"  "incorporated"  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  "established"  $ENTITY  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  "formed"  $ENTITY  $SLOT_VALUE ) }
+{ result: "org:founded", pattern: (  "founded"  $ENTITY  $SLOT_VALUE ) }

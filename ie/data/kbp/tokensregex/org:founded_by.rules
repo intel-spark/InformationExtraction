@@ -1,0 +1,25 @@
+// From Ce's features
+{ result:"org:founded_by", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/founder/}] $SLOT_VALUE ), weight: 0.470588}
+{ result:"org:founded_by", pattern: ( $ENTITY [{lemma:/co-founder/}] $SLOT_VALUE ), weight: 0.480932}
+{ result:"org:founded_by", pattern: ( $ENTITY [{lemma:/co/}] [{lemma:/-/}] [{lemma:/founder/}] $SLOT_VALUE ), weight: 0.821429}
+{ result:"org:founded_by", pattern: ( $ENTITY [{lemma:/founder/}] $SLOT_VALUE ), weight: 0.360529}
+{ result:"org:founded_by", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/founder/}] [{lemma:/of/}] $ENTITY ), weight: 0.109589}
+{ result:"org:founded_by", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/founder/}] [{lemma:/of/}] [{lemma:/the/}] $ENTITY ), weight: 0.0952381}
+{ result:"org:founded_by", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/the/}] [{lemma:/founder/}] [{lemma:/of/}] $ENTITY ), weight: 0.196429}
+{ result:"org:founded_by", pattern: ( $SLOT_VALUE [{lemma:/,/}] [{lemma:/the/}] [{lemma:/founder/}] [{lemma:/of/}] [{lemma:/the/}] $ENTITY ), weight: 0.235294}
+{ result:"org:founded_by", pattern: ( $SLOT_VALUE [{lemma:/and/}] [{lemma:/founder/}] [{lemma:/of/}] $ENTITY ), weight: 0.272727}
+{ result: "org:founded_by", pattern: ( $SLOT_VALUE ","  "the"  "founder"  "of" $ENTITY ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:founded_by", pattern: (  $ENTITY  "was"  "founded"  "by"  $SLOT_VALUE ) }
+{ result: "org:founded_by", pattern: (  $ENTITY  ","  "founded"  "by"  $SLOT_VALUE ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE "founded"  $ENTITY  ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE ","  "who"  "founded"  $ENTITY  ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE ","  "the"  "founder"  $ENTITY  ) }
+{ result: "org:founded_by", pattern: (  $ENTITY  "was"  "formed"  "by"  $SLOT_VALUE ) }
+{ result: "org:founded_by", pattern: (  $ENTITY  ","  "formed"  "by"  $SLOT_VALUE ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE "formed"  $ENTITY  ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE ","  "who"  "formed"  $ENTITY  ) }
+{ result: "org:founded_by", pattern: (  $ENTITY  "was"  "established"  "by"  $SLOT_VALUE ) }
+{ result: "org:founded_by", pattern: (  $ENTITY  ","  "established"  "by"  $SLOT_VALUE ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE "established"  $ENTITY  ) }
+{ result: "org:founded_by", pattern: (  $SLOT_VALUE ","  "who"  "established"  $ENTITY  ) }

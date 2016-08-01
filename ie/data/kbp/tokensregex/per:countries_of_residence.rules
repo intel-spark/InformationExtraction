@@ -1,0 +1,70 @@
+// From Ce's rules
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/hometown/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.0961857}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/native/}] $SLOT_VALUE ), weight: 0.132597}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/a/}] [{lemma:/native/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.0765253}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/,/}] [{lemma:/who/}] [{lemma:/move/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.112069}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/bury/}] [{lemma:/in/}] [{lemma:/she/}] [{lemma:/native/}] $SLOT_VALUE ), weight: 0.5}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/in/}] [{lemma:/she/}] [{lemma:/native/}] $SLOT_VALUE ), weight: 0.236364}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/move/}] [{lemma:/back/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.289474}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/move/}] [{lemma:/from/}] $SLOT_VALUE ), weight: 0.177778}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/move/}] [{lemma:/into/}] [{lemma:/the/}] $SLOT_VALUE ), weight: 0.34375}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY [{lemma:/move/}] [{lemma:/to/}] $SLOT_VALUE ), weight: 0.0491013}
+{ result:"per:cities_of_residence", pattern: ( $SLOT_VALUE [{lemma:/native/}] $ENTITY ), weight: 0.121053}
+{ result:"per:cities_of_residence", pattern: ( $SLOT_VALUE [{lemma:/native/}] [{lemma:/,/}] $ENTITY ), weight: 0.235849}
+{ result:"per:cities_of_residence", pattern: ( $SLOT_VALUE [{ner:"TITLE"}]+ $ENTITY ), weight: 1.0}
+{ result:"per:cities_of_residence", pattern: ( $SLOT_VALUE [{pos:/NN./}]+ $ENTITY ), weight: 1.0}
+{ result:"per:cities_of_residence", pattern: ( $SLOT_VALUE $ENTITY ), weight: 1.0}
+{ result:"per:cities_of_residence", pattern: ( "native" "of" $SLOT_VALUE $ENTITY ), weight: 1.0}
+{ result:"per:cities_of_residence", pattern: ( "native" "of" $SLOT_VALUE "," $ENTITY ), weight: 1.0}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY "who" "lives" "in" $SLOT_VALUE ), weight: 1.0}
+{ result:"per:cities_of_residence", pattern: ( $ENTITY "," "who" "lives" "in" $SLOT_VALUE ), weight: 1.0}
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "grew"  "up"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "was"  "raised"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "lives"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "lived"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "has"  "been"  "living"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "resides"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "resided"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "'s"  "house"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "'s"  "home"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "'s"  "hometown"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "'s"  "hometown"  ","  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "has"  "a"  "house"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "moved"  "to"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "moves"  "to"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "spent"  "his"  "childhood"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "lives"  "in"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "moved"  "to"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "lives"  "in"  "the"  "town"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "moved"  "to"  "the"  "town"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "grew"  "up"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "was"  "raised"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "lives"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "lived"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "has"  "been"  "living"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "resides"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "resided"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "'s"  "house"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "'s"  "home"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "'s"  "hometown"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "'s"  "hometown"  ","  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "has"  "a"  "house"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "moved"  "to"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "moves"  "to"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "spent"  "his"  "childhood"  "in"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "lives"  "in"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "moved"  "to"  "the"  "city"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "lives"  "in"  "the"  "town"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY [] "moved"  "to"  "the"  "town"  "of"  $SLOT_VALUE ) }
+{ result: "per:cities_of_residence", pattern: (  $SLOT_VALUE "citizen"  $ENTITY  ) }
+{ result: "per:cities_of_residence", pattern: (  $SLOT_VALUE ","  "home"  "of"  $ENTITY  ) }
+{ result: "per:cities_of_residence", pattern: (  $SLOT_VALUE ","  "hometown"  "of"  $ENTITY  ) }
+{ result: "per:cities_of_residence", pattern: (  $SLOT_VALUE "is"  "the"  "hometown"  "of"  $ENTITY  ) }
+{ result: "per:cities_of_residence", pattern: (  $SLOT_VALUE "citizen"  ","  $ENTITY  ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE "citizen"  ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE "citizen"  ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY "," "a"  $SLOT_VALUE "citizen"  ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY "a"  $SLOT_VALUE "citizen"  ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY ","  "an"  $SLOT_VALUE "citizen"  ) }
+{ result: "per:cities_of_residence", pattern: (  $ENTITY  "an"  $SLOT_VALUE "citizen"  ) }

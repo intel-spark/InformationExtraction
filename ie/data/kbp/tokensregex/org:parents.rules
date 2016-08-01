@@ -1,0 +1,46 @@
+{ result: "org:parents", pattern: ( $SLOT_VALUE /'s/ /[Ss]chool|[Dd]epartment|[Oo]ffice|[Ii]nstitute/ /of|for/ $ENTITY ) }
+{ result: "org:parents", pattern: ( $SLOT_VALUE /[Ss]chool|[Dd]epartment|[Oo]ffice|[Ii]nstitute/ /of|for/ $ENTITY ) }
+{ result: "org:parents", pattern: ( $ENTITY /at/ $SLOT_VALUE ) }
+{ result: "org:parents", pattern: ( $ENTITY /a/ /subsidiary/ /of/ $SLOT_VALUE ) }
+{ result: "org:parents", pattern: ( $ENTITY [] /a/ /subsidiary/ /of/ $SLOT_VALUE ) }
+{ result: "org:parents", pattern: ( $ENTITY [] [] /a/ /subsidiary/ /of/ $SLOT_VALUE ) }
+{ result: "org:parents", pattern: ( $ENTITY [] [] [] /a/ /subsidiary/ /of/ $SLOT_VALUE ) }
+{ result: "org:parents", pattern: ( $ENTITY [] [] [] [] /a/ /subsidiary/ /of/ $SLOT_VALUE ) }
+{ result: "org:parents", pattern: ( $SLOT_VALUE /'s/ /subsidiary/ /,|:/ $ENTITY ) }
+{ result: "org:parents", pattern: ( $SLOT_VALUE /'s/ /subsidiary/ $ENTITY ) }
+
+// From Ce's rules
+{ result:"org:parents", pattern: ( $SLOT_VALUE [{lemma:/'s/}] [{lemma:/subsidiary/}] $ENTITY ), weight: 0.541667}
+{ result:"org:parents", pattern: ( $SLOT_VALUE [{lemma:/subsidiary/}] $ENTITY ), weight: 0.541667}
+{ result:"org:parents", pattern: ( $ENTITY [{lemma:/'s/}] [{lemma:/corporate/}] $SLOT_VALUE ), weight: 0.714286}
+{ result:"org:parents", pattern: ( $ENTITY [{lemma:/be/}] [{lemma:/a/}] [{lemma:/subsidiary/}] [{lemma:/of/}] $SLOT_VALUE ), weight: 0.541667}
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:parents", pattern: (  $ENTITY  ","  "a"  "subsidiary"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "a"  "subsidiary"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "as"  "a"  "subsidiary"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "operates"  "as"  "a"  "subsidiary"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  ","  "a"  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "a"  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "as"  "a"  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  ","  "a"  "regional"  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "a"  "regional"  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "as"  "a"  "regional"  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  ","  "owned"  "by"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "owned"  "by"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "owns"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "owned"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $ENTITY  "belongs"  "to"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  ","  "belonging"  "to"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  $ENTITY  "subsidiary"  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  "subsidiary"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  "unit"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  "arm"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  []{0,4}  "subsidiary"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  []{0,4}  "branch"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  []{0,4}  "unit"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $SLOT_VALUE "'s"  []{0,4}  "arm"  $ENTITY  ) }
+{ result: "org:parents", pattern: (  $ENTITY  "subsidiary"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "the"  []{0,4}  "arm"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "the"  []{0,4}  "unit"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "the"  []{0,4}  "branch"  "of"  $SLOT_VALUE ) }
+{ result: "org:parents", pattern: (  $ENTITY  "is"  "the"  []{0,4}  "subsidiary"  "of"  $SLOT_VALUE ) }

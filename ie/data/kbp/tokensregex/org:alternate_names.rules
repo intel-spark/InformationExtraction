@@ -1,0 +1,26 @@
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-" $SLOT_VALUE "-RRB-" ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-" "aka" $SLOT_VALUE "-RRB-" ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-" "or" $SLOT_VALUE "-RRB-" ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "," "aka" $SLOT_VALUE "," ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "," "or" $SLOT_VALUE "," ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "org:alternate_names", pattern: (  $ENTITY  "formerly"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "aka"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "a.k.a."  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "is"  "also"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "is"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  ","  "also"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  ","  "better"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  ","  "best"  "known"  "as"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-"  "also"  "known"  "as"  $SLOT_VALUE "-RRB-"  ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-"  "better"  "known"  "as"  $SLOT_VALUE "-RRB-"  ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "formerly"  "known"  "as"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "aka"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "a.k.a."  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "is"  "also"  "known"  "as"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "is"  "known"  "as"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  ","  "also"  "known"  "as"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  ","  "better"  "known"  "as"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  ","  "best"  "known"  "as"  "``"  $SLOT_VALUE ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-"  "also"  "known"  "as"  "``"  $SLOT_VALUE "''"  "-RRB-"  ) }
+{ result: "org:alternate_names", pattern: (  $ENTITY  "-LRB-"  "better"  "known"  "as"  "``"  $SLOT_VALUE "''"  "-RRB-"  ) }

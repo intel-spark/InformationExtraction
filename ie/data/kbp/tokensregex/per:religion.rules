@@ -1,0 +1,15 @@
+{ result: "per:religion", pattern: ( $ENTITY /'m|am|is|was/ /a/? $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:religion", pattern: (  $ENTITY  "is"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "is"  "a"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "is"  "an"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "is"  "a"  "believing"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "was"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "was"  "a"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "was"  "an"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "was"  "a"  "believing"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  ","  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  ","  "a"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  ","  "an"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  ","  "a"  "believing"  $SLOT_VALUE ) }
+{ result: "per:religion", pattern: (  $ENTITY  "converted"  "to"  $SLOT_VALUE ) }
