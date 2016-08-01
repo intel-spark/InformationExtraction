@@ -9,7 +9,7 @@ import scala.io.Source
   * Created by xianyan on 7/27/16.
   */
 object CrawlerHelper {
-  def getLabeledFile(company: String): String = prop.getProperty("labeled-path").format(company)
+
 
   val prop = new Properties()
   prop.load(new FileInputStream("config.properties"))
@@ -21,6 +21,9 @@ object CrawlerHelper {
     prop.getProperty("web-content-path").format(label + "_" + i)
   }
 
+  def getLabeledFile(company: String) = prop.getProperty("labeled-path").format(company)
+
+  def getExtractionFile( company: String) = prop.getProperty("extraction-path").format(company)
   /**
     *
     * @return a map that map url label to url

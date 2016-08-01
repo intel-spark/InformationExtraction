@@ -32,11 +32,12 @@ object Label {
 
   def main(args: Array[String]): Unit = {
     val urlMap = CrawlerHelper.getUrlMap()
-    val label = "Walmart"
-    val result = labelCompany2(label, 0)
-    val bw = new BufferedWriter(new FileWriter(CrawlerHelper.getLabeledFile(label)))
+    val company = "Walmart"
+    val result = labelCompany2(company, 0)
+    val bw = new BufferedWriter(new FileWriter(CrawlerHelper.getLabeledFile(company)))
     bw.write(result)
     bw.close()
+    Extraction.extract(company)
   }
 
   def labelCompany2(company: String, index: Int): String = {

@@ -92,11 +92,8 @@ class NerEvaluation {
     * @param labeled a list of sentence labeled
     * @return a list of labels
     */
-  private def transform(labeled: List[String]): List[String] = {
-    var transformedList = List[String]()
-    labeled.foreach(line => transformedList :+= transform(line))
-    transformedList
-  }
+  private def transform(labeled: List[String]): List[String] =
+    for(line <- labeled) yield transform(line)
 
   /**
     * extract labels from the sentence
@@ -105,8 +102,8 @@ class NerEvaluation {
     * @return label string separated by ","
     */
   private def transform(line: String): String = {
-    var tranStr = List[String]()
-    line.split("\t").foreach(tranStr :+= _.split("/")(1))
+    val items = line.split("\t")
+    val tranStr = for(item <- items) yield item.split("/")(1)
     tranStr.mkString(", ")
   }
 }

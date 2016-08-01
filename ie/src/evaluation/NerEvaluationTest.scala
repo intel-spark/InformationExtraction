@@ -19,10 +19,9 @@ object NerEvaluationTest {
   def main(args: Array[String]): Unit = {
 
     val lines = Source.fromFile("data/evaluation/web/web-content-Walmart_0.txt").getLines().toList
-    var nerList = List[String]()
-    for (line <- lines) {
-      nerList :+= RegexNerTest.extractNER(line).asScala.mkString(", ")
-    }
+    val nerList = for (line <- lines)
+      yield RegexNerTest.extractNER(line).asScala.mkString(", ")
+
     val ner = new NerEvaluation()
     ner.eval(nerList, ner.transformFromFile("data/evaluation/labeled/labeled-Walmart.txt"), "PERSON, TITLE", ",", lines)
     println(ner.precision)
