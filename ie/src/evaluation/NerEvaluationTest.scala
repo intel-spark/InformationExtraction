@@ -4,7 +4,7 @@ import java.io.File
 
 import Test.RegexNerTest
 import evaluation.preparation.CrawlerHelper
-import intel.analytics.KBPModel
+import intel.analytics._
 
 import scala.collection.JavaConverters._
 import scala.io.Source
@@ -31,7 +31,7 @@ object NerEvaluationTest {
     var res = List(List("Company", "Precision", "Recall", "F1"))
 
     println("please input the entity type you want to test, separated by \",\", \ne.g. PERSON, TITLE\n>")
-    val entityTpes = scala.io.StdIn.readLine()
+    val entityTpes = IOUtils.readLine()
     for (labeledFile <- files) {
       val fileName = labeledFile.getName
       val company = fileName.substring(fileName.indexOf("-")+1, fileName.indexOf("."));

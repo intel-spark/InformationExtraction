@@ -129,7 +129,7 @@ public class IntelKBPSemgrexExtractor implements IntelKBPRelationExtractor {
         RedwoodConfiguration.standard().apply();  // Disable SLF4J crap.
         ArgumentParser.fillOptions(IntelKBPSemgrexExtractor.class, args);
         IntelKBPSemgrexExtractor extractor = new IntelKBPSemgrexExtractor(DIR);
-        List<Pair<KBPInput, String>> testExamples = IntelKBPRelationExtractor.readDataset(TEST_FILE);
+        List<Pair<KBPInput, String>> testExamples = DatasetUtils.readDataset(TEST_FILE);
 
         extractor.computeAccuracy(testExamples.stream(), PREDICTIONS.map(x -> {
             try {

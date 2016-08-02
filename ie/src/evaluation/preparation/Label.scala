@@ -6,9 +6,10 @@ import edu.stanford.nlp.ling.CoreAnnotations
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation
 import edu.stanford.nlp.pipeline.Annotation
 import edu.stanford.nlp.util.CoreMap
+import intel.analytics.IOUtils
 
 import scala.collection.mutable.ListBuffer
-import scala.io.{Source, StdIn}
+import scala.io.Source
 
 /**
   * Created by xianyan on 16-7-27.
@@ -78,7 +79,7 @@ object Label {
         def processOneWord(word: String): Any = {
           println(word)
 
-          var lab = StdIn.readLine()
+          var lab = IOUtils.readLine()
           var label = "O"
           lab match {
             case "1" => label = person
@@ -126,7 +127,7 @@ object Label {
             content += startTitle + item + endTitle + " , "
           } else {
             println(item)
-            var lab = StdIn.readLine()
+            var lab = IOUtils.readLine()
             if (lab == "2") content += startTitle + item + endTitle + " , "
             else if (lab == "3") content += startOrganization + item + endOrganization + " , "
             else content += lab + " , "

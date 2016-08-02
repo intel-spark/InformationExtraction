@@ -3,7 +3,7 @@ package main
 import java.io.File
 
 import Test.RegexNerTest
-import intel.analytics.KBPModel
+import intel.analytics.{IOUtils, KBPModel}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
@@ -34,7 +34,7 @@ object SparkBatchDriver {
 
     println("Initilization finished:")
 
-    Iterator.continually(scala.io.StdIn.readLine("dataset path>")).foreach { line =>
+    Iterator.continually(IOUtils.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
         if(new File(line).exists()){
           val data = getDataset(sc, line)

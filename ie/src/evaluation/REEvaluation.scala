@@ -7,6 +7,8 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 import relation.RelationExtractor
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.functions._
 
 import scala.util.Try
 
@@ -21,7 +23,7 @@ object REEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local")
+        .setMaster("local[2]")
         .setAppName(this.getClass.getSimpleName)
     )
     RelationExtractor.init()
@@ -38,37 +40,31 @@ object REEvaluation {
 
   private def getResult(company: String, sc: SparkContext): DataFrame = {
     val rawTextFile = s"$textPath/page-${company}_0.txt"
-    val extractionResult = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
-
-    extractionResult.show(false)
+    val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
 
     val labelFile = s"$labelPath/${company}.csv"
     val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
       val elements = line.split("\t")
       RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
-
     val sqlContext = SQLContext.getOrCreate(sc)
-    val labelDataFrame = sqlContext.createDataFrame(relationRDD)
-    println("labeled: ")
-    labelDataFrame.show(false)
+    val labelledDF = sqlContext.createDataFrame(relationRDD)
 
-    val labeledTitles = labelDataFrame.where("relation=title").collect()
-    val labeled = labeledTitles.map { r =>
-        r.getString(0) + ", " + r.getString(1) + ", " + r.getString(2)
-      }.toSet
+    val correctDF = labelledDF.intersect(extractedDF)
+    println("correct:")
+    correctDF.show(false)
 
-    println(labeled.mkString("\n"))
-    val extracted = extractionResult.where("relation=title").rdd.map(r => (0 to 2).map(i => r.getString(i)).mkString(", ")).collect().toSet
+    println("missed:")
+    labelledDF.except(correctDF).show(false)
 
-    val correct = labeled.union(extracted).size
-    val recall = correct.toDouble / labeled.size
-    val precision = correct.toDouble / extracted.size
+    println("wrong:")
+    extractedDF.except(correctDF).show(false)
+
+    val recall = correctDF.count().toDouble / labelledDF.count()
+    val precision = correctDF.count().toDouble / extractedDF.count()
     println(s"recall: $recall. precision: $precision")
 
-    labelDataFrame
-
-
+    labelledDF
   }
 
 
