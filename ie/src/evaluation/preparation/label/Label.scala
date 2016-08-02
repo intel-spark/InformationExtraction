@@ -1,4 +1,4 @@
-package evaluation.preparation
+package evaluation.preparation.label
 
 import java.io.{BufferedWriter, FileWriter}
 
@@ -6,6 +6,8 @@ import edu.stanford.nlp.ling.CoreAnnotations
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation
 import edu.stanford.nlp.pipeline.Annotation
 import edu.stanford.nlp.util.CoreMap
+import evaluation.EvalPaths
+import evaluation.preparation.NerHelper
 
 import scala.collection.mutable.ListBuffer
 import scala.io.{Source, StdIn}
@@ -30,10 +32,10 @@ object Label {
 
 
   def main(args: Array[String]): Unit = {
-    val urlMap = CrawlerHelper.getUrlMap()
-    val company = "Apple"
-    val result = labelCompany2(company, 0)
-    val bw = new BufferedWriter(new FileWriter(CrawlerHelper.getLabeledFile(company)))
+    val urlMap = EvalPaths.urlMap()
+    val company = "AECOM"
+    val result = labelCompany(company, 0)
+    val bw = new BufferedWriter(new FileWriter(EvalPaths.labeledPath(company)))
     bw.write(result)
     bw.close()
     Extraction.extract(company)
@@ -58,11 +60,9 @@ object Label {
 
   }
 
-  def labelCompany2(company: String, index: Int): String = {
-    val lines = Source.fromFile(CrawlerHelper.getWebContentPath(company, index)).getLines().toList
+  def labelCompany(company: String, index: Int): String = {
+    val lines = Source.fromFile(EvalPaths.webContentPath(company, index)).getLines().toList
     var labeledLines = ListBuffer[String]()
-    var historyBuffer = new FixedList[String](10)
-    var redos = ListBuffer[String]()
     for (line <- lines) {
       println(line)
       val document: Annotation = new Annotation(line)
@@ -74,6 +74,8 @@ object Label {
         // traversing the words in the current sentence
         // a CoreLabel is a CoreMap with additional token-specific methods
         import scala.collection.JavaConversions._
+        var historyBuffer = new FixedList[String](10)
+        var redos = ListBuffer[String]()
 
         def processOneWord(word: String): Any = {
           println(word)
@@ -113,31 +115,7 @@ object Label {
     labeledLines.mkString("\n")
   }
 
-  def labelCompany(company: String, index: Int): String = {
-    val lines = Source.fromFile(CrawlerHelper.getWebContentPath(company, index)).getLines().toList
-    var content = ""
-    for (line <- lines) {
-      val items = line.split(",|and")
-      if (!items.isEmpty) {
-        content += (startPerson + items(0) + endPerson + " , ")
-        content += (startTitle + items(1) + endTitle + " , ")
-        for (item <- items.slice(2, items.length)) {
-          if (isTitle(item)) {
-            content += startTitle + item + endTitle + " , "
-          } else {
-            println(item)
-            var lab = StdIn.readLine()
-            if (lab == "2") content += startTitle + item + endTitle + " , "
-            else if (lab == "3") content += startOrganization + item + endOrganization + " , "
-            else content += lab + " , "
-          }
-        }
-        content = content.substring(0, content.length - 3)
-        content += "\n"
-      }
-    }
-    content
-  }
+
 
   def isTitle(text: String): Boolean = {
     for (title <- titleList) {

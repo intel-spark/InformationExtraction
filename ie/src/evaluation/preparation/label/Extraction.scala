@@ -1,8 +1,9 @@
-package evaluation.preparation
+package evaluation.preparation.label
 
-import java.io.{BufferedReader, BufferedWriter, FileReader, FileWriter}
+import java.io.{BufferedWriter, FileWriter}
 
 import au.com.bytecode.opencsv.CSVWriter
+import evaluation.EvalPaths
 
 import scala.io.Source
 
@@ -60,7 +61,7 @@ object Extraction {
   }
 
   def extract(company: String): Unit = {
-    extract(CrawlerHelper.getLabeledFile(company), CrawlerHelper.getExtractionFile(company))
+    extract(EvalPaths.labeledPath(company), EvalPaths.extractionPath(company))
   }
 
   def main(args: Array[String]): Unit = {

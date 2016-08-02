@@ -3,12 +3,11 @@ package evaluation
 import java.io.File
 
 import Test.RegexNerTest
-import evaluation.preparation.CrawlerHelper
 import intel.analytics.KBPModel
 
 import scala.collection.JavaConverters._
 import scala.io.Source
-import evaluation.preparation.Label.{organization, person, title}
+import evaluation.preparation.label.Label.{organization, person, title}
 
 /**
   * Created by xianyan on 7/27/16.
@@ -34,7 +33,7 @@ object NerEvaluationTest {
     for (labeledFile <- files) {
       val fileName = labeledFile.getName
       val company = fileName.substring(fileName.indexOf("-")+1, fileName.indexOf("."));
-      val lines = Source.fromFile(CrawlerHelper.getWebContentPath(company, 0)).getLines().toList
+      val lines = Source.fromFile(EvalPaths.webContentPath(company, 0)).getLines().toList
       val nerList = for (line <- lines)
         yield RegexNerTest.extractNER(line).asScala.mkString("\t")
 

@@ -1,6 +1,4 @@
-package evaluation.preparation
-
-
+package evaluation.preparation.crawl
 
 import Test.RegexNerTest
 
@@ -28,7 +26,7 @@ object Cleaner {
         res += "\n"+line
       }
     }
-    println(res)
+//    println(res)
     res
   }
 

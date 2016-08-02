@@ -1,4 +1,6 @@
-package evaluation.preparation
+package evaluation.preparation.crawl
+
+import evaluation.EvalPaths
 
 /**
   * Created by xianyan on 7/28/16.
@@ -6,10 +8,10 @@ package evaluation.preparation
 object CleanTest {
 
   def main(args: Array[String]): Unit = {
-    val proxy = CrawlerHelper.getProxy()
-    val crawler = new Crawler(proxy)
+
+    val crawler = new Crawler()
     while (true) {
-      val urlMap = CrawlerHelper.getUrlMap()
+      val urlMap = EvalPaths.urlMap()
       for ((label, urlStr) <- urlMap) {
         val urls = urlStr.split("\t")
         var i = 0;
