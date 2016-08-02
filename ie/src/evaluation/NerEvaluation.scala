@@ -12,10 +12,6 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
     this(0, 0, 0, 0)
   }
 
-  //  var precision = 0.0
-  //  var recall = 0.0
-  //  var f1 = 0.0
-
   /**
     * evaluates the precision, recall and f1
     *
@@ -43,7 +39,6 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
           tp += 1
         else {
           fn += 1
-          //todo: not aligned for original sentence
           if(!r.trim.isEmpty)
           println(
             Console.RED + r +
@@ -84,9 +79,6 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
     for (((oLine, tLine), original) <- (outputs zip truths zip originalLines)) {
       eval(oLine, tLine, labelStr, delimiter, original)
     }
-    //    precision = tp * 1.0 / (tp + fp)
-    //    recall = tp * 1.0 / (tp + fn)
-    //    f1 = 2 * (recall * precision) / (recall + precision)
   }
 
   def precision = tp * 1.0 / (tp + fp)
@@ -95,9 +87,6 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
 
   def f1 = 2 * (recall * precision) / (recall + precision)
 
-  //  def precision(tp: Int, fp: Int) =  tp * 1.0 / (tp + fp)
-  //  def recall(tp: Int, fn: Int) = tp * 1.0 / (tp + fn)
-  //  def f1(precision: Int, recall: Int) = 2 * (recall * precision) / (recall + precision)
   /**
     * read the labeled truths from the file
     *
