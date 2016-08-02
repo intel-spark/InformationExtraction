@@ -1,6 +1,8 @@
+package main
+
 import java.io.File
 
-import Test.{NerWithDepartmentTest, RegexNerTest}
+import Test.RegexNerTest
 import intel.analytics.KBPModel
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
@@ -17,7 +19,7 @@ case class RelationLine(
   entity: String,
   text: String)
 
-object SparkBatchTest {
+object SparkBatchDriver {
 
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.WARN)
@@ -39,7 +41,7 @@ object SparkBatchTest {
           if(line.endsWith(".csv")){
             processCSVFiles(data)
           } else {
-            processTextFiles(data)
+            processTextFiles(data).show(100, false)
           }
         } else {
           processSentence(line)
@@ -48,9 +50,9 @@ object SparkBatchTest {
     }
   }
 
-  private def processTextFiles(data: RDD[String]): Unit ={
+  def processTextFiles(data: RDD[String]): DataFrame ={
     val relations = getWorkRelation(data)
-    relations.show(100, false)
+    relations
   }
 
   private def processCSVFiles(data: RDD[String]): Unit ={
@@ -63,7 +65,7 @@ object SparkBatchTest {
 
   private def processSentence(line: String): Unit = {
 //    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
-    println(NerWithDepartmentTest.extractNER(line).asScala.mkString(", "))
+    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
     KBPModel.extract(line).asScala.foreach(t => println(t._1))
 //    val relations = getWorkRelation(text)
 //    relations.show(100, false)

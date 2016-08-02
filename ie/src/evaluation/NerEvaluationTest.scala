@@ -29,6 +29,7 @@ object NerEvaluationTest {
 
     val files = new File("data/evaluation/labeled").listFiles()
     var res = List(List("Company", "Precision", "Recall", "F1"))
+
     println("please input the entity type you want to test, separated by \",\", \ne.g. PERSON, TITLE\n>")
     val entityTpes = scala.io.StdIn.readLine()
     for (labeledFile <- files) {
@@ -40,8 +41,8 @@ object NerEvaluationTest {
 
       val ner = new NerEvaluation()
 
-
-      println("Evaluate for company: " +company)
+      println()
+      println("Evaluate for company: " + company)
       ner.eval(nerList, ner.transformLabelFromFile(labeledFile.getAbsolutePath),
         entityTpes.toUpperCase(), ",", ner.transformTextFromFile(labeledFile.getAbsolutePath))
 
@@ -57,6 +58,8 @@ object NerEvaluationTest {
     res :+= List("Overall", ner.precision.formatted("%.3f"),
       ner.recall.formatted("%.3f"),
       ner.f1.formatted("%.3f"))
+
+    println()
     println(Tabulator.format(res))
   }
 
