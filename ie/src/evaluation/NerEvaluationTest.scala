@@ -36,7 +36,7 @@ object NerEvaluationTest {
       val company = fileName.substring(fileName.indexOf("-")+1, fileName.indexOf("."));
       val lines = Source.fromFile(CrawlerHelper.getWebContentPath(company, 0)).getLines().toList
       val nerList = for (line <- lines)
-        yield RegexNerTest.extractNER(line).asScala.mkString(", ")
+        yield RegexNerTest.extractNER(line).asScala.mkString("\t")
 
       val ner = new NerEvaluation()
 

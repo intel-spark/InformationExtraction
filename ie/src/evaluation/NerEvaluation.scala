@@ -65,10 +65,10 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
     * @param splitSign
     */
   def eval(outputStr: String, truthStr: String, labelStr: String, splitSign: String, original: String): Unit = {
-    eval(outputStr.split(splitSign).map(_.trim).map(_.toLowerCase).toList,
-      truthStr.split(splitSign).map(_.trim).map(_.toLowerCase).toList,
+    eval(outputStr.split("\t").map(_.trim).map(_.toLowerCase).toList,
+      truthStr.split("\t").map(_.trim).map(_.toLowerCase).toList,
       labelStr.split(splitSign).map(_.trim).map(_.toLowerCase).toList,
-      original.split(splitSign).map(_.trim).toList)
+      original.split("\t").map(_.trim).toList)
   }
 
   /**
@@ -126,7 +126,7 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
   private def transformLabel(line: String): String = {
     val items = line.split("\t")
     val tranStr = for (item <- items; eles = item.split("/") if (eles.length > 1)) yield eles(1)
-    tranStr.mkString(", ")
+    tranStr.mkString("\t")
   }
 
   def transformTextFromFile(file: String): List[String] = {
@@ -152,6 +152,6 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
   private def transformText(line: String): String = {
     val items = line.split("\t")
     val tranStr = for (item <- items; eles = item.split("/") if (eles.length > 1)) yield eles(0).trim
-    tranStr.mkString(", ")
+    tranStr.mkString("\t")
   }
 }
