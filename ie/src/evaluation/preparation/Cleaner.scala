@@ -1,6 +1,8 @@
 package evaluation.preparation
 
-import .RegexNerTest
+
+
+import Test.RegexNerTest
 
 import scala.collection.JavaConverters._
 
