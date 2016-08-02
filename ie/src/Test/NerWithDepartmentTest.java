@@ -13,7 +13,7 @@ import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import intel.analytics.IntelPaths;
-
+import intel.analytics.KBPModel;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -62,12 +62,12 @@ public class NerWithDepartmentTest {
         }
     }
 
-    public static void extractNER(String doc){
+    public static List<String> extractNER(String doc){
         Annotation document = new Annotation(doc);
 
         pipeline.annotate(document);
         List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-
+        List<String> result = new ArrayList<String>();
         for(CoreMap sentence: sentences) {
             // traversing the words in the current sentence
             // a CoreLabel is a CoreMap with additional token-specific methods
@@ -76,10 +76,11 @@ public class NerWithDepartmentTest {
                 String word = token.get(CoreAnnotations.TextAnnotation.class);
                 // this is the NER label of the token
                 String ne = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
+                result.add(ne);
                 System.out.println(word + ": " + ne);
             }
         }
-
+        return result;
     }
 
 

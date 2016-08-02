@@ -1,6 +1,6 @@
 import java.io.File
 
-import Test.RegexNerTest
+import Test.{NerWithDepartmentTest, RegexNerTest}
 import intel.analytics.KBPModel
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
@@ -62,7 +62,8 @@ object SparkBatchTest {
   }
 
   private def processSentence(line: String): Unit = {
-    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
+//    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
+    println(NerWithDepartmentTest.extractNER(line).asScala.mkString(", "))
     KBPModel.extract(line).asScala.foreach(t => println(t._1))
 //    val relations = getWorkRelation(text)
 //    relations.show(100, false)
