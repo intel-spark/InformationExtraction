@@ -1,4 +1,5 @@
 { result:"per:title", pattern: ( $TITLE $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $ENTITY_PER $TITLE ) }
 { result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $ORG [{lemma:/,/}] $ENTITY_PER ) }
 { result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $ORG [{lemma:/,/}] $ENTITY_PER ) }
 { result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $ORG $ENTITY_PER ) }

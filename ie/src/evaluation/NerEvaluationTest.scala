@@ -1,10 +1,14 @@
 package evaluation
 
+import java.io.File
+
 import Test.RegexNerTest
-import intel.analytics.KBPModel
+import evaluation.preparation.CrawlerHelper
+import intel.analytics._
 
 import scala.collection.JavaConverters._
 import scala.io.Source
+import evaluation.preparation.Label.{organization, person, title}
 
 /**
   * Created by xianyan on 7/27/16.
@@ -18,15 +22,45 @@ object NerEvaluationTest {
 
   def main(args: Array[String]): Unit = {
 
-    val lines = Source.fromFile("data/evaluation/web/web-content-Walmart_0.txt").getLines().toList
-    var nerList = List[String]()
-    for (line <- lines) {
-      nerList :+= RegexNerTest.extractNER(line).asScala.mkString(", ")
+    var tp = 0
+    var fp = 0
+    var fn = 0
+    var tn = 0
+
+    val files = new File("data/evaluation/labeled").listFiles()
+    var res = List(List("Company", "Precision", "Recall", "F1"))
+
+    println("please input the entity type you want to test, separated by \",\", \ne.g. PERSON, TITLE\n>")
+    val entityTpes = IOUtils.readLine()
+    for (labeledFile <- files) {
+      val fileName = labeledFile.getName
+      val company = fileName.substring(fileName.indexOf("-")+1, fileName.indexOf("."));
+      val lines = Source.fromFile(CrawlerHelper.getWebContentPath(company, 0)).getLines().toList
+      val nerList = for (line <- lines)
+        yield RegexNerTest.extractNER(line).asScala.mkString("\t")
+
+      val ner = new NerEvaluation()
+
+      println()
+      println("Evaluate for company: " + company)
+      ner.eval(nerList, ner.transformLabelFromFile(labeledFile.getAbsolutePath),
+        entityTpes.toUpperCase(), ",", ner.transformTextFromFile(labeledFile.getAbsolutePath))
+
+
+//      println("\n\nEvaluation result for company " + company)
+      res  :+= List(company, ner.precision.formatted("%.3f"), ner.recall.formatted("%.3f"), ner.f1.formatted("%.3f"))
+      tp += ner.tp
+      fp += ner.fp
+      fn += ner.fn
+      tn += ner.tn
     }
-    val ner = new NerEvaluation()
-    ner.eval(nerList, ner.transformFromFile("data/evaluation/labeled/labeled-Walmart.txt"), "PERSON, TITLE", ",", lines)
-    println(ner.precision)
-    println(ner.recall)
+    val ner = new NerEvaluation(tp, fp, fn, tn)
+    res :+= List("Overall", ner.precision.formatted("%.3f"),
+      ner.recall.formatted("%.3f"),
+      ner.f1.formatted("%.3f"))
+
+    println()
+    println(Tabulator.format(res))
   }
 
 }
