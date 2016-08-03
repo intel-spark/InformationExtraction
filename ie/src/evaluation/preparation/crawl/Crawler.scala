@@ -8,7 +8,6 @@ import java.io._
 import java.net.{MalformedURLException, URL}
 
 import evaluation.EvalPaths
-import Cleaner
 import org.jsoup.Jsoup
 import org.jsoup.nodes.{Element, TextNode}
 

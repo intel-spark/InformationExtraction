@@ -6,6 +6,7 @@ import java.util.Properties
 import evaluation.preparation.crawl.ProxyConfig
 
 import scala.io.Source
+import scala.reflect.io.File
 
 /**
   * Created by xianyan on 8/2/16.
@@ -14,18 +15,21 @@ object EvalPaths {
   def rawPage(company: String) = "data/evaluation/raw/raw-%s.txt".format(company)
 
   var urlsPath: String = "data/evaluation/page-urls.txt"
-  var webContentPath: String = "data/evaluation/web/page-%s.txt"
-//  var labeledPath: String =
-//  var extractionPath: String =
+  var webContentPath: String = "data/evaluation/web/%s/page-%s.txt"
+  //  var labeledPath: String =
+  //  var extractionPath: String =
 
 
   def webContentPath(label: String, i: Int): String = {
-    webContentPath.format(label + "_" + i)
+    val dir = File("data/evaluation/web/" + label + "/")
+    if(!dir.exists) dir.createDirectory()
+    webContentPath.format(label, label + "_" + i)
   }
 
   def labeledPath(company: String) = "data/evaluation/labeled/labeled-%s.txt".format(company)
 
-  def extractionPath( company: String) = "data/evaluation/extraction/extraction-%s.csv".format(company)
+  def extractionPath(company: String) = "data/evaluation/extraction/extraction-%s.csv".format(company)
+
   /**
     *
     * @return a map that map url label to url
