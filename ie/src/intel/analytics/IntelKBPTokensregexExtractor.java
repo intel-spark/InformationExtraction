@@ -130,7 +130,7 @@ public class IntelKBPTokensregexExtractor implements IntelKBPRelationExtractor {
         RedwoodConfiguration.standard().apply();  // Disable SLF4J crap.
         ArgumentParser.fillOptions(IntelKBPTokensregexExtractor.class, args);
         IntelKBPTokensregexExtractor extractor = new IntelKBPTokensregexExtractor(DIR);
-        List<Pair<KBPInput, String>> testExamples = IntelKBPRelationExtractor.readDataset(TEST_FILE);
+        List<Pair<KBPInput, String>> testExamples = DatasetUtils.readDataset(TEST_FILE);
 
         extractor.computeAccuracy(testExamples.stream(), PREDICTIONS.map(x -> {
             try {

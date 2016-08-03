@@ -97,7 +97,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
                 statisticalExtractor
         );
 
-        List<Pair<KBPInput, String>> testExamples = IntelKBPRelationExtractor.readDataset(TEST_FILE);
+        List<Pair<KBPInput, String>> testExamples = DatasetUtils.readDataset(TEST_FILE);
 
         extractor.computeAccuracy(testExamples.stream(), PREDICTIONS.map(x -> {
             try {

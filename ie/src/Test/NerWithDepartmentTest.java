@@ -30,7 +30,7 @@ public class NerWithDepartmentTest {
         props.put("annotators", "tokenize, ssplit, pos, lemma");
         pipeline = new StanfordCoreNLP(props);
 
-        props.setProperty("ner.model","edu/stanford/nlp/models/ner/department-model.ser.gz,edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz," +
+        props.setProperty("ner.model","model/department-model.ser.gz,edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz," +
                 "edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz,edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz");
         pipeline.addAnnotator(new NERCombinerAnnotator("ner", props));
 

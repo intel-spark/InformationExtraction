@@ -690,14 +690,14 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
         // Load the test (or dev) data
         forceTrack("Test data");
-        List<Pair<KBPInput, String>> testExamples = IntelKBPRelationExtractor.readDataset(TEST_FILE);
+        List<Pair<KBPInput, String>> testExamples = DatasetUtils.readDataset(TEST_FILE);
         log.info("Read " + testExamples.size() + " examples");
         endTrack("Test data");
 
         // If we can't find an existing model, train one
         if (!IOUtils.existsInClasspathOrFileSystem(MODEL_FILE)) {
             forceTrack("Training data");
-            List<Pair<KBPInput, String>> trainExamples = IntelKBPRelationExtractor.readDataset(TRAIN_FILE);
+            List<Pair<KBPInput, String>> trainExamples = DatasetUtils.readDataset(TRAIN_FILE);
             log.info("Read " + trainExamples.size() + " examples");
             log.info("" + trainExamples.stream().map(Pair::second).filter(NO_RELATION::equals).count() + " are " + NO_RELATION);
             endTrack("Training data");

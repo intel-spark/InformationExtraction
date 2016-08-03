@@ -8,9 +8,10 @@ import edu.stanford.nlp.pipeline.Annotation
 import edu.stanford.nlp.util.CoreMap
 import evaluation.EvalPaths
 import evaluation.preparation.NerHelper
+import intel.analytics.IOUtils
 
 import scala.collection.mutable.ListBuffer
-import scala.io.{Source, StdIn}
+import scala.io.Source
 
 /**
   * Created by xianyan on 16-7-27.
@@ -80,7 +81,7 @@ object Label {
         def processOneWord(word: String): Any = {
           println(word)
 
-          var lab = StdIn.readLine()
+          var lab = IOUtils.readLine()
           var label = "O"
           lab match {
             case "1" => label = person
@@ -114,17 +115,5 @@ object Label {
     }
     labeledLines.mkString("\n")
   }
-
-
-
-  def isTitle(text: String): Boolean = {
-    for (title <- titleList) {
-      if (text.toLowerCase().contains(title)) {
-        return true
-      }
-    }
-    return false
-  }
-
 
 }

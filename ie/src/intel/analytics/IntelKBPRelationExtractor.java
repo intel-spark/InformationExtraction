@@ -341,71 +341,7 @@ public interface IntelKBPRelationExtractor {
         }
     }
 
-    /**
-     * Read a dataset from a CoNLL formatted input file
-     * @param conllInputFile The input file, formatted as a TSV
-     * @return A list of examples.
-     */
-    static List<Pair<KBPInput, String>> readDataset(File conllInputFile) throws IOException {
-        BufferedReader reader = IOUtils.readerFromFile(conllInputFile);
-        List<Pair<KBPInput, String>> examples = new ArrayList<>();
 
-        int i = 0;
-        String relation = null;
-        List<String> tokens = new ArrayList<>();
-        Span subject = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
-        NERTag subjectNER = null;
-        Span object = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
-        NERTag objectNER = null;
-
-        String line = reader.readLine();
-        if (!line.startsWith("#")) {
-            throw new IllegalArgumentException("First line of input file should be header definition");
-        }
-        while ( (line = reader.readLine()) != null ) {
-            String[] fields = line.split("\t");
-            if (relation == null) {
-                // Case: read the relation
-                assert fields.length == 1;
-                relation = fields[0];
-            } else if (fields.length == 9) {
-                // Case: read a token
-                tokens.add(fields[0]);
-                if ("SUBJECT".equals(fields[1])) {
-                    subject = new Span(Math.min(subject.start(), i), Math.max(subject.end(), i + 1));
-                    subjectNER = valueOf(fields[2].toUpperCase());
-                } else if ("OBJECT".equals(fields[3])) {
-                    object = new Span(Math.min(object.start(), i), Math.max(object.end(), i + 1));
-                    objectNER = valueOf(fields[4].toUpperCase());
-                } else if ("-".equals(fields[1]) && "-".equals(fields[3])) {
-                    // do nothing
-                } else {
-                    throw new IllegalStateException("Could not parse CoNLL file");
-                }
-                i += 1;
-            } else if ("".equals(line.trim())) {
-                // Case: commit a sentence
-                examples.add(Pair.makePair(new KBPInput(
-                        subject,
-                        object,
-                        subjectNER,
-                        objectNER,
-                        new Sentence(tokens)
-                ), relation));
-
-                // (clear the variables)
-                i = 0;
-                relation = null;
-                tokens = new ArrayList<>();
-                subject = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
-                object = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
-            } else {
-                throw new IllegalStateException("Could not parse CoNLL file");
-            }
-        }
-
-        return examples;
-    };
 
     /** A class to compute the accuracy of a relation extractor. */
     @SuppressWarnings("unused")
@@ -612,4 +548,72 @@ public interface IntelKBPRelationExtractor {
         endTrack("Accuracy");
         return accuracy;
     }
+}
+
+class DatasetUtils {
+    /**
+     * Read a dataset from a CoNLL formatted input file
+     * @param conllInputFile The input file, formatted as a TSV
+     * @return A list of examples.
+     */
+    static List<Pair<IntelKBPRelationExtractor.KBPInput, String>> readDataset(File conllInputFile) throws IOException {
+        BufferedReader reader = IOUtils.readerFromFile(conllInputFile);
+        List<Pair<IntelKBPRelationExtractor.KBPInput, String>> examples = new ArrayList<>();
+
+        int i = 0;
+        String relation = null;
+        List<String> tokens = new ArrayList<>();
+        Span subject = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
+        IntelKBPRelationExtractor.NERTag subjectNER = null;
+        Span object = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
+        IntelKBPRelationExtractor.NERTag objectNER = null;
+
+        String line = reader.readLine();
+        if (!line.startsWith("#")) {
+            throw new IllegalArgumentException("First line of input file should be header definition");
+        }
+        while ( (line = reader.readLine()) != null ) {
+            String[] fields = line.split("\t");
+            if (relation == null) {
+                // Case: read the relation
+                assert fields.length == 1;
+                relation = fields[0];
+            } else if (fields.length == 9) {
+                // Case: read a token
+                tokens.add(fields[0]);
+                if ("SUBJECT".equals(fields[1])) {
+                    subject = new Span(Math.min(subject.start(), i), Math.max(subject.end(), i + 1));
+                    subjectNER = valueOf(fields[2].toUpperCase());
+                } else if ("OBJECT".equals(fields[3])) {
+                    object = new Span(Math.min(object.start(), i), Math.max(object.end(), i + 1));
+                    objectNER = valueOf(fields[4].toUpperCase());
+                } else if ("-".equals(fields[1]) && "-".equals(fields[3])) {
+                    // do nothing
+                } else {
+                    throw new IllegalStateException("Could not parse CoNLL file");
+                }
+                i += 1;
+            } else if ("".equals(line.trim())) {
+                // Case: commit a sentence
+                examples.add(Pair.makePair(new IntelKBPRelationExtractor.KBPInput(
+                        subject,
+                        object,
+                        subjectNER,
+                        objectNER,
+                        new Sentence(tokens)
+                ), relation));
+
+                // (clear the variables)
+                i = 0;
+                relation = null;
+                tokens = new ArrayList<>();
+                subject = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
+                object = new Span(Integer.MAX_VALUE, Integer.MIN_VALUE);
+            } else {
+                throw new IllegalStateException("Could not parse CoNLL file");
+            }
+        }
+
+        return examples;
+    };
 }
