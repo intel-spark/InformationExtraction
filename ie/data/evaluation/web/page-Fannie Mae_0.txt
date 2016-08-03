@@ -1,26 +1,12 @@
-Fannie Mae Leadership Team | Fannie Mae
 
-
-Fannie Mae's Leadership Team
-President and Chief Executive Officer
-Timothy J. Mayopoulos
-Executive Vice President Chief Financial Officer
-David Benson
-Executive Vice President Single-Family Business
-Andrew Bon Salle
-Executive Vice President, General Counsel, and Corporate Secretary
-Brian P. Brooks
-Senior Vice President Single-Family Credit Portfolio Management
-Joy Cianci
-Senior Vice President Chief Communications Officer
-Maureen Davenport
-Executive Vice President and Head of Multifamily
-Jeffery R. Hayward
-Senior Vice President Chief Compliance Officer
-Nancy Jardini
-Senior Vice President Chief Risk Officer
-Kimberly Johnson
-Senior Vice President Operations and Technology
-Bruce Lee
-Senior Vice President Chief Human Resources Officer
-Brian McQuaid
+Timothy J. Mayopoulos,  President and Chief Executive Officer
+David Benson,  Executive Vice President Chief Financial Officer
+Andrew Bon Salle,  Executive Vice President Single-Family Business
+Brian P. Brooks,  Executive Vice President, General Counsel, and Corporate Secretary
+Joy Cianci,  Senior Vice President Single-Family Credit Portfolio Management
+Maureen Davenport,  Senior Vice President Chief Communications Officer
+Jeffery R. Hayward,  Executive Vice President and Head of Multifamily
+Nancy Jardini,  Senior Vice President Chief Compliance Officer
+Kimberly Johnson,  Senior Vice President Chief Risk Officer
+Bruce Lee,  Senior Vice President Operations and Technology
+http://www.fanniemae.com/portal/about-us/company-overview/fm-leadership.html

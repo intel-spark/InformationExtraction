@@ -1,29 +1,16 @@
-Safeway.com - Investor Relations - Management
 
-
-Robert  L.  Edwards
-President & Chief Executive Officer
-Peter  J. Bocian
-Executive Vice President & Chief Financial Officer
-Diane M. Dietz
-Executive Vice President & Chief Marketing Officer
-Kelly Griffith
-Executive Vice President Retail Operations
-Larree M. Renda
-Executive Vice President
-David F.  Bond
-Senior Vice President Finance and Control (Chief Accounting Officer)
-Robert A. Gordon
-Senior Vice President Secretary and General Counsel Chief Governance Officer
-Russell  M. Jackson
-Senior Vice President Human Resources
-Barry J. Libenson
-Senior Vice President Chief Information Officer
-Melissa C. Plaisance
-Senior Vice President Finance and Investor Relations
-David R. Stern
-Senior Vice President Planning and Business Development
-Jerry Tidwell
-Senior Vice President Supply Operations
-Donald P. Wright
-Senior Vice President Real Estate and Engineering
+<< Back,  Robert  L.  Edwards President & Chief Executive Officer Peter  J. Bocian Executive Vice President & Chief Financial Officer Diane M. Dietz Executive Vice President & Chief Marketing Officer Kelly Griffith Executive Vice President Retail Operations Larree M. Renda Executive Vice President David F.  Bond Senior Vice President Finance and Control (Chief Accounting Officer) Robert A. Gordon Senior Vice President Secretary and General Counsel Chief Governance Officer Russell  M. Jackson Senior Vice President Human Resources Barry J. Libenson Senior Vice President Chief Information Officer Melissa C. Plaisance Senior Vice President Finance and Investor Relations David R. Stern Senior Vice President Planning and Business Development Jerry Tidwell Senior Vice President Supply Operations Donald P. Wright Senior Vice President Real Estate and Engineering
+Robert  L.  Edwards,  President & Chief Executive Officer, 
+Peter  J. Bocian,  Executive Vice President & Chief Financial Officer, 
+Diane M. Dietz,  Executive Vice President & Chief Marketing Officer, 
+Kelly Griffith,  Executive Vice President Retail Operations, 
+Larree M. Renda,  Executive Vice President, 
+David F.  Bond,  Senior Vice President Finance and Control (Chief Accounting Officer), 
+Robert A. Gordon,  Senior Vice President Secretary and General Counsel Chief Governance Officer, 
+Russell  M. Jackson,  Senior Vice President Human Resources, 
+Barry J. Libenson,  Senior Vice President Chief Information Officer, 
+Melissa C. Plaisance,  Senior Vice President Finance and Investor Relations, 
+David R. Stern,  Senior Vice President Planning and Business Development, 
+Jerry Tidwell,  Senior Vice President Supply Operations, 
+Donald P. Wright,  Senior Vice President Real Estate and Engineering, 
+http://investor.safeway.com/phoenix.zhtml?c=64607&p=irol-govmanage
