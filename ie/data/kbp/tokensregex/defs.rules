@@ -9,10 +9,13 @@ slotvalue = { type: "CLASS", value: "intel.analytics.IntelKBPTokensregexExtracto
 $ENTITY = ([ { kbpentity:true } ]+ )
 $ENTITY_PER = ( [ { kbpentity::EXISTS } & { ner:/.*PERSON.*/ } ]+ )
 $ENTITY_ORG = ( [ { kbpentity::EXISTS } & { ner:/.*ORGANIZATION.*/ } ]+ )
+$ENTITY_DEP = ( [ { kbpentity::EXISTS } & { ner:/.*DEPARTMENT.*/ } ]+ )
 $SLOT_VALUE = ([ { slotvalue:true } ]+ )
+$SLOT_VALUE_DEP = ([ { slotvalue:true; ner:"DEPARTMENT" } ]+ )
 $SLOT_VALUE_ORG = ([ { slotvalue:true; ner:"ORGANIZATION" } ]+ )
 
 $ORG = ( [ { ner:"ORGANIZATION" } ] )
+$DEP = ( [ { ner:"DEPARTMENT" } ] )
 $PERSON = ( [ { ner:"PERSON" } ] )
 $DATE = ( [ { ner:"DATE" } ] )
 
