@@ -20,6 +20,7 @@
 { result: "per:employee_of", pattern: ( $ENTITY "," [{ner:"TITLE"}] "," $SLOT_VALUE_DEP ), weight: 1.0}
 { result: "per:employee_of", pattern: ( $ENTITY [{ner:"TITLE"}] $SLOT_VALUE_DEP ), weight: 1.0}
 { result: "per:employee_of", pattern: ( $ENTITY /.*/ [{ner:"TITLE"}] /.*/ $SLOT_VALUE_DEP ), weight: 1.0}
+{ result: "per:employee_of", pattern: ( $ENTITY_PER /[^,].*/ [{ner:"TITLE"}] $SLOT_VALUE_DEP ), weight: 1.0}
 { result: "per:employee_of", pattern: ( $ENTITY "," [{ner:"TITLE"}] "of" $SLOT_VALUE_DEP ), weight: 1.0}
 { result: "per:employee_of", pattern: ( $ENTITY "," [{ner:"TITLE"}] "of" "the" $SLOT_VALUE_DEP ), weight: 1.0}
 { result: "per:employee_of", pattern: ( $ENTITY [{lemma:"be"}] [{ner:"TITLE"}] "of" "the" $SLOT_VALUE_DEP ), weight: 1.0}
