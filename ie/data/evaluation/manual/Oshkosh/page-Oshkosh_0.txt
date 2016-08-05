@@ -1,31 +1,31 @@
 
 Directors,  Richard M. Donnelly Chairman of the Board   Keith J. Allman President and Chief Executive Officer, Masco Corporation   Peter B. Hamilton Retired, Senior Vice President & Chief Financial Officer, Brunswick Corporation   Leslie F. Kenne President of LK Associates, Retired Lieutenant General of the U.S. Air Force   Kim Metcalf-Kupres Vice President and Chief Marketing Officer, Johnson Controls, Inc.   Steven C. Mizell Executive Vice President and Chief Human Resources Officer, Monsanto Company   Stephen D. Newlin Executive Chairman, PolyOne Corporation   Craig P. Omtvedt Retired, Senior Vice President & Chief Financial Officer, Fortune Brands, Inc.   Duncan J. Palmer Retired, Chief Financial Officer, Reed Elsevier Group   John S. Shiely Chairman Emeritus, Briggs & Stratton Corporation   Richard G. Sim Former Chairman, President & Chief Executive Officer, APW, Ltd.   William Scott Wallace Independent Consultant, Retired Four-Star General of the U.S. Army  
-Richard M. Donnelly,  Chairman of the Board  
-Keith J. Allman,  President and Chief Executive Officer, Masco Corporation  
-Peter B. Hamilton,  Retired, Senior Vice President & Chief Financial Officer, Brunswick Corporation  
-Leslie F. Kenne,  President of LK Associates, Retired Lieutenant General of the U.S. Air Force  
-Kim Metcalf-Kupres,  Vice President and Chief Marketing Officer, Johnson Controls, Inc.  
-Steven C. Mizell,  Executive Vice President and Chief Human Resources Officer, Monsanto Company  
-Stephen D. Newlin,  Executive Chairman, PolyOne Corporation  
-Craig P. Omtvedt,  Retired, Senior Vice President & Chief Financial Officer, Fortune Brands, Inc.  
-Duncan J. Palmer,  Retired, Chief Financial Officer, Reed Elsevier Group  
-John S. Shiely,  Chairman Emeritus, Briggs & Stratton Corporation  
-Richard G. Sim,  Former Chairman, President & Chief Executive Officer, APW, Ltd.  
-William Scott Wallace,  Independent Consultant, Retired Four-Star General of the U.S. Army  
-Officers,  Wilson R. Jones President and Chief Executive Officer   Gregory L. Fredericksen Executive Vice President, Chief Procurement Officer   James W. Johnson Executive Vice President & President, Fire & Emergency   Joseph (Jay) H. Kimmitt Executive Vice President, Government Operations and Industry Relations   Frank R. Nerenhausen Executive Vice President & President, Access Equipment   David M. Sagehorn Executive Vice President, Chief Financial Officer   John J. Bryant Senior Vice President & President, Oshkosh Defense   Ignacio A. Cortina Senior Vice President, General Counsel and Secretary   R. Scott Grennier Senior Vice President & Treasurer   Marek W. May Senior Vice President, Operations   Robert S. Messina Senior Vice President, Engineering & Technology, Chief Technology Officer   Colleen Moynihan Senior Vice President, Quality & Continuous Improvement   Bradley M. Nelson Senior Vice President & President, Commercial   Thomas J. Polnaszek Senior Vice President, Finance and Controller   Mark M. Radue Senior Vice President, Business Development  
-Wilson R. Jones,  President and Chief Executive Officer  
-Gregory L. Fredericksen,  Executive Vice President, Chief Procurement Officer  
-James W. Johnson,  Executive Vice President & President, Fire & Emergency  
-Joseph (Jay) H. Kimmitt,  Executive Vice President, Government Operations and Industry Relations  
-Frank R. Nerenhausen,  Executive Vice President & President, Access Equipment  
-David M. Sagehorn,  Executive Vice President, Chief Financial Officer  
-John J. Bryant,  Senior Vice President & President, Oshkosh Defense  
-Ignacio A. Cortina,  Senior Vice President, General Counsel and Secretary  
-R. Scott Grennier,  Senior Vice President & Treasurer  
-Marek W. May,  Senior Vice President, Operations  
-Robert S. Messina,  Senior Vice President, Engineering & Technology, Chief Technology Officer  
-Colleen Moynihan,  Senior Vice President, Quality & Continuous Improvement  
-Bradley M. Nelson,  Senior Vice President & President, Commercial  
-Thomas J. Polnaszek,  Senior Vice President, Finance and Controller  
-Mark M. Radue,  Senior Vice President, Business Development  
+	1Richard M. Donnelly	,  	2Chairman	 of the Board  
+	1Keith J. Allman	,  	2President	 and 	2Chief Executive Officer	, 	3Masco Corporation
+	1Peter B. Hamilton	,  Retired, 	2Senior Vice President	 & 	2Chief Financial Officer	, 	3Brunswick Corporation
+	1Leslie F. Kenne	,  	2President	 of LK Associates, Retired Lieutenant General of the U.S. Air Force  
+	1Kim Metcalf-Kupres	,  	2Vice President	 and 	2Chief Marketing Officer	, 	3Johnson Controls, Inc.	  
+	1Steven C. Mizell	,  	2Executive Vice President	 and 	2Chief Human Resources Officer	, 	3Monsanto Company	  
+	1Stephen D. Newlin	,  	2Executive Chairman	, 	3PolyOne Corporation	  
+	1Craig P. Omtvedt	,  Retired, 	2Senior Vice President	 & 	2Chief Financial Officer	, 	3Fortune Brands, Inc.	  
+	1Duncan J. Palmer	,  Retired, 	2Chief Financial Officer	, 	3Reed Elsevier Group	  
+	1John S. Shiely	,  	2Chairman	 Emeritus, Briggs & Stratton Corporation  
+	1Richard G. Sim	,  	2Former Chairman	, 	2President	 & 	2Chief Executive Officer	, 	3APW, Ltd.	  
+	1William Scott Wallace	,  	2Independent Consultant	, Retired Four-Star General of the U.S. Army  
+Officers,  	1Wilson R. Jones	 	2President	 and 	2Chief Executive Officer	   Gregory L. Fredericksen Executive Vice President, Chief Procurement Officer   James W. Johnson Executive Vice President & President, Fire & Emergency   Joseph (Jay) H. Kimmitt Executive Vice President, Government Operations and Industry Relations   Frank R. Nerenhausen Executive Vice President & President, Access Equipment   David M. Sagehorn Executive Vice President, Chief Financial Officer   John J. Bryant Senior Vice President & President, Oshkosh Defense   Ignacio A. Cortina Senior Vice President, General Counsel and Secretary   R. Scott Grennier Senior Vice President & Treasurer   Marek W. May Senior Vice President, Operations   Robert S. Messina Senior Vice President, Engineering & Technology, Chief Technology Officer   Colleen Moynihan Senior Vice President, Quality & Continuous Improvement   Bradley M. Nelson Senior Vice President & President, Commercial   Thomas J. Polnaszek Senior Vice President, Finance and Controller   Mark M. Radue Senior Vice President, Business Development  
+	1Wilson R. Jones	,  	2President	 and 	2Chief Executive Officer	  
+	1Gregory L. Fredericksen	,  	2Executive Vice President	, 	2Chief Procurement Officer	  
+	1James W. Johnson	,  	2Executive Vice President	& 	2President	, 	3Fire & Emergency	  
+	1Joseph (Jay) H. Kimmitt	,  	2Executive Vice President	, 	3Government Operations and Industry Relations	  
+	1Frank R. Nerenhausen	,  	2Executive Vice President	 & 	2President	, 	3Access Equipment	  
+	1David M. Sagehorn	,  	2Executive Vice President	, 	2Chief Financial Officer	  
+	1John J. Bryant	,  	2Senior Vice President	 & 	2President	, 	3Oshkosh Defense	  
+	1Ignacio A. Cortina	,  	2Senior Vice President	, 	2General Counsel	 and 	2Secretary	  
+	1R. Scott Grennier	,  	2Senior Vice President	 & 	2Treasurer	  
+	1Marek W. May	,  	2Senior Vice President	, 	3Operations	  
+	1Robert S. Messina	,  	2Senior Vice President	, 	3Engineering & Technology	, 	2Chief Technology Officer	  
+	1Colleen Moynihan	,  	2Senior Vice President	, 	3Quality & Continuous Improvement	  
+	1Bradley M. Nelson	,  	2Senior Vice President	 & 	2President	, 	3Commercial	  
+	1Thomas J. Polnaszek	,  	2Senior Vice President	, 	3Finance and Controller	  
+	1Mark M. Radue	,  	2Senior Vice President	, 	3Business Development	  
 http://www.oshkoshcorporation.com/about/corporategovernance~directorsofficers.html
