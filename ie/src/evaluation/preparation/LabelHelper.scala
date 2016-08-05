@@ -9,12 +9,12 @@ import intel.analytics.IOUtils
 object LabelHelper {
 
   val titles = List(
-    "Chairman of the Board",
+//    "Chairman of the Board",
     "\\w+ Vice President",
-    "Chief.*Officer?",
+    "Chief.*?Officer",
     "CEO",
-    "General Counsel.*Secretary?",
-    //    "General Counsel",
+    "General Counsel.*?Secretary",
+    "Secretary.*?General Counsel",
     "Corporate Controller",
     "Vice President",
     "President",
@@ -22,9 +22,25 @@ object LabelHelper {
     "Treasurer",
     "Corporate Controller",
     "SVP",
-    "VP"
+    "VP",
+    "Chairman",
+    "GM",
+    "General Manager",
+    "COO",
+    "Controller",
+    "Co-founder",
+    "Deputy General Counsel"
   )
 
+  val depts = List(
+    "Global.*",
+    "Internal Audit",
+    "Government Affairs",
+    "Investor Relations",
+    "Special Projects",
+    "Information Technology",
+    "Supply Chain"
+  )
   def main(args: Array[String]): Unit = {
 
     var lastLine = ""
@@ -39,7 +55,11 @@ object LabelHelper {
           newLine = newLine.replaceFirst(",", "\t,")
         }
         for (tp <- titles) {
-          newLine = ("(" + tp + ")[^\\t]").r.replaceFirstIn(newLine, "\t2$1\t")
+          newLine = ("(" + tp + ")([^\\t])|(" + tp + ")$").r.replaceFirstIn(newLine, "\t2$1$3\t$2")
+        }
+
+        for (de <- depts) {
+          newLine = ("(" + de + ")").r.replaceFirstIn(newLine, "\t3$1\t")
         }
 
         println(newLine)
