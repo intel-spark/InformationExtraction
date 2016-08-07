@@ -1,12 +1,12 @@
 
-James A. Skinner,  Executive Chairman of Walgreens Boots Alliance, Inc.
-Stefano Pessina,  Executive Vice Chairman and Chief Executive Officer of Walgreens Boots Alliance, Inc.
-Ornella Barra,  Co-Chief Operating Officer for Walgreens Boots Alliance, Inc.
-George Fairweather,  Executive Vice President and Global Chief Financial Officer of Walgreens Boots Alliance, Inc.
-Alex Gourlay,  Co-Chief Operating Officer for Walgreens Boots Alliance, Inc.
-Ken Murphy,  Executive Vice President of Walgreens Boots Alliance and Chief Commercial Officer and President of Global Brands
-Marco Pagni,  Executive Vice President, Global Chief Administrative Officer and General Counsel of Walgreens Boots Alliance, Inc.
-Kimberly R. Scardino,  Senior Vice President, Global Controller and Chief Accounting Officer of Walgreens Boots Alliance, Inc.
-Kathleen Wilson-Thompson,  Executive Vice President and Global Chief Human Resources Officer of Walgreens Boots Alliance, Inc.
+	1James A. Skinner	,  	2Executive Chairman	 of 	3Walgreens Boots Alliance, Inc	.
+	1Stefano Pessina	,  	2Executive Vice Chairman	 and 	2Chief Executive Officer	 of Walgreens Boots Alliance, Inc.
+	1Ornella Barra	,  	2Co-Chief Operating Officer	 for 	3Walgreens Boots Alliance, Inc	3.
+	1George Fairweather	,  	2Executive Vice President	 and 	2Global Chief Financial Officer	 of Walgreens Boots Alliance, Inc.
+	1Alex Gourlay	,  	2Co-Chief Operating Officer	 for Walgreens Boots Alliance, Inc.
+	1Ken Murphy	,  	2Executive Vice President	 of Walgreens Boots Alliance and 	2Chief Commercial Officer	 and President of Global Brands
+	1Marco Pagni	,  	2Executive Vice President	, Global Chief Administrative Officer and General Counsel of Walgreens Boots Alliance, Inc.
+	1Kimberly R. Scardino	,  	2Senior Vice President	, Global Controller and Chief Accounting Officer of Walgreens Boots Alliance, Inc.
+	1Kathleen Wilson-Thompson	,  	2Executive Vice President	 and Global 	2Chief Human Resources Officer	 of Walgreens Boots Alliance, Inc.
 Terms of use,  Online privacy and security,  Sitemap, 
 http://www.walgreensbootsalliance.com/about/senior-management/
