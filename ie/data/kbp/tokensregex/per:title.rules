@@ -4,6 +4,10 @@
 { result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $ORG [{lemma:/,/}] $ENTITY_PER ) }
 { result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $ORG $ENTITY_PER ) }
 { result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $ORG $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $DEP [{lemma:/,/}] $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $DEP [{lemma:/,/}] $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] [{lemma:the}] $DEP $ENTITY_PER ) }
+{ result:"per:title", pattern: ( $TITLE [{lemma:/of|for/}] $DEP $ENTITY_PER ) }
 //Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
 { result: "per:title", pattern: ( $ENTITY  "was"  "appointed"  $TITLE ) }
 { result: "per:title", pattern: ( $ENTITY  "was"  "nominated"  $TITLE ) }

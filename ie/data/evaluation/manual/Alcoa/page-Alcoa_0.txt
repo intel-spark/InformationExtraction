@@ -1,0 +1,26 @@
+
+Executive Council,  Libby Archell Vice President, Alcoa Chief Communications Officer New York, New York John D. Bergen Vice President, Corporate Projects New York, New York Graeme W. Bottger Executive Vice President President, Alcoa Global Business Services Pittsburgh, Pennsylvania Daniel Cruise Global Vice President, Business Development and Government Affairs, Alcoa New York, New York Leigh Ann Fisher Chief Financial Officer Alcoa Global Primary Products Knoxville, Tennessee Matthew E Garth Vice President, Financial Planning & Analysis and Investor Relations Alcoa New York Ken Giacobbe Chief Financial Officer Alcoa Engineered Products and Solutions Cranberry, PA Roy Harvey Executive Vice President, Alcoa President of Global Primary Products New York, New York Dr. Raymond J. Kilmer Executive Vice President, Alcoa Chief Technology Officer Alcoa Technical Center, Pennsylvania Klaus Kleinfeld Chairman and Chief Executive Officer New York, New York Christoph Kollatz Executive Vice President,  Corporate Development, Strategy and New Ventures New York, New York Kay Meggers Executive Vice President and Group President, Global Rolled Products New York, New York Glenn Miller Chief Financial Officer Global Rolled Products Pittsburgh, Pennsylvania Tim D. Myers Executive Vice President and Group President, Alcoa Transportation and Construction Solutions Cleveland, Ohio   Vas Nair Executive Vice President, Human Resources Environment, Health, Safety and Sustainability   William F. Oplinger Executive Vice President and Chief Financial Officer New York, New York Eric V. Roegner Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio Vitaliy V. Rusakov COO, Alcoa Fastening Systems & Rings, Alcoa Forgings & Extrusions President, Alcoa Fastening Systems & Rings Torrance, California Tómas Már Sigurdsson Chief Operating Officer Alcoa Global Primary Products New York, New York Audrey Strauss Executive Vice President Chief Legal Officer and Secretary New York, New York Karl Tragl Executive Vice President and Group President, Alcoa Engineered Products and Solutions New York   L. Paris Watts-Stanfield Chief Financial Officer Alcoa Transportation and Construction Solutions Pittsburgh, PA Kenneth Wisnoski President, International Project Development and Asset Management New York
+	1Libby Archell	,  	2Vice President	, Alcoa 	2Chief Communications Officer	 New York, New York
+	1John D. Bergen	,  	2Vice President	, 	3Corporate Projects	 New York, New York
+	1Graeme W. Bottger	,  	2Executive Vice President	 	2President	, Alcoa 	3Global Business Services	 Pittsburgh, Pennsylvania
+	1Daniel Cruise	,  	2Global Vice President	, 	3Business Development and Government Affairs	, Alcoa New York, New York
+	1Leigh Ann Fisher	,  	2Chief Financial Officer	 Alcoa 	3Global Primary Products	 Knoxville, Tennessee
+	1Matthew E Garth	,  	2Vice President	, 	3Financial Planning & Analysis	 and 	3Investor Relations	 Alcoa New York
+	1Ken Giacobbe	,  	2Chief Financial Officer	 Alcoa 	3Engineered Products and Solutions	 Cranberry, PA
+	1Roy Harvey	,  	2Executive Vice President	, Alcoa 	2President	 of 	3Global Primary Products	 New York, New York
+	1Dr. Raymond J. Kilmer	,  	2Executive Vice President	, Alcoa 	2Chief Technology Officer	 Alcoa 	3Technical Center	, Pennsylvania
+	1Klaus Kleinfeld	,  	2Chairman	 and 	2Chief Executive Officer	 New York, New York
+	1Christoph Kollatz	,  	2Executive Vice President	,  	3Corporate Development, Strategy and New Ventures	 New York, New York
+	1Kay Meggers	,  	2Executive Vice President	 and 	2Group President	, 	3Global Rolled Products	 New York, New York
+	1Glenn Miller	,  	2Chief Financial Officer	 	3Global Rolled Products	 Pittsburgh, Pennsylvania
+	1Tim D. Myers	,  	2Executive Vice President	 and 	2Group President	, Alcoa 	3Transportation and Construction Solutions	 Cleveland, Ohio  
+	1Vas Nair	,  	2Executive Vice President	, 	3Human Resources Environment	, 	3Health, Safety and Sustainability	  
+	1William F. Oplinger	,  	2Executive Vice President	 and 	2Chief Financial Officer	 New York, New York
+	1Eric V. Roegner	,  	2Chief Operating Officer	, Alcoa 	3Investment Castings, Titanium and Engineered Products	; 	2President	, Alcoa 	3Titanium & Engineered Products	; 	2President	, Alcoa 	3Defense Cleveland	, Ohio
+	1Vitaliy V. Rusakov	,  	2COO	, Alcoa 	3Fastening Systems & Rings	, Alcoa 	3Forgings & Extrusions	 	2President	, Alcoa 	3Fastening Systems & Rings Torrance	, California
+	1Tómas Már Sigurdsson	,  	2Chief Operating Officer	 Alcoa 	3Global Primary Products	 New York, New York
+	1Audrey Strauss	,  	2Executive Vice President	 	2Chief Legal Officer	 and 	2Secretary	 New York, New York
+	1Karl Tragl	,  	2Executive Vice President	 and 	2Group President	, Alcoa 	3Engineered Products and Solutions	 New York  
+	1L. Paris Watts-Stanfield	,  	2Chief Financial Officer	 Alcoa 	3Transportation and Construction Solutions	 Pittsburgh, PA
+	1Kenneth Wisnoski	,  	2President	, 	3International Project Development and Asset Management	 New York
+www.alcoa.com/global/en/investment/executive_council.asp
