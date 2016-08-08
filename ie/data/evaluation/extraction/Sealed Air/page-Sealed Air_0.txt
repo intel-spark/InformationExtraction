@@ -1,0 +1,22 @@
+Jerome Peribere	title	President	Jerome Peribere,  President and CEO
+Jerome Peribere	title	CEO	Jerome Peribere,  President and CEO
+Dr. Ilham Kadri	title	President	Dr. Ilham Kadri,  President, Diversey Care
+Dr. Ilham Kadri	employee_of	Diversey Care	Dr. Ilham Kadri,  President, Diversey Care
+Emile Chammas	title	Senior Vice President	Emile Chammas,  Senior Vice President and Chief Supply Chain Officer
+Emile Chammas	title	Chief Supply Chain Officer	Emile Chammas,  Senior Vice President and Chief Supply Chain Officer
+Carol Lowe	title	Senior Vice President	Carol Lowe,  Senior Vice President and CFO
+Carol Lowe	title	CFO	Carol Lowe,  Senior Vice President and CFO
+Ken Chrisman	title	President	Ken Chrisman,  President, Product Care
+Ken Chrisman	employee_of	Product Care	Ken Chrisman,  President, Product Care
+Chip Cook	title	Vice President	Chip Cook,  Vice President, Customer Service and Sales Operations
+Chip Cook	employee_of	Customer Service and Sales Operations	Chip Cook,  Vice President, Customer Service and Sales Operations
+Ruth Roper	title	Vice President	Ruth Roper,  Vice President, New Ventures and Medical Applications
+Ruth Roper	employee_of	New Ventures and Medical Applications	Ruth Roper,  Vice President, New Ventures and Medical Applications
+Karl Deily	title	President	Karl Deily,  President, Food Care
+Karl Deily	employee_of	Food Care	Karl Deily,  President, Food Care
+Dr. Robert Tatterson	title	Vice President	Dr. Robert Tatterson,  Vice President, R&D and Chief Technology Officer
+Dr. Robert Tatterson	title	Chief Technology Officer	Dr. Robert Tatterson,  Vice President, R&D and Chief Technology Officer
+Dr. Robert Tatterson	employee_of	R&D	Dr. Robert Tatterson,  Vice President, R&D and Chief Technology Officer
+Norman D. Finch, Jr.	title	Vice President	Norman D. Finch, Jr.,  Vice President, Gen. Counsel & Secretary and HR
+Norman D. Finch, Jr.	title	Gen. Counsel	Norman D. Finch, Jr.,  Vice President, Gen. Counsel & Secretary and HR
+Norman D. Finch, Jr.	title	Secretary	Norman D. Finch, Jr.,  Vice President, Gen. Counsel & Secretary and HR

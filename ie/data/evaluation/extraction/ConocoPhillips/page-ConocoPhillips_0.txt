@@ -1,0 +1,30 @@
+RYAN LANCE​​​	title	Chairman	RYAN LANCE​​​,  Chairman and Chief Executive Officer,  Leads the company in driving a unique combination of organic growth, financial returns and an attractive yield
+RYAN LANCE​​​	title	Chief Executive Officer	RYAN LANCE​​​,  Chairman and Chief Executive Officer,  Leads the company in driving a unique combination of organic growth, financial returns and an attractive yield
+MATT FOX	title	Executive Vice President	MATT FOX,  Executive Vice President Strategy, Exploration and Technology,  Leads the teams responsible for strategic planning, exploration, business development and technology
+MATT FOX	employee_of	Strategy, Exploration and Technology	MATT FOX,  Executive Vice President Strategy, Exploration and Technology,  Leads the teams responsible for strategic planning, exploration, business development and technology
+AL J. HIRSHBERG	title	Executive Vice President	AL J. HIRSHBERG,  Executive Vice President Production, Drilling and Projects Leads the teams that oversee the company’s worldwide operations, as well as the drilling, major projects and health, safety and environmental functions
+AL J. HIRSHBERG	employee_of	Production, Drilling and Projects	AL J. HIRSHBERG,  Executive Vice President Production, Drilling and Projects Leads the teams that oversee the company’s worldwide operations, as well as the drilling, major projects and health, safety and environmental functions
+Executive Vice President	employee_of	Production, Drilling and Projects	Executive Vice President,  Production, Drilling and Projects, 
+DON WALLETTE	title	Executive Vice President	DON WALLETTE, JR.,  Executive Vice President Finance, Commercial and Chief Financial Officer Leads the teams responsible for the company’s financial and commercial functions
+DON WALLETTE	title	Chief Financial Officer	DON WALLETTE, JR.,  Executive Vice President Finance, Commercial and Chief Financial Officer Leads the teams responsible for the company’s financial and commercial functions
+DON WALLETTE	employee_of	Finance	DON WALLETTE, JR.,  Executive Vice President Finance, Commercial and Chief Financial Officer Leads the teams responsible for the company’s financial and commercial functions
+DON WALLETTE	employee_of	Commercial	DON WALLETTE, JR.,  Executive Vice President Finance, Commercial and Chief Financial Officer Leads the teams responsible for the company’s financial and commercial functions
+Executive Vice President	title	Chief Financial Officer	Executive Vice President,  Finance, Commercial and,  Chief Financial Officer, 
+Executive Vice President	employee_of	Finance	Executive Vice President,  Finance, Commercial and,  Chief Financial Officer, 
+Executive Vice President	employee_of	Commercial	Executive Vice President,  Finance, Commercial and,  Chief Financial Officer, 
+JANET LANGFORD CARRIG	title	Senior Vice President	JANET LANGFORD CARRIG,  Senior Vice President Legal, General Counsel and Corporate Secretary Serves as counsel providing oversight on all legal issues impacting the corporation
+JANET LANGFORD CARRIG	title	General Counsel and Corporate Secretary	JANET LANGFORD CARRIG,  Senior Vice President Legal, General Counsel and Corporate Secretary Serves as counsel providing oversight on all legal issues impacting the corporation
+Senior Vice President	title	General Counsel and Corporate Secretary	Senior Vice President,  Legal, General Counsel and Corporate Secretary, 
+ANDREW LUNDQUIST	title	Senior Vice President	ANDREW LUNDQUIST,  Senior Vice President Government Affairs Leads a team who serve as the voice of ConocoPhillips in addressing highly complex public policy issues with governments around the world 
+ANDREW LUNDQUIST	employee_of	Government Affairs	ANDREW LUNDQUIST,  Senior Vice President Government Affairs Leads a team who serve as the voice of ConocoPhillips in addressing highly complex public policy issues with governments around the world 
+Senior Vice President	employee_of	Government Affairs	Senior Vice President,  Government Affairs, 
+ELLEN DESANCTIS	title	Vice President	ELLEN DESANCTIS,  Vice President Investor Relations and Communications Leads an integrated team responsible for investor relations, communications, brand, and charitable investment programs
+ELLEN DESANCTIS	employee_of	Investor Relations	ELLEN DESANCTIS,  Vice President Investor Relations and Communications Leads an integrated team responsible for investor relations, communications, brand, and charitable investment programs
+ELLEN DESANCTIS	employee_of	Communications	ELLEN DESANCTIS,  Vice President Investor Relations and Communications Leads an integrated team responsible for investor relations, communications, brand, and charitable investment programs
+Vice President	employee_of	Investor Relations	Vice President,  Investor Relations and Communications, 
+Vice President	employee_of	Communications	Vice President,  Investor Relations and Communications, 
+JAMES MCMORRAN	title	Vice President	JAMES MCMORRAN,  Vice President Human Resources and Real Estate & Facilities Services Leads the global team of human resources professionals and is responsible for Real Estate & Facilities Services
+JAMES MCMORRAN	employee_of	Human Resources	JAMES MCMORRAN,  Vice President Human Resources and Real Estate & Facilities Services Leads the global team of human resources professionals and is responsible for Real Estate & Facilities Services
+JAMES MCMORRAN	employee_of	Real Estate & Facilities Services	JAMES MCMORRAN,  Vice President Human Resources and Real Estate & Facilities Services Leads the global team of human resources professionals and is responsible for Real Estate & Facilities Services
+Vice President	employee_of	Human Resources	Vice President,  Human Resources and Real Estate & Facilities Services, 
+Vice President	employee_of	Real Estate & Facilities Services	Vice President,  Human Resources and Real Estate & Facilities Services, 

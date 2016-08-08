@@ -1,0 +1,32 @@
+Mike McMullen	title	President	Mike McMullen,  President and Chief Executive Officer, Agilent
+Mike McMullen	title	Chief Executive Officer	Mike McMullen,  President and Chief Executive Officer, Agilent
+Henrik Ancher-Jensen	title	Senior Vice President	Henrik Ancher-Jensen,  Senior Vice President, Agilent President, Order Fulfillment,  and Supply Chain, 
+Henrik Ancher-Jensen	title	President	Henrik Ancher-Jensen,  Senior Vice President, Agilent President, Order Fulfillment,  and Supply Chain, 
+Henrik Ancher-Jensen	employee_of	Order Fulfillment,  and Supply Chain	Henrik Ancher-Jensen,  Senior Vice President, Agilent President, Order Fulfillment,  and Supply Chain, 
+Rick Burdsall	title	Senior Vice President	Rick Burdsall,  Senior Vice President, Agilent Global Infrastructure Services, 
+Rick Burdsall	employee_of	Global Infrastructure Services	Rick Burdsall,  Senior Vice President, Agilent Global Infrastructure Services, 
+Mark Doak	title	Senior Vice President	Mark Doak,  Senior Vice President, Agilent President, Agilent CrossLab Group
+Mark Doak	title	President	Mark Doak,  Senior Vice President, Agilent President, Agilent CrossLab Group
+Mark Doak	employee_of	Agilent CrossLab Group	Mark Doak,  Senior Vice President, Agilent President, Agilent CrossLab Group
+Rodney Gonsalves	title	Vice President	Rodney Gonsalves,  Vice President, Agilent Corporate Controller and Principal Accounting Officer
+Rodney Gonsalves	title	Corporate Controller	Rodney Gonsalves,  Vice President, Agilent Corporate Controller and Principal Accounting Officer
+Rodney Gonsalves	title	Principal Accounting Officer	Rodney Gonsalves,  Vice President, Agilent Corporate Controller and Principal Accounting Officer
+Dominique Grau	title	Senior Vice President	Dominique Grau,  Senior Vice President, Agilent Human Resources
+Dominique Grau	employee_of	Human Resources	Dominique Grau,  Senior Vice President, Agilent Human Resources
+Guillermo Gualino	title	Vice President	Guillermo Gualino,  Vice President, Agilent Treasurer, 
+Guillermo Gualino	title	Treasurer	Guillermo Gualino,  Vice President, Agilent Treasurer, 
+Didier Hirsch	title	Senior Vice President	Didier Hirsch,  Senior Vice President, Agilent Chief Financial Officer, 
+Didier Hirsch	title	Chief Financial Officer	Didier Hirsch,  Senior Vice President, Agilent Chief Financial Officer, 
+Patrick Kaltenbach	title	Senior Vice President	Patrick Kaltenbach,  Senior Vice President, Agilent President, Life Sciences and Applied Markets Group
+Patrick Kaltenbach	title	President	Patrick Kaltenbach,  Senior Vice President, Agilent President, Life Sciences and Applied Markets Group
+Patrick Kaltenbach	employee_of	Life Sciences and Applied Markets Group	Patrick Kaltenbach,  Senior Vice President, Agilent President, Life Sciences and Applied Markets Group
+Shiela Barr Robertson	title	Senior Vice President	Shiela Barr Robertson,  Senior Vice President, Agilent Corporate and Business Development
+Shiela Barr Robertson	employee_of	Corporate and Business Development	Shiela Barr Robertson,  Senior Vice President, Agilent Corporate and Business Development
+Darlene Solomon	title	Senior Vice President	Darlene Solomon, Ph.D.,  Senior Vice President, Agilent Chief Technology Officer
+Darlene Solomon	title	Chief Technology Officer	Darlene Solomon, Ph.D.,  Senior Vice President, Agilent Chief Technology Officer
+Michael Tang	title	Senior Vice President	Michael Tang,  Senior Vice President, Agilent General Counsel and Secretary
+Michael Tang	title	General Counsel	Michael Tang,  Senior Vice President, Agilent General Counsel and Secretary
+Michael Tang	title	Secretary	Michael Tang,  Senior Vice President, Agilent General Counsel and Secretary
+Jacob Thaysen	title	Senior Vice President	Jacob Thaysen,  Senior Vice President, Agilent President, Diagnostics and Genomics Group
+Jacob Thaysen	title	President	Jacob Thaysen,  Senior Vice President, Agilent President, Diagnostics and Genomics Group
+Jacob Thaysen	employee_of	Diagnostics and Genomics Group	Jacob Thaysen,  Senior Vice President, Agilent President, Diagnostics and Genomics Group

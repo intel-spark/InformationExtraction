@@ -1,0 +1,32 @@
+Rupert Murdoch	title	Executive Chairman	Rupert Murdoch,  Executive Chairman
+Lachlan Murdoch	title	Co-Chairman	Lachlan Murdoch,  Co-Chairman
+Robert Thomson	title	Chief Executive	Robert Thomson,  Chief Executive
+Bedi A. Singh	title	Chief Financial Officer	Bedi A. Singh,  Chief Financial Officer
+Keisha Smith-Jeremie	title	Chief Human Resources Officer	Keisha Smith-Jeremie,  Chief Human Resources Officer
+Antoinette Bush	title	Global Head of Government Affairs	Antoinette Bush,  Global Head of Government Affairs
+Paul Cheesbrough	title	Chief Technology Officer	Paul Cheesbrough,  Chief Technology Officer
+Anoushka Healy	title	Chief Strategy Officer	Anoushka Healy,  Chief Strategy Officer
+Jim Kennedy	title	Chief Communications Officer	Jim Kennedy,  Chief Communications Officer
+David Pitofsky	title	General Counsel	David Pitofsky,  General Counsel
+Brian Murray	title	CEO	Brian Murray,  CEO, Harper Collins
+Brian Murray	employee_of	Harper Collins	Brian Murray,  CEO, Harper Collins
+Rebekah Brooks	title	CEO	Rebekah Brooks,  CEO, News UK
+Rebekah Brooks	employee_of	News UK	Rebekah Brooks,  CEO, News UK
+Michael Miller	title	Executive Chairman	Michael Miller,  Executive Chairman, News Corp Australasia
+Michael Miller	employee_of	News Corp Australasia	Michael Miller,  Executive Chairman, News Corp Australasia
+William Lewis	title	CEO	William Lewis,  CEO, Dow Jones & Company
+William Lewis	employee_of	Dow Jones & Company	William Lewis,  CEO, Dow Jones & Company
+Ryan O’Hara	title	CEO	Ryan O’Hara,  CEO, Move, Inc.
+Ryan O’Hara	employee_of	Move, Inc	Ryan O’Hara,  CEO, Move, Inc.
+Jesse Angelo	title	CEO	Jesse Angelo,  CEO, The New York Post
+Jesse Angelo	employee_of	The New York Post	Jesse Angelo,  CEO, The New York Post
+Martin Garofalo	title	CEO	Martin Garofalo,  CEO, News America Marketing
+Martin Garofalo	employee_of	News America Marketing	Martin Garofalo,  CEO, News America Marketing
+Rahul Chopra	title	CEO	Rahul Chopra,  CEO, Storyful
+Rahul Chopra	employee_of	Storyful	Rahul Chopra,  CEO, Storyful
+Sarah Wood	title	Co-Founder	Sarah Wood,  Co-Founder and Co-CEO, Unruly
+Sarah Wood	title	Co-CEO	Sarah Wood,  Co-Founder and Co-CEO, Unruly
+Sarah Wood	employee_of	Unruly	Sarah Wood,  Co-Founder and Co-CEO, Unruly
+Scott Button	title	Co-Founder	Scott Button,  Co-Founder and Co-CEO, Unruly
+Scott Button	title	Co-CEO	Scott Button,  Co-Founder and Co-CEO, Unruly
+Scott Button	employee_of	Unruly	Scott Button,  Co-Founder and Co-CEO, Unruly

@@ -1,0 +1,26 @@
+Mario Longhi	title	President	Mario Longhi,  President & Chief Executive Officer
+Mario Longhi	title	Chief Executive Officer	Mario Longhi,  President & Chief Executive Officer
+David B. Burritt	title	Executive Vice President	David B. Burritt,  Executive Vice President & Chief Financial Officer
+David B. Burritt	title	Chief Financial Officer	David B. Burritt,  Executive Vice President & Chief Financial Officer
+Suzanne Rich Folsom	title	General Counsel	Suzanne Rich Folsom,  General Counsel, Chief Compliance Officer & Senior Vice President - Government Affairs
+Suzanne Rich Folsom	title	Chief Compliance Officer	Suzanne Rich Folsom,  General Counsel, Chief Compliance Officer & Senior Vice President - Government Affairs
+Suzanne Rich Folsom	title	Senior Vice President	Suzanne Rich Folsom,  General Counsel, Chief Compliance Officer & Senior Vice President - Government Affairs
+James E. Bruno	title	Senior Vice President	James E. Bruno,  Senior Vice President - Automotive Solutions
+James E. Bruno	employee_of	Automotive Solutions	James E. Bruno,  Senior Vice President - Automotive Solutions
+Sara A. Greenstein	title	Senior Vice President	Sara A. Greenstein,  Senior Vice President - Consumer Solutions
+Sara A. Greenstein	employee_of	Consumer Solutions	Sara A. Greenstein,  Senior Vice President - Consumer Solutions
+Douglas R. Matthews	title	Senior Vice President	Douglas R. Matthews,  Senior Vice President - Industrial, Service Center and Mining Solutions
+David J. Rintoul	title	Senior Vice President	David J. Rintoul,  Senior Vice President - Tubular Business
+Charles G. Balawajder	title	Vice President	Charles G. Balawajder,  Vice President & Chief Information Officer
+Charles G. Balawajder	title	Chief Information Officer	Charles G. Balawajder,  Vice President & Chief Information Officer
+Christine S. Breves	title	Vice President	Christine S. Breves,  Vice President & Chief Supply Chain Officer  
+Christine S. Breves	title	Chief Supply Chain Officer	Christine S. Breves,  Vice President & Chief Supply Chain Officer  
+Scott D. Buckiso	title	Vice President	Scott D. Buckiso,  Vice President – European Solutions President – U. S. Steel Košice
+Colleen M. Darragh	title	Vice President	Colleen M. Darragh,  Vice President & Controller
+Colleen M. Darragh	title	Controller	Colleen M. Darragh,  Vice President & Controller
+J. Craig Horan	title	Vice President	J. Craig Horan,  Vice President - Commercial, Tubular
+Sarados Milios	title	Vice President	Sarados Milios,  Vice President - International Sales, Tubular
+Sarados Milios	employee_of	International Sales, Tubular	Sarados Milios,  Vice President - International Sales, Tubular
+Nancy Sykes	title	Vice President	Nancy Sykes,  Vice President & Chief Human Resources Officer
+Nancy Sykes	title	Chief Human Resources Officer	Nancy Sykes,  Vice President & Chief Human Resources Officer
+Mark G. Tabler	title	Vice President	Mark G. Tabler,  Vice President - Global Quality & Manufacturing Processes

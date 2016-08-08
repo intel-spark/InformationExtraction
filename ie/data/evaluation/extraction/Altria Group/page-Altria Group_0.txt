@@ -1,0 +1,35 @@
+Martin J. Barrington	title	Chairman	Martin J. Barrington,  ​Chairman ​Chief Executive Officer ​President Altria Group, Inc.
+Martin J. Barrington	title	Chief Executive Officer	Martin J. Barrington,  ​Chairman ​Chief Executive Officer ​President Altria Group, Inc.
+James E. Dillard III	title	Senior Vice President	James E. Dillard III,  ​Senior Vice President,  Research, Development and Regulatory Affairs, Chief Innovation Officer Altria Group, Inc​.
+James E. Dillard III	title	Chief Innovation Officer	James E. Dillard III,  ​Senior Vice President,  Research, Development and Regulatory Affairs, Chief Innovation Officer Altria Group, Inc​.
+William F. Gifford, Jr.	title	Chief Financial Officer	William F. Gifford, Jr.,  Chief Financial Officer Altria Group, Inc.
+Craig A. Johnson	title	President Chief Executive Officer	Craig A. Johnson,  ​President Chief Executive Officer Altria Group Distribution Company
+Denise F. Keane	title	Executive Vice President	Denise F. Keane,  ​Executive Vice President General Counsel Altria Group, Inc.
+Denise F. Keane	title	General Counsel	Denise F. Keane,  ​Executive Vice President General Counsel Altria Group, Inc.
+Sal Mancuso	title	Senior Vice President	Sal Mancuso,  Senior Vice President Strategy, Planning and Procurement Altria Group, Inc.
+Sal Mancuso	employee_of	Strategy, Planning and Procurement	Sal Mancuso,  Senior Vice President Strategy, Planning and Procurement Altria Group, Inc.
+Charles N. Whitaker	title	Senior Vice President	Charles N. Whitaker,  Senior Vice President, Human Resources, Compliance and Information Services, Chief Compliance Officer Altria Group, Inc.​
+Charles N. Whitaker	employee_of	Human Resources	Charles N. Whitaker,  Senior Vice President, Human Resources, Compliance and Information Services, Chief Compliance Officer Altria Group, Inc.​
+Charles N. Whitaker	employee_of	Compliance and Information Services	Charles N. Whitaker,  Senior Vice President, Human Resources, Compliance and Information Services, Chief Compliance Officer Altria Group, Inc.​
+Charles N. Whitaker	employee_of	Chief Compliance Officer	Charles N. Whitaker,  Senior Vice President, Human Resources, Compliance and Information Services, Chief Compliance Officer Altria Group, Inc.​
+Howard A. Willard III	title	Chief Operating Officer	Howard A. Willard III,  Chief Operating Officer Altria Group, Inc.
+Theodor P. Baseler	title	President	Theodor P. Baseler,  ​President Chief Executive Officer Ste. Michelle Wine Estates Ltd.
+Theodor P. Baseler	title	Chief Executive Officer	Theodor P. Baseler,  ​President Chief Executive Officer Ste. Michelle Wine Estates Ltd.
+Jody L. Begley	title	President	Jody L. Begley,  ​President General Manager Nu Mark LLC
+Jody L. Begley	title	General Manager	Jody L. Begley,  ​President General Manager Nu Mark LLC
+Clifford B. Fleet	title	President	Clifford B. Fleet,  President Chief Executive Officer Philip Morris USA Inc.
+Clifford B. Fleet	title	Chief Executive Officer	Clifford B. Fleet,  President Chief Executive Officer Philip Morris USA Inc.
+Brian W. Quigley	title	President	Brian W. Quigley,  ​President Chief Executive Officer U.S. Smokeless Tobacco Company
+Brian W. Quigley	title	Chief Executive Officer	Brian W. Quigley,  ​President Chief Executive Officer U.S. Smokeless Tobacco Company
+Pascal A. Fernandez	title	Senior Vice President	Pascal A. Fernandez,  ​Senior Vice President Consumer & Marketplace Insights Altria Client Services LLC
+Pascal A. Fernandez	employee_of	Consumer & Marketplace Insights	Pascal A. Fernandez,  ​Senior Vice President Consumer & Marketplace Insights Altria Client Services LLC
+Murray R. Garnick	title	Senior Vice President	Murray R. Garnick,  ​Senior Vice President Associate General Counsel Altria Client Services LLC
+Murray R. Garnick	title	Associate General Counsel	Murray R. Garnick,  ​Senior Vice President Associate General Counsel Altria Client Services LLC
+Bruce A. Gates	title	Senior Vice President	Bruce A. Gates,  ​Senior Vice President External Affairs Altria Client Services LLC
+Bruce A. Gates	employee_of	External Affairs	Bruce A. Gates,  ​Senior Vice President External Affairs Altria Client Services LLC
+Jennifer Hunter	title	Senior Vice President	Jennifer Hunter,  ​Senior Vice President Communications​ and Corporate Citizenship Altria Client Services LLC
+Jennifer Hunter	employee_of	Communications​ and Corporate Citizenship	Jennifer Hunter,  ​Senior Vice President Communications​ and Corporate Citizenship Altria Client Services LLC
+Gregory H. Ray	title	Senior Vice President	Gregory H. Ray,  Senior Vice President Smokeable Manufacturing Philip Morris USA Inc.
+Gregory H. Ray	employee_of	Smokeable Manufacturing	Gregory H. Ray,  Senior Vice President Smokeable Manufacturing Philip Morris USA Inc.
+Craig G. Schwartz	title	Senior Vice President	Craig G. Schwartz,  ​Senior Vice President Operations and Business Development Nu Mark LLC
+Craig G. Schwartz	employee_of	Operations and Business Development	Craig G. Schwartz,  ​Senior Vice President Operations and Business Development Nu Mark LLC

@@ -1,0 +1,32 @@
+Edward W. Stack	title	Chief Executive Officer	Edward W. Stack,  Chief Executive Officer of DICK'S Sporting Goods Chairman of the Board since 1984
+Edward W. Stack	title	Chairman of the Board	Edward W. Stack,  Chief Executive Officer of DICK'S Sporting Goods Chairman of the Board since 1984
+André J. Hawaux	title	Executive Vice President	André J. Hawaux,  Executive Vice President – Chief Operating Officer
+André J. Hawaux	title	Chief Operating Officer	André J. Hawaux,  Executive Vice President – Chief Operating Officer
+Lauren R. Hobart	title	Executive Vice President	Lauren R. Hobart,  Executive Vice President – Chief Marketing Officer
+Lauren R. Hobart	title	Chief Marketing Officer	Lauren R. Hobart,  Executive Vice President – Chief Marketing Officer
+Teri L. List-Stoll	title	Executive Vice President	Teri L. List-Stoll,  Executive Vice President – Chief Financial Officer
+Teri L. List-Stoll	title	Chief Financial Officer	Teri L. List-Stoll,  Executive Vice President – Chief Financial Officer
+Lee J. Belitsky	title	Executive Vice President	Lee J. Belitsky,  Executive Vice President – Product Development and Planning, Allocations and Replenishment
+Lee J. Belitsky	employee_of	Product Development and Planning, Allocations and Replenishment	Lee J. Belitsky,  Executive Vice President – Product Development and Planning, Allocations and Replenishment
+Michele B. Willoughby	title	Executive Vice President	Michele B. Willoughby,  Executive Vice President – eCommerce and Supply Chain
+Michele B. Willoughby	employee_of	eCommerce	Michele B. Willoughby,  Executive Vice President – eCommerce and Supply Chain
+Michele B. Willoughby	employee_of	Supply Chain	Michele B. Willoughby,  Executive Vice President – eCommerce and Supply Chain
+Ronald E. Baime	title	Senior Vice President	Ronald E. Baime,  Senior Vice President – GMM
+Ronald E. Baime	employee_of	GMM	Ronald E. Baime,  Senior Vice President – GMM
+George P. Giacobbe	title	Senior Vice President	George P. Giacobbe,  Senior Vice President – Supply Chain
+George P. Giacobbe	employee_of	Supply Chain	George P. Giacobbe,  Senior Vice President – Supply Chain
+John E. Hayes III	title	Senior Vice President	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
+John E. Hayes III	title	General Counsel and Secretary	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
+George S. Hill	title	Senior Vice President	George S. Hill,  Senior Vice President – Retail
+George S. Hill	employee_of	Retail	George S. Hill,  Senior Vice President – Retail
+Joseph R. Oliver	title	Senior Vice President	Joseph R. Oliver,  Senior Vice President – Chief Accounting Officer
+Joseph R. Oliver	title	Chief Accounting Officer	Joseph R. Oliver,  Senior Vice President – Chief Accounting Officer
+Daniel L. Ostrowski	title	Senior Vice President	Daniel L. Ostrowski,  Senior Vice President – Store Environment
+Daniel L. Ostrowski	employee_of	Store Environment	Daniel L. Ostrowski,  Senior Vice President – Store Environment
+Kurt J. Schnieders	title	Senior Vice President	Kurt J. Schnieders,  Senior Vice President – Information Technology and Chief Information Officer
+Kurt J. Schnieders	title	Chief Information Officer	Kurt J. Schnieders,  Senior Vice President – Information Technology and Chief Information Officer
+Kurt J. Schnieders	employee_of	Information Technology	Kurt J. Schnieders,  Senior Vice President – Information Technology and Chief Information Officer
+Alexander L. Tomey	title	Senior Vice President	Alexander L. Tomey,  Senior Vice President – GMM
+Alexander L. Tomey	employee_of	GMM	Alexander L. Tomey,  Senior Vice President – GMM
+Deborah M. Victorelli	title	Senior Vice President	Deborah M. Victorelli,  Senior Vice President – Human Resources
+Deborah M. Victorelli	employee_of	Human Resources	Deborah M. Victorelli,  Senior Vice President – Human Resources

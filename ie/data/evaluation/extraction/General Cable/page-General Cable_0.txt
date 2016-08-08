@@ -1,0 +1,13 @@
+Michael T. McDonnell	title	President	Michael T. McDonnell, President& Chief Executive Officer 
+Michael T. McDonnell	title	Chief Executive Officer	Michael T. McDonnell, President& Chief Executive Officer 
+Kurt L. Drake	title	Senior Vice President	Kurt L. Drake, Senior Vice Presidentand Chief Compliance Officer 
+Kurt L. Drake	title	Chief Compliance Officer	Kurt L. Drake, Senior Vice Presidentand Chief Compliance Officer 
+Robert D. Kenny	title	Executive Vice President	Robert D. Kenny, Executive Vice President Chief Executive Officer General Cable Europe and Africa, 
+Robert D. Kenny	title	Chief Executive Officer	Robert D. Kenny, Executive Vice President Chief Executive Officer General Cable Europe and Africa, 
+Gregory J. Lampert	title	Executive Vice President	Gregory J. Lampert, Executive Vice President Presidentand Chief Executive Officer General Cable, The Americas, 
+Gregory J. Lampert	title	President	Gregory J. Lampert, Executive Vice President Presidentand Chief Executive Officer General Cable, The Americas, 
+Gregory J. Lampert	title	Chief Executive Officer	Gregory J. Lampert, Executive Vice President Presidentand Chief Executive Officer General Cable, The Americas, 
+Emerson C. Moser	title	Senior Vice President	Emerson C. Moser, Senior Vice President General Counsel and Corporate Secretary 
+Emerson C. Moser	title	General Counsel and Corporate Secretary	Emerson C. Moser, Senior Vice President General Counsel and Corporate Secretary 
+Brian J. Robinson	title	Executive Vice President	Brian J. Robinson, Executive Vice Presidentand Chief Financial Officer 
+Brian J. Robinson	title	Chief Financial Officer	Brian J. Robinson, Executive Vice Presidentand Chief Financial Officer 

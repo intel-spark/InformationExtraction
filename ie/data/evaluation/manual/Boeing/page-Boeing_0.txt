@@ -6,18 +6,18 @@ Chairman, President and CEO,  Dennis A. Muilenburg Chairman, President and Chief
 	1Dennis A. Muilenburg	,  	2Chairman	, 	2President	 and 	2Chief Executive Officer	, The Boeing Company
 Executive Council,  Raymond L. Conner Vice Chairman, The Boeing Company President, and Chief Executive Officer, Boeing Commercial Airplanes Leanne Caret Executive Vice President, The Boeing Company President, and Chief Executive Officer, Defense, Space & Security Bertrand-Marc (Marc) Allen Senior Vice President, The Boeing Company President, Boeing International Heidi B. Capozzi Senior Vice President, Human Resources, The Boeing Company Ted Colbert Chief Information Officer, The Boeing Company Senior Vice President, Information & Analytics Thomas J. Downey Senior Vice President, Communications, The Boeing Company Scott Fancher Senior Vice President, Program Management, Integration & Development Programs, The Boeing Company Greg Hyslop Chief Technology Officer, The Boeing Company Senior Vice President, Boeing Engineering, Test & Technology Timothy Keating Senior Vice President, Government Operations, The Boeing Company J. Michael Luttig Executive Vice President, General Counsel, The Boeing Company Diana Sands Senior Vice President, Office of Internal Governance and Administration, The Boeing Company Pat Shanahan Senior Vice President, Supply Chain & Operations Greg Smith Chief Financial Officer, The Boeing Company Executive Vice President of Corporate Development & Strategy John J. Tracy Senior Vice President, The Boeing Company
 	1Raymond L. Conner	,  	2Vice Chairman	, The Boeing Company 	2President	, and 	2Chief Executive Officer	, Boeing Commercial Airplanes
-	1Leanne Caret	,  	2Executive Vice President	, The Boeing Company President, and 	2Chief Executive Officer	, 	3Defense, Space & Security
+	1Leanne Caret	,  	2Executive Vice President	, The Boeing Company President, and 	2Chief Executive Officer	, 	3Defense, Space & Security	
 	1Bertrand-Marc (Marc) Allen	,  	2Senior Vice President	, The Boeing Company 	2President	, Boeing International
 	1Heidi B. Capozzi	,  	2Senior Vice President	, 	3Human Resources	, The Boeing Company
-	1Ted Colbert	,  	2Chief Information Officer	, The Boeing Company 	2Senior Vice President	, 	3Information & Analytics
-	1Thomas J. Downey	,  	2Senior Vice President	, 	3Communications, The Boeing Company
+	1Ted Colbert	,  	2Chief Information Officer	, The Boeing Company 	2Senior Vice President	, 	3Information & Analytics	
+	1Thomas J. Downey	,  	2Senior Vice President	, 	3Communications, The Boeing Company	
 	1Scott Fancher	,  	2Senior Vice President	, Program Management, Integration & Development Programs, The Boeing Company
 	1Greg Hyslop	,  	2Chief Technology Officer	, The Boeing Company 	2Senior Vice President	, 3	Boeing Engineering, Test & Technology	
 	1Timothy Keating	,  	2Senior Vice President	, 	3Government Operations	, The Boeing Company
 	1J. Michael Luttig	,  	2Executive Vice President	, 	2General Counsel	, The Boeing Company
 	1Diana Sands	,  	2Senior Vice President	, 	3Office of Internal Governance and Administration	, The Boeing Company
-	1Pat Shanahan	,  	2Senior Vice President	, 	3Supply Chain & Operations
-	1Greg Smith	,  	2Chief Financial Officer	, The Boeing Company 	2Executive Vice President	 of 	3Corporate Development & Strategy
+	1Pat Shanahan	,  	2Senior Vice President	, 	3Supply Chain & Operations	
+	1Greg Smith	,  	2Chief Financial Officer	, The Boeing Company 	2Executive Vice President	 of 	3Corporate Development & Strategy	
 	1John J. Tracy	,  	2Senior Vice President	, The Boeing Company
 Capital Corporation,  Timothy (Tim) Myers President, Boeing Capital Corporation, 
 	1Timothy (Tim) Myers	,  	2President	, Boeing Capital Corporation
@@ -52,11 +52,11 @@ Defense, Space & Security,  Leanne Caret Executive Vice President, The Boeing Co
 	1Gena C. Lovett	,  	2Vice President	, Operations, Defense, Space & Security
 	1Steve Nordlund	,  	2Vice President	, Strategy, Defense, Space & Security
 	1Dennis O'Donoghue	,  	2Vice President	, Engineering, Defense, Space & Security
-	1James (Jim) O'Neill	,  	2President	, 	3BDS Development	 	2St. Louis Senior Executive
+	1James (Jim) O'Neill	,  	2President	, 	3BDS Development	 	2St. Louis Senior Executive	
 	1John (Jake) R. Phillips	,  	2Vice President	, 	2Assistant General Counsel	, Defense, Space & Security
 	1James (Jim) Zrust	,  	2Vice President	, 	3Finance	, 	2Chief Financial Officer	, Defense, Space & Security
 Shared Services,  Beverly M. Wyse President, Shared Services, , Office of Internal Governance and Administration
-	1Beverly M. Wyse	,  	2President	, 	3Shared Services	, 	3Office of Internal Governance and Administration
+	1Beverly M. Wyse	,  	2President	, 	3Shared Services	, 	3Office of Internal Governance and Administration	
 Back to Top,  Utilities News Investors Employee/Retiree Merchandise Suppliers Features & Multimedia Categories Commercial Defense Space Innovation 100 Global Our Principles Careers Our Company Popular Links Orders & Deliveries Randy’s Journal Frontiers Magazine Tours Ethics Line Licensing Investment Recovery Frequently Requested Contact Us Follow Boeing Facebook Twitter YouTube LinkedIn All Social Channels Updates Sign Up Stock Price BA (NYSE)
 Popular Links Orders & Deliveries,  Randy’s Journal,  Frontiers Magazine,  Tours,  Ethics Line,  Licensing,  Investment Recovery,  Frequently Requested,  Contact Us, 
 http://www.boeing.com/company/bios/

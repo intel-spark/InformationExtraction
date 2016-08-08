@@ -1,0 +1,32 @@
+Jeffery H. Boyd	title	Chairman	Jeffery H. Boyd,  Chairman of the Board and Interim Chief Executive Officer
+Jeffery H. Boyd	title	Chief Executive Officer	Jeffery H. Boyd,  Chairman of the Board and Interim Chief Executive Officer
+Daniel J. Finnegan	title	Chief Financial Officer	Daniel J. Finnegan,  Chief Financial Officer and Chief Accounting Officer
+Daniel J. Finnegan	title	Chief Accounting Officer	Daniel J. Finnegan,  Chief Financial Officer and Chief Accounting Officer
+Glenn D. Fogel	title	Head	Glenn D. Fogel,  Head of Worldwide Strategy & Planning; Executive Vice President - Corporate Development
+Glenn D. Fogel	title	Executive Vice President	Glenn D. Fogel,  Head of Worldwide Strategy & Planning; Executive Vice President - Corporate Development
+Peter J. Millones, Jr.	title	Executive Vice President	Peter J. Millones, Jr.,  Executive Vice President, General Counsel and Corporate Secretary
+Peter J. Millones, Jr.	title	General Counsel	Peter J. Millones, Jr.,  Executive Vice President, General Counsel and Corporate Secretary
+Peter J. Millones, Jr.	title	Corporate Secretary	Peter J. Millones, Jr.,  Executive Vice President, General Counsel and Corporate Secretary
+Maelle Gavet	title	Executive Vice President	Maelle Gavet,  Executive Vice President, Global Operations
+Maelle Gavet	employee_of	Global Operations	Maelle Gavet,  Executive Vice President, Global Operations
+Gillian Tans	employee_of	Booking.com	Gillian Tans, , Booking.com
+Brett Keller	employee_of	priceline.com	Brett Keller, , priceline.com
+Steve Hafner	employee_of	KAYAK	Steve Hafner, , KAYAK
+Robert Rosenstein	employee_of	agoda.com	Robert Rosenstein, , agoda.com
+Ian Brown	employee_of	rentalcars.com	Ian Brown, , rentalcars.com
+Christa Quarles	employee_of	OpenTable, Inc.	Christa Quarles,  , OpenTable, Inc.
+Christa Quarles	title	Chief Executive Officer	Christa Quarles,  is the Chief Executive Officer of OpenTable, leading the global business strategy and vision for the company. Ms. Quarles previously held the role of Chief Financial Officer for OpenTable. Prior to joining OpenTable, Christa served as the Chief Business Officer for Nextdoor where she oversaw finance, business intelligence, HR, business development and legal. Previously, Christa served as the SVP and General Manager at Disney where she led the Mobile and Social Games divisions within Disney Interactive. Earlier in her career, Christa spent ten years as an equity research analyst covering the Internet sector at Thomas Weisel Partners (now Stifel Financial). Christa holds an MBA from Harvard Business School and a BS from Carnegie Mellon University where she was elected to Phi Beta Kappa.
+Jeffery H. Boyd	title	Chairman	Jeffery H. Boyd,  Chairman of the Board and Interim Chief Executive Officer
+Jeffery H. Boyd	title	Chief Executive Officer	Jeffery H. Boyd,  Chairman of the Board and Interim Chief Executive Officer
+Timothy M. (Tim) Armstrong	title	Director	Timothy M. (Tim) Armstrong,  Director
+Jan L. Docter	title	Director	Jan L. Docter,  Director
+Jeffrey E. Epstein	title	Director	Jeffrey E. Epstein,  Director
+James M. Guyette	title	Lead Independent Director Chairman	James M. Guyette,  Lead Independent Director Chairman, President and Chief Executive Officer, Rolls-Royce North America Inc.
+James M. Guyette	title	President	James M. Guyette,  Lead Independent Director Chairman, President and Chief Executive Officer, Rolls-Royce North America Inc.
+James M. Guyette	title	Chief Executive Officer	James M. Guyette,  Lead Independent Director Chairman, President and Chief Executive Officer, Rolls-Royce North America Inc.
+James M. Guyette	employee_of	Rolls-Royce North America Inc.	James M. Guyette,  Lead Independent Director Chairman, President and Chief Executive Officer, Rolls-Royce North America Inc.
+Charles Noski	title	Director	Charles Noski,  Director
+Nancy B. Peretsman	title	Director	Nancy B. Peretsman,  Director
+Thomas E. Rothman	title	Director	Thomas E. Rothman,  Director
+Craig W. Rydin	title	Director	Craig W. Rydin,  Director
+Lynn M. Vojvodich	title	Director	Lynn M. Vojvodich,  Director

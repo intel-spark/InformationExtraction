@@ -1,0 +1,28 @@
+Carlos Rodriguez	title	President	Carlos Rodriguez,  President & Chief Executive Officer
+Carlos Rodriguez	title	Chief Executive Officer	Carlos Rodriguez,  President & Chief Executive Officer
+John Ayala	title	President	John Ayala,  President, Small Business Services, Retirement Services, and Insurance Services
+John Ayala	employee_of	Small Business Services	John Ayala,  President, Small Business Services, Retirement Services, and Insurance Services
+John Ayala	employee_of	Retirement Services	John Ayala,  President, Small Business Services, Retirement Services, and Insurance Services
+John Ayala	employee_of	Insurance Services	John Ayala,  President, Small Business Services, Retirement Services, and Insurance Services
+Mark Benjamin	title	President	Mark Benjamin,  President, Global Enterprise Solutions
+Mark Benjamin	employee_of	Global Enterprise Solutions	Mark Benjamin,  President, Global Enterprise Solutions
+Maria Black	title	President	Maria Black,  President, ADP TotalSource
+Maria Black	employee_of	ADP TotalSource	Maria Black,  President, ADP TotalSource
+Michael Bonarti	title	Corporate Vice President	Michael Bonarti,  Corporate Vice President; General Counsel and Secretary
+Michael Bonarti	title	General Counsel	Michael Bonarti,  Corporate Vice President; General Counsel and Secretary
+Michael Bonarti	title	Secretary	Michael Bonarti,  Corporate Vice President; General Counsel and Secretary
+Debbie Dyson	title	Corporate Vice President	Debbie Dyson,  Corporate Vice President, Client Experience and Continuous Improvement
+Debbie Dyson	employee_of	Client Experience and Continuous Improvement	Debbie Dyson,  Corporate Vice President, Client Experience and Continuous Improvement
+Ed Flynn	title	Executive Vice President	Ed Flynn,  Executive Vice President, Worldwide Sales and Marketing
+Ed Flynn	employee_of	Worldwide Sales and Marketing	Ed Flynn,  Executive Vice President, Worldwide Sales and Marketing
+Dermot O'Brien	title	Corporate Vice President	Dermot O'Brien,  Corporate Vice President and CHRO
+Dermot O'Brien	title	CHRO	Dermot O'Brien,  Corporate Vice President and CHRO
+Tom Perrotti	title	President	Tom Perrotti,  President, Major Account Services & ADP Canada
+Tom Perrotti	employee_of	Major Account Services & ADP	Tom Perrotti,  President, Major Account Services & ADP Canada
+Doug Politi	title	President	Doug Politi,  President, Added Value Services
+Doug Politi	employee_of	Added Value Services	Doug Politi,  President, Added Value Services
+Stuart Sackman	title	Corporate Vice President	Stuart Sackman,  Corporate Vice President, Global Product and Technology
+Stuart Sackman	employee_of	Global Product and Technology	Stuart Sackman,  Corporate Vice President, Global Product and Technology
+Jan Siegmund	title	Corporate Vice President	Jan Siegmund,  Corporate Vice President and Chief Financial Officer
+Jan Siegmund	title	Chief Financial Officer	Jan Siegmund,  Corporate Vice President and Chief Financial Officer
+Don Weinstein	title	Chief Strategy Officer	Don Weinstein,  Chief Strategy Officer

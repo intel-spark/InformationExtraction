@@ -1,23 +1,23 @@
 
 	1David Abney	, , UPS 	2Chairman	 and 	2Chief Executive Officer	, Request a speaker,
-	1David P. Abney	,  UPS 	2Chairman	 and 	2Chief Executive Officer
+	1David P. Abney	,  UPS 	2Chairman	 and 	2Chief Executive Officer	
 	1Jim Barber	,  	2President	, UPS International
-	1Norman M. Brothers, Jr.	,  	2Senior Vice President	, 	2General Counsel	 and 	2Corporate Secretary
-	1Teresa M. Finley	,  	2Chief Marketing and Global Business Services Officer
-	1Alan Gershenhorn	,  	2Executive Vice President	 and 	2Chief Commercial Officer
-	1Myron Gray	,  	2President	, 	3U.S. Operations
-	1Kate Gutmann	,  	2Senior Vice President	, 	3Worldwide Sales and Solutions
-	1Teri Plummer McClure	,  	2Chief Human Resources Officer	 and 	2Senior Vice President	, 	3Global Human Resources and Labor
-	1Richard Peretz	,  	2Chief Financial Officer
-	1Juan Perez	,  	2Chief Information Officer
-	1Mark Wallace	,  	2Senior Vice President	, 	3Global Engineering and Sustainability
-	1David P. Abney	,  UPS 	2Chairman	 and 	2Chief Executive Officer
+	1Norman M. Brothers, Jr.	,  	2Senior Vice President	, 	2General Counsel	 and 	2Corporate Secretary	
+	1Teresa M. Finley	,  	2Chief Marketing and Global Business Services Officer	
+	1Alan Gershenhorn	,  	2Executive Vice President	 and 	2Chief Commercial Officer	
+	1Myron Gray	,  	2President	, 	3U.S. Operations	
+	1Kate Gutmann	,  	2Senior Vice President	, 	3Worldwide Sales and Solutions	
+	1Teri Plummer McClure	,  	2Chief Human Resources Officer	 and 	2Senior Vice President	, 	3Global Human Resources and Labor	
+	1Richard Peretz	,  	2Chief Financial Officer	
+	1Juan Perez	,  	2Chief Information Officer	
+	1Mark Wallace	,  	2Senior Vice President	, 	3Global Engineering and Sustainability	
+	1David P. Abney	,  UPS 	2Chairman	 and 	2Chief Executive Officer	
 	1Rodney C. Adkins	,  	2Former Senior Vice-President	, IBM
-	1Michael J. Burns	,  	2Former Chairman	, 	2Chief Executive Officer	 & 	2President	, 	3Dana Corporation
-		1William R. Johnson	,  	2Former Chairman	, 	2President	 & 	2Chief Executive Officer	2, H.J. Heinz Company
+	1Michael J. Burns	,  	2Former Chairman	, 	2Chief Executive Officer	 & 	2President	, 	3Dana Corporation	
+	1William R. Johnson	,  	2Former Chairman	, 	2President	 & 	2Chief Executive Officer	, H.J. Heinz Company
 	1Dr. Candace Kendle	,  	2Co-founder	 and 	2Former Chairman	 & 	2Chief Executive Officer	 of 	3Kendle International, Inc	.
 	1Ann M. Livermore	,  	2Former Executive Vice President	, Hewlett-Packard Company
-	1Rudy H.P. Markham	,  	2Former Financial Director	, 	3Unilever PLC and Unilever NV
+	1Rudy H.P. Markham	,  	2Former Financial Director	, 	3Unilever PLC and Unilever NV	
 	1Clark T. Randt, Jr. (Sandy)	,  Former U.S. 	2Ambassador	 to the People's Republic of China, President of Randt & Co. LLC
 	1John T. Stankey	,  	2CEO	, AT&T Entertainment Group
 	1Carol B. Tome	,  	2Chief Financial Officer	 & 	2Executive Vice President	, The Home Depot, Inc.

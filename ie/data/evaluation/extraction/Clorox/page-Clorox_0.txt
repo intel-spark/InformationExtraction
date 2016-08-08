@@ -1,0 +1,30 @@
+Benno Dorer	title	Chief Executive Office	Benno Dorer,  Chief Executive Office
+James Foster	title	Executive Vice President	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
+James Foster	employee_of	Product Supply	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
+James Foster	employee_of	Enterprise Performance	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
+James Foster	employee_of	IT	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
+Stephen M. Robb	title	Executive Vice President	Stephen M. Robb,  Executive Vice President Chief Financial Office
+Stephen M. Robb	title	Chief Financial Office	Stephen M. Robb,  Executive Vice President Chief Financial Office
+Laura Stein	title	Executive Vice President	Laura Stein,  Executive Vice President- General Counsel and Corporate Affairs
+Laura Stein	employee_of	General Counsel and Corporate Affairs	Laura Stein,  Executive Vice President- General Counsel and Corporate Affairs
+Nick Vlahos	title	Executive Vice President	Nick Vlahos,  Executive Vice President& Chief Operating Officer Household, Lifestyle and Core Global Functions
+Nick Vlahos	title	Chief Operating Officer	Nick Vlahos,  Executive Vice President& Chief Operating Officer Household, Lifestyle and Core Global Functions
+Nick Vlahos	employee_of	Household, Lifestyle and Core Global Functions	Nick Vlahos,  Executive Vice President& Chief Operating Officer Household, Lifestyle and Core Global Functions
+Dawn Willoughby	title	Executive Vice President	Dawn Willoughby,  Executive Vice President& Chief Operating Officer Cleaning, International & Professional Products
+Dawn Willoughby	title	Chief Operating Officer	Dawn Willoughby,  Executive Vice President& Chief Operating Officer Cleaning, International & Professional Products
+Dawn Willoughby	employee_of	Cleaning, International & Professional Products	Dawn Willoughby,  Executive Vice President& Chief Operating Officer Cleaning, International & Professional Products
+Bill Bailey	title	Senior Vice President	Bill Bailey,  Senior Vice President Corporate Business Development
+Bill Bailey	employee_of	Corporate Business Development	Bill Bailey,  Senior Vice President Corporate Business Development
+Jon Balousek	title	Senior Vice President	Jon Balousek,  Senior Vice President General Manager, Specialty Division
+Jon Balousek	title	General Manager	Jon Balousek,  Senior Vice President General Manager, Specialty Division
+Jon Balousek	employee_of	Specialty Division	Jon Balousek,  Senior Vice President General Manager, Specialty Division
+Michael Costello	title	Senior Vice President	Michael Costello,  Senior Vice President International Division
+Michael Costello	employee_of	International Division	Michael Costello,  Senior Vice President International Division
+Denise A. Garner	title	Senior Vice President	Denise A. Garner,  Senior Vice President Chief Innovation Office
+Denise A. Garner	title	Chief Innovation Office	Denise A. Garner,  Senior Vice President Chief Innovation Office
+Matt Laszlo	title	Senior Vice President	Matt Laszlo,  Senior Vice President Chief Customer Office
+Matt Laszlo	title	Chief Customer Office	Matt Laszlo,  Senior Vice President Chief Customer Office
+Kirsten Marriner	title	Senior Vice President	Kirsten Marriner,  Senior Vice President- Chief People Office
+Kirsten Marriner	title	Chief People Office	Kirsten Marriner,  Senior Vice President- Chief People Office
+Eric Reynolds	title	Senior Vice President	Eric Reynolds,  Senior Vice President Chief Marketing Office
+Eric Reynolds	title	Chief Marketing Office	Eric Reynolds,  Senior Vice President Chief Marketing Office

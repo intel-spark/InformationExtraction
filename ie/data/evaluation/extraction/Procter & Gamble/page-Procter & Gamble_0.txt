@@ -1,0 +1,31 @@
+David S. Taylor	title	Chairman	David S. Taylor,  Chairman of the Board, President and Chief Executive Officer Photo
+David S. Taylor	title	President	David S. Taylor,  Chairman of the Board, President and Chief Executive Officer Photo
+David S. Taylor	title	Chief Executive Officer	David S. Taylor,  Chairman of the Board, President and Chief Executive Officer Photo
+Steven D. Bishop	title	Group President	Steven D. Bishop Group President, Global Health Care,  Biography Photo
+Giovanni Ciserani	title	Group President	Giovanni Ciserani Group President, Global Fabric & Home Care and Global Baby & Feminine Care,  Biography Photo
+Linda W. Clement-Holmes	title	Chief Information Officer	Linda W. Clement-Holmes Chief Information Officer,  Biography Photo
+Gary Coombe	title	President	Gary Coombe President, Europe Selling & Market Operations,  Biography Photo
+Philip J. Duncan	title	Global Design Officer	Philip J. Duncan Global Design Officer,  Biography Photo
+Mary Lynn Ferguson-McHugh	title	Group President	Mary Lynn Ferguson-McHugh Group President, Global Family Care and Global Brand Creation and Innovation, P&G Ventures,  Biography Photo
+Thomas M. Finn	title	President	Thomas M. Finn President, Global Personal Health Care,  Biography Photo
+Kathleen (Kathy) B. Fish	title	Chief Technology Officer	Kathleen (Kathy) B. Fish Chief Technology Officer,  Biography Photo
+Fama Francisco	title	President	Fama Francisco President, Global Feminine Care,  Biography Photo
+William P. Gipson	title	Senior Vice President	William P. Gipson Senior Vice President, Global Diversity and Research & Development, Asia Innovation Centers,  Biography Photo
+Colleen E. Jay	title	President	Colleen E. Jay President, Beauty Specialty Businesses,  Biography Photo
+Shailesh G. Jejurikar	title	President	Shailesh G. Jejurikar President, Global Fabric Care and Brand Building Organization, Global Fabric & Home Care, and Executive Sponsor, Global Sustainability,  Biography Photo
+Henry Karamanoukian	title	Senior Vice President	Henry Karamanoukian Senior Vice President, Go-to-Market, China,  Biography Photo
+Patrice Louvet	title	Group President	Patrice Louvet Group President, Global Beauty,  Biography Photo
+Deborah P. Majoras	title	Chief Legal Officer	Deborah P. Majoras Chief Legal Officer and Secretary,  Biography Photo
+Deborah P. Majoras	title	Secretary	Deborah P. Majoras Chief Legal Officer and Secretary,  Biography Photo
+Jon R. Moeller	title	Chief Financial Officer	Jon R. Moeller Chief Financial Officer,  Biography Photo
+Julio Nemeth	title	President	Julio Nemeth President, Global Business Services,  Biography Photo
+Charles E. Pierce	title	Group President	Charles E. Pierce Group President, Global Grooming,  Biography Photo
+Juan Fernando Posada	title	President	Juan Fernando Posada President, Latin America Selling & Market Operations,  Biography Photo
+Matthew S. Price	title	President	Matthew S. Price President, Greater China Selling & Market Operations,  Biography Photo
+Marc S. Pritchard	title	Chief Brand Officer	Marc S. Pritchard Chief Brand Officer,  Biography Photo
+Mohamed Samir	title	President	Mohamed Samir President, India, Middle East and Africa Selling & Market Operations,  Biography Photo
+Jeffrey K. Schomburger	title	Global Sales Officer	Jeffrey K. Schomburger Global Sales Officer, Customer Business Development,  Biography Photo
+Valarie Sheppard	title	Senior Vice President	Valarie Sheppard Senior Vice President, Comptroller and Treasurer,  Biography Photo
+Kirti Singh	title	Vice President	Kirti Singh Vice President, Global Consumer & Market Knowledge,  Biography Photo
+Magesvaran Suranjan	title	President	Magesvaran Suranjan President, Asia Pacific Selling & Market Operations,  Biography Photo
+George Tsourapas	title	President	George Tsourapas President, Global Home Care and P&G Professional,  Biography Photo

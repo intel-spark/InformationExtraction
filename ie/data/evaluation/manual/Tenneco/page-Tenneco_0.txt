@@ -15,10 +15,10 @@ Original Equipment,  Monroe Intelligent Suspension,  Elastomers,  Aftermarket Af
 Our Brands,  Overview Monroe® Walker® Clevite® Rancho® DynoMax® Fonos™ Axios™ Fric-Rot™ Kinetic™ Thrush® Monroe® Intelligent Suspension
 Overview,  Monroe®,  Walker®,  Clevite®,  Rancho®,  DynoMax®,  Fonos™,  Axios™,  Fric-Rot™,  Kinetic™,  Thrush®,  Monroe®,  Intelligent Suspension
 Profile,  Vision and Values,  Global Presence,  Strategic Direction,  Tenneco Brands,  OEM Customers,  Corporate Responsibility,  Executive Management Team, 
-	1Gregg Sherrill	,  	2Chairman	 	2Chief Executive Officer
-	1Brian Kesseler	,  	2Chief Operating Officer
-	1Josep Fornos	,  	2Executive Vice President	 	3Enterprise Business Initiatives
-	1Kenneth R. Trammell	,  	2Executive Vice President	 	2Chief Financial Officer
+	1Gregg Sherrill	,  	2Chairman	 	2Chief Executive Officer	
+	1Brian Kesseler	,  	2Chief Operating Officer	
+	1Josep Fornos	,  	2Executive Vice President	 	3Enterprise Business Initiatives	
+	1Kenneth R. Trammell	,  	2Executive Vice President	 	2Chief Financial Officer	
 	1Tim Jackson	,  	2Executive Vice President	 Technology, Strategy and Business Development
 	1Gregg A. Bolt	,  	2Senior Vice President	 Global Human Resources and Administration
 	1Henry Hummel	,  	2Senior Vice President	 and General Manager Clean Air
@@ -34,9 +34,9 @@ Profile,  Vision and Values,  Global Presence,  Strategic Direction,  Tenneco Br
 	1Steve Pohlman	,  	2Vice President	 and 	2General Manager	 Global Elastomers 
 	1Yih Sng	,  	2Vice President	 and 	2General Manager	 China Clean Air
 	1Alejandro Quiroz	,  	2Vice President	 and 	2General Manager	 Europe Clean Air 
-	1H. William Haser	,  	2Vice President	 	2Chief Information Officer
+	1H. William Haser	,  	2Vice President	 	2Chief Information Officer	
 	1Jane Ostrander	,  	2Vice President	 Global Communications
 	1John Kunz	,  	2Vice President	 Controller
 	1Ben Patel	,  	2Vice President	 Clean Air, Global Research & Development, Systems Integration
-	1Paul D. Novas	,  	2Vice President Finance
+	1Paul D. Novas	,  	2Vice President Finance	
 http://www.tenneco.com/overview/executive_management_team/

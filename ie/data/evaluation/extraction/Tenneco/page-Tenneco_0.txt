@@ -1,0 +1,37 @@
+Gregg Sherrill	title	Chairman	Gregg Sherrill,  Chairman Chief Executive Officer
+Gregg Sherrill	title	Chief Executive Officer	Gregg Sherrill,  Chairman Chief Executive Officer
+Brian Kesseler	title	Chief Operating Officer	Brian Kesseler,  Chief Operating Officer
+Josep Fornos	title	Executive Vice President	Josep Fornos,  Executive Vice President Enterprise Business Initiatives
+Josep Fornos	employee_of	Enterprise Business Initiatives	Josep Fornos,  Executive Vice President Enterprise Business Initiatives
+Kenneth R. Trammell	title	Executive Vice President	Kenneth R. Trammell,  Executive Vice President Chief Financial Officer
+Kenneth R. Trammell	title	Chief Financial Officer	Kenneth R. Trammell,  Executive Vice President Chief Financial Officer
+Tim Jackson	title	Executive Vice President	Tim Jackson,  Executive Vice President Technology, Strategy and Business Development
+Gregg A. Bolt	title	Senior Vice President	Gregg A. Bolt,  Senior Vice President Global Human Resources and Administration
+Henry Hummel	title	Senior Vice President	Henry Hummel,  Senior Vice President and General Manager Clean Air
+Michael Charlton	title	Senior Vice President	Michael Charlton,  Senior Vice President Global Manufacturing Development
+Enrique Orta	title	Senior Vice President	Enrique Orta,  Senior Vice President Ride Performance 
+Patrick Guo	title	Senior Vice President	Patrick Guo,  Senior Vice President and General Manager Asia Pacific
+Patrick Guo	title	General Manager	Patrick Guo,  Senior Vice President and General Manager Asia Pacific
+Joseph A. Pomaranski	title	Senior Vice President	Joseph A. Pomaranski,  Senior Vice President and General Manager Global Aftermarket
+Joseph A. Pomaranski	title	General Manager	Joseph A. Pomaranski,  Senior Vice President and General Manager Global Aftermarket
+James Harrington	title	Senior Vice President	James Harrington,  Senior Vice President General Counsel and Corporate Secretary
+James Harrington	title	General Counsel	James Harrington,  Senior Vice President General Counsel and Corporate Secretary
+Jack Hall	title	Vice President	Jack Hall,  Vice President and General Manager North America Ride Performance
+Jack Hall	title	General Manager	Jack Hall,  Vice President and General Manager North America Ride Performance
+Michael Seurynck	title	Vice President	Michael Seurynck,  Vice President and General Manager North America Clean Air
+Michael Seurynck	title	General Manager	Michael Seurynck,  Vice President and General Manager North America Clean Air
+Jeff Koviak	title	Vice President	Jeff Koviak,  Vice President and General Manager North America Aftermarket
+Jeff Koviak	title	General Manager	Jeff Koviak,  Vice President and General Manager North America Aftermarket
+Yasuharu Shimonishi	title	General Manager	Yasuharu Shimonishi,  General Manager Japan
+Steve Pohlman	title	Vice President	Steve Pohlman,  Vice President and General Manager Global Elastomers 
+Steve Pohlman	title	General Manager	Steve Pohlman,  Vice President and General Manager Global Elastomers 
+Yih Sng	title	Vice President	Yih Sng,  Vice President and General Manager China Clean Air
+Yih Sng	title	General Manager	Yih Sng,  Vice President and General Manager China Clean Air
+Alejandro Quiroz	title	Vice President	Alejandro Quiroz,  Vice President and General Manager Europe Clean Air 
+Alejandro Quiroz	title	General Manager	Alejandro Quiroz,  Vice President and General Manager Europe Clean Air 
+H. William Haser	title	Vice President	H. William Haser,  Vice President Chief Information Officer
+H. William Haser	title	Chief Information Officer	H. William Haser,  Vice President Chief Information Officer
+Jane Ostrander	title	Vice President	Jane Ostrander,  Vice President Global Communications
+John Kunz	title	Vice President	John Kunz,  Vice President Controller
+Ben Patel	title	Vice President	Ben Patel,  Vice President Clean Air, Global Research & Development, Systems Integration
+Paul D. Novas	title	Vice President Finance	Paul D. Novas,  Vice President Finance

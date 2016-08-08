@@ -1,0 +1,25 @@
+Donald H. Layton	title	Chief Executive Officer	Donald H. Layton,  Chief Executive Officer 
+David M. Brickman	title	Executive Vice President	David M. Brickman,  Executive Vice President Multifamily Business, 
+David M. Brickman	employee_of	Multifamily Business	David M. Brickman,  Executive Vice President Multifamily Business, 
+Anil Hinduja	title	Executive Vice President	Anil Hinduja,  Executive Vice Presidentand Chief Enterprise Risk Officer 
+Anil Hinduja	title	Chief Enterprise Risk Officer	Anil Hinduja,  Executive Vice Presidentand Chief Enterprise Risk Officer 
+Michael Hutchins	title	Executive Vice President	Michael Hutchins,  Executive Vice President Investments and Capital Markets, 
+Michael Hutchins	employee_of	Investments and Capital Markets	Michael Hutchins,  Executive Vice President Investments and Capital Markets, 
+Timothy F. Kenny	title	Senior Vice President	Timothy F. Kenny,  Senior Vice Presidentand General Auditor, 
+Timothy F. Kenny	employee_of	General Auditor	Timothy F. Kenny,  Senior Vice Presidentand General Auditor, 
+David Lowman	title	Executive Vice President	David Lowman,  Executive Vice President Single-Family Business, 
+David Lowman	employee_of	Single-Family Business	David Lowman,  Executive Vice President Single-Family Business, 
+Robert Lux	title	Executive Vice President	Robert Lux,  Executive Vice Presidentand Chief Information Officer 
+Robert Lux	title	Chief Information Officer	Robert Lux,  Executive Vice Presidentand Chief Information Officer 
+James G. Mackey	title	Executive Vice President	James G. Mackey,  Executive Vice Presidentand Chief Financial Officer 
+James G. Mackey	title	Chief Financial Officer	James G. Mackey,  Executive Vice Presidentand Chief Financial Officer 
+William McDavid	title	Executive Vice President	William McDavid,  Executive Vice President General Counsel and Corporate Secretary 
+William McDavid	title	General Counsel and Corporate Secretary	William McDavid,  Executive Vice President General Counsel and Corporate Secretary 
+Dwight Robinson	title	Senior Vice President	Dwight Robinson,  Senior Vice Presidentof Human Resources, Diversity & Inclusion and Chief Diversity Officer 
+Dwight Robinson	title	Chief Diversity Officer	Dwight Robinson,  Senior Vice Presidentof Human Resources, Diversity & Inclusion and Chief Diversity Officer 
+Dwight Robinson	employee_of	Human Resources	Dwight Robinson,  Senior Vice Presidentof Human Resources, Diversity & Inclusion and Chief Diversity Officer 
+Dwight Robinson	employee_of	Diversity & Inclusion	Dwight Robinson,  Senior Vice Presidentof Human Resources, Diversity & Inclusion and Chief Diversity Officer 
+Carol Wambeke	title	Senior Vice President	Carol Wambeke,  Senior Vice Presidentand Chief Compliance Officer 
+Carol Wambeke	title	Chief Compliance Officer	Carol Wambeke,  Senior Vice Presidentand Chief Compliance Officer 
+Jerry Weiss	title	Executive Vice President	Jerry Weiss,  Executive Vice Presidentand Chief Administrative Officer 
+Jerry Weiss	title	Chief Administrative Officer	Jerry Weiss,  Executive Vice Presidentand Chief Administrative Officer 

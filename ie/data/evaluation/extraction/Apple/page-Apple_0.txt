@@ -1,0 +1,41 @@
+Tim Cook	title	CEO	Tim Cook, CEO
+Angela Ahrendts	title	Senior Vice President	Angela Ahrendts, Senior Vice President Retail and Online Stores
+Angela Ahrendts	employee_of	Retail and Online Stores	Angela Ahrendts, Senior Vice President Retail and Online Stores
+Eddy Cue	title	Senior Vice President	Eddy Cue, Senior Vice President Internet Software and Services
+Eddy Cue	employee_of	Internet Software and Services	Eddy Cue, Senior Vice President Internet Software and Services
+Craig Federighi	title	Senior Vice President	Craig Federighi, Senior Vice President Software Engineering
+Jonathan Ive	title	Chief Design Officer	Jonathan Ive, Chief Design Officer  
+Luca Maestri	title	Senior Vice President	Luca Maestri, Senior Vice President and Chief Financial Officer
+Luca Maestri	title	Chief Financial Officer	Luca Maestri, Senior Vice President and Chief Financial Officer
+Dan Riccio	title	Senior Vice President	Dan Riccio, Senior Vice President Hardware Engineering
+Philip W. Schiller	title	Senior Vice President	Philip W. Schiller, Senior Vice President Worldwide Marketing
+Philip W. Schiller	employee_of	Worldwide Marketing	Philip W. Schiller, Senior Vice President Worldwide Marketing
+Bruce Sewell	title	Senior Vice President	Bruce Sewell, Senior Vice President and General Counsel
+Bruce Sewell	title	General Counsel	Bruce Sewell, Senior Vice President and General Counsel
+Johny Srouji	title	Senior Vice President	Johny Srouji, Senior Vice President Hardware Technologies
+Johny Srouji	employee_of	Hardware Technologies	Johny Srouji, Senior Vice President Hardware Technologies
+Jeff Williams	title	Chief Operating Officer	Jeff Williams, Chief Operating Officer
+Paul Deneve	title	Vice President	Paul Deneve, Vice President Special Projects
+Alan Dye	title	Vice President	Alan Dye, Vice President User Interface Design
+Alan Dye	employee_of	User Interface Design	Alan Dye, Vice President User Interface Design
+Steve Dowling	title	Vice President	Steve Dowling, Vice President Communications
+Steve Dowling	employee_of	Communications	Steve Dowling, Vice President Communications
+Richard Howarth	title	Vice President	Richard Howarth, Vice President Industrial Design
+Richard Howarth	employee_of	Industrial Design	Richard Howarth, Vice President Industrial Design
+Lisa Jackson	title	Vice President	Lisa Jackson, Vice President Environment, Policy and Social Initiatives
+Tor Myhren	title	Vice President	Tor Myhren, Vice President Marketing Communications
+Tor Myhren	employee_of	Marketing Communications	Tor Myhren, Vice President Marketing Communications
+Joel Podolny	title	Vice President	Joel Podolny, Vice President Dean, Apple University
+Denise Young Smith	title	Vice President	Denise Young Smith, Vice President Worldwide Human Resources
+Denise Young Smith	employee_of	Worldwide Human Resources	Denise Young Smith, Vice President Worldwide Human Resources
+Arthur D. Levinson	title	Chairman	Arthur D. Levinson, Ph. D., Chairman of the Board, Apple Former Chairman and CEO Genentech
+Arthur D. Levinson	title	Former Chairman	Arthur D. Levinson, Ph. D., Chairman of the Board, Apple Former Chairman and CEO Genentech
+Arthur D. Levinson	title	CEO	Arthur D. Levinson, Ph. D., Chairman of the Board, Apple Former Chairman and CEO Genentech
+James A. Bell	title	Former CFO	James A. Bell, Former CFO and Corporate President The Boeing Company
+James A. Bell	title	Corporate President	James A. Bell, Former CFO and Corporate President The Boeing Company
+Tim Cook	title	CEO	Tim Cook, CEO Apple
+Albert Gore Jr.	title	Former Vice President	Albert Gore Jr., Former Vice President of the United States
+Robert A. Iger	title	Chairman	Robert A. Iger, Chairman and CEO The Walt Disney Company
+Ronald D. Sugar	title	Former Chairman	Ronald D. Sugar, Ph. D., Former Chairman and CEO Northrop Grumman
+Susan L. Wagner	title	Co-founder	Susan L. Wagner, Co-founder and Director BlackRock
+Susan L. Wagner	title	Director	Susan L. Wagner, Co-founder and Director BlackRock

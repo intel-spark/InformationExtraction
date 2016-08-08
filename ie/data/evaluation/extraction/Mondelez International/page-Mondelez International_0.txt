@@ -1,0 +1,24 @@
+Irene Rosenfeld	title	Chairman	Irene Rosenfeld,  Chairman and Chief Executive Officer
+Irene Rosenfeld	title	Chief Executive Officer	Irene Rosenfeld,  Chairman and Chief Executive Officer
+Gustavo Abelenda	title	Executive Vice President	Gustavo Abelenda,  Executive Vice President and President, Latin America
+Gustavo Abelenda	title	President	Gustavo Abelenda,  Executive Vice President and President, Latin America
+Gustavo Abelenda	employee_of	Latin America	Gustavo Abelenda,  Executive Vice President and President, Latin America
+Maurizio Brusadelli	title	President	​Maurizio Brusadelli,  President, Asia Pacific
+Maurizio Brusadelli	employee_of	Asia Pacific	​Maurizio Brusadelli,  President, Asia Pacific
+Tim Cofer	title	Chief Growth Officer	Tim Cofer,  Chief Growth Officer
+Brian Gladden	title	Executive Vice President	Brian Gladden,  Executive Vice President and Chief Financial Officer
+Brian Gladden	title	Chief Financial Officer	Brian Gladden,  Executive Vice President and Chief Financial Officer
+Rob Hargrove	title	Executive Vice President	Rob Hargrove,  Executive Vice President Research, Development & Quality
+Rob Hargrove	employee_of	Research, Development & Quality	Rob Hargrove,  Executive Vice President Research, Development & Quality
+Roberto Marques	title	Executive Vice President	Roberto Marques,  Executive Vice President and President, North America
+Roberto Marques	title	President	Roberto Marques,  Executive Vice President and President, North America
+Roberto Marques	employee_of	North America	Roberto Marques,  Executive Vice President and President, North America
+Karen May	title	Executive Vice President	Karen May,  Executive Vice President, Human Resources
+Karen May	employee_of	Human Resources	Karen May,  Executive Vice President, Human Resources
+Daniel Myers	title	Executive Vice President	Daniel Myers,  Executive Vice President, Integrated Supply Chain
+Daniel Myers	employee_of	Integrated Supply Chain	Daniel Myers,  Executive Vice President, Integrated Supply Chain
+Gerhard Pleuhs	title	Executive Vice President	Gerhard Pleuhs,  Executive Vice President & General Counsel
+Gerhard Pleuhs	title	General Counsel	Gerhard Pleuhs,  Executive Vice President & General Counsel
+Hubert Weber	title	Executive Vice President	Hubert Weber,  Executive Vice President and President, Mondelēz Europe
+Hubert Weber	title	President	Hubert Weber,  Executive Vice President and President, Mondelēz Europe
+Hubert Weber	employee_of	Mondelēz Europe	Hubert Weber,  Executive Vice President and President, Mondelēz Europe

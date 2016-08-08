@@ -1,0 +1,17 @@
+James L. Robo	title	Chairman	James L. Robo,  Chairman and Chief Executive Officer NextEra Energy, Inc.
+James L. Robo	title	Chief Executive Officer	James L. Robo,  Chairman and Chief Executive Officer NextEra Energy, Inc.
+James L. Robo	employee_of	NextEra Energy, Inc.	James L. Robo,  Chairman and Chief Executive Officer NextEra Energy, Inc.
+Eric Silagy	title	President	Eric Silagy,  President and Chief Executive Officer Florida Power & Light Company
+Eric Silagy	title	Chief Executive Officer	Eric Silagy,  President and Chief Executive Officer Florida Power & Light Company
+Eric Silagy	employee_of	Florida Power & Light Company	Eric Silagy,  President and Chief Executive Officer Florida Power & Light Company
+Armando Pimentel	title	President	Armando Pimentel,  President and Chief Executive Officer NextEra Energy Resources, LLC
+Armando Pimentel	title	Chief Executive Officer	Armando Pimentel,  President and Chief Executive Officer NextEra Energy Resources, LLC
+Armando Pimentel	employee_of	NextEra Energy Resources, LLC	Armando Pimentel,  President and Chief Executive Officer NextEra Energy Resources, LLC
+John Ketchum	title	Executive Vice President	John Ketchum,  Executive Vice President Finance and Chief Financial Officer
+John Ketchum	title	Finance and Chief Financial Officer	John Ketchum,  Executive Vice President Finance and Chief Financial Officer
+Charles E. Sieving	title	Executive Vice President	Charles E. Sieving,  Executive Vice President and General Counsel NextEra Energy, Inc.
+Charles E. Sieving	title	General Counsel	Charles E. Sieving,  Executive Vice President and General Counsel NextEra Energy, Inc.
+Charles E. Sieving	employee_of	NextEra Energy, Inc.	Charles E. Sieving,  Executive Vice President and General Counsel NextEra Energy, Inc.
+Deborah H. Caplan	title	Executive Vice President	Deborah H. Caplan,  Executive Vice President Human Resources and Corporate Services NextEra Energy, Inc.
+Deborah H. Caplan	employee_of	Human Resources and Corporate Services	Deborah H. Caplan,  Executive Vice President Human Resources and Corporate Services NextEra Energy, Inc.
+Deborah H. Caplan	employee_of	NextEra Energy, Inc.	Deborah H. Caplan,  Executive Vice President Human Resources and Corporate Services NextEra Energy, Inc.

@@ -1,0 +1,25 @@
+John J. Christmann IV	title	Chief Executive Officer	John J. Christmann IV,  Chief Executive Officer and President
+John J. Christmann IV	title	President	John J. Christmann IV,  Chief Executive Officer and President
+Stephen J. Riney	title	Chief Financial Officer	Stephen J. Riney,  Chief Financial Officer and Executive Vice President
+Stephen J. Riney	title	Executive Vice President	Stephen J. Riney,  Chief Financial Officer and Executive Vice President
+Margery M. Harris	title	Executive Vice President	Margery M. Harris,  Executive Vice President – Human Resources
+Margery M. Harris	employee_of	Human Resources	Margery M. Harris,  Executive Vice President – Human Resources
+P. Anthony Lannie	title	Executive Vice President	P. Anthony Lannie,  Executive Vice President and General Counsel
+P. Anthony Lannie	title	General Counsel	P. Anthony Lannie,  Executive Vice President and General Counsel
+W. Kregg Olson	title	Executive Vice President	W. Kregg Olson,  Executive Vice President – Corporate Reservoir Engineering
+W. Kregg Olson	employee_of	Corporate Reservoir Engineering	W. Kregg Olson,  Executive Vice President – Corporate Reservoir Engineering
+Timothy J. Sullivan	title	Executive Vice President	Timothy J. Sullivan,  Executive Vice President – Operations Support
+Timothy J. Sullivan	employee_of	Operations Support	Timothy J. Sullivan,  Executive Vice President – Operations Support
+Timothy R. Custer	title	Senior Vice President	Timothy R. Custer,  Senior Vice President – North America Land, Government Affairs and Real Estate
+Rebecca A. Hoyt	title	Senior Vice President	Rebecca A. Hoyt,  Senior Vice President, Chief Accounting Officer and Controller
+Rebecca A. Hoyt	title	Chief Accounting Officer	Rebecca A. Hoyt,  Senior Vice President, Chief Accounting Officer and Controller
+Rebecca A. Hoyt	title	Controller	Rebecca A. Hoyt,  Senior Vice President, Chief Accounting Officer and Controller
+James L. House	title	Senior Region Vice President	James L. House,  Senior Region Vice President – Egypt, Mid-Continent, Gulf Coast, Gulf of Mexico and International New Ventures
+Steven J. Keenan	title	Senior Region Vice President	Steven J. Keenan,  Senior Region Vice President – Delaware Basin Region
+Faron J. Thibodeaux	title	Senior Region Vice President	Faron J. Thibodeaux,  Senior Region Vice President – Permian Region
+Grady L. Ables	title	Senior Region Vice President	Grady L. Ables,  Senior Region Vice President – North Sea and Canada
+David Chi	title	Region Vice President	David Chi,  Region Vice President – Egypt Region and General Manager, Apache Egypt
+Gary T. Clark	title	Vice President	Gary T. Clark,  Vice President – Investor Relations
+Cory L. Loegering	title	Region Vice President	Cory L. Loegering,  Region Vice President – UK Region and Managing Director, Apache North Sea
+Rajesh Sharma	title	Corporate Secretary	Rajesh Sharma,  Corporate Secretary and Assistant General Counsel – Governance
+Rajesh Sharma	title	Assistant General Counsel	Rajesh Sharma,  Corporate Secretary and Assistant General Counsel – Governance
