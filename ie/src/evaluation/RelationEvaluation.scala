@@ -36,7 +36,7 @@ object RelationEvaluation {
   }
 
   private def getResult(company: String, sc: SparkContext): PageResult = {
-    val rawTextFile = s"$textPath/page-${company}_0.txt"
+    val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
     val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
                         .where(col("relation")==="title")
 
