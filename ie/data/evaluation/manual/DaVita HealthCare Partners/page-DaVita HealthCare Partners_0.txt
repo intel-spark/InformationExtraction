@@ -1,0 +1,13 @@
+
+Board & Management,  Management,  Kent  J. Thiry Chairman and Chief Executive Officer of DaVita HealthCare Partners Inc., and Chief Executive Officer, HealthCare Partners Javier J. Rodriguez Chief Executive Officer, Kidney Care Michael D. Staffieri Chief Operating Officer, Kidney Care Dennis L. Kogod President, HealthCare Partners Joseph C. Mello Chief Operating Officer, HealthCare Partners James K. Hilger Interim Chief Financial Officer and Chief Accounting Officer of DaVita HealthCare Partners Inc. Jeanine M. Jiganti Chief Compliance Officer of DaVita HealthCare Partners Inc. LeAnne M. Zumwalt Group Vice President, Purchasing and Public Affairs of DaVita HealthCare Partners Inc. Dr. Allen R. Nissenson Chief Medical Officer, Kidney Care Kathleen A. Waters Chief Legal Officer of DaVita HealthCare Partners Inc.
+	1Kent  J. Thiry	,  	2Chairman	 and 	2Chief Executive Officer	 of DaVita HealthCare Partners Inc., and Chief Executive Officer, HealthCare Partners, 
+	1Javier J. Rodriguez	,  	2Chief Executive Officer	, Kidney Care, 
+	1Michael D. Staffieri	,  	2Chief Operating Officer	, Kidney Care, 
+	1Dennis L. Kogod	,  	2President	, HealthCare Partners, 
+	1Joseph C. Mello	,  	2Chief Operating Officer	, HealthCare Partners, 
+	1James K. Hilger	,  Interim 	2Chief Financial Officer	 and 	2Chief Accounting Officer	 of DaVita HealthCare Partners Inc., 
+	1Jeanine M. Jiganti	,  	2Chief Compliance Officer	 of DaVita HealthCare Partners Inc., 
+	1LeAnne M. Zumwalt	,  	2Group Vice President	, 	3Purchasing and Public Affairs	 of DaVita HealthCare Partners Inc., 
+	1Dr. Allen R. Nissenson	,  	2Chief Medical Officer	, Kidney Care, 
+	1Kathleen A. Waters	,  	2Chief Legal Officer	 of DaVita HealthCare Partners Inc., 
+http://investors.davitahealthcarepartners.com/phoenix.zhtml?c=76556&p=irol-governance
