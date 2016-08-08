@@ -1,0 +1,33 @@
+Gary R. Heminger	title	Chairman	Gary R. Heminger,  Chairman, President and Chief Executive Officer Marathon Petroleum Corporation
+Gary R. Heminger	title	President	Gary R. Heminger,  Chairman, President and Chief Executive Officer Marathon Petroleum Corporation
+Gary R. Heminger	title	Chief Executive Officer	Gary R. Heminger,  Chairman, President and Chief Executive Officer Marathon Petroleum Corporation
+Gary R. Heminger	employee_of	Marathon Petroleum Corporation	Gary R. Heminger,  Chairman, President and Chief Executive Officer Marathon Petroleum Corporation
+Donald C. Templin	title	Executive Vice President	Donald C. Templin,  Executive Vice President Marathon Petroleum Corporation
+Donald C. Templin	employee_of	Marathon Petroleum Corporation	Donald C. Templin,  Executive Vice President Marathon Petroleum Corporation
+Randy S. Nickerson	title	Executive Vice President	Randy S. Nickerson,  Executive Vice President, Corporate Strategy Marathon Petroleum Corporation
+Randy S. Nickerson	employee_of	Corporate Strategy	Randy S. Nickerson,  Executive Vice President, Corporate Strategy Marathon Petroleum Corporation
+Anthony R. Kenney	title	President	Anthony R. Kenney,  President Speedway LLC
+Anthony R. Kenney	employee_of	Speedway LLC	Anthony R. Kenney,  President Speedway LLC
+Raymond L. Brooks	title	Senior Vice President	Raymond L. Brooks,  Senior Vice President, Refining Marathon Petroleum Corporation
+Raymond L. Brooks	employee_of	Refining	Raymond L. Brooks,  Senior Vice President, Refining Marathon Petroleum Corporation
+Timothy T. Griffith	title	Senior Vice President	Timothy T. Griffith,  Senior Vice President and Chief Financial Officer Marathon Petroleum Corporation
+Timothy T. Griffith	title	Chief Financial Officer	Timothy T. Griffith,  Senior Vice President and Chief Financial Officer Marathon Petroleum Corporation
+Timothy T. Griffith	employee_of	Marathon Petroleum Corporation	Timothy T. Griffith,  Senior Vice President and Chief Financial Officer Marathon Petroleum Corporation
+Thomas M. Kelley	title	Senior Vice President	Thomas M. Kelley,  Senior Vice President, Marketing Marathon Petroleum Corporation
+Thomas M. Kelley	employee_of	Marketing	Thomas M. Kelley,  Senior Vice President, Marketing Marathon Petroleum Corporation
+Rodney P. Nichols	title	Senior Vice President	Rodney P. Nichols,  Senior Vice President, Human Resources and Administrative Services Marathon Petroleum Corporation
+Rodney P. Nichols	employee_of	Human Resources and Administrative Services	Rodney P. Nichols,  Senior Vice President, Human Resources and Administrative Services Marathon Petroleum Corporation
+C. Michael Palmer	title	Senior Vice President	C. Michael Palmer,  Senior Vice President, Supply, Distribution and Planning Marathon Petroleum Corporation
+John S. Swearingen	title	,  	John S. Swearingen,  Senior Vice President, Transportation and Logistics Marathon Petroleum Corporation
+John S. Swearingen	title	Senior Vice President	John S. Swearingen,  Senior Vice President, Transportation and Logistics Marathon Petroleum Corporation
+Molly R. Benson	title	Vice President	Molly R. Benson,  Vice President, Corporate Secretary and Chief Compliance Officer Marathon Petroleum Corporation
+Suzanne Gagle	title	Vice President	Suzanne Gagle,  Vice President and General Counsel Marathon Petroleum Corporation
+Suzanne Gagle	title	General Counsel	Suzanne Gagle,  Vice President and General Counsel Marathon Petroleum Corporation
+John R. Haley	title	Vice President	John R. Haley,   Vice President, Tax Marathon Petroleum Corporation
+James P. Heintschel	title	Vice President	James P. Heintschel,  Vice President, Business Development Marathon Petroleum Corporation
+Thomas Kaczynski	title	Vice President	Thomas Kaczynski,  Vice President, Finance and Treasurer Marathon Petroleum Corporation,  
+John J. Quaid	title	Vice President	John J. Quaid,  Vice President and Controller Marathon Petroleum Corporation
+John J. Quaid	title	Controller	John J. Quaid,  Vice President and Controller Marathon Petroleum Corporation
+Donald W. Wehrly	title	Vice President	Donald W. Wehrly,  Vice President and Chief Information Officer Marathon Petroleum Corporation
+Donald W. Wehrly	title	Chief Information Officer	Donald W. Wehrly,  Vice President and Chief Information Officer Marathon Petroleum Corporation
+David L. Whikehart	title	Vice President	David L. Whikehart,  Vice President, Environment, Safety and Corporate Affairs Marathon Petroleum Corporation

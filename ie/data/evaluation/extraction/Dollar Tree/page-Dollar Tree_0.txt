@@ -1,0 +1,14 @@
+Bob Sasser	title	Chief Executive Officer	Bob Sasser,  Chief Executive Officer
+Kevin S. Wampler	title	Chief Financial Officer	Kevin S. Wampler,  Chief Financial Officer
+Gary M. Philbin	title	President	Gary M. Philbin,  President and Chief Operating Officer, Family Dollar
+Gary M. Philbin	title	Chief Operating Officer	Gary M. Philbin,  President and Chief Operating Officer, Family Dollar
+Gary M. Philbin	employee_of	Family Dollar	Gary M. Philbin,  President and Chief Operating Officer, Family Dollar
+Michael A. Witynski	title	Chief Operating Officer	Michael A. Witynski,  Chief Operating Officer, Dollar Tree
+Michael A. Witynski	employee_of	Dollar Tree	Michael A. Witynski,  Chief Operating Officer, Dollar Tree
+David A. Jacobs	title	Chief Strategy Officer	David A. Jacobs,  Chief Strategy Officer
+Joshua R. Jewett	title	Chief Information Officer	Joshua R. Jewett,  Chief Information Officer
+Mike Matacunas	title	Chief Administrative Officer	Mike Matacunas,  Chief Administrative Officer
+Gary Maxwell	title	Chief Supply Chain Officer	Gary Maxwell,  Chief Supply Chain Officer
+William A. Old, Jr.	title	Chief Legal Officer	William A. Old, Jr.,  Chief Legal Officer and Corporate Secretary
+William A. Old, Jr.	title	Corporate Secretary	William A. Old, Jr.,  Chief Legal Officer and Corporate Secretary
+Robert H. Rudman	title	Chief Merchandising Officer	Robert H. Rudman,  Chief Merchandising Officer

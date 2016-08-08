@@ -1,0 +1,54 @@
+James R. Verrier	title	President	James R. Verrier,  President and CEO BorgWarner Inc.  
+James R. Verrier	title	CEO	James R. Verrier,  President and CEO BorgWarner Inc.  
+Alexis P. Michas	title	Non-Executive Chairman	Alexis P. Michas,  Non-Executive Chairman of the Board, BorgWarner Inc. Managing Partner, Juniper Investment Company, LLC
+Jan Carlson	title	President	Jan Carlson,  President, CEO and Chairman of the Board of Autoliv, Inc.
+Dennis C. Cuneo	title	Partner	Dennis C. Cuneo,  Partner Fisher & Phillips LLP
+Ernest J. Novak, Jr.i	title	Managing Partner	Ernest J. Novak, Jr.i,  Managing Partner, Retired Ernst & Young
+Vicki L. Sato	title	Professor of Management Practice	Vicki L. Sato,  Professor of Management Practice, Harvard Business School
+Richard O. Schaum	title	General Manager	Richard O. Schaum,  General Manager 3rd Horizon Associates LLC
+Steven G. Carlson	title	Vice President	Steven G. Carlson,  Vice President and Controller,   
+Steven G. Carlson	title	Controller	Steven G. Carlson,  Vice President and Controller,   
+Steven G. Carlson	title	Vice President	Steven G. Carlson Vice President and Controller     Dr. Stefan Demmerle Vice President and President and General Manager, BorgWarner PowerDrive Systems, 
+Steven G. Carlson	title	Controller	Steven G. Carlson Vice President and Controller     Dr. Stefan Demmerle Vice President and President and General Manager, BorgWarner PowerDrive Systems, 
+Steven G. Carlson	title	Vice President	Steven G. Carlson Vice President and Controller     Dr. Stefan Demmerle Vice President and President and General Manager, BorgWarner PowerDrive Systems, 
+Steven G. Carlson	title	President	Steven G. Carlson Vice President and Controller     Dr. Stefan Demmerle Vice President and President and General Manager, BorgWarner PowerDrive Systems, 
+Steven G. Carlson	title	General Manager	Steven G. Carlson Vice President and Controller     Dr. Stefan Demmerle Vice President and President and General Manager, BorgWarner PowerDrive Systems, 
+Brady Ericson	title	Vice President	  Brady Ericson Vice President and President and General Manager, BorgWarner Emissions Systems, 
+Brady Ericson	title	President	  Brady Ericson Vice President and President and General Manager, BorgWarner Emissions Systems, 
+Brady Ericson	title	General Manager	  Brady Ericson Vice President and President and General Manager, BorgWarner Emissions Systems, 
+Joseph Fadool	title	Vice President	  Joseph Fadool Vice President and President and General Manager, BorgWarner Morse Systems, 
+Joseph Fadool	title	President	  Joseph Fadool Vice President and President and General Manager, BorgWarner Morse Systems, 
+Joseph Fadool	title	General Manager	  Joseph Fadool Vice President and President and General Manager, BorgWarner Morse Systems, 
+John J. Gasparovic	title	Vice President	  John J. Gasparovic Vice President, General Counsel and Secretary, 
+John J. Gasparovic	title	General Counsel	  John J. Gasparovic Vice President, General Counsel and Secretary, 
+John J. Gasparovic	title	Secretary	  John J. Gasparovic Vice President, General Counsel and Secretary, 
+Ronald T. Hundzinski	title	Vice President	  Ronald T. Hundzinski Vice President and  Chief Financial Officer, 
+Ronald T. Hundzinski	title	Chief Financial Officer	  Ronald T. Hundzinski Vice President and  Chief Financial Officer, 
+Tonit Calaway	title	Vice President	Tonit Calaway,  Vice President, Chief Human Resources Officer
+Tonit Calaway	title	Chief Human Resources Officer	Tonit Calaway,  Vice President, Chief Human Resources Officer
+Tonit Calaway	title	Vice President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	Chief Human Resources Officer	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	Vice President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	General Manager	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
+Frédéric Lissalde	title	Vice President	Frédéric Lissalde Vice President and President and General Manager, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  
+Frédéric Lissalde	title	President	Frédéric Lissalde Vice President and President and General Manager, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  
+Frédéric Lissalde	title	General Manager	Frédéric Lissalde Vice President and President and General Manager, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  
+Thomas J. McGill	title	Vice President	Thomas J. McGill Vice President and Treasurer,   
+Thomas J. McGill	title	Treasurer	Thomas J. McGill Vice President and Treasurer,   
+Daniel Paterra	title	Vice President	Daniel Paterra,  Vice President and President and General Manager, BorgWarner Thermal Systems, 
+Daniel Paterra	title	President	Daniel Paterra,  Vice President and President and General Manager, BorgWarner Thermal Systems, 
+Daniel Paterra	title	General Manager	Daniel Paterra,  Vice President and President and General Manager, BorgWarner Thermal Systems, 
+James R. Verrier	title	President	James R. Verrier,  President and,  Chief Executive Officer, 
+James R. Verrier	title	Chief Executive Officer	James R. Verrier,  President and,  Chief Executive Officer, 
+Jamal M. Farhat	title	Vice President	Jamal M. Farhat,  Vice President and Chief Information Officer, 
+Jamal M. Farhat	title	Chief Information Officer	Jamal M. Farhat,  Vice President and Chief Information Officer, 
+David Hasson	title	Vice President	David Hasson,  Vice President,,   Tax
+Laurene H. Horiszny	title	Vice President	Laurene H. Horiszny,  Vice President and,  Chief Compliance Officer,   Chris Thomas ,  Vice President and,  Chief Technology Officer, 
+Laurene H. Horiszny	title	Chief Compliance Officer	Laurene H. Horiszny,  Vice President and,  Chief Compliance Officer,   Chris Thomas ,  Vice President and,  Chief Technology Officer, 
+Laurene H. Horiszny	title	Vice President	Laurene H. Horiszny,  Vice President and,  Chief Compliance Officer,   Chris Thomas ,  Vice President and,  Chief Technology Officer, 
+Laurene H. Horiszny	title	Chief Technology Officer	Laurene H. Horiszny,  Vice President and,  Chief Compliance Officer,   Chris Thomas ,  Vice President and,  Chief Technology Officer, 
+Scott D. Gallett	title	Vice President	Scott D. Gallett Vice President, Marketing, Public Relations, Communications and Government Affairs,  Anthony D. Hensel Vice President, Internal Audit  Tom Tan Vice President and  President BorgWarner China Chris H. Vance Vice President, Business Development and M&A  
+Anthony D. Hensel	title	Vice President	Anthony D. Hensel,  Vice President,,  Internal Audit,  
+Tom Tan	title	Vice President	Tom Tan,  Vice President and ,  President BorgWarner China
+Chris H. Vance	title	Vice President	Chris H. Vance,  Vice President,,  Business Development and M&A, 

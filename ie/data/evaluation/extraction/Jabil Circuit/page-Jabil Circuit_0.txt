@@ -1,0 +1,183 @@
+Ade, Stephanie	title	Vice President	Ade, Stephanie,  Vice President, Finance, Business Services
+Ade, Stephanie	employee_of	Finance, Business Services	Ade, Stephanie,  Vice President, Finance, Business Services
+Allan, Susan	title	Vice President	Allan, Susan,  Vice President, Assistant Corporate Secretary
+Allan, Susan	employee_of	Assistant Corporate Secretary	Allan, Susan,  Vice President, Assistant Corporate Secretary
+Austermann, Eric D.	title	Vice President	Austermann, Eric D.,  Vice President, Social and Environmental Responsibility
+Austermann, Eric D.	employee_of	Social and Environmental Responsibility	Austermann, Eric D.,  Vice President, Social and Environmental Responsibility
+Bajaj, Mudit S.	title	Vice President	Bajaj, Mudit S.,  Vice President, Advanced Analytics Solutions
+Bajaj, Mudit S.	employee_of	Advanced Analytics Solutions	Bajaj, Mudit S.,  Vice President, Advanced Analytics Solutions
+Beamer, David B.	title	Vice President	Beamer, David B.,  Vice President, Finance, Division CFO (Healthcare and Life Sciences)
+Beamer, David B.	title	Division CFO	Beamer, David B.,  Vice President, Finance, Division CFO (Healthcare and Life Sciences)
+Beamer, David B.	employee_of	Finance	Beamer, David B.,  Vice President, Finance, Division CFO (Healthcare and Life Sciences)
+Beamer, David B.	employee_of	Healthcare and Life Sciences	Beamer, David B.,  Vice President, Finance, Division CFO (Healthcare and Life Sciences)
+vBelinsky, Howard “Clinton”	title	Vice President	vBelinsky, Howard “Clinton”,  Vice President, Global Quality
+vBelinsky, Howard “Clinton”	employee_of	Global Quality	vBelinsky, Howard “Clinton”,  Vice President, Global Quality
+Benner, David	title	Vice President	Benner, David,  Vice President, Global Security
+Benner, David	employee_of	Global Security	Benner, David,  Vice President, Global Security
+Bik, Otto J.	title	Vice President	Bik, Otto J.,  Vice President, Finance, Division CFO, Engineered Solutions Group
+Bik, Otto J.	title	Division CFO	Bik, Otto J.,  Vice President, Finance, Division CFO, Engineered Solutions Group
+Bik, Otto J.	employee_of	Finance	Bik, Otto J.,  Vice President, Finance, Division CFO, Engineered Solutions Group
+Bik, Otto J.	employee_of	Engineered Solutions Group	Bik, Otto J.,  Vice President, Finance, Division CFO, Engineered Solutions Group
+Blythe, Thomas R.	title	Vice President	Blythe, Thomas R.,  Vice President, Tax Strategy
+Blythe, Thomas R.	employee_of	Tax Strategy	Blythe, Thomas R.,  Vice President, Tax Strategy
+Brem, Samantha A.	title	Vice President	Brem, Samantha A.,  Vice President, Global Legal Affairs
+Brem, Samantha A.	employee_of	Global Legal Affairs	Brem, Samantha A.,  Vice President, Global Legal Affairs
+Brown, Alan	title	Vice President	Brown, Alan,  Vice President, Global Supply Chain
+Brown, Alan	employee_of	Global Supply Chain	Brown, Alan,  Vice President, Global Supply Chain
+Caltabiano, John D.	title	Vice President	Caltabiano, John D.,  Vice President, Supply Chain Management (Industrial and Energy)
+Caltabiano, John D.	employee_of	Supply Chain Management	Caltabiano, John D.,  Vice President, Supply Chain Management (Industrial and Energy)
+Caltabiano, John D.	employee_of	Industrial and Energy	Caltabiano, John D.,  Vice President, Supply Chain Management (Industrial and Energy)
+Cantrell, Gary L.	title	Senior Vice President	Cantrell, Gary L.,  Senior Vice President, CIO
+Cantrell, Gary L.	title	CIO	Cantrell, Gary L.,  Senior Vice President, CIO
+Dargan, John	title	Senior Vice President	Dargan, John,  Senior Vice President, Corporate Investment
+Dargan, John	employee_of	Corporate Investment	Dargan, John,  Senior Vice President, Corporate Investment
+Datt, Ragesh	title	Vice President	Datt, Ragesh,  Vice President, Information Technology
+Datt, Ragesh	employee_of	Information Technology	Datt, Ragesh,  Vice President, Information Technology
+Dulchinos, John D.	title	Vice President	Dulchinos, John D.,  Vice President, Strategic Capabilities
+Dulchinos, John D.	employee_of	Strategic Capabilities	Dulchinos, John D.,  Vice President, Strategic Capabilities
+Foster, John T.	title	Vice President	Foster, John T.,  Vice President, Divisional CIO
+Foster, John T.	title	Divisional CIO	Foster, John T.,  Vice President, Divisional CIO
+Gamota, Daniel R.	title	Vice President	Gamota, Daniel R.,  Vice President, Strategic Capabilities
+Gamota, Daniel R.	employee_of	Strategic Capabilities	Gamota, Daniel R.,  Vice President, Strategic Capabilities
+Garvin, Walter L.	title	Vice President	Garvin, Walter L.,  Vice President, Global Lean Six Sigma
+Garvin, Walter L.	employee_of	Global Lean Six Sigma	Garvin, Walter L.,  Vice President, Global Lean Six Sigma
+Gonzalez, Gonzalo D.	title	Vice President	Gonzalez, Gonzalo D.,  Vice President, Global Operations Services
+Gonzalez, Gonzalo D.	employee_of	Global Operations Services	Gonzalez, Gonzalo D.,  Vice President, Global Operations Services
+Guyton, Odell	title	Vice President	Guyton, Odell,  Vice President, Global Compliance
+Guyton, Odell	employee_of	Global Compliance	Guyton, Odell,  Vice President, Global Compliance
+Hartung, Frederick A.	title	Vice President	Hartung, Frederick A.,  Vice President, Advanced Planning and Logistics
+Hartung, Frederick A.	employee_of	Advanced Planning and Logistics	Hartung, Frederick A.,  Vice President, Advanced Planning and Logistics
+Hawthorne, Robert F.	title	Vice President	Hawthorne, Robert F.,  Vice President, Information Technology
+Hawthorne, Robert F.	employee_of	Information Technology	Hawthorne, Robert F.,  Vice President, Information Technology
+Hebard, Gregory B.	title	Vice President	Hebard, Gregory B.,  Vice President, Financial Planning & Analysis
+Hebard, Gregory B.	employee_of	Financial Planning & Analysis	Hebard, Gregory B.,  Vice President, Financial Planning & Analysis
+Hnatyshin, Donald J.J.	title	Senior Vice President	Hnatyshin, Donald J.J.,  Senior Vice President, Chief Supply Chain Officer
+Hnatyshin, Donald J.J.	title	Chief Supply Chain Officer	Hnatyshin, Donald J.J.,  Senior Vice President, Chief Supply Chain Officer
+Hodge, Steven A.	title	Senior Vice President	Hodge, Steven A.,  Senior Vice President, Finance, CFO Green Point
+Hodge, Steven A.	title	CFO	Hodge, Steven A.,  Senior Vice President, Finance, CFO Green Point
+Hodge, Steven A.	employee_of	Finance, 	Hodge, Steven A.,  Senior Vice President, Finance, CFO Green Point
+Johnson, Bruce A.	title	Vice President	Johnson, Bruce A.,  Vice President, Human Resources (EMS)
+Johnson, Bruce A.	employee_of	Human Resources	Johnson, Bruce A.,  Vice President, Human Resources (EMS)
+Kipling, David G.	title	Vice President	Kipling, David G.,  Vice President, Corporate Investment
+Kipling, David G.	employee_of	Corporate Investment	Kipling, David G.,  Vice President, Corporate Investment
+Kircher, James J.	title	Vice President	Kircher, James J.,  Vice President, Business Development
+Kircher, James J.	employee_of	Business Development	Kircher, James J.,  Vice President, Business Development
+Li, Tsung Lung “Jon”	title	Vice President	Li, Tsung Lung “Jon”, Vice President, Finance
+Li, Tsung Lung “Jon”	employee_of	Finance	Li, Tsung Lung “Jon”, Vice President, Finance
+Lumetta, Jeffrey J.	title	Vice President	Lumetta, Jeffrey J., Vice President, Technology
+Lumetta, Jeffrey J.	employee_of	Technology	Lumetta, Jeffrey J., Vice President, Technology
+Lynch, Daniel P.	title	Vice President	Lynch, Daniel P., Vice President, Total Rewards
+Lynch, Daniel P.	employee_of	Total Rewards	Lynch, Daniel P., Vice President, Total Rewards
+Madigan, Jonathan J.	title	Vice President	Madigan, Jonathan J., Vice President, Planning and Operations Solutions
+Madigan, Jonathan J.	employee_of	Planning and Operations Solutions	Madigan, Jonathan J., Vice President, Planning and Operations Solutions
+McBeth, Joseph S.	title	Vice President	McBeth, Joseph S., Vice President, Global Supply Chain
+McBeth, Joseph S.	employee_of	Global Supply Chain	McBeth, Joseph S., Vice President, Global Supply Chain
+McGuckin, Audrey J.	title	Vice President	McGuckin, Audrey J., Vice President, Human Development
+McGuckin, Audrey J.	employee_of	Human Development	McGuckin, Audrey J., Vice President, Human Development
+McKay, Francis “Frank” G.	title	Vice President	McKay, Francis “Frank” G., Vice President, Procurement and Purchasing Services (Capabilities)
+McKay, Francis “Frank” G.	employee_of	Procurement and Purchasing Services	McKay, Francis “Frank” G., Vice President, Procurement and Purchasing Services (Capabilities)
+Miller, David P.	title	Vice President	Miller, David P., Vice President, Strategic Planning
+Miller, David P.	employee_of	Strategic Planning	Miller, David P., Vice President, Strategic Planning
+Moretti, Joanne	title	Senior Vice President	Moretti, Joanne,  Senior Vice President, Chief Marketing Officer
+Moretti, Joanne	title	Chief Marketing Officer	Moretti, Joanne,  Senior Vice President, Chief Marketing Officer
+Myers, Donald J.	title	Senior Vice President	Myers, Donald J.,  Senior Vice President, Corporate Development
+Myers, Donald J.	employee_of	Corporate Development	Myers, Donald J.,  Senior Vice President, Corporate Development
+Ramachandran, Bhaskar	title	Vice President	Ramachandran, Bhaskar, Vice President, Information Technology
+Ramachandran, Bhaskar	employee_of	Information Technology	Ramachandran, Bhaskar, Vice President, Information Technology
+Shih, Eric Chun-Wei	title	Vice President	Shih, Eric Chun-Wei, Vice President, Design Engineering – Asia
+Shih, Eric Chun-Wei	employee_of	Design Engineering	Shih, Eric Chun-Wei, Vice President, Design Engineering – Asia
+Silverio, Roland	title	Senior Vice President	Silverio, Roland,  Senior Vice President, Human Resources
+Silverio, Roland	employee_of	Human Resources	Silverio, Roland,  Senior Vice President, Human Resources
+Smith, Daryn G.	title	Senior Vice President	Smith, Daryn G.,  Senior Vice President, Finance, CFO EMS
+Smith, Daryn G.	employee_of	Finance, CFO EMS	Smith, Daryn G.,  Senior Vice President, Finance, CFO EMS
+Stock, Lawrence A.	title	Chief Risk Officer	Stock, Lawrence A.,  Chief Risk Officer
+Tan, Kiang Lip	title	Vice President	Tan, Kiang Lip, Vice President, Human Resources, Green Point
+Tan, Kiang Lip	employee_of	Human Resources	Tan, Kiang Lip, Vice President, Human Resources, Green Point
+Traud, Timothy W.	title	Senior Vice President	Traud, Timothy W.,  Senior Vice President, Tax
+Traud, Timothy W.	employee_of	Tax	Traud, Timothy W.,  Senior Vice President, Tax
+Walters, Beth A.	title	Senior Vice President	Walters, Beth A.,  Senior Vice President, Communications and Investor Relations
+Walters, Beth A.	employee_of	Communications and Investor Relations	Walters, Beth A.,  Senior Vice President, Communications and Investor Relations
+Watt Mong Pui, "Watt, Richard"	title	Vice President	Watt Mong Pui, "Watt, Richard", Vice President, Finance (Green Point)
+Watt Mong Pui, "Watt, Richard"	employee_of	Finance	Watt Mong Pui, "Watt, Richard", Vice President, Finance (Green Point)
+Yap, May Yee	title	Vice President	Yap, May Yee, Vice President, Information Technology
+Yap, May Yee	employee_of	Information Technology	Yap, May Yee, Vice President, Information Technology
+Katz, Robert L.	title	General Counsel	Katz, Robert L.,  General Counsel
+Kneisler, Jean	title	Vice President	Kneisler, Jean, Vice President, Information Technology Infrastructure
+Kneisler, Jean	employee_of	Information Technology Infrastructure	Kneisler, Jean, Vice President, Information Technology Infrastructure
+Borges, Steven D.	title	Executive Vice President	Borges, Steven D.,  Executive Vice President, CEO, Consumer Lifestyles
+Borges, Steven D.	title	CEO	Borges, Steven D.,  Executive Vice President, CEO, Consumer Lifestyles
+Borges, Steven D.	employee_of	Consumer Lifestyles	Borges, Steven D.,  Executive Vice President, CEO, Consumer Lifestyles
+Campbell, George	title	Vice President	Campbell, George, Vice President, Operations
+Campbell, George	employee_of	Operations	Campbell, George, Vice President, Operations
+Cavanaugh, Jeffrey M.	title	Vice President	Cavanaugh, Jeffrey M., Vice President, Business Development
+Cavanaugh, Jeffrey M.	employee_of	Business Development	Cavanaugh, Jeffrey M., Vice President, Business Development
+Chang, Wen Chien “Vincent”	title	Vice President	Chang, Wen Chien “Vincent”, Vice President, Operations (Green Point)
+Chang, Wen Chien “Vincent”	employee_of	Operations	Chang, Wen Chien “Vincent”, Vice President, Operations (Green Point)
+Chiang, Hwai Hai “HH”	title	Executive Vice President	Chiang, Hwai Hai “HH”,  Executive Vice President, CEO, Green Point
+Chiang, Hwai Hai “HH”	title	CEO	Chiang, Hwai Hai “HH”,  Executive Vice President, CEO, Green Point
+Chiu, Shao Chen “Stoney”	title	Senior Vice President	Chiu, Shao Chen “Stoney”,  Senior Vice President, Business Development
+Chiu, Shao Chen “Stoney”	employee_of	Business Development	Chiu, Shao Chen “Stoney”,  Senior Vice President, Business Development
+Couch, David D.	title	Senior Vice President	Couch, David D.,  Senior Vice President, Corporate Operations
+Couch, David D.	employee_of	Corporate Operations	Couch, David D.,  Senior Vice President, Corporate Operations
+Emerson, David S.	title	Vice President	Emerson, David S., Vice President, Sales, Growth Markets
+Emerson, David S.	employee_of	Sales	Emerson, David S., Vice President, Sales, Growth Markets
+Emerson, David S.	employee_of	Growth Markets	Emerson, David S., Vice President, Sales, Growth Markets
+Frake, William J.	title	Vice President	Frake, William J., Vice President, Global Business Unit
+Frake, William J.	employee_of	Global Business Unit	Frake, William J., Vice President, Global Business Unit
+Gebicke, Scott R.	title	Vice President	Gebicke, Scott R., Vice President, Global Business Units (for Connected Solutions)
+Gebicke, Scott R.	employee_of	Global Business Units	Gebicke, Scott R., Vice President, Global Business Units (for Connected Solutions)
+Lee, Kong Ann “KA”	title	Senior Vice President	Lee, Kong Ann “KA”,  Senior Vice President, Operations
+Lee, Kong Ann “KA”	employee_of	Operations	Lee, Kong Ann “KA”,  Senior Vice President, Operations
+Lee, Ming-Yen	title	Senior Vice President	Lee, Ming-Yen,  Senior Vice President, Tooling Operations
+Lee, Ming-Yen	employee_of	Tooling Operations	Lee, Ming-Yen,  Senior Vice President, Tooling Operations
+Mahaz, John J.	title	Vice President	Mahaz, John J., Vice President, Operations, Nypro
+Mahaz, John J.	employee_of	Operations	Mahaz, John J., Vice President, Operations, Nypro
+Main, III, Charles	title	Vice President	Main, III, Charles, Vice President, Global Business Unit
+Main, III, Charles	employee_of	Global Business Unit	Main, III, Charles, Vice President, Global Business Unit
+Matthes, Michael J.	title	Senior Vice President	Matthes, Michael J.,  Senior Vice President, Global Business Units (for Jabil Defense & Aerospace)
+Matthes, Michael J.	employee_of	Global Business Units	Matthes, Michael J.,  Senior Vice President, Global Business Units (for Jabil Defense & Aerospace)
+McCabe, Jack	title	Vice President	McCabe, Jack, Vice President, Nypro
+McCoy, Frederic E.	title	Vice President	McCoy, Frederic E., Vice President, Global Business Units
+McCoy, Frederic E.	employee_of	Global Business Units	McCoy, Frederic E., Vice President, Global Business Units
+Yungtao, Liu "Edward"	title	Vice President	Yungtao, Liu "Edward", Vice President, Business Development
+Yungtao, Liu "Edward"	employee_of	Business Development	Yungtao, Liu "Edward", Vice President, Business Development
+Stodola, Joseph V.	title	Vice President	Stodola, Joseph V., Vice President, Business Development (Jabil Packaging Solutions)
+Stodola, Joseph V.	employee_of	Business Development	Stodola, Joseph V., Vice President, Business Development (Jabil Packaging Solutions)
+Cavallaro, Emanuele	title	Vice President	Cavallaro, Emanuele, Vice President, Global Business Units
+Cavallaro, Emanuele	employee_of	Global Business Units	Cavallaro, Emanuele, Vice President, Global Business Units
+Chen, Robert	title	Vice President	Chen, Robert, Vice President, Engineering Design
+Cochran, Terry “Keith”	title	Vice President	Cochran, Terry “Keith”, Vice President, Global Business Units
+Cochran, Terry “Keith”	employee_of	Global Business Units	Cochran, Terry “Keith”, Vice President, Global Business Units
+Creadon, Jr., Gerald “JJ”	title	Vice President	Creadon, Jr., Gerald “JJ”, Vice President, Global Business Unit
+Creadon, Jr., Gerald “JJ”	employee_of	Global Business Unit	Creadon, Jr., Gerald “JJ”, Vice President, Global Business Unit
+Ferri, Roberto L.	title	Senior Vice President	Ferri, Roberto L.,  Senior Vice President, Global EMS Sales
+Ferri, Roberto L.	employee_of	Global EMS Sales	Ferri, Roberto L.,  Senior Vice President, Global EMS Sales
+Fitzpatrick, Daniel L.	title	Vice President	Fitzpatrick, Daniel L., Vice President, Global Business Units
+Fitzpatrick, Daniel L.	employee_of	Global Business Units	Fitzpatrick, Daniel L., Vice President, Global Business Units
+Harmon, Robert P.	title	Vice President	Harmon, Robert P., Vice President, Global Business Units
+Harmon, Robert P.	employee_of	Global Business Units	Harmon, Robert P., Vice President, Global Business Units
+Mausser, Joseph "Joe"	title	Vice President	Mausser, Joseph "Joe", Vice President, Global Business Units
+Mausser, Joseph "Joe"	employee_of	Global Business Units	Mausser, Joseph "Joe", Vice President, Global Business Units
+McKelvie, Cyril	title	Vice President	McKelvie, Cyril, Vice President, Global Business Units
+McKelvie, Cyril	employee_of	Global Business Units	McKelvie, Cyril, Vice President, Global Business Units
+Morley, Chad Lee	title	Vice President	Morley, Chad Lee, Vice President, Global Business Units (Industrial & Energy)
+Morley, Chad Lee	employee_of	Global Business Units	Morley, Chad Lee, Vice President, Global Business Units (Industrial & Energy)
+Ong, Kay Chong “KC”	title	Senior Vice President	Ong, Kay Chong “KC”,  Senior Vice President, Operations, EMS
+Ong, Kay Chong “KC”	employee_of	Operations	Ong, Kay Chong “KC”,  Senior Vice President, Operations, EMS
+Ortega, Benny	title	Vice President	Ortega, Benny, Vice President, Operations, EMS Europe
+Paulus, Carey A.	title	Vice President	Paulus, Carey A., Vice President, Global Business Units
+Paulus, Carey A.	employee_of	Global Business Units	Paulus, Carey A., Vice President, Global Business Units
+Priestley, Andrew D.	title	Senior Vice President	Priestley, Andrew D.,  Senior Vice President, Global Business Units
+Priestley, Andrew D.	employee_of	Global Business Units	Priestley, Andrew D.,  Senior Vice President, Global Business Units
+Shahnazarian, Roger	title	Vice President	Shahnazarian, Roger, Vice President, Operations, EMS Americas
+Shahnazarian, Roger	employee_of	Operations	Shahnazarian, Roger, Vice President, Operations, EMS Americas
+Trotter, Craig P.	title	Vice President	Trotter, Craig P., Vice President, Global Business Units
+Trotter, Craig P.	employee_of	Global Business Units	Trotter, Craig P., Vice President, Global Business Units
+Wilson, Kenneth	title	Senior Vice President	Wilson, Kenneth,  Senior Vice President, Global Business Units
+Wilson, Kenneth	employee_of	Global Business Units	Wilson, Kenneth,  Senior Vice President, Global Business Units
+Wilson, Robert C. “Bob”	title	Vice President	Wilson, Robert C. “Bob”, Vice President, Technology and Strategy, Enterprise & Infrastructure
+Wilson, Robert C. “Bob”	employee_of	Technology and Strategy	Wilson, Robert C. “Bob”, Vice President, Technology and Strategy, Enterprise & Infrastructure
+Wilson, Robert C. “Bob”	employee_of	Enterprise & Infrastructure	Wilson, Robert C. “Bob”, Vice President, Technology and Strategy, Enterprise & Infrastructure
+Bahash, Lisa J.	title	Senior Vice President	Bahash, Lisa J.,  Senior Vice President, Business Development, Automotive & Transportation
+Bahash, Lisa J.	employee_of	Business Development	Bahash, Lisa J.,  Senior Vice President, Business Development, Automotive & Transportation
+Bahash, Lisa J.	employee_of	Automotive & Transportation	Bahash, Lisa J.,  Senior Vice President, Business Development, Automotive & Transportation

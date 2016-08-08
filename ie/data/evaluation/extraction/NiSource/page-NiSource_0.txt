@@ -1,0 +1,18 @@
+Donald E. Brown	title	Executive Vice President	Donald E. Brown,  Executive Vice President and Chief Financial Officer
+Donald E. Brown	title	Chief Financial Officer	Donald E. Brown,  Executive Vice President and Chief Financial Officer
+Carrie J. Hightman	title	Executive Vice President	Carrie J. Hightman,  Executive Vice President and Chief Legal Officer
+Carrie J. Hightman	title	Chief Legal Officer	Carrie J. Hightman,  Executive Vice President and Chief Legal Officer
+Carl W. Levander	title	Executive Vice President	Carl W. Levander,  Executive Vice President, Regulatory Policy and Corporate Affairs
+Violet G. Sistovaris	title	Executive Vice President	Violet G. Sistovaris,  Executive Vice President, NIPSCO
+Violet G. Sistovaris	employee_of	NIPSCO	Violet G. Sistovaris,  Executive Vice President, NIPSCO
+Jim L. Stanley	title	Chief Operating Officer	Jim L. Stanley,  Chief Operating Officer
+Pablo A. Vegas	title	Executive Vice President	Pablo A. Vegas,  Executive Vice President and President, Columbia Gas Group
+Pablo A. Vegas	title	President	Pablo A. Vegas,  Executive Vice President and President, Columbia Gas Group
+Sam Lee	title	Vice President	Sam Lee,  Vice President, Corporate Secretary
+Sam Lee	employee_of	Corporate Secretary	Sam Lee,  Vice President, Corporate Secretary
+Joseph Mulpas	title	Vice President	Joseph Mulpas,  Vice President and Chief Accounting Officer
+Joseph Mulpas	title	Chief Accounting Officer	Joseph Mulpas,  Vice President and Chief Accounting Officer
+Suzanne K. Surface	title	Vice President	Suzanne K. Surface,  Vice President, Audit
+Suzanne K. Surface	employee_of	Audit	Suzanne K. Surface,  Vice President, Audit
+Shawn Anderson	title	Treasurer	Shawn Anderson,  Treasurer and Chief Risk Officer
+Shawn Anderson	title	Chief Risk Officer	Shawn Anderson,  Treasurer and Chief Risk Officer

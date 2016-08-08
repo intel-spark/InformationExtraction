@@ -3,7 +3,7 @@ Text Only,  Sign In to SPG.com Help  Reservations Email All Options Our Brand S
 English,  Français,  Español, 
 Deutsch,  Italiano,  Português, 
 	1Bruce W. Duncan	,  	2President	, 	2Chief Executive Officer	 and 	2Director	, 	3First Industrial Realty Trust Inc	.
-	1THOMAS B. MANGAS	,  	2Chief Executive Officer	, 	3Starwood Hotels & Resorts
+	1THOMAS B. MANGAS	,  	2Chief Executive Officer	, 	3Starwood Hotels & Resorts	
 Ambassador Charlene Barshefsky,  Senior International Partner, WilmerHale, LLP
 	1Thomas Clarke Ph.D	,  	2President	, New Business Development, Nike, Inc.
 	1Clayton C. Daley, Jr.	,  	2Retired Chief Financial Officer	 and Vice Chair, Procter & Gamble
@@ -12,15 +12,15 @@ Ambassador Charlene Barshefsky,  Senior International Partner, WilmerHale, LLP
 	1AYLWIN B. LEWIS	,  	2President	 and 	2Chief Executive Officer	, Potbelly Sandwich Works, LLC
 	1Stephen R. Quazzo	,  	2Chief Executive Officer	, 	2Managing Director	 and 	2Co-founder	, Pearlmark Real Estate Partners, LLC
 	1Thomas O. Ryder	,  	2Retired Chairman	 and 	2Chief Executive Officer	, The Readers Digest Association, Inc.
-	1Thomas B. Mangas	,  	2Chief Executive Officer
-	1Jeff Cava	,  	2Executive Vice President	 and 	2Chief Human Resources Officer
+	1Thomas B. Mangas	,  	2Chief Executive Officer	
+	1Jeff Cava	,  	2Executive Vice President	 and 	2Chief Human Resources Officer	
 	1Stephen Ho	,  	2President	, Asia Pacific
 	1K.C. KAVANAGH	,  	2Senior Vice President	 Of Global Communications
-	1JOHN PEYTON	,  	2Senior Vice President	, 	3Brands & Shared Services
-	1Martha Poulter	,  	2Executive Vice President	 and 	2Chief Information Officer
+	1JOHN PEYTON	,  	2Senior Vice President	, 	3Brands & Shared Services	
+	1Martha Poulter	,  	2Executive Vice President	 and 	2Chief Information Officer	
 	1SERGIO D. RIVERA	,  	2President	, The Americas, Starwood Hotels & Resorts Worldwide, Inc.
-	1Alan M. Schnaid	,  	2Senior Vice President	 and 	2Chief Financial Officer
-	1Kenneth S. Siegel	,  	2Chief Administrative Officer	 and 	2General Counsel
+	1Alan M. Schnaid	,  	2Senior Vice President	 and 	2Chief Financial Officer	
+	1Kenneth S. Siegel	,  	2Chief Administrative Officer	 and 	2General Counsel	
 	1Simon Turner	,  2	President	, Global Development
 	1MARK R. VONDRASEK	,  	2Senior Vice President	, Commercial Services
 	1MICHAEL WALE	,  	2President, Europe	, Africa, and Middle East

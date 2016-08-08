@@ -1,0 +1,8 @@
+D.R. Horton	employee_of	Investor Relations	D.R. Horton,  Investor Relations, ,  Investor Relations, ,  Corporate Governance,  Board of Directors, 
+D.R. Horton	employee_of	Corporate Governance	D.R. Horton,  Investor Relations, ,  Investor Relations, ,  Corporate Governance,  Board of Directors, 
+D.R. Horton	employee_of	Board of Directors	D.R. Horton,  Investor Relations, ,  Investor Relations, ,  Corporate Governance,  Board of Directors, 
+Donald R. Horton	title	Chairman of the Board	Donald R. Horton Chairman of the Board, 
+Barbara K. Allen	title	Outside Director	Barbara K. Allen Outside Director, 
+Brad S. Anderson	title	Outside Director	Brad S. Anderson Outside Director, 
+Michael R. Buchanan	title	Outside Director	Michael R. Buchanan Outside Director, 
+Michael W. Hewatt	title	Outside Director	Michael W. Hewatt Outside Director, 

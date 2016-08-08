@@ -1,0 +1,106 @@
+Jeff Immelt	title	CEO	Jeff Immelt, CEO  Corporate Executives,  Business Executives,  Board Of Directors, 
+Jeff Immelt	title	Corporate Executives	Jeff Immelt, CEO  Corporate Executives,  Business Executives,  Board Of Directors, 
+Jeff Immelt	title	Business Executives	Jeff Immelt, CEO  Corporate Executives,  Business Executives,  Board Of Directors, 
+Jeff Immelt	title	Board Of Directors	Jeff Immelt, CEO  Corporate Executives,  Business Executives,  Board Of Directors, 
+Steve Bolze	title	SVP	Steve Bolze,  Steve Bolze,  SVP GE President& CEO GE Power Responsible for the world-leading provider of traditional and renewable power generation technology.
+Steve Bolze	title	President	Steve Bolze,  Steve Bolze,  SVP GE President& CEO GE Power Responsible for the world-leading provider of traditional and renewable power generation technology.
+Steve Bolze	title	CEO	Steve Bolze,  Steve Bolze,  SVP GE President& CEO GE Power Responsible for the world-leading provider of traditional and renewable power generation technology.
+Steve Bolze	title	SVP	Steve Bolze,  SVP GE President& CEO GE Power
+Steve Bolze	title	President	Steve Bolze,  SVP GE President& CEO GE Power
+Steve Bolze	title	CEO	Steve Bolze,  SVP GE President& CEO GE Power
+Steve Bolze	employee_of	GE Power	Steve Bolze,  SVP GE President& CEO GE Power
+Lynn Calpeter	title	VP	Lynn Calpeter,  Lynn Calpeter,  VP& Chief Financial OfficeGE Power Leads all financial operations for GE Power, serving global energy needs with modern technologies.
+Lynn Calpeter	title	Chief Financial Office	Lynn Calpeter,  Lynn Calpeter,  VP& Chief Financial OfficeGE Power Leads all financial operations for GE Power, serving global energy needs with modern technologies.
+Lynn Calpeter	title	VP	Lynn Calpeter,  VP& Chief Financial OfficeGE Power
+Lynn Calpeter	title	Chief Financial Office	Lynn Calpeter,  VP& Chief Financial OfficeGE Power
+Lynn Calpeter	employee_of	GE Power	Lynn Calpeter,  VP& Chief Financial OfficeGE Power
+John L. Flannery	title	SVP	John L. Flannery,  John L. Flannery,  SVP GE President& CEO GE Healthcare Responsible for the global leader in medical diagnostic technology and biosciences.
+John L. Flannery	title	President	John L. Flannery,  John L. Flannery,  SVP GE President& CEO GE Healthcare Responsible for the global leader in medical diagnostic technology and biosciences.
+John L. Flannery	title	CEO	John L. Flannery,  John L. Flannery,  SVP GE President& CEO GE Healthcare Responsible for the global leader in medical diagnostic technology and biosciences.
+John L. Flannery	title	SVP	John L. Flannery,  SVP GE President& CEO GE Healthcare
+John L. Flannery	title	President	John L. Flannery,  SVP GE President& CEO GE Healthcare
+John L. Flannery	title	CEO	John L. Flannery,  SVP GE President& CEO GE Healthcare
+John L. Flannery	employee_of	GE Healthcare	John L. Flannery,  SVP GE President& CEO GE Healthcare
+David L. Joyce	title	SVP	David L. Joyce,  David L. Joyce,  SVP GE President& CEO GE Aviation Leads GE Aviation, appointed to his current role in 2008 having been with GE since 1980.
+David L. Joyce	title	President	David L. Joyce,  David L. Joyce,  SVP GE President& CEO GE Aviation Leads GE Aviation, appointed to his current role in 2008 having been with GE since 1980.
+David L. Joyce	title	CEO	David L. Joyce,  David L. Joyce,  SVP GE President& CEO GE Aviation Leads GE Aviation, appointed to his current role in 2008 having been with GE since 1980.
+David L. Joyce	title	SVP	David L. Joyce,  SVP GE President& CEO GE Aviation
+David L. Joyce	title	President	David L. Joyce,  SVP GE President& CEO GE Aviation
+David L. Joyce	title	CEO	David L. Joyce,  SVP GE President& CEO GE Aviation
+David L. Joyce	employee_of	GE Aviation	David L. Joyce,  SVP GE President& CEO GE Aviation
+Richard A. Laxer	title	President	Richard A. Laxer,  Richard A. Laxer,  President& CEOGE Capital International Responsible for financial operations in 27 countries with 22,000 employees and close to $117 billion in assets.
+Richard A. Laxer	title	CEO	Richard A. Laxer,  Richard A. Laxer,  President& CEOGE Capital International Responsible for financial operations in 27 countries with 22,000 employees and close to $117 billion in assets.
+Richard A. Laxer	title	President	Richard A. Laxer,  President& CEOGE Capital International
+Richard A. Laxer	title	CEO	Richard A. Laxer,  President& CEOGE Capital International
+Richard A. Laxer	employee_of	GE Capital International	Richard A. Laxer,  President& CEOGE Capital International
+Paul A. McElhinney	title	SVP	Paul A. McElhinney,  Paul A. McElhinney,  SVP GE Presidentand CEO Power Services Responsible for a global services strategy that offers electric utility and industrial customers the technology, knowledge and insight they need.
+Paul A. McElhinney	title	President	Paul A. McElhinney,  Paul A. McElhinney,  SVP GE Presidentand CEO Power Services Responsible for a global services strategy that offers electric utility and industrial customers the technology, knowledge and insight they need.
+Paul A. McElhinney	title	CEO	Paul A. McElhinney,  Paul A. McElhinney,  SVP GE Presidentand CEO Power Services Responsible for a global services strategy that offers electric utility and industrial customers the technology, knowledge and insight they need.
+Paul A. McElhinney	title	SVP	Paul A. McElhinney,  SVP GE Presidentand CEO Power Services
+Paul A. McElhinney	title	President	Paul A. McElhinney,  SVP GE Presidentand CEO Power Services
+Paul A. McElhinney	title	CEO	Paul A. McElhinney,  SVP GE Presidentand CEO Power Services
+Paul A. McElhinney	employee_of	Power Services	Paul A. McElhinney,  SVP GE Presidentand CEO Power Services
+Jamie S. Miller	title	SVP	Jamie S. Miller,  Jamie S. Miller,  SVP GE President& CEO GE Transportation Leads GE's rail, mining and marine industries with annual revenues of $5.7 billion.
+Jamie S. Miller	title	President	Jamie S. Miller,  Jamie S. Miller,  SVP GE President& CEO GE Transportation Leads GE's rail, mining and marine industries with annual revenues of $5.7 billion.
+Jamie S. Miller	title	CEO	Jamie S. Miller,  Jamie S. Miller,  SVP GE President& CEO GE Transportation Leads GE's rail, mining and marine industries with annual revenues of $5.7 billion.
+Jamie S. Miller	title	SVP	Jamie S. Miller,  SVP GE President& CEO GE Transportation
+Jamie S. Miller	title	President	Jamie S. Miller,  SVP GE President& CEO GE Transportation
+Jamie S. Miller	title	CEO	Jamie S. Miller,  SVP GE President& CEO GE Transportation
+Jamie S. Miller	employee_of	GE Transportation	Jamie S. Miller,  SVP GE President& CEO GE Transportation
+Jérôme Pécresse	title	President	Jérôme Pécresse,  Jérôme Pécresse,  President& CEOGE Renewable Energy Leads GE Renewable Energy, which has the broadest renewable energy portfolio in the industry.
+Jérôme Pécresse	title	CEO	Jérôme Pécresse,  Jérôme Pécresse,  President& CEOGE Renewable Energy Leads GE Renewable Energy, which has the broadest renewable energy portfolio in the industry.
+Jérôme Pécresse	title	President	Jérôme Pécresse,  President& CEOGE Renewable Energy
+Jérôme Pécresse	title	CEO	Jérôme Pécresse,  President& CEOGE Renewable Energy
+Jérôme Pécresse	employee_of	GE Renewable Energy	Jérôme Pécresse,  President& CEOGE Renewable Energy
+William Ruh	title	SVP	William Ruh,  William Ruh,  SVP& Chief Digital Office GE CEO GE Digital Leads GE’s digital software solutions and services, as well as global IT, and is responsible for GE’s Digital Thread initiatives.
+William Ruh	title	Chief Digital Office	William Ruh,  William Ruh,  SVP& Chief Digital Office GE CEO GE Digital Leads GE’s digital software solutions and services, as well as global IT, and is responsible for GE’s Digital Thread initiatives.
+William Ruh	title	CEO	William Ruh,  William Ruh,  SVP& Chief Digital Office GE CEO GE Digital Leads GE’s digital software solutions and services, as well as global IT, and is responsible for GE’s Digital Thread initiatives.
+William Ruh	title	SVP	William Ruh,  SVP& Chief Digital Office GE CEO GE Digital
+William Ruh	title	Chief Digital Office	William Ruh,  SVP& Chief Digital Office GE CEO GE Digital
+William Ruh	title	CEO	William Ruh,  SVP& Chief Digital Office GE CEO GE Digital
+William Ruh	employee_of	GE Digital	William Ruh,  SVP& Chief Digital Office GE CEO GE Digital
+Keith S. Sherin	title	CEO	Keith S. Sherin,  Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital Vice Chairman GE and Chairman and CEOof GE Capital
+Keith S. Sherin	title	CEO	Keith S. Sherin,  Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital Vice Chairman GE and Chairman and CEOof GE Capital
+Keith S. Sherin	title	CEO	Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital
+Keith S. Sherin	employee_of	GE Capital	Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital
+Khozema Z. Shipchandler	title	VP	Khozema Z. Shipchandler,  Khozema Z. Shipchandler,  VP& Chief Financial OfficeGE Digital Leads all financial activities for GE Digital, helping transform GE into the world's leading digital industrial company.
+Khozema Z. Shipchandler	title	Chief Financial Office	Khozema Z. Shipchandler,  Khozema Z. Shipchandler,  VP& Chief Financial OfficeGE Digital Leads all financial activities for GE Digital, helping transform GE into the world's leading digital industrial company.
+Khozema Z. Shipchandler	title	VP	Khozema Z. Shipchandler,  VP& Chief Financial OfficeGE Digital
+Khozema Z. Shipchandler	title	Chief Financial Office	Khozema Z. Shipchandler,  VP& Chief Financial OfficeGE Digital
+Khozema Z. Shipchandler	employee_of	GE Digital	Khozema Z. Shipchandler,  VP& Chief Financial OfficeGE Digital
+Lorenzo Simonelli	title	SVP	Lorenzo Simonelli,  Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas Leads GE Oil & Gas, an advanced technology equipment and services company.
+Lorenzo Simonelli	title	President	Lorenzo Simonelli,  Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas Leads GE Oil & Gas, an advanced technology equipment and services company.
+Lorenzo Simonelli	title	CEO	Lorenzo Simonelli,  Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas Leads GE Oil & Gas, an advanced technology equipment and services company.
+Lorenzo Simonelli	title	SVP	Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas
+Lorenzo Simonelli	title	President	Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas
+Lorenzo Simonelli	title	CEO	Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas
+Lorenzo Simonelli	employee_of	GE Oil & Gas	Lorenzo Simonelli,  SVP GE President& CEO GE Oil & Gas
+Richard L. Stanley	title	VP	Richard L. Stanley,  Richard L. Stanley,  VP& Chief Technology OfficeGE Power Leads all GE Power technical efforts including research, development, technology, and product design.
+Richard L. Stanley	title	Chief Technology Office	Richard L. Stanley,  Richard L. Stanley,  VP& Chief Technology OfficeGE Power Leads all GE Power technical efforts including research, development, technology, and product design.
+Richard L. Stanley	employee_of	GE Power	Richard L. Stanley,  Richard L. Stanley,  VP& Chief Technology OfficeGE Power Leads all GE Power technical efforts including research, development, technology, and product design.
+Richard L. Stanley	title	VP	Richard L. Stanley,  VP& Chief Technology OfficeGE Power
+Richard L. Stanley	title	Chief Technology Office	Richard L. Stanley,  VP& Chief Technology OfficeGE Power
+Richard L. Stanley	employee_of	GE Power	Richard L. Stanley,  VP& Chief Technology OfficeGE Power
+Dmitri Stockton	title	SVP	Dmitri Stockton,  Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management Leads GE Asset Management, a leading global asset manager investing on behalf of a wide range of clients from around the world.
+Dmitri Stockton	title	President	Dmitri Stockton,  Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management Leads GE Asset Management, a leading global asset manager investing on behalf of a wide range of clients from around the world.
+Dmitri Stockton	title	CEO	Dmitri Stockton,  Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management Leads GE Asset Management, a leading global asset manager investing on behalf of a wide range of clients from around the world.
+Dmitri Stockton	employee_of	GE Asset Management	Dmitri Stockton,  Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management Leads GE Asset Management, a leading global asset manager investing on behalf of a wide range of clients from around the world.
+Dmitri Stockton	title	SVP	Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management
+Dmitri Stockton	title	Chairman	Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management
+Dmitri Stockton	title	President	Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management
+Dmitri Stockton	title	CEO	Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management
+Dmitri Stockton	employee_of	GE Asset Management	Dmitri Stockton,  SVP GE Chairman, President& CEO GE Asset Management
+Russell Stokes	title	SVP	Russell Stokes,  Russell Stokes,  SVP GE President& CEO GE Energy Connections Leads the development of advanced technology solutions that help solve global energy challenges.
+Russell Stokes	title	President	Russell Stokes,  Russell Stokes,  SVP GE President& CEO GE Energy Connections Leads the development of advanced technology solutions that help solve global energy challenges.
+Russell Stokes	title	CEO	Russell Stokes,  Russell Stokes,  SVP GE President& CEO GE Energy Connections Leads the development of advanced technology solutions that help solve global energy challenges.
+Russell Stokes	employee_of	GE Energy Connections	Russell Stokes,  Russell Stokes,  SVP GE President& CEO GE Energy Connections Leads the development of advanced technology solutions that help solve global energy challenges.
+Russell Stokes	title	SVP	Russell Stokes,  SVP GE President& CEO GE Energy Connections
+Russell Stokes	title	President	Russell Stokes,  SVP GE President& CEO GE Energy Connections
+Russell Stokes	title	CEO	Russell Stokes,  SVP GE President& CEO GE Energy Connections
+Russell Stokes	employee_of	GE Energy Connections	Russell Stokes,  SVP GE President& CEO GE Energy Connections
+Maryrose Sylvester	title	President	Maryrose Sylvester,  Maryrose Sylvester,  President& CEOCurrent powered by GE Serves as President& Chief Executive Officeof Current - GE's first-of-its kind energy company.
+Maryrose Sylvester	title	CEO	Maryrose Sylvester,  Maryrose Sylvester,  President& CEOCurrent powered by GE Serves as President& Chief Executive Officeof Current - GE's first-of-its kind energy company.
+Maryrose Sylvester	title	President	Maryrose Sylvester,  Maryrose Sylvester,  President& CEOCurrent powered by GE Serves as President& Chief Executive Officeof Current - GE's first-of-its kind energy company.
+Maryrose Sylvester	title	Chief Executive Office	Maryrose Sylvester,  Maryrose Sylvester,  President& CEOCurrent powered by GE Serves as President& Chief Executive Officeof Current - GE's first-of-its kind energy company.
+Maryrose Sylvester	title	President	Maryrose Sylvester,  President& CEOCurrent powered by GE
+Maryrose Sylvester	title	CEO	Maryrose Sylvester,  President& CEOCurrent powered by GE

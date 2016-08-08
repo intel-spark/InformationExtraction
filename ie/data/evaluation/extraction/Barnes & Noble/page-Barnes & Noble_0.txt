@@ -1,0 +1,27 @@
+Leonard Riggio	title	Founder	Leonard Riggio,  Founder and Executive Chairman Barnes & Noble, Inc.
+Leonard Riggio	title	Executive Chairman	Leonard Riggio,  Founder and Executive Chairman Barnes & Noble, Inc.
+Ronald D. Boire	title	Chief Executive Officer	Ronald D. Boire,  Chief Executive Officer Barnes & Noble, Inc. 
+Jaime Carey	title	President	Jaime Carey,  President of Development & Restaurant Group Barnes & Noble, Inc.
+Jaime Carey	employee_of	Development & Restaurant Group	Jaime Carey,  President of Development & Restaurant Group Barnes & Noble, Inc.
+Mary Amicucci	title	Chief Merchandising Officer	Mary Amicucci, , Chief Merchandising Officer, Barnes & Noble, Inc.
+Fred Argir	title	V.P.	Fred Argir, , V.P. and Chief Digital Officer, Barnes & Noble, Inc.
+Fred Argir	title	Chief Digital Officer	Fred Argir, , V.P. and Chief Digital Officer, Barnes & Noble, Inc.
+David Deason	title	V.P.	David Deason, , V.P. of Development, Barnes & Noble, Inc. 
+Brad Feuer	title	General Counsel	Brad Feuer, , General Counsel, Barnes & Noble, Inc.  
+Rosa Hakala	title	V.P.	Rosa Hakala, , V.P. of Distribution and Logistics, Barnes & Noble, Inc.
+Rosa Hakala	employee_of	Distribution and Logistics	Rosa Hakala, , V.P. of Distribution and Logistics, Barnes & Noble, Inc.
+Peter Herpich	title	Vice President	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
+Peter Herpich	title	Corporate Controller	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
+Peter Herpich	title	Principal Accounting Officer	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
+Mary Ellen Keating	title	Senior V.P.	Mary Ellen Keating, , Senior V.P. of Corporate Communications and Public Affairs, Barnes & Noble, Inc. 
+Mary Ellen Keating	employee_of	Corporate Communications and Public Affairs	Mary Ellen Keating, , Senior V.P. of Corporate Communications and Public Affairs, Barnes & Noble, Inc. 
+Michael Ladd	title	Vice President	Michael Ladd, , Vice President, Stores, Barnes & Noble, Inc.
+Michael Ladd	employee_of	Stores	Michael Ladd, , Vice President, Stores, Barnes & Noble, Inc.
+Allen W. Lindstrom	title	Chief Financial Officer	Allen W. Lindstrom, , Chief Financial Officer, Barnes & Noble, Inc. 
+Andy Milevoj	title	V.P.	Andy Milevoj, , V.P. of Investor Relations, Barnes & Noble, Inc.
+Andy Milevoj	employee_of	Investor Relations	Andy Milevoj, , V.P. of Investor Relations, Barnes & Noble, Inc.
+Michelle Smith	title	V.P.	Michelle Smith, , V.P. of Human Resources, Barnes & Noble, Inc. 
+Michelle Smith	employee_of	Human Resources	Michelle Smith, , V.P. of Human Resources, Barnes & Noble, Inc. 
+Theresa Thompson	title	Executive Vice President	Theresa Thompson, , Executive Vice President, Sterling Publishing 
+Theresa Thompson	employee_of	Sterling Publishing	Theresa Thompson, , Executive Vice President, Sterling Publishing 
+William E. Wood	title	Chief Information Officer	William E. Wood, , Chief Information Officer, Barnes & Noble, Inc.

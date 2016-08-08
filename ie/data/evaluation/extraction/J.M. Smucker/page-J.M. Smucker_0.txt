@@ -1,0 +1,39 @@
+Mark T. Smucker	title	President	Mark T. Smucker,  President and Chief Executive Officer
+Mark T. Smucker	title	Chief Executive Officer	Mark T. Smucker,  President and Chief Executive Officer
+Mark R. Belgya	title	Vice Chair	Mark R. Belgya,  Vice Chair and Chief Financial Officer
+Mark R. Belgya	title	Chief Financial Officer	Mark R. Belgya,  Vice Chair and Chief Financial Officer
+Steven Oakland	title	Vice Chair	Steven Oakland,  Vice Chair and President, U.S. Food and Beverage
+Steven Oakland	title	President	Steven Oakland,  Vice Chair and President, U.S. Food and Beverage
+Steven Oakland	employee_of	U.S. Food and Beverage	Steven Oakland,  Vice Chair and President, U.S. Food and Beverage
+Barry C. Dunaway	title	President	Barry C. Dunaway,  President, Pet Food and Pet Snacks
+Barry C. Dunaway	employee_of	Pet Food and Pet Snacks	Barry C. Dunaway,  President, Pet Food and Pet Snacks
+David J. Lemmon	title	President	David J. Lemmon,  President, Canada and International
+Geoff E. Tanner	title	Senior Vice President	Geoff E. Tanner,  Senior Vice President, Growth and Innovation
+Geoff E. Tanner	employee_of	Growth and Innovation	Geoff E. Tanner,  Senior Vice President, Growth and Innovation
+Jill R. Penrose	title	Senior Vice President	Jill R. Penrose,  Senior Vice President, Human Resources and Corporate Communications
+Jill R. Penrose	employee_of	Human Resources	Jill R. Penrose,  Senior Vice President, Human Resources and Corporate Communications
+Jill R. Penrose	employee_of	Corporate Communications	Jill R. Penrose,  Senior Vice President, Human Resources and Corporate Communications
+Jeannette L. Knudsen	title	Senior Vice President	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
+Jeannette L. Knudsen	employee_of	General Counsel	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
+Jeannette L. Knudsen	employee_of	Secretary	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
+Dennis J. Armstrong	title	Senior Vice President	Dennis J. Armstrong,  Senior Vice President, Supply Chain Logistics and Operations Support
+Dennis J. Armstrong	employee_of	Supply Chain Logistics	Dennis J. Armstrong,  Senior Vice President, Supply Chain Logistics and Operations Support
+Dennis J. Armstrong	employee_of	Operations Support	Dennis J. Armstrong,  Senior Vice President, Supply Chain Logistics and Operations Support
+J. Randal Day	title	Senior Vice President	J. Randal Day,  Senior Vice President, Operations
+J. Randal Day	employee_of	Operations	J. Randal Day,  Senior Vice President, Operations
+Robert D. Ferguson	title	Senior Vice President	Robert D. Ferguson,  Senior Vice President, Supply Chain
+Robert D. Ferguson	employee_of	Supply Chain	Robert D. Ferguson,  Senior Vice President, Supply Chain
+Richard K. Smucker	title	Executive Chairman	Richard K. Smucker,  Executive Chairman
+Timothy P. Smucker	title	Chairman Emeritus	Timothy P. Smucker,  Chairman Emeritus
+Vincent C. Byrd	title	Vice Chairman	Vincent C. Byrd,  Vice Chairman
+John W. Denman	title	Vice President	John W. Denman,  Vice President, Human Resources Operations
+John W. Denman	employee_of	Human Resources Operations	John W. Denman,  Vice President, Human Resources Operations
+Tamara J. Fynan	title	Vice President	Tamara J. Fynan,  Vice President, Marketing Services
+Tamara J. Fynan	employee_of	Marketing Services	Tamara J. Fynan,  Vice President, Marketing Services
+Kevin G. Jackson	title	Vice President	Kevin G. Jackson,  Vice President, U.S. Retail and Market Development Organization (MDO)
+Kevin G. Jackson	employee_of	U.S. Retail and Market Development Organization	Kevin G. Jackson,  Vice President, U.S. Retail and Market Development Organization (MDO)
+John F. Mayer	title	Corporate Vice President	John F. Mayer,  Corporate Vice President
+Julia L. Sabin	title	Vice President	Julia L. Sabin,  Vice President, Industry and Government Affairs
+Julia L. Sabin	employee_of	Industry and Government Affairs	Julia L. Sabin,  Vice President, Industry and Government Affairs
+Christopher P. Resweber	title	Senior Vice President	Christopher P. Resweber,  Senior Vice President, Government and Industry Affairs
+Christopher P. Resweber	employee_of	Government and Industry Affairs	Christopher P. Resweber,  Senior Vice President, Government and Industry Affairs

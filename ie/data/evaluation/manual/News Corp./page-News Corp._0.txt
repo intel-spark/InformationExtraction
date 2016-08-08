@@ -7,24 +7,24 @@ Executive Bios,  Media Contacts,  General Inquiries,  Brand Materials,
 About Us,  Our Leadership,  Our Businesses,  Philanthropy,  Corporate Governance Board of Directors Board Committees Auditors Statement of Corporate Governance Standards of Business Conduct The Code of Ethics for the Chief Executive Officer and Senior Financial Officers Insider Trading and Confidentiality Policy Corporate Diversity Statement UK Newspaper Matters Political Activities Policy ASX Corporate Governance Communicating with the Board
 Corporate Governance,  Board of Directors Board Committees Auditors Statement of Corporate Governance,  Standards of Business Conduct The Code of Ethics for the Chief Executive Officer and Senior Financial Officers Insider Trading and Confidentiality Policy Corporate Diversity Statement UK Newspaper Matters Political Activities Policy ASX Corporate Governance,  Communicating with the Board
 Board of Directors,  Board Committees,  Auditors,  Statement of Corporate Governance,  Standards of Business Conduct,  The Code of Ethics for the Chief Executive Officer and Senior Financial Officers,  Insider Trading and Confidentiality Policy,  Corporate Diversity Statement,  UK Newspaper Matters,  Political Activities Policy,  ASX Corporate Governance,  Communicating with the Board, 
-	1Rupert Murdoch	,  	2Executive Chairman
-	1Lachlan Murdoch	,  	2Co-Chairman
-	1Robert Thomson	,  	2Chief Executive
-	1Bedi A. Singh	,  	2Chief Financial Officer
-	1Keisha Smith-Jeremie	,  	2Chief Human Resources Officer
-	1Antoinette Bush	,  	2Global Head of Government Affairs
-	1Paul Cheesbrough	,  	2Chief Technology Officer
-	1Anoushka Healy	,  	2Chief Strategy Officer
-	1Jim Kennedy	,  	2Chief Communications Officer
-	1David Pitofsky	,  	2General Counsel
-	1Brian Murray	,  	2CEO	, 	3Harper Collins
-	1Rebekah Brooks	,  	2CEO	, 	3News UK
-	1Michael Miller	,  	2Executive Chairman	, 	3News Corp Australasia
-	1William Lewis	,  	2CEO	, 	3Dow Jones & Company
-	1Ryan O’Hara	,  	2CEO	, 	3Move, Inc.
-	1Jesse Angelo	,  	2CEO	, 	3The New York Post
-	1Martin Garofalo	,  	2CEO	, 	3News America Marketing
-	1Rahul Chopra	,  	2CEO	, 	3Storyful
-	1Sarah Wood	,  	2Co-Founder	 and 	2Co-CEO	, 	3Unruly
-	1Scott Button	,  	2Co-Founder	 and 	2Co-CEO	, 	3Unruly
+	1Rupert Murdoch	,  	2Executive Chairman	
+	1Lachlan Murdoch	,  	2Co-Chairman	
+	1Robert Thomson	,  	2Chief Executive	
+	1Bedi A. Singh	,  	2Chief Financial Officer	
+	1Keisha Smith-Jeremie	,  	2Chief Human Resources Officer	
+	1Antoinette Bush	,  	2Global Head of Government Affairs	
+	1Paul Cheesbrough	,  	2Chief Technology Officer	
+	1Anoushka Healy	,  	2Chief Strategy Officer	
+	1Jim Kennedy	,  	2Chief Communications Officer	
+	1David Pitofsky	,  	2General Counsel	
+	1Brian Murray	,  	2CEO	, 	3Harper Collins	
+	1Rebekah Brooks	,  	2CEO	, 	3News UK	
+	1Michael Miller	,  	2Executive Chairman	, 	3News Corp Australasia	
+	1William Lewis	,  	2CEO	, 	3Dow Jones & Company	
+	1Ryan O’Hara	,  	2CEO	, 	3Move, Inc	.
+	1Jesse Angelo	,  	2CEO	, 	3The New York Post	
+	1Martin Garofalo	,  	2CEO	, 	3News America Marketing	
+	1Rahul Chopra	,  	2CEO	, 	3Storyful	
+	1Sarah Wood	,  	2Co-Founder	 and 	2Co-CEO	, 	3Unruly	
+	1Scott Button	,  	2Co-Founder	 and 	2Co-CEO	, 	3Unruly	
 http://newscorp.com/about/leadership/

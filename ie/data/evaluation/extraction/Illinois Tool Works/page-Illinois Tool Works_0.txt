@@ -1,0 +1,15 @@
+E. Scott Santi	title	Chairman	E. Scott Santi,  Chairman & Chief Executive Officer
+E. Scott Santi	title	Chief Executive Officer	E. Scott Santi,  Chairman & Chief Executive Officer
+Christopher A. O’Herlihy	title	Vice Chairman	Christopher A. O’Herlihy,  Vice Chairman
+David C. Parry	title	Vice Chairman	David C. Parry,  Vice Chairman
+Michael M. Larsen	title	Senior Vice President	Michael M. Larsen,  Senior Vice President & Chief Financial Officer
+Michael M. Larsen	title	Chief Financial Officer	Michael M. Larsen,  Senior Vice President & Chief Financial Officer
+Mary K. (“Katie”) Lawler	title	Senior Vice President	Mary K. (“Katie”) Lawler,  Senior Vice President, Chief Human Resources Officer
+Mary K. (“Katie”) Lawler	title	Chief Human Resources Officer	Mary K. (“Katie”) Lawler,  Senior Vice President, Chief Human Resources Officer
+John R. Hartnett	title	Executive Vice President	John R. Hartnett,  Executive Vice President
+Roland M. Martel	title	Executive Vice President	Roland M. Martel,  Executive Vice President
+Steven L. Martindale	title	Executive Vice President	Steven L. Martindale,  Executive Vice President
+Sundaram Nagarajan	title	Executive Vice President	Sundaram Nagarajan,  Executive Vice President
+Lei Zhang Schlitz	title	Executive Vice President	Lei Zhang Schlitz,  Executive Vice President
+Juan Valls	title	Executive Vice President	Juan Valls,  Executive Vice President
+Michael R. Zimmerman	title	Executive Vice President	Michael R. Zimmerman,  Executive Vice President

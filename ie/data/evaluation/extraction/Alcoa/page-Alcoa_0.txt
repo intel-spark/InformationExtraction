@@ -1,0 +1,62 @@
+Libby Archell	title	Vice President	Libby Archell,  Vice President, Alcoa Chief Communications Officer New York, New York
+Libby Archell	title	Chief Communications Officer	Libby Archell,  Vice President, Alcoa Chief Communications Officer New York, New York
+John D. Bergen	title	Vice President	John D. Bergen,  Vice President, Corporate Projects New York, New York
+John D. Bergen	employee_of	Corporate Projects	John D. Bergen,  Vice President, Corporate Projects New York, New York
+Graeme W. Bottger	title	Executive Vice President	Graeme W. Bottger,  Executive Vice President President, Alcoa Global Business Services Pittsburgh, Pennsylvania
+Graeme W. Bottger	title	President	Graeme W. Bottger,  Executive Vice President President, Alcoa Global Business Services Pittsburgh, Pennsylvania
+Graeme W. Bottger	employee_of	Global Business Services	Graeme W. Bottger,  Executive Vice President President, Alcoa Global Business Services Pittsburgh, Pennsylvania
+Daniel Cruise	title	Global Vice President	Daniel Cruise,  Global Vice President, Business Development and Government Affairs, Alcoa New York, New York
+Daniel Cruise	employee_of	Business Development and Government Affairs	Daniel Cruise,  Global Vice President, Business Development and Government Affairs, Alcoa New York, New York
+Leigh Ann Fisher	title	Chief Financial Officer	Leigh Ann Fisher,  Chief Financial Officer Alcoa Global Primary Products Knoxville, Tennessee
+Leigh Ann Fisher	employee_of	Global Primary Products	Leigh Ann Fisher,  Chief Financial Officer Alcoa Global Primary Products Knoxville, Tennessee
+Matthew E Garth	title	Vice President	Matthew E Garth,  Vice President, Financial Planning & Analysis and Investor Relations Alcoa New York
+Matthew E Garth	employee_of	Financial Planning & Analysis	Matthew E Garth,  Vice President, Financial Planning & Analysis and Investor Relations Alcoa New York
+Matthew E Garth	employee_of	Investor Relations	Matthew E Garth,  Vice President, Financial Planning & Analysis and Investor Relations Alcoa New York
+Ken Giacobbe	title	Chief Financial Officer	Ken Giacobbe,  Chief Financial Officer Alcoa Engineered Products and Solutions Cranberry, PA
+Ken Giacobbe	employee_of	Engineered Products and Solutions	Ken Giacobbe,  Chief Financial Officer Alcoa Engineered Products and Solutions Cranberry, PA
+Roy Harvey	title	Executive Vice President	Roy Harvey,  Executive Vice President, Alcoa President of Global Primary Products New York, New York
+Roy Harvey	title	President	Roy Harvey,  Executive Vice President, Alcoa President of Global Primary Products New York, New York
+Roy Harvey	employee_of	Global Primary Products	Roy Harvey,  Executive Vice President, Alcoa President of Global Primary Products New York, New York
+Dr. Raymond J. Kilmer	title	Executive Vice President	Dr. Raymond J. Kilmer,  Executive Vice President, Alcoa Chief Technology Officer Alcoa Technical Center, Pennsylvania
+Dr. Raymond J. Kilmer	title	Chief Technology Officer	Dr. Raymond J. Kilmer,  Executive Vice President, Alcoa Chief Technology Officer Alcoa Technical Center, Pennsylvania
+Dr. Raymond J. Kilmer	employee_of	Technical Center	Dr. Raymond J. Kilmer,  Executive Vice President, Alcoa Chief Technology Officer Alcoa Technical Center, Pennsylvania
+Klaus Kleinfeld	title	Chairman	Klaus Kleinfeld,  Chairman and Chief Executive Officer New York, New York
+Klaus Kleinfeld	title	Chief Executive Officer	Klaus Kleinfeld,  Chairman and Chief Executive Officer New York, New York
+Christoph Kollatz	title	Executive Vice President	Christoph Kollatz,  Executive Vice President,  Corporate Development, Strategy and New Ventures New York, New York
+Christoph Kollatz	employee_of	Corporate Development, Strategy and New Ventures	Christoph Kollatz,  Executive Vice President,  Corporate Development, Strategy and New Ventures New York, New York
+Kay Meggers	title	Executive Vice President	Kay Meggers,  Executive Vice President and Group President, Global Rolled Products New York, New York
+Kay Meggers	title	Group President	Kay Meggers,  Executive Vice President and Group President, Global Rolled Products New York, New York
+Kay Meggers	employee_of	Global Rolled Products	Kay Meggers,  Executive Vice President and Group President, Global Rolled Products New York, New York
+Glenn Miller	title	Chief Financial Officer	Glenn Miller,  Chief Financial Officer Global Rolled Products Pittsburgh, Pennsylvania
+Glenn Miller	employee_of	Global Rolled Products	Glenn Miller,  Chief Financial Officer Global Rolled Products Pittsburgh, Pennsylvania
+Tim D. Myers	title	Executive Vice President	Tim D. Myers,  Executive Vice President and Group President, Alcoa Transportation and Construction Solutions Cleveland, Ohio  
+Tim D. Myers	title	Group President	Tim D. Myers,  Executive Vice President and Group President, Alcoa Transportation and Construction Solutions Cleveland, Ohio  
+Tim D. Myers	employee_of	Transportation and Construction Solutions	Tim D. Myers,  Executive Vice President and Group President, Alcoa Transportation and Construction Solutions Cleveland, Ohio  
+Vas Nair	title	Executive Vice President	Vas Nair,  Executive Vice President, Human Resources Environment, Health, Safety and Sustainability  
+Vas Nair	employee_of	Human Resources Environment	Vas Nair,  Executive Vice President, Human Resources Environment, Health, Safety and Sustainability  
+Vas Nair	employee_of	Health, Safety and Sustainability	Vas Nair,  Executive Vice President, Human Resources Environment, Health, Safety and Sustainability  
+William F. Oplinger	title	Executive Vice President	William F. Oplinger,  Executive Vice President and Chief Financial Officer New York, New York
+William F. Oplinger	title	Chief Financial Officer	William F. Oplinger,  Executive Vice President and Chief Financial Officer New York, New York
+Eric V. Roegner	title	Chief Operating Officer	Eric V. Roegner,  Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio
+Eric V. Roegner	title	President	Eric V. Roegner,  Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio
+Eric V. Roegner	title	President	Eric V. Roegner,  Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio
+Eric V. Roegner	employee_of	Investment Castings, Titanium and Engineered Products	Eric V. Roegner,  Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio
+Eric V. Roegner	employee_of	Titanium & Engineered Products	Eric V. Roegner,  Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio
+Eric V. Roegner	employee_of	Defense Cleveland	Eric V. Roegner,  Chief Operating Officer, Alcoa Investment Castings, Titanium and Engineered Products; President, Alcoa Titanium & Engineered Products; President, Alcoa Defense Cleveland, Ohio
+Vitaliy V. Rusakov	title	COO	Vitaliy V. Rusakov,  COO, Alcoa Fastening Systems & Rings, Alcoa Forgings & Extrusions President, Alcoa Fastening Systems & Rings Torrance, California
+Vitaliy V. Rusakov	title	President	Vitaliy V. Rusakov,  COO, Alcoa Fastening Systems & Rings, Alcoa Forgings & Extrusions President, Alcoa Fastening Systems & Rings Torrance, California
+Vitaliy V. Rusakov	employee_of	Fastening Systems & Rings	Vitaliy V. Rusakov,  COO, Alcoa Fastening Systems & Rings, Alcoa Forgings & Extrusions President, Alcoa Fastening Systems & Rings Torrance, California
+Vitaliy V. Rusakov	employee_of	Forgings & Extrusions	Vitaliy V. Rusakov,  COO, Alcoa Fastening Systems & Rings, Alcoa Forgings & Extrusions President, Alcoa Fastening Systems & Rings Torrance, California
+Vitaliy V. Rusakov	employee_of	Fastening Systems & Rings Torrance	Vitaliy V. Rusakov,  COO, Alcoa Fastening Systems & Rings, Alcoa Forgings & Extrusions President, Alcoa Fastening Systems & Rings Torrance, California
+Tómas Már Sigurdsson	title	Chief Operating Officer	Tómas Már Sigurdsson,  Chief Operating Officer Alcoa Global Primary Products New York, New York
+Tómas Már Sigurdsson	employee_of	Global Primary Products	Tómas Már Sigurdsson,  Chief Operating Officer Alcoa Global Primary Products New York, New York
+Audrey Strauss	title	Executive Vice President	Audrey Strauss,  Executive Vice President Chief Legal Officer and Secretary New York, New York
+Audrey Strauss	title	Chief Legal Officer	Audrey Strauss,  Executive Vice President Chief Legal Officer and Secretary New York, New York
+Audrey Strauss	title	Secretary	Audrey Strauss,  Executive Vice President Chief Legal Officer and Secretary New York, New York
+Karl Tragl	title	Executive Vice President	Karl Tragl,  Executive Vice President and Group President, Alcoa Engineered Products and Solutions New York  
+Karl Tragl	title	Group President	Karl Tragl,  Executive Vice President and Group President, Alcoa Engineered Products and Solutions New York  
+Karl Tragl	employee_of	Engineered Products and Solutions	Karl Tragl,  Executive Vice President and Group President, Alcoa Engineered Products and Solutions New York  
+L. Paris Watts-Stanfield	title	Chief Financial Officer	L. Paris Watts-Stanfield,  Chief Financial Officer Alcoa Transportation and Construction Solutions Pittsburgh, PA
+L. Paris Watts-Stanfield	employee_of	Transportation and Construction Solutions	L. Paris Watts-Stanfield,  Chief Financial Officer Alcoa Transportation and Construction Solutions Pittsburgh, PA
+Kenneth Wisnoski	title	President	Kenneth Wisnoski,  President, International Project Development and Asset Management New York
+Kenneth Wisnoski	employee_of	International Project Development and Asset Management	Kenneth Wisnoski,  President, International Project Development and Asset Management New York

@@ -10,8 +10,8 @@ Digital Software & Services Industrial Internet Stories Partners Digital News Di
 	1Jeff Immelt	, 	2CEO	  	2Corporate Executives	,  	2Business Executives	,  	2Board Of Directors	, 
 	1Steve Bolze	,  	1Steve Bolze	,  	2SVP	 GE 	2President	& 	2CEO	 GE Power Responsible for the world-leading provider of traditional and renewable power generation technology.
 	1Steve Bolze	,  	2SVP	 GE 	2President	& 	2CEO	 	3GE Power	
-	1Lynn Calpeter	,  Lynn Calpeter,  	2VP	& 	2	2Chief Financial Office		GE Power Leads all financial operations for GE Power, serving global energy needs with modern technologies.
-	1Lynn Calpeter	,  	2VP	& 		2Chief Financial Office			3GE Power	
+	1Lynn Calpeter	,  Lynn Calpeter,  	2VP	& 	2Chief Financial Office	GE Power Leads all financial operations for GE Power, serving global energy needs with modern technologies.
+	1Lynn Calpeter	,  	2VP	& 	2Chief Financial Office		3GE Power	
 	1John L. Flannery	,  John L. Flannery,  	2SVP	 GE 	2President	& 	2CEO	 GE Healthcare Responsible for the global leader in medical diagnostic technology and biosciences.
 	1John L. Flannery	,  	2SVP	 GE 	2President	& 	2CEO	 	3GE Healthcare	
 	1David L. Joyce	,  David L. Joyce,  	2SVP	 GE 	2President	& 	2CEO	 GE Aviation Leads GE Aviation, appointed to his current role in 2008 having been with GE since 1980.
@@ -24,20 +24,20 @@ Digital Software & Services Industrial Internet Stories Partners Digital News Di
 	1Jamie S. Miller	,  	2SVP	 GE 	2President	& 	2CEO	 	3GE Transportation	
 	1Jérôme Pécresse	,  Jérôme Pécresse,  	2President	& 	2CEO	GE Renewable Energy Leads GE Renewable Energy, which has the broadest renewable energy portfolio in the industry.
 	1Jérôme Pécresse	,  	2President	& 	2CEO		3GE Renewable Energy	
-	1William Ruh	,  William Ruh,  	2SVP	& 	2	2Chief Digital Office		 GE 	2CEO	 GE Digital Leads GE’s digital software solutions and services, as well as global IT, and is responsible for GE’s Digital Thread initiatives.
-	1William Ruh	,  	2SVP	& 	2	2Chief Digital Office		 GE 	2CEO	 	3GE Digital	
+	1William Ruh	,  William Ruh,  	2SVP	& 	2Chief Digital Office	 GE 	2CEO	 GE Digital Leads GE’s digital software solutions and services, as well as global IT, and is responsible for GE’s Digital Thread initiatives.
+	1William Ruh	,  	2SVP	& 	2Chief Digital Office	 GE 	2CEO	 	3GE Digital	
 	1Keith S. Sherin	,  Keith S. Sherin,  Vice Chairman, GE Chairman & 	2CEO	 GE Capital Vice Chairman GE and Chairman and 	2CEO	of GE Capital
 	1Keith S. Sherin	,  Vice Chairman, GE Chairman & 	2CEO	 	3GE Capital	
-	1Khozema Z. Shipchandler	,  Khozema Z. Shipchandler,  	2VP	& 	2	2Chief Financial Office		GE Digital Leads all financial activities for GE Digital, helping transform GE into the world's leading digital industrial company.
-	1Khozema Z. Shipchandler	,  	2VP	& 	2	2Chief Financial Office			3GE Digital	
+	1Khozema Z. Shipchandler	,  Khozema Z. Shipchandler,  	2VP	& 	2Chief Financial Office	GE Digital Leads all financial activities for GE Digital, helping transform GE into the world's leading digital industrial company.
+	1Khozema Z. Shipchandler	,  	2VP	& 	2Chief Financial Office		3GE Digital	
 	1Lorenzo Simonelli	,  Lorenzo Simonelli,  	2SVP	 GE 	2President	& 	2CEO	 GE Oil & Gas Leads GE Oil & Gas, an advanced technology equipment and services company.
 	1Lorenzo Simonelli	,  	2SVP	 GE 	2President	& 	2CEO	 	3GE Oil & Gas	
-	1Richard L. Stanley	,  Richard L. Stanley,  	2VP	& 	2	2Chief Technology Office			3GE Power	 Leads all GE Power technical efforts including research, development, technology, and product design.
-	1Richard L. Stanley	,  	2VP	& 	2	2Chief Technology Office			3GE Power	
+	1Richard L. Stanley	,  Richard L. Stanley,  	2VP	& 	2Chief Technology Office		3GE Power	 Leads all GE Power technical efforts including research, development, technology, and product design.
+	1Richard L. Stanley	,  	2VP	& 	2Chief Technology Office		3GE Power	
 	1Dmitri Stockton	,  Dmitri Stockton,  	2SVP	 GE Chairman, 	2President	& 	2CEO	 	3GE Asset Management	 Leads GE Asset Management, a leading global asset manager investing on behalf of a wide range of clients from around the world.
 	1Dmitri Stockton	,  	2SVP	 GE 	2Chairman	, 	2President	& 	2CEO	 	3GE Asset Management	
 	1Russell Stokes	,  Russell Stokes,  	2SVP	 GE 	2President	& 	2CEO	 	3GE Energy Connections	 Leads the development of advanced technology solutions that help solve global energy challenges.
 	1Russell Stokes	,  	2SVP	 GE 	2President	& 	2CEO	 	3GE Energy Connections	
-	1Maryrose Sylvester	,  Maryrose Sylvester,  	2President	& 	2CEO	Current powered by GE Serves as 	2President	& 	2	2Chief Executive Office		of Current - GE's first-of-its kind energy company.
+	1Maryrose Sylvester	,  Maryrose Sylvester,  	2President	& 	2CEO	Current powered by GE Serves as 	2President	& 	2Chief Executive Office	of Current - GE's first-of-its kind energy company.
 	1Maryrose Sylvester	,  	2President	& 	2CEO	Current powered by GE
 www.ge.com/about-us/leadership/business-executives
