@@ -30,8 +30,9 @@ public class NerWithDepartmentTest {
         props.put("annotators", "tokenize, ssplit, pos, lemma");
         pipeline = new StanfordCoreNLP(props);
 
-        props.setProperty("ner.model","model/department-model.ser.gz,edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz," +
+        props.setProperty("ner.model","/home/ding/Downloads/stanford-ner-2015-12-09/test/new-model.ser.gz,edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz," +
                 "edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz,edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz");
+//        props.setProperty("ner.model","/home/ding/Downloads/stanford-ner-2015-12-09/test/model.ser.gz");
         pipeline.addAnnotator(new NERCombinerAnnotator("ner", props));
 
         String options2 = "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.Regex_NER_caseless + ";" + IntelPaths.Regex_NER_cased;
@@ -77,7 +78,7 @@ public class NerWithDepartmentTest {
                 // this is the NER label of the token
                 String ne = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
                 result.add(ne);
-                System.out.println(word + ": " + ne);
+                System.out.println(word + "\t" + ne);
             }
         }
         return result;

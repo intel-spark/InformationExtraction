@@ -10,6 +10,8 @@
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="lib1" level="project" />
     <orderEntry type="library" name="sparkjars" level="project" />
-    <orderEntry type="library" name="scala-sdk-2.11.6" level="application" />
+    <orderEntry type="library" name="scala-sdk-2.10.5" level="application" />
+    <orderEntry type="library" name="spark-assembly-1.6.1-hadoop2.6.0" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.10.5" level="application" />
   </component>
 </module>

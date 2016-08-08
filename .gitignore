@@ -19,7 +19,6 @@ project/plugins/project/
 ie/.idea/*
 ie/edu/*
 ie/edu
-*.gz
 *.tagger
 ie/META-INF/
 *.ser
