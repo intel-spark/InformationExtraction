@@ -37,8 +37,8 @@ object RelationEvaluation {
 
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
-    val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
-      .where(col("relation").isin("title", "employee_of"))
+    val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).filter(_.length < 200))
+      .where(col("relation").isin("title"))
       .select("name", "relation", "entity")
       .distinct()
       .cache()
@@ -52,7 +52,7 @@ object RelationEvaluation {
     
     val sqlContext = SQLContext.getOrCreate(sc)
     val labelledDF = sqlContext.createDataFrame(relationRDD)
-      .where(col("relation").isin("title", "employee_of"))
+      .where(col("relation").isin("title"))
       .select("name", "relation", "entity")
       .distinct()
       .cache()
@@ -78,8 +78,8 @@ object RelationEvaluation {
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList = Array("AGL Resources")
-//    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+  val companyList = //Array("Apple", "AGL Resources")
+    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 

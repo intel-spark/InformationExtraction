@@ -23,7 +23,6 @@ object SparkBatchDriver {
 
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.WARN)
-    Logger.getLogger("edu").setLevel(Level.WARN)
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
