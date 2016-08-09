@@ -1,4 +1,4 @@
-package evaluation
+package org.apache.spark.sql
 
 import java.io.File
 
@@ -42,7 +42,6 @@ object RelationEvaluation {
       .select("name", "relation", "entity")
       .distinct()
       .cache()
-    extractedDF.show()
 
     val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
     val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
@@ -60,26 +59,28 @@ object RelationEvaluation {
 
     val correctDF = labelledDF.intersect(extractedDF).cache()
     println(company)
-    println("\tcorrect:")
-    correctDF.show(false)
+    println(Console.BLUE + "\tcorrect:")
+    println(correctDF.showString(20, false))
 
-    println("\tmissed:")
-    labelledDF.except(correctDF).show(false)
+    println(Console.RED + "\tmissed:")
+    println(labelledDF.except(correctDF).showString(8, false))
 
     println("\twrong:")
-    extractedDF.except(correctDF).show(false)
+    println(Console.RED + extractedDF.except(correctDF).showString(8, false))
 
-    val recall = correctDF.count().toDouble / labelledDF.count()
-    val precision = correctDF.count().toDouble / extractedDF.count()
-    println(s"recall: $recall. precision: $precision")
     val correctCt = correctDF.count()
+    val recall = correctCt.toDouble / labelledDF.count()
+    val precision = correctCt.toDouble / extractedDF.count()
+    println(Console.YELLOW_B + s"recall: $recall. precision: $precision. (" +
+      s"extracted: ${extractedDF.count()}; labelled: ${labelledDF.count()}; correct: ${correctCt})")
+    println(Console.RESET)
     PageResult(correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
   }
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList = //Array("Apple", "AGL Resources")
-    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+  val companyList = Array("US Foods", "Computer Sciences", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy", "Williams Companies")
+//    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 

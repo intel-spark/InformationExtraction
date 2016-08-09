@@ -50,7 +50,7 @@ object SparkBatchDriver {
   }
 
   def processTextFiles(data: RDD[String]): DataFrame ={
-    val relations = getWorkRelation(data)
+    val relations = processRDD(data)
     relations
   }
 
@@ -58,33 +58,33 @@ object SparkBatchDriver {
     val text = data.filter(!_.startsWith("//"))map(s =>
       s.split('|')(3)
     )
-    val relations = getWorkRelation(text)
+    val relations = processRDD(text)
     relations.show(100, false)
   }
 
   private def processSentence(line: String): Unit = {
-//    println(RegexNerTest.extractNER(line).asScala.mkString(", "))
     println(RegexNerTest.extractNER(line).asScala.mkString(", "))
     KBPModel.extract(line).asScala.foreach(t => println(t._1))
-//    val relations = getWorkRelation(text)
-//    relations.show(100, false)
-//    print("dataset path>")
   }
 
-  private def getWorkRelation(data: RDD[String]): DataFrame ={
+  private def processRDD(data: RDD[String]): DataFrame ={
     val relations = data.flatMap { s =>
-      val raw = KBPModel.extract(s)
-      raw.asScala.toSeq.map { case (r, sen) =>
-        if(r.relationGloss() == "org:top_members/employees") {
-          RelationLine(r.objectGloss(), "top member of", r.subjectGloss(), sen)
-        } else {
-          RelationLine(r.subjectGloss(), r.relationGloss().split(":")(1), r.objectGloss(), sen)
-        }
-      }
+      getWorkRelation(s)
     }
 
     val sqlContext = SQLContext.getOrCreate(data.sparkContext)
     sqlContext.createDataFrame(relations)
+  }
+  
+  private def getWorkRelation(line: String): Seq[RelationLine] ={
+    val raw = KBPModel.extract(line)
+    raw.asScala.toSeq.map { case (r, sen) =>
+      if(r.relationGloss() == "org:top_members/employees") {
+        RelationLine(r.objectGloss(), "top member of", r.subjectGloss(), sen)
+      } else {
+        RelationLine(r.subjectGloss(), r.relationGloss().split(":")(1), r.objectGloss(), sen)
+      }
+    }
   }
 
   private def getDataset(sc: SparkContext, path: String): RDD[String] = {
