@@ -14,7 +14,7 @@ object TabConverter {
     val conf = new SparkConf().setMaster("local").setAppName("ss")
     val sc = new SparkContext(conf)
 
-    val path = "/home/yuhao/workspace/github/hhbyyh/InformationExtraction/ie/data/evaluation/manual/"
+    val path = "data/evaluation/manual/"
     new File(path).listFiles().foreach { folder =>
       val company = folder.getName
       folder.listFiles().foreach { file =>
