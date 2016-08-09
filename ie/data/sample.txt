@@ -11,3 +11,4 @@ It is exciting for Tom that he becomes CEO of Intel Corp
 Jason was awarded "Best CEO of the year" for his service in Walmart.
 Lily enjoys the talk of Mike, the CEO of Costco
 Jason is Director of Intel and Lily is the CEO of Microsoft.
+Jason is Director of Intel. Lily is the CEO of Microsoft.
