@@ -1,11 +1,9 @@
 
-Leadership,  James L. Robo Eric Silagy Armando Pimentel Charles E. Sieving John Ketchum Deborah H. Caplan Our History Awards & Recognition Fact Sheet Governance Advertising
-James L. Robo,  Eric Silagy,  Armando Pimentel,  Charles E. Sieving,  John Ketchum,  Deborah H. Caplan, 
-Leadership James L. Robo Eric Silagy Armando Pimentel Charles E. Sieving John Ketchum Deborah H. Caplan Our History,  Awards & Recognition,  Fact Sheet,  Governance,  Advertising, 
-James L. Robo,  Chairman and Chief Executive Officer NextEra Energy, Inc.
-Eric Silagy,  President and Chief Executive Officer Florida Power & Light Company
-Armando Pimentel,  President and Chief Executive Officer NextEra Energy Resources, LLC
-John Ketchum,  Executive Vice President Finance and Chief Financial Officer
-Charles E. Sieving,  Executive Vice President and General Counsel NextEra Energy, Inc.
-Deborah H. Caplan,  Executive Vice President Human Resources and Corporate Services NextEra Energy, Inc.
+James L. Robo, Eric Silagy, Armando Pimentel, Charles E. Sieving, John Ketchum, Deborah H. Caplan, 
+James L. Robo, Chairman and Chief Executive Officer, NextEra Energy, Inc.
+Eric Silagy, President and Chief Executive Officer, Florida Power & Light Company
+Armando Pimentel, President and Chief Executive Officer, NextEra Energy Resources, LLC
+John Ketchum, Executive Vice President, Finance and Chief Financial Officer
+Charles E. Sieving, Executive Vice President and General Counsel, NextEra Energy, Inc.
+Deborah H. Caplan, Executive Vice President, Human Resources and Corporate Services, NextEra Energy, Inc.
 www.nexteraenergy.com/company/bios.shtml

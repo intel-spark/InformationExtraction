@@ -1,9 +1,9 @@
 
-Consumer Home,  Professional Home,  Aerospace & Defense,  Buildings,  Industrial,  Oil & Gas,  Personal Safety,  Scanning & Mobile Productivity,  Security and Fire,  Vehicles,  Manufacturing,  Healthcare & Medical,  Recreation,  Chemicals, Specialty Materials & Fertilizers, 
-Deutsch,  |, 
-Deutsch,  |, 
-Polski,  |, 
-Slovenčina,  |, 
-Deutsch,  |, , ,  Français,  |, , ,  Italiano,  |, , , 
-Consumer Home,  divider, , , , , , , ,  Professional Home,  divider, , , , , , , ,  Aerospace & Defense,  divider, , , , , , , ,  Vehicles,  divider, , , , , , , ,  Buildings,  divider, , , , , , , ,  Industrial,  divider, , , , , , , ,  Oil & Gas,  divider, , , , , , , ,  Personal Safety,  divider, , , , , , , ,  Scanning & Mobile Productivity, 
+Scanning & Mobile Productivity, 
+Deutsch, |, 
+Deutsch, |, 
+Polski, |, 
+Slovenčina, |, 
+Deutsch, |, Français, |, Italiano, |, 
+Scanning & Mobile Productivity, 
 http://honeywell.com/About/HoneywellLeadership/.../honeywell-leadership.asp%E2%80%A6

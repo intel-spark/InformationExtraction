@@ -1,16 +1,15 @@
 
-Group 1 Automotive,  800 Gessner Houston, TX 77024,  Sales: (713) 647-5700
-Group 1 Automotive 800 Gessner Houston, TX 77024 Sales: (713) 647-5700 Investor Relations,  About Company Profile Core Values Board of Directors Board Committees Management Team Regional Vice Presidents Corporate Governance CTSCA Locations News Events Earnings Calendar Data Fundamentals Company Presentations Annual Reports Transcript Archives Investment Calculator Research Coverage SEC Filings Stock IR Key Ratios IR Snapshot Historical Stock Price Interactive Chart Contact Alerts Get News Alerts by Email All RSS Feeds Request Information
-Earl J. Hesterberg,  President and Chief Executive Officer
-John C. Rickel,  Senior Vice President and Chief Financial Officer
-Frank Grese Jr.,  Senior Vice President, Human Resources, Training, and Operations Support
-Ronald W. Barnhill,  Vice President - Taxes
-Darryl M. Burman,  Vice President, General Counsel
-Peter C. DeLongchamps,  Vice President, Manufacturer Relations, Financial Services and Public Affairs   
-James R. Druzbik,  Vice President, Information Systems
-Michael Jones,  Vice President, Collision Operations
-Wade D. Hubbard,  Vice President, Fixed Operations
-Mark J. Iuppenlatz,  Vice President, Corporate Development
-Lance A. Parker,  Vice President and Corporate Controller
-Michael D. Welch,  Vice President and Treasurer
+Group 1 Automotive, 800 Gessner, Houston, TX 77024, Sales: (713) 647-5700
+Earl J. Hesterberg, President and Chief Executive Officer
+John C. Rickel, Senior Vice President and Chief Financial Officer
+Frank Grese Jr., Senior Vice President, Human Resources, Training, and Operations Support
+Ronald W. Barnhill, Vice President - Taxes
+Darryl M. Burman, Vice President, General Counsel
+Peter C. DeLongchamps, Vice President, Manufacturer Relations, Financial Services and Public Affairs   
+James R. Druzbik, Vice President, Information Systems
+Michael Jones, Vice President, Collision Operations
+Wade D. Hubbard, Vice President, Fixed Operations
+Mark J. Iuppenlatz, Vice President, Corporate Development
+Lance A. Parker, Vice President and Corporate Controller
+Michael D. Welch, Vice President and Treasurer
 http://group1corp.com/index.php?s=20

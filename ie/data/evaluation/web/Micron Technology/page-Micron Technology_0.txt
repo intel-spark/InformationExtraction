@@ -1,14 +1,22 @@
 
-To find a model for a specific part, enter the part number or choose a technology: No part found or Family,  Technology, 
-SATA SSDs,  SAS SSDs,  PCIe SSDs, 
-Tools and Utilities Micron Validated Memory Serial Presence Detect Lookup Power Calculators Storage Executive Software Compatibility Guides Obsolete Part Catalogs Contact Us, 
-D. Mark Durcan,  Chief Executive Officer, Director
-April Arnzen,  Vice President, Human Resources
-Ernie Maddock,  Chief Financial Officer and Vice President, Finance
-Joel L. Poppen,  Vice President, Legal Affairs, General Counsel, and Corporate Secretary
-Michael W. Sadler,  Vice President of Corporate Development
-Trevor Schulze,  Chief Information Officer and Vice President, Information Technology
-Robert E. Switz - Chairman,  Robert L. Bailey,  Richard M. Beyer,  Patrick J. Byrne,  D. Mark Durcan,  Mercedes Johnson,  Lawrence N. Mondry, 
-Greg Atwood,  Brent Keeth,  Gurtej Sandhu, 
-Solutions,  Automotive Memory Solutions, ,  Client SSD Storage,  Data Center,  Embedded Memory Solutions, ,  Enterprise SSD Storage,  Mobile Memory Solutions, ,  Networking Innovations,  Supercomputing Memory,  Ultrathin Solutions, , 
+To find a model for a specific part, enter the part number or choose a technology: No part found or Family, Technology, 
+SATA SSDs, SAS SSDs, PCIe SSDs, 
+Mobile Memory Solutions, 
+D. Mark Durcan, Chief Executive Officer, Director
+April Arnzen, Vice President, Human Resources
+Ernie Maddock, Chief Financial Officer and Vice President, Finance
+Joel L. Poppen, Vice President, Legal Affairs, General Counsel, and Corporate Secretary
+Michael W. Sadler, Vice President of, Corporate Development
+Trevor Schulze, Chief Information Officer and Vice President, Information Technology
+Robert E. Switz - Chairman, 
+Robert L. Bailey, 
+Richard M. Beyer, 
+Patrick J. Byrne, 
+D. Mark Durcan, 
+Mercedes Johnson, 
+Lawrence N. Mondry, 
+Greg, Atwood, 
+Brent, Keeth, 
+Gurtej, Sandhu, 
+Mobile Memory Solutions, 
 http://www.micron.com/about/our-company/leadership

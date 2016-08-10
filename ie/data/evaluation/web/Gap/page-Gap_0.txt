@@ -1,8 +1,7 @@
 
-Home,  About Brands Leadership History Franchise information Careers Gap Careers Banana Republic Careers Old Navy Careers Athleta Careers Intermix Careers College Students GapTech Careers Benefits Investors Financial News and Events Financial Information Analyst Coverage Stock Information Global Presence Governance Corporate Compliance Sustainability Strategy Highlights People Environment #LetsDoMore News People & Passion Growth & Innovation Style & Trends Press Releases Blogs Gap Inc. aDressed Gap styld.by Old Navy tumblr Athleta Chi Blog Intermix BeyondBestDressed Gap Inc. #LetsDoMore Intermix The Mix
-Careers,  Gap Careers,  Banana Republic Careers,  Old Navy Careers,  Athleta Careers,  Intermix Careers,  College Students GapTech Careers,  Benefits
-Investors,  Financial News and Events Financial Information Analyst Coverage Stock Information Global Presence Governance Corporate Compliance
-Financial News and Events,  Financial Information,  Analyst Coverage,  Stock Information,  Global Presence,  Governance,  Corporate Compliance, 
-Careers,  Gap Careers,  Banana Republic Careers,  Old Navy Careers,  Athleta Careers,  Intermix Careers,  For College Applicants
-Financial News and Events,  Financial Information,  Analyst Coverage,  Stock Information,  Real Estate,  Governance,  Corporate Compliance, 
+Careers, Gap Careers, Banana Republic Careers, Old Navy Careers, Athleta Careers, Intermix Careers, College Students GapTech Careers, Benefits
+Investors, Financial News and Events Financial Information Analyst Coverage Stock Information Global Presence Governance Corporate Compliance
+Financial News and Events, Financial Information, Analyst Coverage, Stock Information, Global Presence, Governance, Corporate Compliance, 
+Careers, Gap Careers, Banana Republic Careers, Old Navy Careers, Athleta Careers, Intermix Careers, For College Applicants
+Financial News and Events, Financial Information, Analyst Coverage, Stock Information, Real Estate, Governance, Corporate Compliance, 
 www.gapinc.com/content/gapinc/.../gapincexectives/gapincexecutives.ht

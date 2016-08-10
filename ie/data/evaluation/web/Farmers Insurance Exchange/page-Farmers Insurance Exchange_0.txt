@@ -1,5 +1,4 @@
 
-Home insurance,  Homeowner Renters Condo Mobile Home Specialty Home
-Homeowner,  Renters,  Condo,  Mobile Home,  Specialty Home, 
-Sitemap,  Careers,  Contact Us,  About Us,  Communities,  Newsroom,  ePartners,  Terms of Use,  Privacy Policy,  Our Companies, 
+Home insurance, Homeowner Renters Condo Mobile Home Specialty Home
+Homeowner, Renters, Condo, Mobile Home, Specialty Home, 
 http://www.farmers.com/management/
