@@ -1,0 +1,53 @@
+Wayne T. Smith	title	Chairman of the Board	Wayne T. Smith,  Chairman of the Board and Chief Executive Officer,  Wayne Smith serves as Chairman of the Board and Chief Executive Officer,  of Community Health Systems, Inc. He is one of the most tenured executives in the hospital industry and has led the Company’s growth from a small rural hospital organization to become the largest operator of hospitals in the nation, as measured by number of facilities. Smith has been named one of the 100 Most Influential People in Healthcare by Modern Healthcare,  magazine for the past 14 years and a Top CEO for the healthcare facilities sector by Institutional Investor,  several times in the past decade. Read Bio, 
+Wayne T. Smith	title	Chief Executive Officer	Wayne T. Smith,  Chairman of the Board and Chief Executive Officer,  Wayne Smith serves as Chairman of the Board and Chief Executive Officer,  of Community Health Systems, Inc. He is one of the most tenured executives in the hospital industry and has led the Company’s growth from a small rural hospital organization to become the largest operator of hospitals in the nation, as measured by number of facilities. Smith has been named one of the 100 Most Influential People in Healthcare by Modern Healthcare,  magazine for the past 14 years and a Top CEO for the healthcare facilities sector by Institutional Investor,  several times in the past decade. Read Bio, 
+Wayne T. Smith	title	CEO	Wayne T. Smith,  Chairman of the Board and Chief Executive Officer,  Wayne Smith serves as Chairman of the Board and Chief Executive Officer,  of Community Health Systems, Inc. He is one of the most tenured executives in the hospital industry and has led the Company’s growth from a small rural hospital organization to become the largest operator of hospitals in the nation, as measured by number of facilities. Smith has been named one of the 100 Most Influential People in Healthcare by Modern Healthcare,  magazine for the past 14 years and a Top CEO for the healthcare facilities sector by Institutional Investor,  several times in the past decade. Read Bio, 
+W. Larry Cash	title	President	W. Larry Cash,  President, Financial Services and Chief Financial Officer
+W. Larry Cash	title	Chief Financial Officer	W. Larry Cash,  President, Financial Services and Chief Financial Officer
+W. Larry Cash	employee_of	Financial Services	W. Larry Cash,  President, Financial Services and Chief Financial Officer
+David L. Miller	title	President	David L. Miller,  President and Chief Operating Officer
+David L. Miller	title	Chief Operating Officer	David L. Miller,  President and Chief Operating Officer
+Lynn T. Simon	title	President	Lynn T. Simon, M.D.,  President, Clinical Services and Chief Quality Officer
+Lynn T. Simon	title	Chief Quality Officer	Lynn T. Simon, M.D.,  President, Clinical Services and Chief Quality Officer
+Lynn T. Simon	employee_of	Clinical Services	Lynn T. Simon, M.D.,  President, Clinical Services and Chief Quality Officer
+Tim L. Hingtgen	title	Executive Vice President	Tim L. Hingtgen,  Executive Vice President – Operations
+Tim L. Hingtgen	employee_of	Operations	Tim L. Hingtgen,  Executive Vice President – Operations
+Rachel A. Seifert	title	Executive Vice President	Rachel A. Seifert,  Executive Vice President, Secretary and General Counsel
+Rachel A. Seifert	title	Secretary and General Counsel	Rachel A. Seifert,  Executive Vice President, Secretary and General Counsel
+Martin G. Schweinhart	title	Executive Vice President	Martin G. Schweinhart,  Executive Vice President, Administration
+Martin G. Schweinhart	employee_of	Administration	Martin G. Schweinhart,  Executive Vice President, Administration
+Martin J. Bonick	title	President	Martin J. Bonick,  President, Division I Operations
+Martin J. Bonick	employee_of	Division I Operations	Martin J. Bonick,  President, Division I Operations
+Michael T. Portacci	title	President	Michael T. Portacci,  President, Division II Operations
+Michael T. Portacci	employee_of	Division II Operations	Michael T. Portacci,  President, Division II Operations
+Robert O. Horrar	title	President	Robert O. Horrar,  President, Division III Operations
+Robert O. Horrar	employee_of	Division III Operations	Robert O. Horrar,  President, Division III Operations
+John McClellan	title	President	John McClellan,  President, Division IV Operations
+John McClellan	employee_of	Division IV Operations	John McClellan,  President, Division IV Operations
+Paul Smith	title	President	Paul Smith,  President, Division V Operations
+Paul Smith	employee_of	Division V Operations	Paul Smith,  President, Division V Operations
+Andrea E. (Andi) Bosshart	title	Senior Vice President	Andrea E. (Andi) Bosshart,  Senior Vice President, Corporate Compliance and Privacy Officer
+Andrea E. (Andi) Bosshart	title	Privacy Officer	Andrea E. (Andi) Bosshart,  Senior Vice President, Corporate Compliance and Privacy Officer
+Andrea E. (Andi) Bosshart	employee_of	Corporate Compliance	Andrea E. (Andi) Bosshart,  Senior Vice President, Corporate Compliance and Privacy Officer
+T. Mark Buford	title	Senior Vice President	T. Mark Buford,  Senior Vice President, Internal Audit
+T. Mark Buford	employee_of	Internal Audit	T. Mark Buford,  Senior Vice President, Internal Audit
+Larry M. Carlton	title	Senior Vice President	Larry M. Carlton,  Senior Vice President, Revenue Management
+Larry M. Carlton	employee_of	Revenue Management	Larry M. Carlton,  Senior Vice President, Revenue Management
+Ben Fordham	title	Senior Vice President	Ben Fordham,  Senior Vice President and Chief Litigation Counsel
+Tomi Galin	title	Senior Vice President	Tomi Galin,  Senior Vice President, Corporate Communications, Marketing and Public Affairs
+Tomi Galin	employee_of	Corporate Communications	Tomi Galin,  Senior Vice President, Corporate Communications, Marketing and Public Affairs
+Tomi Galin	employee_of	Marketing	Tomi Galin,  Senior Vice President, Corporate Communications, Marketing and Public Affairs
+Tomi Galin	employee_of	Public Affairs	Tomi Galin,  Senior Vice President, Corporate Communications, Marketing and Public Affairs
+Kevin Hammons	title	Senior Vice President	Kevin Hammons,  Senior Vice President and Chief Accounting Officer
+Kevin Hammons	title	Chief Accounting Officer	Kevin Hammons,  Senior Vice President and Chief Accounting Officer
+Kenneth D. Hawkins	title	Senior Vice President	Kenneth D. Hawkins,  Senior Vice President, Acquisitions & Development
+Kenneth D. Hawkins	employee_of	Acquisitions & Development	Kenneth D. Hawkins,  Senior Vice President, Acquisitions & Development
+Michael M. Lynd	title	Senior Vice President	Michael M. Lynd,  Senior Vice President, Financial Services
+Michael M. Lynd	employee_of	Financial Services	Michael M. Lynd,  Senior Vice President, Financial Services
+Tim G. Marlette	title	Senior Vice President	Tim G. Marlette,  Senior Vice President and Chief Purchasing Officer
+Tim G. Marlette	title	Chief Purchasing Officer	Tim G. Marlette,  Senior Vice President and Chief Purchasing Officer
+Pamela T. Rudisill	title	Senior Vice President	Pamela T. Rudisill,  Senior Vice President, Chief Nursing Officer
+Pamela T. Rudisill	title	Chief Nursing Officer	Pamela T. Rudisill,  Senior Vice President, Chief Nursing Officer
+Ronald J. Shafer	title	Senior Vice President	Ronald J. Shafer,  Senior Vice President, Human Resources
+Ronald J. Shafer	employee_of	Human Resources	Ronald J. Shafer,  Senior Vice President, Human Resources
+Manish Shah	title	Senior Vice President	Manish Shah,  Senior Vice President and Chief Information Officer
+Manish Shah	title	Chief Information Officer	Manish Shah,  Senior Vice President and Chief Information Officer

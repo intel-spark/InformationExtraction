@@ -1,0 +1,20 @@
+Gene Lee	title	President	Gene Lee,  President & Chief Executive Officer
+Gene Lee	title	Chief Executive Officer	Gene Lee,  President & Chief Executive Officer
+Matt Broad	title	Senior Vice President	Matt Broad,  Senior Vice President, General Counsel & Corporate Secretary
+Matt Broad	title	General Counsel & Corporate Secretary	Matt Broad,  Senior Vice President, General Counsel & Corporate Secretary
+Laurie Burns	title	Senior Vice President	Laurie Burns,  Senior Vice President, Chief Development Officer
+Laurie Burns	title	Chief Development Officer	Laurie Burns,  Senior Vice President, Chief Development Officer
+Todd Burrowes	title	President	Todd Burrowes,  President, LongHorn Steakhouse
+Todd Burrowes	employee_of	LongHorn Steakhouse	Todd Burrowes,  President, LongHorn Steakhouse
+Rick Cardenas	title	Senior Vice President	Rick Cardenas,  Senior Vice President, Chief Financial Officer
+Rick Cardenas	title	Chief Financial Officer	Rick Cardenas,  Senior Vice President, Chief Financial Officer
+Dave George	title	President	Dave George,  President, Olive Garden
+Dave George	employee_of	Olive Garden	Dave George,  President, Olive Garden
+Harald Herrmann	title	Senior Vice President	Harald Herrmann,  Senior Vice President, Special Projects
+Harald Herrmann	employee_of	Special Projects	Harald Herrmann,  Senior Vice President, Special Projects
+Danielle Kirgan	title	Senior Vice President	Danielle Kirgan,  Senior Vice President, Chief Human Resources Officer
+Danielle Kirgan	title	Chief Human Resources Officer	Danielle Kirgan,  Senior Vice President, Chief Human Resources Officer
+John Madonna	title	Senior Vice President	John Madonna,  Senior Vice President, Corporate Controller
+John Madonna	title	Corporate Controller	John Madonna,  Senior Vice President, Corporate Controller
+Doug Milanes	title	Senior Vice President	Doug Milanes,  Senior Vice President, Chief Supply Chain Officer
+Doug Milanes	title	Chief Supply Chain Officer	Doug Milanes,  Senior Vice President, Chief Supply Chain Officer

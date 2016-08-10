@@ -1,0 +1,30 @@
+Gregory J. Hayes	title	President	Gregory J. Hayes,  President and Chief Executive Officer
+Gregory J. Hayes	title	Chief Executive Officer	Gregory J. Hayes,  President and Chief Executive Officer
+Elizabeth B. Amato	title	Executive Vice President	Elizabeth B. Amato,  Executive Vice President and Chief Human Resources Officer
+Elizabeth B. Amato	title	Chief Human Resources Officer	Elizabeth B. Amato,  Executive Vice President and Chief Human Resources Officer
+Vince Campisi	title	Senior Vice President	Vince Campisi,  Senior Vice President, Digital, and Chief Information Officer
+Vince Campisi	title	Chief Information Officer	Vince Campisi,  Senior Vice President, Digital, and Chief Information Officer
+Nancy M. Davis	title	Senior Vice President	Nancy M. Davis,  Senior Vice President and Chief Information Officer
+Nancy M. Davis	title	Chief Information Officer	Nancy M. Davis,  Senior Vice President and Chief Information Officer
+Philippe Delpech	title	President	Philippe Delpech,  President, Otis Elevator
+Philippe Delpech	employee_of	Otis Elevator	Philippe Delpech,  President, Otis Elevator
+Michael R. Dumais	title	Senior Vice President	Michael R. Dumais,  Senior Vice President, Strategic Planning
+Michael R. Dumais	employee_of	Strategic Planning	Michael R. Dumais,  Senior Vice President, Strategic Planning
+Charles D. Gill	title	Executive Vice President	Charles D. Gill,  Executive Vice President and General Counsel
+Charles D. Gill	title	 and 	Charles D. Gill,  Executive Vice President and General Counsel
+Charles D. Gill	title	General Counsel	Charles D. Gill,  Executive Vice President and General Counsel
+David L. Gitlin	title	President	David L. Gitlin,  President, UTC Aerospace Systems
+David L. Gitlin	employee_of	UTC Aerospace Systems	David L. Gitlin,  President, UTC Aerospace Systems
+David P. Hess	title	Executive Vice President	David P. Hess,  Executive Vice President and Chief Customer Officer, Aerospace
+David P. Hess	title	Chief Customer Officer	David P. Hess,  Executive Vice President and Chief Customer Officer, Aerospace
+Akhil Johri	title	Executive Vice President	Akhil Johri,  Executive Vice President and Chief Financial Officer
+Akhil Johri	title	Chief Financial Officer	Akhil Johri,  Executive Vice President and Chief Financial Officer
+Robert F. Leduc	title	President	Robert F. Leduc,  President, Pratt & Whitney
+Robert F. Leduc	employee_of	Pratt & Whitney	Robert F. Leduc,  President, Pratt & Whitney
+Nancy T. Lintner	title	Senior Vice President	Nancy T. Lintner,  Senior Vice President, Communications
+Nancy T. Lintner	employee_of	Communications	Nancy T. Lintner,  Senior Vice President, Communications
+Peter F. Longo	title	Senior Vice President	Peter F. Longo,  Peter F. Longo, , Senior Vice President, Operations
+Peter F. Longo	employee_of	Operations	Peter F. Longo,  Peter F. Longo, , Senior Vice President, Operations
+Timothy J. McBride	title	Senior Vice President	Timothy J. McBride,  Senior Vice President, Government Relations
+Robert J. McDonough	title	President	Robert J. McDonough,  President, UTC Climate, Controls & Security
+J. Michael McQuade	title	Senior Vice President	J. Michael McQuade,  Senior Vice President, Science and Technology

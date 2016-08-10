@@ -1,0 +1,19 @@
+David Cordani	title	President	David Cordani,  Presidentand CEO Cigna Corporation. Read more
+David Cordani	title	CEO	David Cordani,  Presidentand CEO Cigna Corporation. Read more
+Lisa Bacus	title	Executive Vice President	Lisa Bacus,  Executive Vice Presidentand Global Chief Marketing Officer Cigna Corporation. Read more, 
+Lisa Bacus	title	Global Chief Marketing Officer	Lisa Bacus,  Executive Vice Presidentand Global Chief Marketing Officer Cigna Corporation. Read more, 
+Mark Boxer	title	Executive Vice President	Mark Boxer,  Executive Vice Presidentand Global Chief Information Officer Cigna Corporation. Read more, 
+Mark Boxer	title	Global Chief Information Officer	Mark Boxer,  Executive Vice Presidentand Global Chief Information Officer Cigna Corporation. Read more, 
+Herb Fritch	title	President	Herb Fritch,  President Cigna-HealthSpring. Read more
+Nicole Jones	title	Executive Vice President	Nicole Jones,  Executive Vice Presidentand General Counsel, Cigna Corporation. Read more, 
+Nicole Jones	title	General Counsel	Nicole Jones,  Executive Vice Presidentand General Counsel, Cigna Corporation. Read more, 
+Matthew Manders	title	President	Matthew Manders,  President U.S. Commercial Markets and Global Health Care Operations, Cigna Corporation. Read more, 
+Matthew Manders	employee_of	U.S. Commercial Markets	Matthew Manders,  President U.S. Commercial Markets and Global Health Care Operations, Cigna Corporation. Read more, 
+Matthew Manders	employee_of	Global Health Care Operations	Matthew Manders,  President U.S. Commercial Markets and Global Health Care Operations, Cigna Corporation. Read more, 
+Alan Muney	title	Chief Medical Officer	Alan Muney,  MD, MHA Chief Medical Officer Cigna Corporation. Read more
+John Murabito	title	Executive Vice President	John Murabito,  Executive Vice President Human Resources and Services, Cigna Corporation. Read more
+John Murabito	employee_of	Human Resources and Services	John Murabito,  Executive Vice President Human Resources and Services, Cigna Corporation. Read more
+Thomas McCarthy	title	Executive Vice President	Thomas McCarthy,  Executive Vice Presidentand Chief Financial Officer Cigna Corporation. Read more, 
+Thomas McCarthy	title	Chief Financial Officer	Thomas McCarthy,  Executive Vice Presidentand Chief Financial Officer Cigna Corporation. Read more, 
+Jason Sadler	title	President	Jason Sadler,  President International Markets, Cigna Corporation. Read more
+Jason Sadler	employee_of	International Markets	Jason Sadler,  President International Markets, Cigna Corporation. Read more

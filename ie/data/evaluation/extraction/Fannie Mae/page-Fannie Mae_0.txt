@@ -1,0 +1,21 @@
+Timothy J. Mayopoulos	title	President	Timothy J. Mayopoulos,  President and Chief Executive Officer
+Timothy J. Mayopoulos	title	Chief Executive Officer	Timothy J. Mayopoulos,  President and Chief Executive Officer
+David Benson	title	Executive Vice President	David Benson,  Executive Vice President Chief Financial Officer
+David Benson	title	Chief Financial Officer	David Benson,  Executive Vice President Chief Financial Officer
+Andrew Bon Salle	title	Executive Vice President	Andrew Bon Salle,  Executive Vice President Single-Family Business
+Andrew Bon Salle	employee_of	Single-Family Business	Andrew Bon Salle,  Executive Vice President Single-Family Business
+Brian P. Brooks	title	Executive Vice President	Brian P. Brooks,  Executive Vice President, General Counsel, and Corporate Secretary
+Brian P. Brooks	title	General Counsel	Brian P. Brooks,  Executive Vice President, General Counsel, and Corporate Secretary
+Brian P. Brooks	title	Corporate Secretary	Brian P. Brooks,  Executive Vice President, General Counsel, and Corporate Secretary
+Joy Cianci	title	Senior Vice President	Joy Cianci,  Senior Vice President Single-Family Credit Portfolio Management
+Joy Cianci	employee_of	Single-Family Credit Portfolio Management	Joy Cianci,  Senior Vice President Single-Family Credit Portfolio Management
+Maureen Davenport	title	Senior Vice President	Maureen Davenport,  Senior Vice President Chief Communications Officer
+Maureen Davenport	title	Chief Communications Officer	Maureen Davenport,  Senior Vice President Chief Communications Officer
+Jeffery R. Hayward	title	Executive Vice President	Jeffery R. Hayward,  Executive Vice President and Head of Multifamily
+Jeffery R. Hayward	title	Head of Multifamily	Jeffery R. Hayward,  Executive Vice President and Head of Multifamily
+Nancy Jardini	title	Senior Vice President	Nancy Jardini,  Senior Vice President Chief Compliance Officer
+Nancy Jardini	title	Chief Compliance Officer	Nancy Jardini,  Senior Vice President Chief Compliance Officer
+Kimberly Johnson	title	Senior Vice President	Kimberly Johnson,  Senior Vice President Chief Risk Officer
+Kimberly Johnson	title	Chief Risk Officer	Kimberly Johnson,  Senior Vice President Chief Risk Officer
+Bruce Lee	title	Senior Vice President	Bruce Lee,  Senior Vice President Operations and Technology
+Bruce Lee	employee_of	Operations and Technology	Bruce Lee,  Senior Vice President Operations and Technology

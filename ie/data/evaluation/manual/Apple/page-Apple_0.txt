@@ -3,26 +3,26 @@ Apple - Press Info - Apple Leadership
 
 Mac
 Executive Profiles
-	1Tim Cook	, 	2CEO
-	1Angela Ahrendts	, 	2Senior Vice President	 	3Retail and Online Stores
-	1Eddy Cue	, 	2Senior Vice President	 	3Internet Software and Services
-	1Craig Federighi	, 	2Senior Vice President	 Software Engineering
-	1Jonathan Ive	, 	2Chief Design Officer  
-	1Luca Maestri	, 	2Senior Vice President	 and 	2Chief Financial Officer
-	1Dan Riccio	, 	2Senior Vice President	 Hardware Engineering
-	1Philip W. Schiller	, 	2Senior Vice President	 	3Worldwide Marketing
-	1Bruce Sewell	, 	2Senior Vice President	 and 	2General Counsel
-	1Johny Srouji	, 	2Senior Vice President	 	3Hardware Technologies
-	1Jeff Williams	, 	2Chief Operating Officer
-	1Paul Deneve	, 	2Vice President	 Special Projects
-	1Alan Dye	, 	2Vice President	 	3User Interface Design
-	1Steve Dowling	, 	2Vice President	 	3Communications
-	1Richard Howarth	, 	2Vice President	 	3Industrial Design
+	1Tim Cook	, 	2CEO	
+	1Angela Ahrendts	, 	2Senior Vice President	 	3Retail and Online Stores	
+	1Eddy Cue	, 	2Senior Vice President	 	3Internet Software and Services	
+	1Craig Federighi	, 	2Senior Vice President	 Software Engineering	
+	1Jonathan Ive	, 	2Chief Design Officer	  
+	1Luca Maestri	, 	2Senior Vice President	 and 	2Chief Financial Officer	
+	1Dan Riccio	, 	2Senior Vice President	 Hardware Engineering	
+	1Philip W. Schiller	, 	2Senior Vice President	 	3Worldwide Marketing	
+	1Bruce Sewell	, 	2Senior Vice President	 and 	2General Counsel	
+	1Johny Srouji	, 	2Senior Vice President	 	3Hardware Technologies	
+	1Jeff Williams	, 	2Chief Operating Officer	
+	1Paul Deneve	, 	2Vice President	 Special Projects	
+	1Alan Dye	, 	2Vice President	 	3User Interface Design	
+	1Steve Dowling	, 	2Vice President	 	3Communications	
+	1Richard Howarth	, 	2Vice President	 	3Industrial Design	
 	1Lisa Jackson	, 	2Vice President	 Environment, Policy and Social Initiatives
-	1Tor Myhren	, 	2Vice President	 	3Marketing Communications
+	1Tor Myhren	, 	2Vice President	 	3Marketing Communications	
 	1Joel Podolny	, 	2Vice President	 Dean, Apple University
-	1Denise Young Smith	, 	2Vice President	 	3Worldwide Human Resources
-	1Arthur D. Levinson	, Ph. D., 	2Chairman	 of the Board, Apple 	2Former Chairman	 and 	2CEO Genentech
+	1Denise Young Smith	, 	2Vice President	 	3Worldwide Human Resources	
+	1Arthur D. Levinson	, Ph. D., 	2Chairman	 of the Board, Apple 	2Former Chairman	 and 	2CEO	 Genentech
 	1James A. Bell	, 	2Former CFO	 and 	2Corporate President	 The Boeing Company
 	1Tim Cook	, 	2CEO	 Apple
 	1Albert Gore Jr.	, 	2Former Vice President	 of the United States

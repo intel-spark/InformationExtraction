@@ -1,0 +1,43 @@
+David Abney	title	Chairman	David Abney, , UPS Chairman and Chief Executive Officer, Request a speaker,
+David Abney	title	Chief Executive Officer	David Abney, , UPS Chairman and Chief Executive Officer, Request a speaker,
+David P. Abney	title	Chairman	David P. Abney,  UPS Chairman and Chief Executive Officer
+David P. Abney	title	Chief Executive Officer	David P. Abney,  UPS Chairman and Chief Executive Officer
+Jim Barber	title	President	Jim Barber,  President, UPS International
+Norman M. Brothers, Jr.	title	Senior Vice President	Norman M. Brothers, Jr.,  Senior Vice President, General Counsel and Corporate Secretary
+Norman M. Brothers, Jr.	title	General Counsel	Norman M. Brothers, Jr.,  Senior Vice President, General Counsel and Corporate Secretary
+Norman M. Brothers, Jr.	title	Corporate Secretary	Norman M. Brothers, Jr.,  Senior Vice President, General Counsel and Corporate Secretary
+Teresa M. Finley	title	Chief Marketing and Global Business Services Officer	Teresa M. Finley,  Chief Marketing and Global Business Services Officer
+Alan Gershenhorn	title	Executive Vice President	Alan Gershenhorn,  Executive Vice President and Chief Commercial Officer
+Alan Gershenhorn	title	Chief Commercial Officer	Alan Gershenhorn,  Executive Vice President and Chief Commercial Officer
+Myron Gray	title	President	Myron Gray,  President, U.S. Operations
+Myron Gray	employee_of	U.S. Operations	Myron Gray,  President, U.S. Operations
+Kate Gutmann	title	Senior Vice President	Kate Gutmann,  Senior Vice President, Worldwide Sales and Solutions
+Kate Gutmann	employee_of	Worldwide Sales and Solutions	Kate Gutmann,  Senior Vice President, Worldwide Sales and Solutions
+Teri Plummer McClure	title	Chief Human Resources Officer	Teri Plummer McClure,  Chief Human Resources Officer and Senior Vice President, Global Human Resources and Labor
+Teri Plummer McClure	title	Senior Vice President	Teri Plummer McClure,  Chief Human Resources Officer and Senior Vice President, Global Human Resources and Labor
+Teri Plummer McClure	employee_of	Global Human Resources and Labor	Teri Plummer McClure,  Chief Human Resources Officer and Senior Vice President, Global Human Resources and Labor
+Richard Peretz	title	Chief Financial Officer	Richard Peretz,  Chief Financial Officer
+Juan Perez	title	Chief Information Officer	Juan Perez,  Chief Information Officer
+Mark Wallace	title	Senior Vice President	Mark Wallace,  Senior Vice President, Global Engineering and Sustainability
+Mark Wallace	employee_of	Global Engineering and Sustainability	Mark Wallace,  Senior Vice President, Global Engineering and Sustainability
+David P. Abney	title	Chairman	David P. Abney,  UPS Chairman and Chief Executive Officer
+David P. Abney	title	Chief Executive Officer	David P. Abney,  UPS Chairman and Chief Executive Officer
+Rodney C. Adkins	title	Former Senior Vice-President	Rodney C. Adkins,  Former Senior Vice-President, IBM
+Michael J. Burns	title	Former Chairman	Michael J. Burns,  Former Chairman, Chief Executive Officer & President, Dana Corporation
+Michael J. Burns	title	Chief Executive Officer	Michael J. Burns,  Former Chairman, Chief Executive Officer & President, Dana Corporation
+Michael J. Burns	title	President	Michael J. Burns,  Former Chairman, Chief Executive Officer & President, Dana Corporation
+Michael J. Burns	employee_of	Dana Corporation	Michael J. Burns,  Former Chairman, Chief Executive Officer & President, Dana Corporation
+William R. Johnson	title	Former Chairman	William R. Johnson,  Former Chairman, President & Chief Executive Officer, H.J. Heinz Company
+William R. Johnson	title	President	William R. Johnson,  Former Chairman, President & Chief Executive Officer, H.J. Heinz Company
+William R. Johnson	title	Chief Executive Officer	William R. Johnson,  Former Chairman, President & Chief Executive Officer, H.J. Heinz Company
+Dr. Candace Kendle	title	Co-founder	Dr. Candace Kendle,  Co-founder and Former Chairman & Chief Executive Officer of Kendle International, Inc.
+Dr. Candace Kendle	title	Former Chairman	Dr. Candace Kendle,  Co-founder and Former Chairman & Chief Executive Officer of Kendle International, Inc.
+Dr. Candace Kendle	title	Chief Executive Officer	Dr. Candace Kendle,  Co-founder and Former Chairman & Chief Executive Officer of Kendle International, Inc.
+Dr. Candace Kendle	employee_of	Kendle International, Inc	Dr. Candace Kendle,  Co-founder and Former Chairman & Chief Executive Officer of Kendle International, Inc.
+Ann M. Livermore	title	Former Executive Vice President	Ann M. Livermore,  Former Executive Vice President, Hewlett-Packard Company
+Rudy H.P. Markham	title	Former Financial Director	Rudy H.P. Markham,  Former Financial Director, Unilever PLC and Unilever NV
+Rudy H.P. Markham	employee_of	Unilever PLC and Unilever NV	Rudy H.P. Markham,  Former Financial Director, Unilever PLC and Unilever NV
+Clark T. Randt, Jr. (Sandy)	title	Ambassador	Clark T. Randt, Jr. (Sandy),  Former U.S. Ambassador to the People's Republic of China, President of Randt & Co. LLC
+John T. Stankey	title	CEO	John T. Stankey,  CEO, AT&T Entertainment Group
+Carol B. Tome	title	Chief Financial Officer	Carol B. Tome,  Chief Financial Officer & Executive Vice President, The Home Depot, Inc.
+Carol B. Tome	title	Executive Vice President	Carol B. Tome,  Chief Financial Officer & Executive Vice President, The Home Depot, Inc.

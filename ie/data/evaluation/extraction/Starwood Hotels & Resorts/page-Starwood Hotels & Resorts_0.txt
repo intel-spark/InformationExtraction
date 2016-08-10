@@ -1,0 +1,33 @@
+Bruce W. Duncan	title	President	Bruce W. Duncan,  President, Chief Executive Officer and Director, First Industrial Realty Trust Inc.
+Bruce W. Duncan	title	Chief Executive Officer	Bruce W. Duncan,  President, Chief Executive Officer and Director, First Industrial Realty Trust Inc.
+Bruce W. Duncan	title	Director	Bruce W. Duncan,  President, Chief Executive Officer and Director, First Industrial Realty Trust Inc.
+Bruce W. Duncan	employee_of	First Industrial Realty Trust Inc	Bruce W. Duncan,  President, Chief Executive Officer and Director, First Industrial Realty Trust Inc.
+THOMAS B. MANGAS	title	Chief Executive Officer	THOMAS B. MANGAS,  Chief Executive Officer, Starwood Hotels & Resorts
+THOMAS B. MANGAS	employee_of	Starwood Hotels & Resorts	THOMAS B. MANGAS,  Chief Executive Officer, Starwood Hotels & Resorts
+Thomas Clarke Ph.D	title	President	Thomas Clarke Ph.D,  President, New Business Development, Nike, Inc.
+Clayton C. Daley, Jr.	title	Retired Chief Financial Officer	Clayton C. Daley, Jr.,  Retired Chief Financial Officer and Vice Chair, Procter & Gamble
+Lizanne Galbreath	title	Managing Partner	Lizanne Galbreath,  Managing Partner, Galbreath & Company
+Eric Hippeau	title	Partner	Eric Hippeau,  Partner, Lerer Ventures
+AYLWIN B. LEWIS	title	President	AYLWIN B. LEWIS,  President and Chief Executive Officer, Potbelly Sandwich Works, LLC
+AYLWIN B. LEWIS	title	Chief Executive Officer	AYLWIN B. LEWIS,  President and Chief Executive Officer, Potbelly Sandwich Works, LLC
+Stephen R. Quazzo	title	Chief Executive Officer	Stephen R. Quazzo,  Chief Executive Officer, Managing Director and Co-founder, Pearlmark Real Estate Partners, LLC
+Stephen R. Quazzo	title	Managing Director	Stephen R. Quazzo,  Chief Executive Officer, Managing Director and Co-founder, Pearlmark Real Estate Partners, LLC
+Stephen R. Quazzo	title	Co-founder	Stephen R. Quazzo,  Chief Executive Officer, Managing Director and Co-founder, Pearlmark Real Estate Partners, LLC
+Thomas O. Ryder	title	Retired Chairman	Thomas O. Ryder,  Retired Chairman and Chief Executive Officer, The Readers Digest Association, Inc.
+Thomas O. Ryder	title	Chief Executive Officer	Thomas O. Ryder,  Retired Chairman and Chief Executive Officer, The Readers Digest Association, Inc.
+Thomas B. Mangas	title	Chief Executive Officer	Thomas B. Mangas,  Chief Executive Officer
+Jeff Cava	title	Executive Vice President	Jeff Cava,  Executive Vice President and Chief Human Resources Officer
+Jeff Cava	title	Chief Human Resources Officer	Jeff Cava,  Executive Vice President and Chief Human Resources Officer
+Stephen Ho	title	President	Stephen Ho,  President, Asia Pacific
+K.C. KAVANAGH	title	Senior Vice President	K.C. KAVANAGH,  Senior Vice President Of Global Communications
+JOHN PEYTON	title	Senior Vice President	JOHN PEYTON,  Senior Vice President, Brands & Shared Services
+JOHN PEYTON	employee_of	Brands & Shared Services	JOHN PEYTON,  Senior Vice President, Brands & Shared Services
+Martha Poulter	title	Executive Vice President	Martha Poulter,  Executive Vice President and Chief Information Officer
+Martha Poulter	title	Chief Information Officer	Martha Poulter,  Executive Vice President and Chief Information Officer
+SERGIO D. RIVERA	title	President	SERGIO D. RIVERA,  President, The Americas, Starwood Hotels & Resorts Worldwide, Inc.
+Alan M. Schnaid	title	Senior Vice President	Alan M. Schnaid,  Senior Vice President and Chief Financial Officer
+Alan M. Schnaid	title	Chief Financial Officer	Alan M. Schnaid,  Senior Vice President and Chief Financial Officer
+Kenneth S. Siegel	title	Chief Administrative Officer	Kenneth S. Siegel,  Chief Administrative Officer and General Counsel
+Kenneth S. Siegel	title	General Counsel	Kenneth S. Siegel,  Chief Administrative Officer and General Counsel
+MARK R. VONDRASEK	title	Senior Vice President	MARK R. VONDRASEK,  Senior Vice President, Commercial Services
+MICHAEL WALE	title	President, Europe	MICHAEL WALE,  President, Europe, Africa, and Middle East

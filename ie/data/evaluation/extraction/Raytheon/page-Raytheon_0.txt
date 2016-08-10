@@ -1,0 +1,25 @@
+Thomas A. Kennedy	title	Chairman	Thomas A. Kennedy,  Chairman and Chief Executive Officer
+Thomas A. Kennedy	title	Chief Executive Officer	Thomas A. Kennedy,  Chairman and Chief Executive Officer
+Kevin G. DaSilva	title	Vice President	Kevin G. DaSilva,  Vice President Treasury Raytheon Company
+Lawrence J. Harrington	title	Vice President	Lawrence J. Harrington,  Vice President Internal Audit
+Lawrence J. Harrington	employee_of	Internal Audit	Lawrence J. Harrington,  Vice President Internal Audit
+John D. Harris II	title	Vice President	John D. Harris II,  Vice President Business Development Raytheon Company, Chief Executive Officer Raytheon International, Inc.
+John D. Harris II	employee_of	Business Development	John D. Harris II,  Vice President Business Development Raytheon Company, Chief Executive Officer Raytheon International, Inc.
+Frank R. Jimenez	title	Vice President	Frank R. Jimenez,  Vice President General Counsel and Corporate Secretary
+Frank R. Jimenez	title	General Counsel	Frank R. Jimenez,  Vice President General Counsel and Corporate Secretary
+Frank R. Jimenez	title	Corporate Secretary	Frank R. Jimenez,  Vice President General Counsel and Corporate Secretary
+Wesley D. Kremer	title	Vice President	Wesley D. Kremer,  Vice President Raytheon Company, President Integrated Defense Systems
+Wesley D. Kremer	employee_of	Raytheon Company	Wesley D. Kremer,  Vice President Raytheon Company, President Integrated Defense Systems
+Taylor W. Lawrence	title	Vice President	Taylor W. Lawrence,  Vice President Raytheon Company, President Missile Systems
+Edward Miyashiro	title	Vice President	Edward Miyashiro,  Vice President Raytheon Company Evaluation Team
+Randa G. Newsome	title	Vice President	Randa G. Newsome,  Vice President Human Resources and Global Security
+Anthony F. O'Brien	title	Vice President	Anthony F. O'Brien,  Vice President, Chief Financial Officer Raytheon Company
+Anthony F. O'Brien	title	Chief Financial Officer	Anthony F. O'Brien,  Vice President, Chief Financial Officer Raytheon Company
+Rebecca R. Rhoads	title	Vice President	Rebecca R. Rhoads,  Vice President Raytheon Company, President Global Business Services
+Mark E. Russell	title	Vice President	Mark E. Russell,  Vice President Engineering, Technology and Mission Assurance
+David C. Wajsgras	title	Vice President	David C. Wajsgras,  Vice President Raytheon Company, President Intelligence, Information and Services
+Pamela A. Wickham	title	Vice President	Pamela A. Wickham,  Vice President Corporate Affairs and Communications
+David Wilkins	title	Vice President	David Wilkins,  Vice President Contracts and Supply Chain
+Mike J. Wood	title	Vice President	Mike J. Wood,  Vice President Controller and Chief Accounting Officer
+Mike J. Wood	title	Chief Accounting Officer	Mike J. Wood,  Vice President Controller and Chief Accounting Officer
+Richard R. Yuse	title	Vice President	Richard R. Yuse,  Vice President Raytheon Company, President Space and Airborne Systems

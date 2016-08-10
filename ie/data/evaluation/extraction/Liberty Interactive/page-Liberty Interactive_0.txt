@@ -1,0 +1,5 @@
+John C. Malone	title	Chairman	John C. Malone,  Chairman
+Gregory B. Maffei	title	Chief Executive Officer	Gregory B. Maffei,  Chief Executive Officer
+Richard N. Baer	title	Chief Legal Officer	Richard N. Baer,  Chief Legal Officer
+Albert E. Rosenthaler	title	Chief Tax Officer	Albert E. Rosenthaler,  Chief Tax Officer
+Christopher W. Shean	title	Chief Financial Officer	Christopher W. Shean,  Chief Financial Officer

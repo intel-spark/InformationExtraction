@@ -1,0 +1,19 @@
+Carl T. Camden	title	President	Carl T. Camden,  President and Chief Executive Officer
+Carl T. Camden	title	Chief Executive Officer	Carl T. Camden,  President and Chief Executive Officer
+George S. Corona	title	Executive Vice President	George S. Corona,  Executive Vice President and Chief Operating Officer
+George S. Corona	title	Chief Operating Officer	George S. Corona,  Executive Vice President and Chief Operating Officer
+Steve S. Armstrong	title	General Manager	Steve S. Armstrong,  General Manager, U.S. Operations
+Steve S. Armstrong	employee_of	U.S. Operations	Steve S. Armstrong,  General Manager, U.S. Operations
+James Bradley	employee_of	Outsourcing and Consulting Group	James Bradley,  Outsourcing and Consulting Group
+Teresa S. Carroll	title	General Manager	Teresa S. Carroll,  Centers of Excellence and General Manager, Outsourcing & Consulting Group
+Teresa S. Carroll	employee_of	Outsourcing & Consulting Group	Teresa S. Carroll,  Centers of Excellence and General Manager, Outsourcing & Consulting Group
+Carolyn Palmer	employee_of	Global Marketing	Carolyn Palmer,  Global Marketing
+Peter W. Quigley	title	General Counsel	Peter W. Quigley,  General Counsel, Assistant Secretary and Chief Administrative Officer
+Peter W. Quigley	title	Assistant Secretary	Peter W. Quigley,  General Counsel, Assistant Secretary and Chief Administrative Officer
+Peter W. Quigley	title	Chief Administrative Officer	Peter W. Quigley,  General Counsel, Assistant Secretary and Chief Administrative Officer
+Nina M. Ramsey	title	Chief Human Resources Officer	Nina M. Ramsey,  Chief Human Resources Officer
+Natalia Shuman	title	General Manager	Natalia Shuman,  General Manager, EMEA and APAC Regions, Chief Operating Officer, North Asia
+Natalia Shuman	title	Chief Operating Officer	Natalia Shuman,  General Manager, EMEA and APAC Regions, Chief Operating Officer, North Asia
+Judy Snyder	title	Chief Information Officer	Judy Snyder,  Chief Information Officer
+Olivier Thirot	title	Chief Financial Officer	Olivier Thirot,  Chief Financial Officer
+Debra Thorpe	employee_of	Strategic Account Operations	Debra Thorpe,  Strategic Account Operations

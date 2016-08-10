@@ -1,0 +1,22 @@
+Mark J. Costa	title	Chairman	Mark J. Costa,  Chairman and Chief Executive Officer
+Mark J. Costa	title	Chief Executive Officer	Mark J. Costa,  Chairman and Chief Executive Officer
+Michael H.K. Chung	title	Senior Vice President	Michael H.K. Chung,  Senior Vice President and Chief International Ventures Officer
+Michael H.K. Chung	title	Chief International Ventures Officer	Michael H.K. Chung,  Senior Vice President and Chief International Ventures Officer
+Mark K. Cox	title	Senior Vice President	Mark K. Cox,  Senior Vice President, Chief Manufacturing, Supply Chain and Engineering Officer
+Mark K. Cox	title	Chief Manufacturing, Supply Chain and Engineering Officer	Mark K. Cox,  Senior Vice President, Chief Manufacturing, Supply Chain and Engineering Officer
+Stephen G. Crawford	title	Senior Vice President	Stephen G. Crawford,  Senior Vice President and Chief Technology Officer
+Stephen G. Crawford	title	Chief Technology Officer	Stephen G. Crawford,  Senior Vice President and Chief Technology Officer
+Curt E. Espeland	title	Executive Vice President	Curt E. Espeland,  Executive Vice President and Chief Financial Officer
+Curt E. Espeland	title	Chief Financial Officer	Curt E. Espeland,  Executive Vice President and Chief Financial Officer
+David A. Golden	title	Senior Vice President	David A. Golden,  Senior Vice President, Chief Legal and Sustainability Officer, and Corporate Secretary
+David A. Golden	title	Chief Legal and Sustainability Officer	David A. Golden,  Senior Vice President, Chief Legal and Sustainability Officer, and Corporate Secretary
+David A. Golden	title	Corporate Secretary	David A. Golden,  Senior Vice President, Chief Legal and Sustainability Officer, and Corporate Secretary
+Brad A. Lich	title	Executive Vice President	Brad A. Lich,  Executive Vice President and Chief Commercial Officer
+Brad A. Lich	title	Chief Commercial Officer	Brad A. Lich,  Executive Vice President and Chief Commercial Officer
+Lucian Boldea	title	Senior Vice President	Lucian Boldea,  Senior Vice President, Additives & Functional Products
+Lucian Boldea	employee_of	Additives & Functional Products	Lucian Boldea,  Senior Vice President, Additives & Functional Products
+Perry Stuckey	title	Senior Vice President	Perry Stuckey,  Senior Vice President and Chief Human Resources Officer
+Perry Stuckey	title	Chief Human Resources Officer	Perry Stuckey,  Senior Vice President and Chief Human Resources Officer
+Damon C. Warmack	title	Senior Vice President	Damon C. Warmack,  Senior Vice President Corporate Development and Chemical Intermediates
+Damon C. Warmack	employee_of	Corporate Development	Damon C. Warmack,  Senior Vice President Corporate Development and Chemical Intermediates
+Damon C. Warmack	employee_of	Chemical Intermediates	Damon C. Warmack,  Senior Vice President Corporate Development and Chemical Intermediates

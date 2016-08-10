@@ -14,20 +14,20 @@ About Us Corporate Profile History Facilities Executive Biographies,  Safety Env
 com.ibm.skins.NoSkin.skin,  WCM Breadcrumbs,  Home / About Us / Executive Biographies uss internet content library (english)/United States Steel Internet/About Us/Executive Biographies/Executive Biographies Executive Biographies
 Home / About Us / Executive Biographies, ,  uss internet content library (english)/United States Steel Internet/About Us/Executive Biographies, /Executive Biographies, ,  Executive Biographies, 
 com.ibm.skins.NoSkin.skin,  WCM Body Content,  Executive Biographies     Mario Longhi President & Chief Executive Officer       David B. Burritt Executive Vice President & Chief Financial Officer       Suzanne Rich Folsom General Counsel, Chief Compliance Officer & Senior Vice President - Government Affairs           James E. Bruno Senior Vice President - Automotive Solutions       Sara A. Greenstein Senior Vice President - Consumer Solutions       Douglas R. Matthews Senior Vice President - Industrial, Service Center and Mining Solutions       David J. Rintoul Senior Vice President - Tubular Business           Charles G. Balawajder Vice President & Chief Information Officer       Christine S. Breves Vice President & Chief Supply Chain Officer         Scott D. Buckiso Vice President – European Solutions President – U. S. Steel Košice       Colleen M. Darragh Vice President & Controller       J. Craig Horan Vice President - Commercial, Tubular       Sarados Milios Vice President - International Sales, Tubular       Nancy Sykes Vice President & Chief Human Resources Officer       Mark G. Tabler Vice President - Global Quality & Manufacturing Processes           uss internet content library (english)/United States Steel Internet/About Us/Executive Biographies/Executive Biographies Executive Biographies
-	1Mario Longhi	,  	2President	 & 	2Chief Executive Officer
-	1David B. Burritt	,  	2Executive Vice President	 & 	2Chief Financial Officer
+	1Mario Longhi	,  	2President	 & 	2Chief Executive Officer	
+	1David B. Burritt	,  	2Executive Vice President	 & 	2Chief Financial Officer	
 	1Suzanne Rich Folsom	,  	2General Counsel	, 	2Chief Compliance Officer	 & 	2Senior Vice President	 - Government Affairs
-	1James E. Bruno	,  	2Senior Vice President	 - 	3Automotive Solutions
-	1Sara A. Greenstein	,  	2Senior Vice President	 - 	3Consumer Solutions
+	1James E. Bruno	,  	2Senior Vice President	 - 	3Automotive Solutions	
+	1Sara A. Greenstein	,  	2Senior Vice President	 - 	3Consumer Solutions	
 	1Douglas R. Matthews	,  	2Senior Vice President	 - Industrial, Service Center and Mining Solutions
 	1David J. Rintoul	,  	2Senior Vice President	 - Tubular Business
-	1Charles G. Balawajder	,  	2Vice President	 & 	2Chief Information Officer
+	1Charles G. Balawajder	,  	2Vice President	 & 	2Chief Information Officer	
 	1Christine S. Breves	,  	2Vice President	 & 	2Chief Supply Chain Officer	  
 	1Scott D. Buckiso	,  	2Vice President	 – European Solutions President – U. S. Steel Košice
-	1Colleen M. Darragh	,  	2Vice President	 & 	2Controller
+	1Colleen M. Darragh	,  	2Vice President	 & 	2Controller	
 	1J. Craig Horan	,  	2Vice President	 - Commercial, Tubular
-	1Sarados Milios	,  	2Vice President	 - 	3International Sales, Tubular
-	1Nancy Sykes	,  	2Vice President	 & 	2Chief Human Resources Officer
+	1Sarados Milios	,  	2Vice President	 - 	3International Sales, Tubular	
+	1Nancy Sykes	,  	2Vice President	 & 	2Chief Human Resources Officer	
 	1Mark G. Tabler	,  	2Vice President	 - Global Quality & Manufacturing Processes
 Executive Biographies,      Mario Longhi President & Chief Executive Officer       David B. Burritt Executive Vice President & Chief Financial Officer       Suzanne Rich Folsom General Counsel, Chief Compliance Officer & Senior Vice President - Government Affairs           James E. Bruno Senior Vice President - Automotive Solutions       Sara A. Greenstein Senior Vice President - Consumer Solutions       Douglas R. Matthews Senior Vice President - Industrial, Service Center and Mining Solutions       David J. Rintoul Senior Vice President - Tubular Business           Charles G. Balawajder Vice President & Chief Information Officer       Christine S. Breves Vice President & Chief Supply Chain Officer         Scott D. Buckiso Vice President – European Solutions President – U. S. Steel Košice       Colleen M. Darragh Vice President & Controller       J. Craig Horan Vice President - Commercial, Tubular       Sarados Milios Vice President - International Sales, Tubular       Nancy Sykes Vice President & Chief Human Resources Officer       Mark G. Tabler Vice President - Global Quality & Manufacturing Processes           uss internet content library (english)/United States Steel Internet/About Us/Executive Biographies, /Executive Biographies, ,  Executive Biographies, 
 com.ibm.skins.NoSkin.skin,  WCM Right Widget Holder,    ABOUT US Code of Ethical Business Conduct Ethics Line uss internet content library (english)/United States Steel Internet/About Us/Executive Biographies/Executive Biographies Executive Biographies

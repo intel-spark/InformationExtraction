@@ -1,4 +1,6 @@
-package evaluation
+package org.apache.spark.sql
+
+import java.io.File
 
 import main.{RelationLine, SparkBatchDriver}
 import org.apache.log4j.{Level, Logger}
@@ -16,14 +18,12 @@ object RelationEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[2]")
+        .setMaster("local[6]")
         .setAppName(this.getClass.getSimpleName)
     )
     RelationExtractor.init()
 
-    println("Initilization finished:")
-
-    val pageResults = companyList.filter(_.nonEmpty).map { company =>
+    val pageResults = companyList.toSeq.filter(_.nonEmpty).map { company =>
       getResult(company, sc)
     }
 
@@ -32,43 +32,55 @@ object RelationEvaluation {
     val totalMissed = pageResults.map(_.missed).sum
     val recall = totalCorrect.toDouble / (totalCorrect + totalMissed)
     val precision = totalCorrect.toDouble / (totalCorrect + totalWrong)
-    println(s"recall: $recall. precision: $precision")
+    println(s"overall recall: $recall. precision: $precision")
   }
 
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
-    val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
-                        .where(col("relation")==="title")
+    val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).filter(_.length < 200))
+      .where(col("relation").isin("title"))
+      .select("name", "relation", "entity")
+      .distinct()
+      .cache()
 
-    val labelFile = s"$labelPath/${company}.csv"
+    val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
     val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
       val elements = line.split("\t")
       RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
+    
     val sqlContext = SQLContext.getOrCreate(sc)
-    val labelledDF = sqlContext.createDataFrame(relationRDD).where(col("relation")==="title")
+    val labelledDF = sqlContext.createDataFrame(relationRDD)
+      .where(col("relation").isin("title"))
+      .select("name", "relation", "entity")
+      .distinct()
+      .cache()
 
 
-    val correctDF = labelledDF.intersect(extractedDF)
-    println("correct:")
-    correctDF.show(false)
+    val correctDF = labelledDF.intersect(extractedDF).cache()
+    println(company)
+    println(Console.BLUE + "\tcorrect:")
+    println(correctDF.showString(20, false))
 
-    println("missed:")
-    labelledDF.except(correctDF).show(false)
+    println(Console.RED + "\tmissed:")
+    println(labelledDF.except(correctDF).showString(8, false))
 
-    println("wrong:")
-    extractedDF.except(correctDF).show(false)
+    println("\twrong:")
+    println(Console.RED + extractedDF.except(correctDF).showString(8, false))
 
-    val recall = correctDF.count().toDouble / labelledDF.count()
-    val precision = correctDF.count().toDouble / extractedDF.count()
-    println(s"recall: $recall. precision: $precision")
     val correctCt = correctDF.count()
+    val recall = correctCt.toDouble / labelledDF.count()
+    val precision = correctCt.toDouble / extractedDF.count()
+    println(Console.YELLOW_B + s"recall: $recall. precision: $precision. (" +
+      s"extracted: ${extractedDF.count()}; labelled: ${labelledDF.count()}; correct: ${correctCt})")
+    println(Console.RESET)
     PageResult(correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
   }
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList = Array("Apple")
+  val companyList = Array("US Foods", "Computer Sciences", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy", "Williams Companies")
+//    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 

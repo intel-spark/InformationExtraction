@@ -1,0 +1,20 @@
+Denise M. Morrison	title	President	Denise M. Morrison,  President and Chief Executive Officer
+Denise M. Morrison	title	Chief Executive Officer	Denise M. Morrison,  President and Chief Executive Officer
+Mark R. Alexander	title	President	Mark R. Alexander,  President, Americas Simple Meals and Beverages
+Mark R. Alexander	employee_of	Americas Simple Meals and Beverages	Mark R. Alexander,  President, Americas Simple Meals and Beverages
+Carlos J. Barroso	title	Senior Vice President	Carlos J. Barroso,  Senior Vice President, Global Research and Development and Quality
+Carlos J. Barroso	employee_of	Global Research and Development and Quality	Carlos J. Barroso,  Senior Vice President, Global Research and Development and Quality
+Edward L. Carolan	title	Senior Vice President	Edward L. Carolan,  Senior Vice President and President, Integrated Global Services
+Edward L. Carolan	title	President	Edward L. Carolan,  Senior Vice President and President, Integrated Global Services
+Edward L. Carolan	employee_of	Integrated Global Services	Edward L. Carolan,  Senior Vice President and President, Integrated Global Services
+Adam G. Ciongoli	title	Senior Vice President	Adam G. Ciongoli,  Senior Vice President, General Counsel and Secretary
+Adam G. Ciongoli	title	General Counsel	Adam G. Ciongoli,  Senior Vice President, General Counsel and Secretary
+Adam G. Ciongoli	title	Secretary	Adam G. Ciongoli,  Senior Vice President, General Counsel and Secretary
+Anthony P. DiSilvestro	title	Senior Vice President	Anthony P. DiSilvestro,  Senior Vice President and Chief Financial Officer
+Anthony P. DiSilvestro	title	Chief Financial Officer	Anthony P. DiSilvestro,  Senior Vice President and Chief Financial Officer
+Jeffery T. Dunn	title	President	Jeffery T. Dunn,  President, Campbell Fresh
+Jeffery T. Dunn	employee_of	Campbell Fresh	Jeffery T. Dunn,  President, Campbell Fresh
+Luca Mignini	title	President	Luca Mignini,  President, Global Biscuits and Snacks
+Luca Mignini	employee_of	Global Biscuits and Snacks	Luca Mignini,  President, Global Biscuits and Snacks
+Robert W. Morrissey	title	Senior Vice President	Robert W. Morrissey,  Senior Vice President and Chief Human Resources Officer
+Robert W. Morrissey	title	Chief Human Resources Officer	Robert W. Morrissey,  Senior Vice President and Chief Human Resources Officer
