@@ -39,8 +39,11 @@ object RelationEvaluation {
 
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
-    val extractedDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).filter(_.length < 200))
+    val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).filter(_.length < 200))
       .where(col("relation").isin("title"))
+      .cache()
+      
+    val extractedDF = extractedRawDF
       .select("name", "relation", "entity")
       .distinct()
       .cache()
@@ -52,8 +55,10 @@ object RelationEvaluation {
     }
     
     val sqlContext = SQLContext.getOrCreate(sc)
-    val labelledDF = sqlContext.createDataFrame(relationRDD)
+    val labelledRawDF = sqlContext.createDataFrame(relationRDD)
       .where(col("relation").isin("title"))
+        .cache()
+    val labelledDF = labelledRawDF
       .select("name", "relation", "entity")
       .distinct()
       .cache()
@@ -65,10 +70,10 @@ object RelationEvaluation {
     println(correctDF.showString(100, false))
 
     println(Console.RED + "missed:")
-    println(labelledDF.except(correctDF).showString(8, false))
+    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity")).showString(8, false))
 
     println("wrong:")
-    println(Console.RED + extractedDF.except(correctDF).showString(8, false))
+    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity")).showString(8, false))
 
     val extractedCt = extractedDF.count()
     val labelledCt = labelledDF.count()
@@ -83,7 +88,7 @@ object RelationEvaluation {
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList = Array("Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
+  val companyList = Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
 //    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }

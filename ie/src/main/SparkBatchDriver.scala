@@ -64,7 +64,7 @@ object SparkBatchDriver {
 
   private def processSentence(line: String): Unit = {
     println(RegexNerTest.extractNER(line).asScala.mkString(", "))
-    KBPModel.extract(line).asScala.foreach(t => println(t._1))
+    IntelKBPModel.extract(line).asScala.foreach(t => println(t._1))
   }
 
   private def processRDD(data: RDD[String]): DataFrame ={
