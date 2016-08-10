@@ -12,23 +12,24 @@ import scala.reflect.io.File
   * Created by xianyan on 8/2/16.
   */
 object EvalPaths {
-  def rawPage(company: String) = "data/evaluation/raw/raw-%s.txt".format(company)
+  def rawPage(company: String) = s"data/evaluation/raw/raw-${company}.txt"
 
   var urlsPath: String = "data/evaluation/page-urls.txt"
-  var webContentPath: String = "data/evaluation/web/%s/page-%s.txt"
+//  var webContentPath: String = "data/evaluation/web/%s/page-%s.txt"
   //  var labeledPath: String =
   //  var extractionPath: String =
 
 
   def webContentPath(label: String, i: Int): String = {
-    val dir = File("data/evaluation/web/" + label + "/")
+    val root = "data/evaluation/web/"
+    val dir = File(s"${root}${label}/")
     if(!dir.exists) dir.createDirectory()
-    webContentPath.format(label, label + "_" + i)
+    s"${root}$label/page-${label}_${i}.txt"
   }
 
-  def labeledPath(company: String) = "data/evaluation/labeled/labeled-%s.txt".format(company)
+  def labeledPath(company: String) = s"data/evaluation/labeled/labeled-${company}.txt"
 
-  def extractionPath(company: String) = "data/evaluation/extraction/extraction-%s.csv".format(company)
+  def extractionPath(company: String) = s"data/evaluation/extraction/extraction-${company}.csv"
 
   /**
     *

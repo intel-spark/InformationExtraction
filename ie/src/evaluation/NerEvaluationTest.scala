@@ -48,16 +48,16 @@ object NerEvaluationTest {
 
 
 //      println("\n\nEvaluation result for company " + company)
-      res  :+= List(company, ner.precision.formatted("%.3f"), ner.recall.formatted("%.3f"), ner.f1.formatted("%.3f"))
+      res  :+= List(company, f"${ner.precision}%.3f", f"${ner.recall}%.3f", f"${ner.f1}%.3f")
       tp += ner.tp
       fp += ner.fp
       fn += ner.fn
       tn += ner.tn
     }
     val ner = new NerEvaluation(tp, fp, fn, tn)
-    res :+= List("Overall", ner.precision.formatted("%.3f"),
-      ner.recall.formatted("%.3f"),
-      ner.f1.formatted("%.3f"))
+    res :+= List("Overall", f"${ner.precision}%.3f",
+      f"${ner.recall}%.3f",
+      f"${ner.f1}%.3f")
 
     println()
     println(Tabulator.format(res))
