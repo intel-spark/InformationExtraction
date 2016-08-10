@@ -26,8 +26,15 @@ object Cleaner {
         res += "\n"+line
       }
     }
-//    println(res)
     res
   }
 
+  def containsMultiplePerson(parentStr: String): Boolean = {
+    val list = RegexNerTest.extractNER(parentStr).asScala.filter(_ != "O")
+    if (!list.isEmpty) {
+      if(list.contains("TITLE") || list.contains("PERSON")) return true
+    }
+    return false
+  }
+  
 }
