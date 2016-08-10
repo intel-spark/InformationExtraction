@@ -11,9 +11,9 @@ import evaluation.EvalPaths
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 
+
 import scala.collection.JavaConversions._
 import scala.util.control.Exception._
-
 
 //sealed case class Link(title: String, href: String)
 
