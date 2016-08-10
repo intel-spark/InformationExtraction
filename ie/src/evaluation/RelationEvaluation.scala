@@ -26,6 +26,8 @@ object RelationEvaluation {
     val pageResults = companyList.toSeq.filter(_.nonEmpty).map { company =>
       getResult(company, sc)
     }
+    println(s"Overall results: ${pageResults.size} companies evaluated")
+    SQLContext.getOrCreate(sc).createDataFrame(sc.parallelize(pageResults)).show(300, false)
 
     val totalCorrect = pageResults.map(_.correct).sum
     val totalWrong = pageResults.map(_.wrong).sum
@@ -59,32 +61,34 @@ object RelationEvaluation {
 
     val correctDF = labelledDF.intersect(extractedDF).cache()
     println(company)
-    println(Console.BLUE + "\tcorrect:")
-    println(correctDF.showString(20, false))
+    println(Console.BLUE + "correct:")
+    println(correctDF.showString(100, false))
 
-    println(Console.RED + "\tmissed:")
+    println(Console.RED + "missed:")
     println(labelledDF.except(correctDF).showString(8, false))
 
-    println("\twrong:")
+    println("wrong:")
     println(Console.RED + extractedDF.except(correctDF).showString(8, false))
 
+    val extractedCt = extractedDF.count()
+    val labelledCt = labelledDF.count()
     val correctCt = correctDF.count()
-    val recall = correctCt.toDouble / labelledDF.count()
-    val precision = correctCt.toDouble / extractedDF.count()
+    val recall = correctCt.toDouble / labelledCt
+    val precision = correctCt.toDouble / (if (extractedCt == 0) 1 else extractedCt)
     println(Console.YELLOW_B + s"recall: $recall. precision: $precision. (" +
-      s"extracted: ${extractedDF.count()}; labelled: ${labelledDF.count()}; correct: ${correctCt})")
+      s"extracted: ${extractedCt}; labelled: ${labelledCt}; correct: ${correctCt})")
     println(Console.RESET)
-    PageResult(correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
+    PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
   }
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList = Array("US Foods", "Computer Sciences", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy", "Williams Companies")
+  val companyList = Array("Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
 //    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 
-case class PageResult(correct: Long, wrong: Long, missed: Long)
+case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
 
 
 
