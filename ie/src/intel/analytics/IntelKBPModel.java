@@ -20,18 +20,18 @@ public class IntelKBPModel {
     static StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
     static {
-        props.setProperty("annotators", "tokenize,ssplit,pos,lemma");
-        pipeline = new StanfordCoreNLP(props);
-        props.setProperty("ner.model","edu/stanford/nlp/models/ner/new-model.ser.gz,edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz," +
-                "edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz,edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz");
-        pipeline.addAnnotator(new NERCombinerAnnotator("ner", props));
+//        props.setProperty("annotators", "tokenize,ssplit,pos,lemma");
+        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
+        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
+        props.setProperty("ner.model","model/new-model.ser.gz,model/english.all.3class.distsim.crf.ser.gz," +
+                "model/english.muc.7class.distsim.crf.ser.gz,model/english.conll.4class.distsim.crf.ser.gz");
 
-        String options2 = "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.Regex_NER_caseless + ";" + IntelPaths.Regex_NER_cased;
-        props.setProperty("regexner.mapping", options2);
-        pipeline.addAnnotator(new RegexNERAnnotator("regexNer", props));
-        pipeline.addAnnotator(new ParserAnnotator("parse", props));
-        pipeline.addAnnotator(new MentionAnnotator(props));
-        pipeline.addAnnotator(new CorefAnnotator(props));
+        pipeline = new StanfordCoreNLP(props);
+//        pipeline.addAnnotator(new NERCombinerAnnotator("ner", props));
+//        pipeline.addAnnotator(new RegexNERAnnotator("regexNer", props));
+//        pipeline.addAnnotator(new ParserAnnotator("parse", props));
+//        pipeline.addAnnotator(new MentionAnnotator(props));
+//        pipeline.addAnnotator(new CorefAnnotator(props));
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
     }
 

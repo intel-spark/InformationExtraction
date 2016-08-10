@@ -3,7 +3,7 @@ package main
 import java.io.File
 
 import Test.RegexNerTest
-import intel.analytics.{IOUtils, KBPModel}
+import intel.analytics.{IOUtils, IntelKBPModel, KBPModel}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
@@ -77,7 +77,7 @@ object SparkBatchDriver {
   }
   
   private def getWorkRelation(line: String): Seq[RelationLine] ={
-    val raw = KBPModel.extract(line)
+    val raw = IntelKBPModel.extract(line)
     raw.asScala.toSeq.map { case (r, sen) =>
       if(r.relationGloss() == "org:top_members/employees") {
         RelationLine(r.objectGloss(), "top member of", r.subjectGloss(), sen)
