@@ -12,7 +12,7 @@ object Cleaner {
   def isStartOfContent(line: String): Boolean = {
     val list = RegexNerTest.extractNER(line).asScala.filter(_ != "O")
     if (!list.isEmpty) {
-      if(list.contains("TITLE") || list.contains("PERSON")) return true
+      if (list.contains("TITLE") || list.contains("PERSON")) return true
     }
     return false
   }
@@ -23,7 +23,7 @@ object Cleaner {
     var res = ""
     for (line <- lines) {
       if (isStartOfContent(line)) {
-        res += "\n"+line
+        res += "\n" + line
       }
     }
     res
@@ -32,9 +32,9 @@ object Cleaner {
   def containsMultiplePerson(parentStr: String): Boolean = {
     val list = RegexNerTest.extractNER(parentStr).asScala.filter(_ != "O")
     if (!list.isEmpty) {
-      if(list.contains("TITLE") || list.contains("PERSON")) return true
+      if (list.contains("TITLE") || list.contains("PERSON")) return true
     }
     return false
   }
-  
+
 }

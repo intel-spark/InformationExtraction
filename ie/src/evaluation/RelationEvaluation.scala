@@ -4,10 +4,9 @@ import java.io.File
 
 import main.{RelationLine, SparkBatchDriver}
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.{DataFrame, Row, SQLContext}
+import org.apache.spark.sql.functions._
 import org.apache.spark.{SparkConf, SparkContext}
 import relation.RelationExtractor
-import org.apache.spark.sql.functions._
 
 object RelationEvaluation {
 
@@ -39,10 +38,13 @@ object RelationEvaluation {
 
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
-    val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).filter(_.length < 200))
+        val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map{
+          line => if(line.length > 200) line.substring(0,200) else line
+        })
+//    val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
       .where(col("relation").isin("title"))
       .cache()
-      
+
     val extractedDF = extractedRawDF
       .select("name", "relation", "entity")
       .distinct()
@@ -53,27 +55,27 @@ object RelationEvaluation {
       val elements = line.split("\t")
       RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
-    
+
     val sqlContext = SQLContext.getOrCreate(sc)
     val labelledRawDF = sqlContext.createDataFrame(relationRDD)
       .where(col("relation").isin("title"))
-        .cache()
+      .cache()
     val labelledDF = labelledRawDF
       .select("name", "relation", "entity")
       .distinct()
       .cache()
 
 
-    val correctDF = labelledDF.intersect(extractedDF).cache()
+    val correctDF = labelledDF.intersect(extractedDF).distinct().cache()
     println(company)
     println(Console.BLUE + "correct:")
     println(correctDF.showString(100, false))
 
     println(Console.RED + "missed:")
-    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity")).showString(8, false))
+    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity")).distinct().showString(8, false))
 
     println("wrong:")
-    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity")).showString(8, false))
+    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity")).distinct().showString(8, false))
 
     val extractedCt = extractedDF.count()
     val labelledCt = labelledDF.count()
@@ -88,8 +90,38 @@ object RelationEvaluation {
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList = Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
-//    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+  val companyList =
+  //    Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
+//    Array("ARRIS Group",
+//      "AbbVie",
+//      "AmerisourceBergen",
+//      "CSX",
+//      "Corning",
+//      "Energy Future Holdings",
+//      "Fidelity National Financial",
+//      "Freeport-McMoRan",
+//      "H.J. Heinz",
+//      "Hanesbrands",
+//      "Integrys Energy Group",
+//      "Mattel",
+//      "Mosaic",
+//      "Murphy Oil",
+//      "NCR Corporation",
+//      "National Oilwell Varco",
+//      "Nike",
+//      "Office Depot",
+//      "PBF Energy",
+//      "Pantry",
+//      "PetSmart",
+//      "Progressive Corp",
+//      "Quest Diagnostics",
+//      "Realogy Holdings",
+//      "Sonic Automotive",
+//      "Staples",
+//      "Twenty-First Century Fox",
+//      "UnitedHealth Group")
+
+      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 
