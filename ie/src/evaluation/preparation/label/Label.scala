@@ -19,17 +19,10 @@ import scala.io.Source
 object Label {
 
 
-  //  val titleList = List("president", "ceo", "officer", "chairman")
   val titleList = List {}
   val person = "PERSON"
   val title = "TITLE"
   val organization = "ORGANIZATION"
-  val startPerson = "<PERSON>"
-  val endPerson = "</PERSON>"
-  val startTitle = "<TITLE>"
-  val endTitle = "</TITLE>"
-  val startOrganization = "<ORGANIZATION>"
-  val endOrganization = "</ORGANIZATION>"
 
 
   def main(args: Array[String]): Unit = {
@@ -95,14 +88,14 @@ object Label {
           }
           if (lab == "c") result = result.dropRight(1)
           else result :+= (word + "/" + label)
-          if(lab != "c") historyBuffer.append(word)
+          if (lab != "c") historyBuffer.append(word)
 
         }
 
 
         for (token <- sentence.get(classOf[CoreAnnotations.TokensAnnotation])) {
           while (!redos.isEmpty) {
-            val word = redos.remove(redos.length-1)
+            val word = redos.remove(redos.length - 1)
             processOneWord(word)
           }
           // this is the text of the token

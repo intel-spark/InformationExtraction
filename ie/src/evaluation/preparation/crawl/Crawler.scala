@@ -11,11 +11,9 @@ import evaluation.EvalPaths
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 
-
 import scala.collection.JavaConversions._
 import scala.util.control.Exception._
 
-//sealed case class Link(title: String, href: String)
 
 class Crawler() {
   val proxy = EvalPaths.proxy()
@@ -52,7 +50,6 @@ class Crawler() {
 
   }
 
-//  def titleText(doc: JDoc): String = doc.select("title").text
 
   def bodyText(doc: JDoc): String = {
     doc.select("body").text
@@ -67,16 +64,6 @@ class Crawler() {
     }
     text
   }
-
-  //
-  //  /**
-  //    * Extracts links from a document
-  //    *
-  //    */
-  //  def linkSequence(doc: JDoc): Seq[Link] = {
-  //    val links = doc.select("a[href]").iterator.toList
-  //    links.map { l => Link(l.text, l.attr("href")) }
-  //  }
 
 
   def safeURL(url: String): Option[String] = {
@@ -95,14 +82,7 @@ class Crawler() {
     }
   }
 
-//  def getText(element: Element): String = {
-////    element.select("br").append(",")
-////    element.`val`()
-//    element.children().map(transformElement(_)).filter(!_.isEmpty).mkString(", ")
-//  }
-
   def extract(doc: JDoc): List[String] = {
-    //    println(doc)
 
     var lastParentStr = ""
     var lastParentUpdated = ""
@@ -112,9 +92,7 @@ class Crawler() {
       if (!element.isBlock) {
         if (!element.text().trim.isEmpty) {
           val parentStr = extractParent(element).text()
-          //          if(!containsMultiplePerson(parentStr)) {
           if (lastParentStr != parentStr) {
-            //            println(lastParentUpdated)
             lines :+= lastParentUpdated
             lastParentStr = parentStr
             lastParentUpdated = lastParentStr
@@ -122,8 +100,6 @@ class Crawler() {
           lastParentUpdated = lastParentUpdated.replace(element.text(), element.text() + ", ")
         }
       }
-      //      println(element.text() +"\tparent:\t"+extractParent(element).text())
-      //      }
       else
         for (child <- element.children()) {
           extractElement(child)
@@ -135,26 +111,17 @@ class Crawler() {
   }
 
 
-//  def isElementTooBroad(parent: Element): Boolean = {
-//    rep = rep + parent.children().size();
-//    if (rep > 20) return true
-//    parent.children().foreach(isElementTooBroad)
-//    return false
-//  }
-
   def isElementTooBroad(parent: Element): Boolean = {
     parent.getAllElements.size() > 20
   }
 
 
-  var rep = 1
   def extractParent(element: Element): Element = {
     var parent = element.parent()
     while (parent.text() == element.text()) {
       parent = parent.parent()
     }
-    rep = 1
-    if(isElementTooBroad(parent)) {
+    if (isElementTooBroad(parent)) {
       println(s"${parent.text()} is filtered due to too broad")
       return element
     }
@@ -172,7 +139,6 @@ class Crawler() {
   def save2File2(saveFile: File, strings: List[String], url: String) = {
     val bw = new BufferedWriter(new FileWriter(saveFile))
     bw.write(Cleaner.clean(strings.mkString("\n")))
-//    bw.write(strings.mkString("\n"))
     bw.write("\n" + url)
     bw.close()
   }
@@ -181,9 +147,8 @@ class Crawler() {
     try {
       val saveFile = new File(EvalPaths.webContentPath(label, i))
       if (!saveFile.exists()) {
-        val doc = Jsoup.parse(get(url, label).html().replaceAll("<br>",","))
+        val doc = Jsoup.parse(get(url, label).html().replaceAll("<br>", ","))
         save2File2(saveFile, extract(doc), url)
-        //        save2File(saveFile, doc, url)
         println(url + " done")
         return true
       }

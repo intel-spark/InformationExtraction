@@ -20,14 +20,6 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
     * @param labels  list of labels to be checked
     */
   def eval(outputs: List[String], truths: List[String], labels: List[String], original: List[String]): Unit = {
-    //    println(original)
-    //    print("output: ");
-    //    outputs.foreach(printf("%15s", _));
-    //    println()
-    //    print("truths: ");
-    //    truths.foreach(printf("%15s", _));
-    //    println()
-
     for (((o, t), r) <- (outputs zip truths zip original)) {
       if (t == "o") {
         //truth negative
@@ -39,13 +31,13 @@ class NerEvaluation(var tp: Int, var fp: Int, var fn: Int, var tn: Int) {
           tp += 1
         else {
           fn += 1
-          if(!r.trim.isEmpty)
-          println(
-            Console.RED + r +
-              Console.BLACK + " not recognized as " +
-              Console.RED + t +
-              Console.BLACK + " in sentence " +
-              Console.BLUE + original.mkString(" "))
+          if (!r.trim.isEmpty)
+            println(
+              Console.RED + r +
+                Console.BLACK + " not recognized as " +
+                Console.RED + t +
+                Console.BLACK + " in sentence " +
+                Console.BLUE + original.mkString(" "))
         }
       }
     }

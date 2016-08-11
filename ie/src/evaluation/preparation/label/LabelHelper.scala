@@ -1,4 +1,4 @@
-package evaluation.preparation
+package evaluation.preparation.label
 
 import intel.analytics.IOUtils
 
