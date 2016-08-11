@@ -25,3 +25,6 @@
 { result: "per:title", pattern: ( $TITLE "worked"  "as"  "a"  $ENTITY  ) }
 { result: "per:title", pattern: ( $TITLE "worked"  "as"  "an"  $ENTITY  ) }
 { result: "per:title", pattern: ( $TITLE $ENTITY  ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  []{0, 3} ","  $TITLE ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  []{0, 10} $TITLE ) }
