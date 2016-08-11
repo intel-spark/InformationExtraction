@@ -38,10 +38,9 @@ object RelationEvaluation {
 
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
-        val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map{
-          line => if(line.length > 200) line.substring(0,200) else line
+    val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map{
+          line => if(line.length > 500) line.substring(0,500) else line
         })
-//    val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile))
       .where(col("relation").isin("title"))
       .cache()
 
@@ -91,7 +90,7 @@ object RelationEvaluation {
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
   val companyList =
-  //    Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
+      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
 //    Array("ARRIS Group",
 //      "AbbVie",
 //      "AmerisourceBergen",
@@ -121,7 +120,7 @@ object RelationEvaluation {
 //      "Twenty-First Century Fox",
 //      "UnitedHealth Group")
 
-      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+//      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 
