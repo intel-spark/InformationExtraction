@@ -8,8 +8,6 @@ James Beer	employee_of	McKesson Corporation	James Beer,  Executive Vice Presiden
 Patrick J. Blake	title	Executive Vice President	Patrick J. Blake,  Executive Vice President and Group President, McKesson Corporation Read More,
 Patrick J. Blake	title	Group President	Patrick J. Blake,  Executive Vice President and Group President, McKesson Corporation Read More,
 Patrick J. Blake	employee_of	McKesson Corporation	Patrick J. Blake,  Executive Vice President and Group President, McKesson Corporation Read More,
-Jorge L. Figueredo	title	Executive Vice President	Jorge L. Figueredo,  Executive Vice President, Human Resources, McKesson Corporation Read More,
-Jorge L. Figueredo	employee_of	Human Resources	Jorge L. Figueredo,  Executive Vice President, Human Resources, McKesson Corporation Read More,
 Paul C. Julian	title	Executive Vice President	Paul C. Julian,  Executive Vice President and Group President, McKesson Corporation Read More,
 Paul C. Julian	title	Group President	Paul C. Julian,  Executive Vice President and Group President, McKesson Corporation Read More,
 Paul C. Julian	employee_of	McKesson Corporation	Paul C. Julian,  Executive Vice President and Group President, McKesson Corporation Read More,
