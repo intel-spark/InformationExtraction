@@ -25,6 +25,7 @@ public class IntelKBPModel {
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
         props.setProperty("ner.model","model/new-model.ser.gz,model/english.all.3class.distsim.crf.ser.gz," +
                 "model/english.muc.7class.distsim.crf.ser.gz,model/english.conll.4class.distsim.crf.ser.gz");
+        props.setProperty("ner.combinationMode", "HIGH_RECALL");
 
         pipeline = new StanfordCoreNLP(props);
 //        pipeline.addAnnotator(new NERCombinerAnnotator("ner", props));
