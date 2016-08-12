@@ -39,8 +39,9 @@ object RelationEvaluation {
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
     val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map{
-      line => if(line.length > 500) line.substring(0,500) else line
-    })
+          line => if(line.length > 500) line.substring(0, 500) else line
+        }.map(_.replaceAll("\u00a0"," "))
+      )
       .where(col("relation").isin("title"))
       .cache()
 
@@ -50,9 +51,9 @@ object RelationEvaluation {
       .cache()
 
     val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
-    val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
-      val elements = line.split("\t")
-      RelationLine(elements(0).replaceAll("\\u00A0", " ").replace("  "," "), elements(1), elements(2), elements(3))
+    val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>      
+      val elements = line.replaceAll("\u00a0"," ").replace("  "," ").split("\t")
+      RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
 
     val sqlContext = SQLContext.getOrCreate(sc)
@@ -64,17 +65,18 @@ object RelationEvaluation {
       .distinct()
       .cache()
 
-
     val correctDF = labelledDF.intersect(extractedDF).distinct().cache()
     println(company)
     println(Console.BLUE + "correct:")
     println(correctDF.showString(100, false))
 
     println(Console.RED + "missed:")
-    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity")).distinct().showString(8, false))
+    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity"))
+      .distinct().showString(100, false))
 
     println("wrong:")
-    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity")).distinct().showString(8, false))
+    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity"))
+      .distinct().showString(100, false))
 
     val extractedCt = extractedDF.count()
     val labelledCt = labelledDF.count()
