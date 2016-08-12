@@ -25,7 +25,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static edu.stanford.nlp.util.logging.Redwood.Util.*;
+import static edu.stanford.nlp.util.logging.Redwood.Util.endTrack;
+import static edu.stanford.nlp.util.logging.Redwood.Util.forceTrack;
 
 /**
  * A relation extractor to work with Victor's new KBP data.
@@ -34,26 +35,27 @@ import static edu.stanford.nlp.util.logging.Redwood.Util.*;
 public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, Serializable {
     private static final long serialVersionUID = 1L;
 
-    @ArgumentParser.Option(name="train", gloss="The dataset to train on")
+    @ArgumentParser.Option(name = "train", gloss = "The dataset to train on")
     public static File TRAIN_FILE = new File("train.conll");
 
-    @ArgumentParser.Option(name="test", gloss="The dataset to test on")
+    @ArgumentParser.Option(name = "test", gloss = "The dataset to test on")
     public static File TEST_FILE = new File("test.conll");
 
-    @ArgumentParser.Option(name="model", gloss="The dataset to test on")
+    @ArgumentParser.Option(name = "model", gloss = "The dataset to test on")
     public static String MODEL_FILE = DefaultPaths.DEFAULT_KBP_CLASSIFIER;
 
-    @ArgumentParser.Option(name="predictions", gloss="Dump model predictions to this file")
+    @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();
 
-    private enum MinimizerType{ QN, SGD, HYBRID, L1 }
-    @ArgumentParser.Option(name="minimizer", gloss="The minimizer to use for training the classifier")
+    private enum MinimizerType {QN, SGD, HYBRID, L1}
+
+    @ArgumentParser.Option(name = "minimizer", gloss = "The minimizer to use for training the classifier")
     private static MinimizerType minimizer = MinimizerType.L1;
 
-    @ArgumentParser.Option(name="feature_threshold", gloss="The minimum number of times to see a feature to count it")
+    @ArgumentParser.Option(name = "feature_threshold", gloss = "The minimum number of times to see a feature to count it")
     private static int FEATURE_THRESHOLD = 0;
 
-    @ArgumentParser.Option(name="sigma", gloss="The regularizer for the classifier")
+    @ArgumentParser.Option(name = "sigma", gloss = "The regularizer for the classifier")
     private static double SIGMA = 1.0;
 
 
@@ -63,7 +65,7 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
     /**
      * A list of triggers for top employees.
      */
-    private static final Set<String> TOP_EMPLOYEE_TRIGGERS = Collections.unmodifiableSet(new HashSet<String>(){{
+    private static final Set<String> TOP_EMPLOYEE_TRIGGERS = Collections.unmodifiableSet(new HashSet<String>() {{
         add("executive");
         add("chairman");
         add("president");
@@ -148,27 +150,27 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
     /**
      * <p>
-     *   Often, features fall naturally into <i>feature templates</i> and their associated value.
-     *   For example, unigram features have a feature template of unigram, and a feature value of the word
-     *   in question.
+     * Often, features fall naturally into <i>feature templates</i> and their associated value.
+     * For example, unigram features have a feature template of unigram, and a feature value of the word
+     * in question.
      * </p>
-     *
      * <p>
-     *   This method is a convenience convention for defining these feature template / value pairs.
-     *   The advantage of using the method is that it allows for easily finding the feature template for a
-     *   given feature value; thus, you can do feature selection post-hoc on the String features by splitting
-     *   out certain feature templates.
-     * </p>
-     *
      * <p>
-     *   Note that spaces in the feature value are also replaced with a special character, mostly out of
-     *   paranoia.
+     * This method is a convenience convention for defining these feature template / value pairs.
+     * The advantage of using the method is that it allows for easily finding the feature template for a
+     * given feature value; thus, you can do feature selection post-hoc on the String features by splitting
+     * out certain feature templates.
+     * </p>
+     * <p>
+     * <p>
+     * Note that spaces in the feature value are also replaced with a special character, mostly out of
+     * paranoia.
      * </p>
      *
-     * @param features The feature counter we are updating.
+     * @param features        The feature counter we are updating.
      * @param featureTemplate The feature template to add a value to.
-     * @param featureValue The value of the feature template. This is joined with the template, so it
-     *                     need only be unique within the template.
+     * @param featureValue    The value of the feature template. This is joined with the template, so it
+     *                        need only be unique within the template.
      */
     private static void indicator(Counter<String> features, String featureTemplate, String featureValue) {
         features.incrementCount(featureTemplate + "ℵ" + featureValue.replace(' ', 'ˑ'));
@@ -181,14 +183,13 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
      * "was born in" if the selector is <code>CoreLabel::token</code>;
      * or "be bear in" if the selector is <code>CoreLabel::lemma</code>.
      *
-     * @param input The featurizer input.
+     * @param input    The featurizer input.
      * @param selector The field to compute for each element in the span. A good default is <code></code>CoreLabel::word</code> or <code></code>CoreLabel::token</code>
-     * @param <E> The type of element returned by the selector.
-     *
+     * @param <E>      The type of element returned by the selector.
      * @return A list of elements between the two mentions.
      */
     @SuppressWarnings("unchecked")
-    private  static <E> List<E> spanBetweenMentions(KBPInput input, Function<CoreLabel, E> selector) {
+    private static <E> List<E> spanBetweenMentions(KBPInput input, Function<CoreLabel, E> selector) {
         List<CoreLabel> sentence = input.sentence.asCoreLabels(Sentence::lemmas, Sentence::nerTags);
         Span subjSpan = input.subjectSpan;
         Span objSpan = input.objectSpan;
@@ -221,18 +222,17 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
     /**
      * <p>
-     *   Span features often only make sense if the subject and object are positioned at the correct ends of the span.
-     *   For example, "x is the son of y" and "y is the son of x" have the same span feature, but mean different things
-     *   depending on where x and y are.
+     * Span features often only make sense if the subject and object are positioned at the correct ends of the span.
+     * For example, "x is the son of y" and "y is the son of x" have the same span feature, but mean different things
+     * depending on where x and y are.
      * </p>
-     *
      * <p>
-     *   This is a simple helper to position a dummy subject and object token appropriately.
+     * <p>
+     * This is a simple helper to position a dummy subject and object token appropriately.
      * </p>
      *
-     * @param input The featurizer input.
+     * @param input   The featurizer input.
      * @param feature The span feature to augment.
-     *
      * @return The augmented feature.
      */
     private static String withMentionsPositioned(KBPInput input, String feature) {
@@ -310,12 +310,18 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
         int numQuotesInSpan = 0;
         int parenParity = 0;
         for (String lemma : lemmaSpan) {
-            if (lemma.equals(",")) { numCommasInSpan += 1; }
+            if (lemma.equals(",")) {
+                numCommasInSpan += 1;
+            }
             if (lemma.equals("\"") || lemma.equals("``") || lemma.equals("''")) {
                 numQuotesInSpan += 1;
             }
-            if (lemma.equals("(") || lemma.equals("-LRB-")) { parenParity += 1; }
-            if (lemma.equals(")") || lemma.equals("-RRB-")) { parenParity -= 1; }
+            if (lemma.equals("(") || lemma.equals("-LRB-")) {
+                parenParity += 1;
+            }
+            if (lemma.equals(")") || lemma.equals("-RRB-")) {
+                parenParity -= 1;
+            }
         }
         indicator(feats, "comma_parity", numCommasInSpan % 2 == 0 ? "even" : "odd");
         indicator(feats, "quote_parity", numQuotesInSpan % 2 == 0 ? "even" : "odd");
@@ -566,13 +572,14 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
     /**
      * Create a classifier factory
+     *
      * @param <L> The label class of the factory
      * @return A factory to minimize a classifier against.
      */
     private static <L> LinearClassifierFactory<L, String> initFactory(double sigma) {
-        LinearClassifierFactory<L,String> factory = new LinearClassifierFactory<>();
+        LinearClassifierFactory<L, String> factory = new LinearClassifierFactory<>();
         Factory<Minimizer<DiffFunction>> minimizerFactory;
-        switch(minimizer) {
+        switch (minimizer) {
             case QN:
                 minimizerFactory = () -> new QNMinimizer(15);
                 break;
@@ -607,6 +614,7 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
     /**
      * Train a multinomial classifier off of the provided dataset.
+     *
      * @param dataset The dataset to train the classifier off of.
      * @return A classifier.
      */
@@ -620,7 +628,7 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
         log.info("Randomizing dataset...");
         dataset.randomize(42l);
         log.info("Creating factory...");
-        LinearClassifierFactory<String,String> factory = initFactory(sigma);
+        LinearClassifierFactory<String, String> factory = initFactory(sigma);
 
         // Train the final classifier
         log.info("BEGIN training");
@@ -649,6 +657,7 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
 
     /**
      * Create a new KBP relation extractor, from the given implementing classifier.
+     *
      * @param classifier The implementing classifier.
      */
     public IntelKBPStatisticalExtractor(Classifier<String, String> classifier) {
@@ -661,21 +670,21 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
      * probability of that decision.
      * Note that this method will not return a relation which does not type check.
      *
-     *
      * @param input The input to classify.
      * @return A pair with the relation we classified into, along with its confidence.
      */
-    public Pair<String,Double> classify(KBPInput input) {
+    public Pair<String, Double> classify(KBPInput input) {
         RVFDatum<String, String> datum = new RVFDatum<>(features(input));
-        Counter<String> scores =  classifier.scoresOf(datum);
+        Counter<String> scores = classifier.scoresOf(datum);
         Counters.expInPlace(scores);
         Counters.normalize(scores);
         String best = Counters.argmax(scores);
         // While it doesn't type check, continue going down the list.
         // NO_RELATION is always an option somewhere in there, so safe to keep going...
         while (!NO_RELATION.equals(best) &&
-                (!IntelKBPRelationExtractor.RelationType.fromString(best).get().validNamedEntityLabels.contains(input.objectType) ||
-                        RelationType.fromString(best).get().entityType != input.subjectType) ) {
+                (RelationType.fromString(best).isPresent()
+                        && (!IntelKBPRelationExtractor.RelationType.fromString(best).get().validNamedEntityLabels.contains(input.objectType) ||
+                        RelationType.fromString(best).get().entityType != input.subjectType))) {
             scores.remove(best);
             Counters.normalize(scores);
             best = Counters.argmax(scores);
