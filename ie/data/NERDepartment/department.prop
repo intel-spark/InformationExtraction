@@ -3,7 +3,7 @@ trainFileList = test/page-Advance_Auto_Parts_0_final.tsv,test/page-AECOM_0_final
 #location where you would like to save (serialize to) your
 #classifier; adding .gz at the end automatically gzips the file,
 #making it faster and smaller
-serializeTo = test/new-model.ser.gz
+serializeTo = test/intel-english.3class.distsim.crf.ser.gz
 
 #structure of your training file; this tells the classifier
 #that the word is in column 0 and the correct answer is in
