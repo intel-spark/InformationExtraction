@@ -5,7 +5,6 @@ import java.io.File
 import com.intel.ie.RegexNerTest
 import com.intel.ie.analytics.KBPModel
 import com.intel.ie.analytics._
-import com.intel.ie.evaluation.Tabulator
 
 import scala.collection.JavaConverters._
 import scala.io.Source

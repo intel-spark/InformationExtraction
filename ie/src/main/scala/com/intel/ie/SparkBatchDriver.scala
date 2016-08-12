@@ -2,7 +2,6 @@ package com.intel.ie
 
 import java.io.File
 
-import com.intel.ie.RegexNerTest
 import com.intel.ie.analytics.{IOUtils, IntelKBPModel, KBPModel}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD

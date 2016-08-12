@@ -9,7 +9,6 @@ import edu.stanford.nlp.util.CoreMap
 import com.intel.ie.evaluation.EvalPaths
 import com.intel.ie.evaluation.preparation.NerHelper
 import com.intel.ie.analytics.IOUtils
-import com.intel.ie.evaluation.preparation.label.Extraction
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
