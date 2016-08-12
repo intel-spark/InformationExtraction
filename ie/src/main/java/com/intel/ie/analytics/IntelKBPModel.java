@@ -26,7 +26,7 @@ public class IntelKBPModel {
         props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
                 "model/english.muc.7class.distsim.crf.ser.gz," +
                 "model/english.conll.4class.distsim.crf.ser.gz," +
-                "model/new-model.ser.gz,");
+                "model/intel-english.3class.distsim.crf.ser.gz,");
 
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
