@@ -39,8 +39,9 @@ object RelationEvaluation {
   private def getResult(company: String, sc: SparkContext): PageResult = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
     val extractedRawDF = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map{
-          line => if(line.length > 500) line.substring(0,500) else line
-        })
+          line => if(line.length > 500) line.substring(0, 500) else line
+        }.map(_.replaceAll("\u00a0"," "))
+      )
       .where(col("relation").isin("title"))
       .cache()
 
@@ -51,7 +52,7 @@ object RelationEvaluation {
 
     val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
     val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
-      val elements = line.split("\t")
+      val elements = line.replaceAll("\u00a0"," ").split("\t")
       RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
 
@@ -64,17 +65,18 @@ object RelationEvaluation {
       .distinct()
       .cache()
 
-
     val correctDF = labelledDF.intersect(extractedDF).distinct().cache()
     println(company)
     println(Console.BLUE + "correct:")
     println(correctDF.showString(100, false))
 
     println(Console.RED + "missed:")
-    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity")).distinct().showString(8, false))
+    println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity"))
+      .distinct().showString(100, false))
 
     println("wrong:")
-    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity")).distinct().showString(8, false))
+    println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity"))
+      .distinct().showString(100, false))
 
     val extractedCt = extractedDF.count()
     val labelledCt = labelledDF.count()
@@ -89,8 +91,8 @@ object RelationEvaluation {
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList =
-      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
+  val companyList = 
+//      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
 //    Array("ARRIS Group",
 //      "AbbVie",
 //      "AmerisourceBergen",
@@ -120,7 +122,7 @@ object RelationEvaluation {
 //      "Twenty-First Century Fox",
 //      "UnitedHealth Group")
 
-//      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 
