@@ -20,13 +20,12 @@ public class RegexNerTest {
     static {
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner");
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
-        props.setProperty("ner.model","model/new-model.ser.gz,model/english.all.3class.distsim.crf.ser.gz," +
-                "model/english.muc.7class.distsim.crf.ser.gz,model/english.conll.4class.distsim.crf.ser.gz");
-        props.setProperty("ner.combinationMode", "HIGH_RECALL");
+        props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
+                "model/english.muc.7class.distsim.crf.ser.gz," +
+                "model/english.conll.4class.distsim.crf.ser.gz," +
+                "model/new-model.ser.gz,");
         pipeline = new StanfordCoreNLP(props);
     }
-
-
 
     public static void main(String[] args) throws IOException{
 
