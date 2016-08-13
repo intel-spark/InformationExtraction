@@ -17,14 +17,14 @@ Ian M. Cook* Chairman, President and Chief Executive Officer Mr. Cook joined Co
 	1Natasha  Chen	,  	2VP	 & 	2GM	, Colgate-Southern Europe
 	1Constantina  Christopoulou	,  	2VP	, 	3Global R&D	
 	1Marty  Collins	,  	2VP	, 	3Global Legal	
-	1Michael A. Corbo*	,  	2Chief Supply Chain Officer	
+	1Michael A. Corbo	,  	2Chief Supply Chain Officer	
 	1Mike  Crowe	,  	2Chief Information Officer	
 	1Marianne  DeLorenzo	,  	2VP	, 	3Global Information Technology	
-	1Mukul  Deoras*	,  	2Chief Marketing Officer	
+	1Mukul  Deoras	,  	2Chief Marketing Officer	
 	1Bill  DeVizio	,  	2Chief Dental Officer	
 	1Robert W.  Dietz	,  	2VP	, 	3Global Facilities	
 	1Cathy  Dillane	,  	2VP	, Colgate-Latin America
-	1Victoria  Dolan*	,  	2VP	 & 	2Corporate Controller	
+	1Victoria  Dolan	,  	2VP	 & 	2Corporate Controller	
 	1Gordon  Dumesich	,  	2VP	 & 	2GM	, Hill's Pet Nutrition -Japan
 	1Philip  Durocher	,  	2VP	 & 	2GM	, Colgate-UK & Ireland
 	1Bradley  Farr	,  	2VP	 & 	2GM	, Colgate-South Africa
@@ -37,18 +37,18 @@ Ian M. Cook* Chairman, President and Chief Executive Officer Mr. Cook joined Co
 	1Derek  Gordon	,  	2VP	 & 	2GM	, Colgate-Canada
 	1Taylor  Gordy	,  	2VP	, Colgate-U.S.
 	1Peter  Graylin	,  	2VP	, 	3Global Legal	
-	1Tom  Greene*	,  	2Chief Information & Business Services Officer	
+	1Tom  Greene	,  	2Chief Information & Business Services Officer	
 	1Jan  Guifarro	,  	2VP	, 	3Corporate Communications	
 	1Jack J. Haber	,  	2VP	, 	3Global Advertising & Digital	
 	1Elise  Halvorson	,  	2VP	, 	3Enterprise Risk Management	
-	1Suzan F. Harrison*	,  	2President	, 	3Global Oral Care	
+	1Suzan F. Harrison	,  	2President	, 	3Global Oral Care	
 	1John  Hazlin	,  	2VP	, Colgate-Africa/Eurasia
 	1Raymond  Ho	,  	2VP	, Colgate-Asia
 	1Bob  Holland	,  	2VP	, 	3Ethics & Compliance	
 	1Henry  Hu	,  	2VP	, Colgate-Asia
 	1Nina  Huffman	,  	2VP	, 	3Global Legal	
 	1Traci  Hughes-Velez	,  	2VP	, Colgate-Europe/South Pacific
-	1John J. Huston*	,  	2SVP	, Chief of Staff
+	1John J. Huston	,  	2SVP	, Chief of Staff
 	1Henning  Jakobsen	,  	2VP	 & 	2GM	, Colgate-Nordic
 	1N. Jay  Jayaraman	,  	2VP	, 	3Global Technology	
 	1Elyse  Kane	,  	2VP	, Colgate-North America
@@ -59,12 +59,12 @@ Ian M. Cook* Chairman, President and Chief Executive Officer Mr. Cook joined Co
 	1Wojciech  Krol	,  	2VP	 & 	2GM	, Colgate-Central Europe East
 	1Andrea  Lagioia	,  	2VP	 & 	2GM	, Colgate-Brazil
 	1Stephen  Lau	,  	2VP	 & 	2GM	, Colgate-Philippines
-	1Al  Lee*	,  	2Chief Ethics & Compliance Officer	
+	1Al  Lee	,  	2Chief Ethics & Compliance Officer	
 	1Stephane  Lionnet	,  	2VP	, Colgate-North America
 	1Javier  Llinas	,  	2VP	, 	3Global Information Technology	
 	1Diane  Loiselle	,  	2VP	, Hill's Pet Nutrition
 	1Moira  Loten	,  	2VP	, 	3Global Oral Care	
-	1Daniel B. Marsili*	,  	2Chief Human Resources Officer	
+	1Daniel B. Marsili	,  	2Chief Human Resources Officer	
 	1Pablo  Mascolo	,  	2VP	, Colgate-Latin America
 	1Sally  Massey	,  	2VP	, 	3Global Human Resources	
 	1Paul  McGarry	,  	2VP	, 	3Global Information Technology	
@@ -73,16 +73,16 @@ Ian M. Cook* Chairman, President and Chief Executive Officer Mr. Cook joined Co
 	1Pascal  Montilus	,  	2VP	, Colgate-North America
 	1Josue  Munoz	,  	2VP	, 	3Global Supply Chain	
 	1Francisco  Munoz Ramirez	,  	2VP	 & 	2GM	, Colgate-Venezuela
-	1Vinod  Nambiar*	,  	2President	, Colgate-Asia Pacific Division
+	1Vinod  Nambiar	 ,  	2President	, Colgate-Asia Pacific Division
 	1Debra  Nichols	,  	2VP	, Hill's Pet Nutrition
 	1Jesper  Nordengaard	,  	2VP	, Hill's Pet Nutrition
 	1Ed  Oblon	,  	2VP	, Hill's Pet Nutrition
-	1Elaine  Paik*	,  	2VP	 & Corporate 	2Treasurer	
-	1Prabha  Parameswaran*	,  	2President	, Colgate-Europe
+	1Elaine  Paik	,  	2VP	 & Corporate 	2Treasurer	
+	1Prabha  Parameswaran	,  	2President	, Colgate-Europe
 	1Ellen  Park	,  	2VP	, 	3Global Legal	
 	1Terrell  Partee	,  	2VP	, 	3Global R&D	
 	1Chris E. Pedersen	,  	2VP	 & 	2GM	, Colgate-South Pacific
-	1Hector  Pedrazat2	,  	2VP	 & 	2GM	, Colgate-Andina
+	1Hector  Pedraza	,  	2VP	 & 	2GM	, Colgate-Andina
 	1Brent  Peterson	,  	2VP	, 	3Global Human Resources	
 	1Robert C. Pierce	,  	2VP	, 	3Global R&D	
 	1Spencer  Pingel	,  	2VP	, 	3Global Analytics	
@@ -113,13 +113,13 @@ Ian M. Cook* Chairman, President and Chief Executive Officer Mr. Cook joined Co
 	1Neil  Stout	,  	2VP	, 	3Global Toothbrush Division	
 	1Lynne  Tapper	,  	2VP	, 	3Global Human Resources	
 	1Orlando  Tenorio	,  	2VP	, Colgate-Asia
-	1Bina H. Thompson*	,  	2SVP	, Investor Relations
+	1Bina H. Thompson	,  	2SVP	, Investor Relations
 	1Richard  Thorogood	,  	2VP	, 	3Global Insights	
 	1Linda  Topping	,  	2VP	, 	3Global Supply Chain	
 	1Ann  Tracy	,  	2VP	, Colgate-Europe/South Pacific
-	1Panagiotis  Tsourapas*	,  	2President	, Colgate-Latin America Division
+	1Panagiotis  Tsourapas	,  	2President	, Colgate-Latin America Division
 	1Bill  Van de Graaf	,  	2VP	 & 	2GM	, Colgate-U.S.
-	1Patricia  Verduin*	,  	2Chief Technology Officer	
+	1Patricia  Verduin	,  	2Chief Technology Officer	
 	1Lucie Claire  Vincent	,  	2VP	 & 	2GM	, 	3Global Home Care	
 	1Cliff  Wilkins	,  	2VP	, 	3Global Legal	
 	1Ruben  Young	,  	2VP	 & 	2GM	, Colgate-Greater Indo-China

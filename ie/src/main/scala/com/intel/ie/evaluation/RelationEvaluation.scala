@@ -51,8 +51,8 @@ object RelationEvaluation {
       .cache()
 
     val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
-    val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
-      val elements = line.replaceAll("\u00a0"," ").split("\t")
+    val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>      
+      val elements = line.replaceAll("\u00a0"," ").replace("  "," ").split("\t")
       RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
 
@@ -93,7 +93,7 @@ object RelationEvaluation {
   val labelPath = "data/evaluation/extraction"
   val companyList =
     Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
-  //    Array("ARRIS Group",
+      //    Array("ARRIS Group",
   //      "AbbVie",
   //      "AmerisourceBergen",
   //      "CSX",

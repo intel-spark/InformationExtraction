@@ -5,7 +5,7 @@
 	1Jan Carlson	,  	2President	, CEO and Chairman of the Board of Autoliv, Inc.
 	1Dennis C. Cuneo	,  	2Partner	 Fisher & Phillips LLP
 	1Governor John McKernan	,  President U.S. Chamber of Commerce Foundation
-	1Ernest J. Novak, Jr.i	,  	2Managing Partner	, Retired Ernst & Young
+	1Ernest J. Novak	, Jr.i,  	2Managing Partner	, Retired Ernst & Young
 	1Vicki L. Sato	,  	2Professor of Management Practice	, Harvard Business School
 	1Richard O. Schaum	,  	2General Manager	 3rd Horizon Associates LLC
 	1Thomas T. Stallkamp	,  Principal Collaborative Management LLC
@@ -16,7 +16,7 @@
   	1John J. Gasparovic	 	2Vice President	, 	2General Counsel	 and 	2Secretary	, 
   	1Ronald T. Hundzinski	 	2Vice President	 and  	2Chief Financial Officer	, 
 	1Tonit Calaway	,  	2Vice President	, 	2Chief Human Resources Officer	
-  	1Tonit Calaway	 	2Vice President	, 	2Chief Human Resources Officer	   	1Robin Kendrick	 	2Vice President	 and 	2President	 and 	2General Manager	, BorgWarner Transmission Systems    , 
+  	1Tonit Calaway	 	2Vice President	, 	2Chief Human Resources Officer	   	1Robin Kendrick	 	2Vice President	 and 	2President	 and General, Manager, BorgWarner Transmission Systems    , 
 	1Frédéric Lissalde	 	2Vice President	 and 	2President	 and 		2General Manager	, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  
 	1Thomas J. McGill	 	2Vice President	 and 	2Treasurer	,   
 	1Daniel Paterra	,  	2Vice President	 and 	2President	 and 	2General Manager	, BorgWarner Thermal Systems, 
