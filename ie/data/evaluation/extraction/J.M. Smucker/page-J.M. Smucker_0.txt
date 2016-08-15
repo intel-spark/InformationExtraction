@@ -14,8 +14,8 @@ Jill R. Penrose	title	Senior Vice President	Jill R. Penrose,  Senior Vice Presid
 Jill R. Penrose	employee_of	Human Resources	Jill R. Penrose,  Senior Vice President, Human Resources and Corporate Communications
 Jill R. Penrose	employee_of	Corporate Communications	Jill R. Penrose,  Senior Vice President, Human Resources and Corporate Communications
 Jeannette L. Knudsen	title	Senior Vice President	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
-Jeannette L. Knudsen	employee_of	General Counsel	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
-Jeannette L. Knudsen	employee_of	Secretary	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
+Jeannette L. Knudsen	title	General Counsel	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
+Jeannette L. Knudsen	title	Secretary	Jeannette L. Knudsen,  Senior Vice President, General Counsel and Secretary
 Dennis J. Armstrong	title	Senior Vice President	Dennis J. Armstrong,  Senior Vice President, Supply Chain Logistics and Operations Support
 Dennis J. Armstrong	employee_of	Supply Chain Logistics	Dennis J. Armstrong,  Senior Vice President, Supply Chain Logistics and Operations Support
 Dennis J. Armstrong	employee_of	Operations Support	Dennis J. Armstrong,  Senior Vice President, Supply Chain Logistics and Operations Support

@@ -8,3 +8,18 @@ William J. Janetschek	title	Member	+ more,  William J. Janetschek Member & Chief
 William J. Janetschek	title	Chief Financial Officer	+ more,  William J. Janetschek Member & Chief Financial Officer, 
 David J. Sorkin	title	Member	+ more,  David J. Sorkin Member & General Counsel, 
 David J. Sorkin	title	General Counsel	+ more,  David J. Sorkin Member & General Counsel, 
+Rupen Jhaveri	title	Director	Rupen Jhaveri Director, Private Equity Mumbai + Learn More,  
+Steven R. Okun	title	Director	Steven R. Okun Director of Asia-Pacific Public Affairs Singapore + Learn More, 
+Steven R. Okun	employee_of	Public Affairs	Steven R. Okun Director of Asia-Pacific Public Affairs Singapore + Learn More, 
+Steven R. Okun	title	Director	Steven R. Okun Director of Asia-Pacific Public Affairs Singapore + Learn More 
+Steven R. Okun	employee_of	Public Affairs	Steven R. Okun Director of Asia-Pacific Public Affairs Singapore + Learn More 
+Stanley Ho	title	Director	Stanley Ho Director, Client and Partner Group Hong Kong + Learn More,  
+Stanley Ho	employee_of	Client and Partner Group	Stanley Ho Director, Client and Partner Group Hong Kong + Learn More,  
+Brittany Bagley	title	Director	Brittany Bagley Director, Private Equity Menlo Park + Learn More,  
+Eric Wolfe	title	Member	Eric Wolfe Member, Hedge Funds New York + Learn More 
+Eric Wolfe	employee_of	Hedge Funds	Eric Wolfe Member, Hedge Funds New York + Learn More 
+Jurcell Virginia	title	Director	Jurcell Virginia Director, Client and Partner Group London + Learn More
+Jurcell Virginia	employee_of	Client and Partner Group	Jurcell Virginia Director, Client and Partner Group London + Learn More
+Eric Wolfe	title	Member	Eric Wolfe Member, Hedge Funds New York + Learn More,  
+Jurcell Virginia	title	Director	Jurcell Virginia Director, Client and Partner Group London + Learn More, 
+Jurcell Virginia	employee_of	Client and Partner Group	Jurcell Virginia Director, Client and Partner Group London + Learn More, 

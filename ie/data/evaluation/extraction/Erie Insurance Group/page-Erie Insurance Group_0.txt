@@ -1,13 +1,13 @@
 Timothy G. NeCastro	title	Chief Executive Officer	Timothy G. NeCastro,  Chief Executive Officer
 Terrence W. Cavanaugh	title	President	Terrence W. Cavanaugh,  President
 Gregory Gutting	title	CPA	Gregory Gutting, , CPA, CPCU Executive Vice President & Chief Financial Officer
-Gregory Gutting	title	CPCU Executive Vice President	Gregory Gutting, , CPA, CPCU Executive Vice President & Chief Financial Officer
+Gregory Gutting	title	Executive Vice President	Gregory Gutting, , CPA, CPCU Executive Vice President & Chief Financial Officer
 Gregory Gutting	title	Chief Financial Officer	Gregory Gutting, , CPA, CPCU Executive Vice President & Chief Financial Officer
 Bob Ingram	title	Executive Vice President	Bob Ingram,  Executive Vice President and Chief Information Officer
 Bob Ingram	title	Chief Information Officer	Bob Ingram,  Executive Vice President and Chief Information Officer
 Sean McLaughlin	title	Executive Vice President	Sean McLaughlin,  Executive Vice President and General Counsel
 Sean McLaughlin	title	General Counsel	Sean McLaughlin,  Executive Vice President and General Counsel
-Pat Burns	title	CPCU, AIC, AIS Interim Executive Vice President	Pat Burns, , CPCU, AIC, AIS Interim Executive Vice President, Services
+Pat Burns	title	Interim Executive Vice President	Pat Burns, , CPCU, AIC, AIS Interim Executive Vice President, Services
 Pat Burns	employee_of	Services	Pat Burns, , CPCU, AIC, AIS Interim Executive Vice President, Services
-Doug Smith	title	CPCU, FCAS, MAAA Interim Executive Vice President	Doug Smith, , CPCU, FCAS, MAAA Interim Executive Vice President, Sales and Marketing and Product
+Doug Smith	title	Interim Executive Vice President	Doug Smith, , CPCU, FCAS, MAAA Interim Executive Vice President, Sales and Marketing and Product
 Doug Smith	employee_of	Sales and Marketing and Product	Doug Smith, , CPCU, FCAS, MAAA Interim Executive Vice President, Sales and Marketing and Product

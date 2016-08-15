@@ -27,6 +27,8 @@ Michael Cave	title	Former Senior Vice President	Michael Cave,  Non-Executive Cha
 R. John Anderson	title	Former President	R. John Anderson,  Former Presidentand Chief Executive Officer Levi Strauss & Co.
 R. John Anderson	title	Chief Executive Officer	R. John Anderson,  Former Presidentand Chief Executive Officer Levi Strauss & Co.
 Donald A. James	title	Co-Founder	Donald A. James,  Co-Founder, Majority Owner, Chairman and Chief Executive Officerof Fred Deeley Imports Ltd.
+Donald A. James	title	Majority Owner	Donald A. James,  Co-Founder, Majority Owner, Chairman and Chief Executive Officerof Fred Deeley Imports Ltd.
+Donald A. James	title	Chairman	Donald A. James,  Co-Founder, Majority Owner, Chairman and Chief Executive Officerof Fred Deeley Imports Ltd.
 Donald A. James	title	Chief Executive Officer	Donald A. James,  Co-Founder, Majority Owner, Chairman and Chief Executive Officerof Fred Deeley Imports Ltd.
 Matthew S. Levatich	title	President	Matthew S. Levatich,  Presidentand Chief Executive Officer Harley-Davidson, Inc.
 Matthew S. Levatich	title	Chief Executive Officer	Matthew S. Levatich,  Presidentand Chief Executive Officer Harley-Davidson, Inc.

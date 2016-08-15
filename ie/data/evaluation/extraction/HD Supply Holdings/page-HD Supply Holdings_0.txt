@@ -1,15 +1,15 @@
-Joseph J. DeAngelo	title	Chairman and 	Joseph J. DeAngelo Chairman and Chief Executive OfficerBiography,  High Res Image | Low Res Image
+Joseph J. DeAngelo	title	Chairman	Joseph J. DeAngelo Chairman and Chief Executive OfficerBiography,  High Res Image | Low Res Image
 Joseph J. DeAngelo	title	Chief Executive Officer	Joseph J. DeAngelo Chairman and Chief Executive OfficerBiography,  High Res Image | Low Res Image
-Brad Cowles	title	Chief Information Office	Brad Cowles Chief Information Office, HD Supply Biography,  High Res Image | Low Res Image
-Brad Cowles	employee_of	HD Supply Biography	Brad Cowles Chief Information Office, HD Supply Biography,  High Res Image | Low Res Image
+Brad Cowles	title	Chief Information Officer	Brad Cowles Chief Information Officer, HD Supply Biography,  High Res Image | Low Res Image
+Brad Cowles	employee_of	HD Supply Biography	Brad Cowles Chief Information Officer, HD Supply Biography,  High Res Image | Low Res Image
 Joe Izganics	title	Senior Vice President	Joe Izganics Senior Vice PresidentHome Improvement Solutions Biography,  High Res Image, 
 Joe Izganics	employee_of	Home Improvement Solutions	Joe Izganics Senior Vice PresidentHome Improvement Solutions Biography,  High Res Image, 
 Steve LeClair	title	President	Steve LeClair PresidentHD Supply Waterworks Biography,  High Res Image | Low Res Image
 Steve LeClair	employee_of	HD Supply Waterworks	Steve LeClair PresidentHD Supply Waterworks Biography,  High Res Image | Low Res Image
 Evan Levitt	title	Senior Vice President	Evan Levitt Senior Vice Presidentand Chief Financial OfficerBiography,  High Res Image | Low Res Image
 Evan Levitt	title	Chief Financial Officer	Evan Levitt Senior Vice Presidentand Chief Financial OfficerBiography,  High Res Image | Low Res Image
-Steven Margolius 	title	Chief Operating Office	Steven Margolius Chief Operating Office, HD Supply Facilities Maintenance Biography,  Low Res Image, 
-Steven Margolius 	employee_of	HD Supply Facilities Maintenance	Steven Margolius Chief Operating Office, HD Supply Facilities Maintenance Biography,  Low Res Image, 
+Steven Margolius 	title	Chief Operating Officer	Steven Margolius Chief Operating Officer, HD Supply Facilities Maintenance Biography,  Low Res Image, 
+Steven Margolius 	employee_of	HD Supply Facilities Maintenance	Steven Margolius Chief Operating Officer, HD Supply Facilities Maintenance Biography,  Low Res Image, 
 Dan McDevitt	title	General Counsel and Corporate Secretary	Dan McDevitt General Counsel and Corporate SecretaryBiography,  High Res Image | Low Res Image
 Margaret Newman	title	Senior Vice President	Margaret Newman Senior Vice President, Human Resources Biography,  High Res Image | Low Res Image
 Margaret Newman	employee_of	Human Resources	Margaret Newman Senior Vice President, Human Resources Biography,  High Res Image | Low Res Image

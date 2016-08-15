@@ -9,6 +9,6 @@ David A. Jacobs	title	Chief Strategy Officer	David A. Jacobs,  Chief Strategy Of
 Joshua R. Jewett	title	Chief Information Officer	Joshua R. Jewett,  Chief Information Officer
 Mike Matacunas	title	Chief Administrative Officer	Mike Matacunas,  Chief Administrative Officer
 Gary Maxwell	title	Chief Supply Chain Officer	Gary Maxwell,  Chief Supply Chain Officer
-William A. Old, Jr.	title	Chief Legal Officer	William A. Old, Jr.,  Chief Legal Officer and Corporate Secretary
-William A. Old, Jr.	title	Corporate Secretary	William A. Old, Jr.,  Chief Legal Officer and Corporate Secretary
+William A. Old	title	Chief Legal Officer	William A. Old, Jr.,  Chief Legal Officer and Corporate Secretary
+William A. Old	title	Corporate Secretary	William A. Old, Jr.,  Chief Legal Officer and Corporate Secretary
 Robert H. Rudman	title	Chief Merchandising Officer	Robert H. Rudman,  Chief Merchandising Officer
