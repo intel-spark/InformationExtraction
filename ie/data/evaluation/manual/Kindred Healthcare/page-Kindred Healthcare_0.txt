@@ -21,7 +21,7 @@ David A. Causby,  Executive Vice President and President, Kindred at Home,  Da
 William M. Altman,  Executive Vice President for Strategy, Policy and Integrated Care,  William M. Altman,  Executive Vice President for Strategy, Policy and Integrated Care, 
 	1William M. Altman	,  	2Executive Vice President	 for 	3Strategy, Policy and Integrated Care	, 
 Joseph L. Landenwich,  General Counsel and Corporate Secretary,  Joseph L. Landenwich,  General Counsel and Corporate Secretary, 
-	1Joseph L. Landenwich	,  	2General Counsel and Corporate Secretary	, 
+	1Joseph L. Landenwich	,  	2General Counsel	 and 	2Corporate Secretary	, 
 Stephen R. Cunanan,  Chief Administrative Officer and Chief People Officer,  Stephen R. Cunanan,  Chief Administrative Officer and Chief People Officer, 
 	1Stephen R. Cunanan	,  	2Chief Administrative Officer	 and 	2Chief People Officer	, 
 http://phx.corporate-ir.net/phoenix.zhtml?c=129959&p=irol-govmanage

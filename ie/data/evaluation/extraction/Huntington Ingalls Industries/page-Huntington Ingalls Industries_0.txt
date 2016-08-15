@@ -1,6 +1,7 @@
 Mike Petters	title	President	Mike Petters President and Chief Executive Officer Full bio, 
 Mike Petters	title	Chief Executive Officer	Mike Petters President and Chief Executive Officer Full bio, 
-Brian Cuccias	title	Executive Vice President President	Brian Cuccias Executive Vice President President, Ingalls Shipbuilding Full bio, 
+Brian Cuccias	title	Executive Vice President	Brian Cuccias Executive Vice President President, Ingalls Shipbuilding Full bio, 
+Brian Cuccias	title	President	Brian Cuccias Executive Vice President President, Ingalls Shipbuilding Full bio, 
 Brian Cuccias	employee_of	Ingalls Shipbuilding	Brian Cuccias Executive Vice President President, Ingalls Shipbuilding Full bio, 
 Jerri Fuller Dickseski	title	Executive Vice President	Jerri Fuller Dickseski Executive Vice President Communications Full bio, 
 Jerri Fuller Dickseski	employee_of	Communications	Jerri Fuller Dickseski Executive Vice President Communications Full bio, 

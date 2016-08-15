@@ -4,8 +4,8 @@ Jim Thorpe	title	Executive Vice President	Jim Thorpe,  Executive Vice President 
 Jim Thorpe	title	Chief Merchandising Officer	Jim Thorpe,  Executive Vice President and Chief Merchandising Officer
 Jeff Owen	title	Executive Vice President	Jeff Owen,  Executive Vice President, Store Operations
 Jeff Owen	employee_of	Store Operations	Jeff Owen,  Executive Vice President, Store Operations
-Bob  Ravener,  	title	Executive Vice President	Bob  Ravener,  Executive Vice President and Chief People Officer
-Bob  Ravener,  	title	Chief People Officer	Bob  Ravener,  Executive Vice President and Chief People Officer
+Bob  Ravener	title	Executive Vice President	Bob  Ravener,  Executive Vice President and Chief People Officer
+Bob  Ravener	title	Chief People Officer	Bob  Ravener,  Executive Vice President and Chief People Officer
 Rhonda Taylor	title	Executive Vice President	Rhonda Taylor,  Executive Vice President and General Counsel
 Rhonda Taylor	title	General Counsel	Rhonda Taylor,  Executive Vice President and General Counsel
 Mike Kindy	title	Senior Vice President	Mike Kindy,  Senior Vice President, Global Supply Chain
