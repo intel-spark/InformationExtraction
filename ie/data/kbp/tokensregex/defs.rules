@@ -3,8 +3,8 @@ ner = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$NamedEntity
 pos = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$PartOfSpeechAnnotation" }
 lemma = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$LemmaAnnotation" }
 tokens = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$TokensAnnotation" }
-kbpentity = { type: "CLASS", value: "intel.analytics.IntelKBPTokensregexExtractor$Subject" }
-slotvalue = { type: "CLASS", value: "intel.analytics.IntelKBPTokensregexExtractor$Object" }
+kbpentity = { type: "CLASS", value: "com.intel.ie.analytics.IntelKBPTokensregexExtractor$Subject" }
+slotvalue = { type: "CLASS", value: "com.intel.ie.analytics.IntelKBPTokensregexExtractor$Object" }
 
 $ENTITY = ([ { kbpentity:true } ]+ )
 $ENTITY_PER = ( [ { kbpentity::EXISTS } & { ner:/.*PERSON.*/ } ]+ )
