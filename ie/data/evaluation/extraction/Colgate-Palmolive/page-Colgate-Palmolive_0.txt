@@ -28,17 +28,17 @@ Constantina  Christopoulou	title	VP	Constantina  Christopoulou,  VP, Global 
 Constantina  Christopoulou	employee_of	Global R&D	Constantina  Christopoulou,  VP, Global R&D
 Marty  Collins	title	VP	Marty  Collins,  VP, Global Legal
 Marty  Collins	employee_of	Global Legal	Marty  Collins,  VP, Global Legal
-Michael A. Corbo*	title	Chief Supply Chain Officer	Michael A. Corbo*,  Chief Supply Chain Officer
+Michael A. Corbo	title	Chief Supply Chain Officer	Michael A. Corbo,  Chief Supply Chain Officer
 Mike  Crowe	title	Chief Information Officer	Mike  Crowe,  Chief Information Officer
 Marianne  DeLorenzo	title	VP	Marianne  DeLorenzo,  VP, Global Information Technology
 Marianne  DeLorenzo	employee_of	Global Information Technology	Marianne  DeLorenzo,  VP, Global Information Technology
-Mukul  Deoras*	title	Chief Marketing Officer	Mukul  Deoras*,  Chief Marketing Officer
+Mukul  Deoras	title	Chief Marketing Officer	Mukul  Deoras,  Chief Marketing Officer
 Bill  DeVizio	title	Chief Dental Officer	Bill  DeVizio,  Chief Dental Officer
 Robert W.  Dietz	title	VP	Robert W.  Dietz,  VP, Global Facilities
 Robert W.  Dietz	employee_of	Global Facilities	Robert W.  Dietz,  VP, Global Facilities
 Cathy  Dillane	title	VP	Cathy  Dillane,  VP, Colgate-Latin America
-Victoria  Dolan*	title	VP	Victoria  Dolan*,  VP & Corporate Controller
-Victoria  Dolan*	title	Corporate Controller	Victoria  Dolan*,  VP & Corporate Controller
+Victoria  Dolan	title	VP	Victoria  Dolan,  VP & Corporate Controller
+Victoria  Dolan	title	Corporate Controller	Victoria  Dolan,  VP & Corporate Controller
 Gordon  Dumesich	title	VP	Gordon  Dumesich,  VP & GM, Hill's Pet Nutrition -Japan
 Gordon  Dumesich	title	GM	Gordon  Dumesich,  VP & GM, Hill's Pet Nutrition -Japan
 Philip  Durocher	title	VP	Philip  Durocher,  VP & GM, Colgate-UK & Ireland
@@ -60,15 +60,15 @@ Derek  Gordon	title	GM	Derek  Gordon,  VP & GM, Colgate-Canada
 Taylor  Gordy	title	VP	Taylor  Gordy,  VP, Colgate-U.S.
 Peter  Graylin	title	VP	Peter  Graylin,  VP, Global Legal
 Peter  Graylin	employee_of	Global Legal	Peter  Graylin,  VP, Global Legal
-Tom  Greene*	title	Chief Information & Business Services Officer	Tom  Greene*,  Chief Information & Business Services Officer
+Tom  Greene	title	Chief Information & Business Services Officer	Tom  Greene,  Chief Information & Business Services Officer
 Jan  Guifarro	title	VP	Jan  Guifarro,  VP, Corporate Communications
 Jan  Guifarro	employee_of	Corporate Communications	Jan  Guifarro,  VP, Corporate Communications
 Jack J. Haber	title	VP	Jack J. Haber,  VP, Global Advertising & Digital
 Jack J. Haber	employee_of	Global Advertising & Digital	Jack J. Haber,  VP, Global Advertising & Digital
 Elise  Halvorson	title	VP	Elise  Halvorson,  VP, Enterprise Risk Management
 Elise  Halvorson	employee_of	Enterprise Risk Management	Elise  Halvorson,  VP, Enterprise Risk Management
-Suzan F. Harrison*	title	President	Suzan F. Harrison*,  President, Global Oral Care
-Suzan F. Harrison*	employee_of	Global Oral Care	Suzan F. Harrison*,  President, Global Oral Care
+Suzan F. Harrison	title	President	Suzan F. Harrison,  President, Global Oral Care
+Suzan F. Harrison	employee_of	Global Oral Care	Suzan F. Harrison,  President, Global Oral Care
 John  Hazlin	title	VP	John  Hazlin,  VP, Colgate-Africa/Eurasia
 Raymond  Ho	title	VP	Raymond  Ho,  VP, Colgate-Asia
 Bob  Holland	title	VP	Bob  Holland,  VP, Ethics & Compliance
@@ -77,7 +77,7 @@ Henry  Hu	title	VP	Henry  Hu,  VP, Colgate-Asia
 Nina  Huffman	title	VP	Nina  Huffman,  VP, Global Legal
 Nina  Huffman	employee_of	Global Legal	Nina  Huffman,  VP, Global Legal
 Traci  Hughes-Velez	title	VP	Traci  Hughes-Velez,  VP, Colgate-Europe/South Pacific
-John J. Huston*	title	SVP	John J. Huston*,  SVP, Chief of Staff
+John J. Huston	title	SVP	John J. Huston,  SVP, Chief of Staff
 Henning  Jakobsen	title	VP	Henning  Jakobsen,  VP & GM, Colgate-Nordic
 Henning  Jakobsen	title	GM	Henning  Jakobsen,  VP & GM, Colgate-Nordic
 N. Jay  Jayaraman	title	VP	N. Jay  Jayaraman,  VP, Global Technology
@@ -95,14 +95,14 @@ Andrea  Lagioia	title	VP	Andrea  Lagioia,  VP & GM, Colgate-Brazil
 Andrea  Lagioia	title	GM	Andrea  Lagioia,  VP & GM, Colgate-Brazil
 Stephen  Lau	title	VP	Stephen  Lau,  VP & GM, Colgate-Philippines
 Stephen  Lau	title	GM	Stephen  Lau,  VP & GM, Colgate-Philippines
-Al  Lee*	title	Chief Ethics & Compliance Officer	Al  Lee*,  Chief Ethics & Compliance Officer
+Al  Lee	title	Chief Ethics & Compliance Officer	Al  Lee,  Chief Ethics & Compliance Officer
 Stephane  Lionnet	title	VP	Stephane  Lionnet,  VP, Colgate-North America
 Javier  Llinas	title	VP	Javier  Llinas,  VP, Global Information Technology
 Javier  Llinas	employee_of	Global Information Technology	Javier  Llinas,  VP, Global Information Technology
 Diane  Loiselle	title	VP	Diane  Loiselle,  VP, Hill's Pet Nutrition
 Moira  Loten	title	VP	Moira  Loten,  VP, Global Oral Care
 Moira  Loten	employee_of	Global Oral Care	Moira  Loten,  VP, Global Oral Care
-Daniel B. Marsili*	title	Chief Human Resources Officer	Daniel B. Marsili*,  Chief Human Resources Officer
+Daniel B. Marsili	title	Chief Human Resources Officer	Daniel B. Marsili,  Chief Human Resources Officer
 Pablo  Mascolo	title	VP	Pablo  Mascolo,  VP, Colgate-Latin America
 Sally  Massey	title	VP	Sally  Massey,  VP, Global Human Resources
 Sally  Massey	employee_of	Global Human Resources	Sally  Massey,  VP, Global Human Resources
@@ -117,21 +117,21 @@ Josue  Munoz	title	VP	Josue  Munoz,  VP, Global Supply Chain
 Josue  Munoz	employee_of	Global Supply Chain	Josue  Munoz,  VP, Global Supply Chain
 Francisco  Munoz Ramirez	title	VP	Francisco  Munoz Ramirez,  VP & GM, Colgate-Venezuela
 Francisco  Munoz Ramirez	title	GM	Francisco  Munoz Ramirez,  VP & GM, Colgate-Venezuela
-Vinod  Nambiar*	title	President	Vinod  Nambiar*,  President, Colgate-Asia Pacific Division
+Vinod  Nambiar	title	President	Vinod  Nambiar ,  President, Colgate-Asia Pacific Division
 Debra  Nichols	title	VP	Debra  Nichols,  VP, Hill's Pet Nutrition
 Jesper  Nordengaard	title	VP	Jesper  Nordengaard,  VP, Hill's Pet Nutrition
 Ed  Oblon	title	VP	Ed  Oblon,  VP, Hill's Pet Nutrition
-Elaine  Paik*	title	VP	Elaine  Paik*,  VP & Corporate Treasurer
-Elaine  Paik*	title	Treasurer	Elaine  Paik*,  VP & Corporate Treasurer
-Prabha  Parameswaran*	title	President	Prabha  Parameswaran*,  President, Colgate-Europe
+Elaine  Paik	title	VP	Elaine  Paik,  VP & Corporate Treasurer
+Elaine  Paik	title	Treasurer	Elaine  Paik,  VP & Corporate Treasurer
+Prabha  Parameswaran	title	President	Prabha  Parameswaran,  President, Colgate-Europe
 Ellen  Park	title	VP	Ellen  Park,  VP, Global Legal
 Ellen  Park	employee_of	Global Legal	Ellen  Park,  VP, Global Legal
 Terrell  Partee	title	VP	Terrell  Partee,  VP, Global R&D
 Terrell  Partee	employee_of	Global R&D	Terrell  Partee,  VP, Global R&D
 Chris E. Pedersen	title	VP	Chris E. Pedersen,  VP & GM, Colgate-South Pacific
 Chris E. Pedersen	title	GM	Chris E. Pedersen,  VP & GM, Colgate-South Pacific
-Hector  Pedrazat2	title	VP	Hector  Pedrazat2,  VP & GM, Colgate-Andina
-Hector  Pedrazat2	title	GM	Hector  Pedrazat2,  VP & GM, Colgate-Andina
+Hector  Pedraza	title	VP	Hector  Pedraza,  VP & GM, Colgate-Andina
+Hector  Pedraza	title	GM	Hector  Pedraza,  VP & GM, Colgate-Andina
 Brent  Peterson	title	VP	Brent  Peterson,  VP, Global Human Resources
 Brent  Peterson	employee_of	Global Human Resources	Brent  Peterson,  VP, Global Human Resources
 Robert C. Pierce	title	VP	Robert C. Pierce,  VP, Global R&D
@@ -182,16 +182,16 @@ Neil  Stout	employee_of	Global Toothbrush Division	Neil  Stout,  VP, Global 
 Lynne  Tapper	title	VP	Lynne  Tapper,  VP, Global Human Resources
 Lynne  Tapper	employee_of	Global Human Resources	Lynne  Tapper,  VP, Global Human Resources
 Orlando  Tenorio	title	VP	Orlando  Tenorio,  VP, Colgate-Asia
-Bina H. Thompson*	title	SVP	Bina H. Thompson*,  SVP, Investor Relations
+Bina H. Thompson	title	SVP	Bina H. Thompson,  SVP, Investor Relations
 Richard  Thorogood	title	VP	Richard  Thorogood,  VP, Global Insights
 Richard  Thorogood	employee_of	Global Insights	Richard  Thorogood,  VP, Global Insights
 Linda  Topping	title	VP	Linda  Topping,  VP, Global Supply Chain
 Linda  Topping	employee_of	Global Supply Chain	Linda  Topping,  VP, Global Supply Chain
 Ann  Tracy	title	VP	Ann  Tracy,  VP, Colgate-Europe/South Pacific
-Panagiotis  Tsourapas*	title	President	Panagiotis  Tsourapas*,  President, Colgate-Latin America Division
+Panagiotis  Tsourapas	title	President	Panagiotis  Tsourapas,  President, Colgate-Latin America Division
 Bill  Van de Graaf	title	VP	Bill  Van de Graaf,  VP & GM, Colgate-U.S.
 Bill  Van de Graaf	title	GM	Bill  Van de Graaf,  VP & GM, Colgate-U.S.
-Patricia  Verduin*	title	Chief Technology Officer	Patricia  Verduin*,  Chief Technology Officer
+Patricia  Verduin	title	Chief Technology Officer	Patricia  Verduin,  Chief Technology Officer
 Lucie Claire  Vincent	title	VP	Lucie Claire  Vincent,  VP & GM, Global Home Care
 Lucie Claire  Vincent	title	GM	Lucie Claire  Vincent,  VP & GM, Global Home Care
 Lucie Claire  Vincent	employee_of	Global Home Care	Lucie Claire  Vincent,  VP & GM, Global Home Care
