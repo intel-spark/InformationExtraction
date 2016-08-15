@@ -1,8 +1,8 @@
-Jananne A. Copeland	title	Chief Accounting Office	Jananne A. Copeland,  - Chief Accounting Office
+Jananne A. Copeland	title	Chief Accounting Officer	Jananne A. Copeland,  - Chief Accounting Officer
 Jill E. Daugherty	title	Corporate Controller	Jill E. Daugherty,  - Corporate Controller
 Richard D. Moore	title	Treasurer	Richard D. Moore,  - Treasurer
-Kim R. Doe	title	Chief Audit Office	Kim R. Doe,  - Chief Audit Office
-Lance W. High	title	Chief Ethics and Compliance Office	Lance W. High,  - Chief Ethics and Compliance Office
+Kim R. Doe	title	Chief Audit Officer	Kim R. Doe,  - Chief Audit Officer
+Lance W. High	title	Chief Ethics and Compliance Officer	Lance W. High,  - Chief Ethics and Compliance Officer
 Christopher M. Reitz	title	Corporate Secretary	Christopher M. Reitz,  - Corporate Secretary
 Sally A. Stiles	title	Assistant Treasurer	Sally A. Stiles,  - Assistant Treasurer
 Patrick G. Holcombe	title	Assistant Secretary	Patrick G. Holcombe,  - Assistant Secretary

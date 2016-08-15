@@ -1,10 +1,10 @@
-Benno Dorer	title	Chief Executive Office	Benno Dorer,  Chief Executive Office
+Benno Dorer	title	Chief Executive Officer	Benno Dorer,  Chief Executive Officer
 James Foster	title	Executive Vice President	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
 James Foster	employee_of	Product Supply	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
 James Foster	employee_of	Enterprise Performance	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
 James Foster	employee_of	IT	James Foster,  Executive Vice President Product Supply, Enterprise Performance and IT
-Stephen M. Robb	title	Executive Vice President	Stephen M. Robb,  Executive Vice President Chief Financial Office
-Stephen M. Robb	title	Chief Financial Office	Stephen M. Robb,  Executive Vice President Chief Financial Office
+Stephen M. Robb	title	Executive Vice President	Stephen M. Robb,  Executive Vice President Chief Financial Officer
+Stephen M. Robb	title	Chief Financial Officer	Stephen M. Robb,  Executive Vice President Chief Financial Officer
 Laura Stein	title	Executive Vice President	Laura Stein,  Executive Vice President- General Counsel and Corporate Affairs
 Laura Stein	employee_of	General Counsel and Corporate Affairs	Laura Stein,  Executive Vice President- General Counsel and Corporate Affairs
 Nick Vlahos	title	Executive Vice President	Nick Vlahos,  Executive Vice President& Chief Operating Officer Household, Lifestyle and Core Global Functions
@@ -20,11 +20,11 @@ Jon Balousek	title	General Manager	Jon Balousek,  Senior Vice President Genera
 Jon Balousek	employee_of	Specialty Division	Jon Balousek,  Senior Vice President General Manager, Specialty Division
 Michael Costello	title	Senior Vice President	Michael Costello,  Senior Vice President International Division
 Michael Costello	employee_of	International Division	Michael Costello,  Senior Vice President International Division
-Denise A. Garner	title	Senior Vice President	Denise A. Garner,  Senior Vice President Chief Innovation Office
-Denise A. Garner	title	Chief Innovation Office	Denise A. Garner,  Senior Vice President Chief Innovation Office
-Matt Laszlo	title	Senior Vice President	Matt Laszlo,  Senior Vice President Chief Customer Office
-Matt Laszlo	title	Chief Customer Office	Matt Laszlo,  Senior Vice President Chief Customer Office
-Kirsten Marriner	title	Senior Vice President	Kirsten Marriner,  Senior Vice President- Chief People Office
-Kirsten Marriner	title	Chief People Office	Kirsten Marriner,  Senior Vice President- Chief People Office
-Eric Reynolds	title	Senior Vice President	Eric Reynolds,  Senior Vice President Chief Marketing Office
-Eric Reynolds	title	Chief Marketing Office	Eric Reynolds,  Senior Vice President Chief Marketing Office
+Denise A. Garner	title	Senior Vice President	Denise A. Garner,  Senior Vice President Chief Innovation Officer
+Denise A. Garner	title	Chief Innovation Officer	Denise A. Garner,  Senior Vice President Chief Innovation Officer
+Matt Laszlo	title	Senior Vice President	Matt Laszlo,  Senior Vice President Chief Customer Officer
+Matt Laszlo	title	Chief Customer Officer	Matt Laszlo,  Senior Vice President Chief Customer Officer
+Kirsten Marriner	title	Senior Vice President	Kirsten Marriner,  Senior Vice President- Chief People Officer
+Kirsten Marriner	title	Chief People Officer	Kirsten Marriner,  Senior Vice President- Chief People Officer
+Eric Reynolds	title	Senior Vice President	Eric Reynolds,  Senior Vice President Chief Marketing Officer
+Eric Reynolds	title	Chief Marketing Officer	Eric Reynolds,  Senior Vice President Chief Marketing Officer

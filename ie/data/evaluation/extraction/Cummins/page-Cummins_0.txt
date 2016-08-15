@@ -11,7 +11,6 @@ Tracy Embree	title	Vice President	Tracy Embree,  Vice President - Cummins Inc.
 Tracy Embree	title	President	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
 Tracy Embree	employee_of	Components Group	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
 Tracy Embree	employee_of	Business Development	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
-Vice President	title	President	Vice President,  - Cummins Inc.; President,  - Compone, nts Group and Business Developm, ent, 
 Thad Ewald	title	Vice President	Thad Ewald,  Vice President - Corporate Strategy,   
 Thad Ewald	employee_of	Corporate Strategy	Thad Ewald,  Vice President - Corporate Strategy,   
 Rich Freeland	title	President	Rich Freeland,  President and Chief Operating Officer  

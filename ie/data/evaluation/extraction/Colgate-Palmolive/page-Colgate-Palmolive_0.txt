@@ -8,8 +8,8 @@ Andrea  Bernard	title	VP	Andrea  Bernard,  VP, Global Legal
 Andrea  Bernard	employee_of	Global Legal	Andrea  Bernard,  VP, Global Legal
 Joseph M. Bertolini	title	VP	Joseph M. Bertolini,  VP, Global Finance
 Joseph M. Bertolini	employee_of	Global Finance	Joseph M. Bertolini,  VP, Global Finance
-Peter  Brons-Poulsen*	title	President	Peter  Brons-Poulsen*,  President & CEO, Hill's Pet Nutrition
-Peter  Brons-Poulsen*	title	CEO	Peter  Brons-Poulsen*,  President & CEO, Hill's Pet Nutrition
+Peter  Brons-Poulsen	title	President	Peter  Brons-Poulsen*,  President & CEO, Hill's Pet Nutrition
+Peter  Brons-Poulsen	title	CEO	Peter  Brons-Poulsen*,  President & CEO, Hill's Pet Nutrition
 Marsha  Butler	title	VP	Marsha  Butler,  VP, Global Oral Care
 Marsha  Butler	employee_of	Global Oral Care	Marsha  Butler,  VP, Global Oral Care
 Scott  Cain	title	VP	Scott  Cain,  VP, Global Finance

@@ -6,9 +6,9 @@ Paul J. Krump	title	President	Paul J. Krump *  Paul J. Krump, Executive Vice Pr
 Paul J. Krump	employee_of	Personal Lines and Claims	Paul J. Krump *  Paul J. Krump, Executive Vice President The Chubb Corporation, and Presidentof Personal Lines and Claims,  Learn More 
 Richard G. Spiro	title	Executive Vice President	Richard G. Spiro *  Richard G. Spiro, Executive Vice President& Chief Financial Officer The Chubb Corporation,  Learn More 
 Richard G. Spiro	title	Chief Financial Officer	Richard G. Spiro *  Richard G. Spiro, Executive Vice President& Chief Financial Officer The Chubb Corporation,  Learn More 
-Harold L. Morrison Jr.	title	Executive Vice President	Harold L. Morrison Jr.,*  Harold L. Morrison, Jr., Executive Vice President The Chubb Corporation and Chief Global Field Officer & Chief Administrative Officer  Learn More 
-Harold L. Morrison Jr.	title	Chief Global Field Officer	Harold L. Morrison Jr.,*  Harold L. Morrison, Jr., Executive Vice President The Chubb Corporation and Chief Global Field Officer & Chief Administrative Officer  Learn More 
-Harold L. Morrison Jr.	title	Chief Administrative Officer	Harold L. Morrison Jr.,*  Harold L. Morrison, Jr., Executive Vice President The Chubb Corporation and Chief Global Field Officer & Chief Administrative Officer  Learn More 
+Harold L. Morrison 	title	Executive Vice President	Harold L. Morrison Jr.,*  Harold L. Morrison, Jr., Executive Vice President The Chubb Corporation and Chief Global Field Officer & Chief Administrative Officer  Learn More 
+Harold L. Morrison 	title	Chief Global Field Officer	Harold L. Morrison Jr.,*  Harold L. Morrison, Jr., Executive Vice President The Chubb Corporation and Chief Global Field Officer & Chief Administrative Officer  Learn More 
+Harold L. Morrison 	title	Chief Administrative Officer	Harold L. Morrison Jr.,*  Harold L. Morrison, Jr., Executive Vice President The Chubb Corporation and Chief Global Field Officer & Chief Administrative Officer  Learn More 
 Maureen Brundage	title	Executive Vice President	Maureen Brundage  Maureen A. Brundage, Executive Vice Presidentand General Counsel, The Chubb Corporation,  Learn More 
 Maureen Brundage	title	General Counsel	Maureen Brundage  Maureen A. Brundage, Executive Vice Presidentand General Counsel, The Chubb Corporation,  Learn More 
 Ned I. Gerstman	title	Executive Vice President	Ned I. Gerstman  Ned I. Gerstman, Executive Vice President& Co-Chief Investment Officer The Chubb Corporation,  Learn More 

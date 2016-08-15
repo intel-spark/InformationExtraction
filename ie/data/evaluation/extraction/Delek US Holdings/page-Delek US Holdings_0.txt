@@ -1,5 +1,6 @@
 Ezra Uzi Yemin	title	Chairman	Ezra Uzi Yemin (Chairman, President and Chief Executive Officer), 
-Ezra Uzi Yemin	title	President and Chief Executive Officer	Ezra Uzi Yemin (Chairman, President and Chief Executive Officer), 
+Ezra Uzi Yemin	title	President	Ezra Uzi Yemin (Chairman, President and Chief Executive Officer), 
+Ezra Uzi Yemin	title	Chief Executive Officer	Ezra Uzi Yemin (Chairman, President and Chief Executive Officer), 
 Assi Ginzburg	title	Executive Vice President	Assi Ginzburg (Executive Vice President and Chief Financial Officer), 
 Assi Ginzburg	title	Chief Financial Officer	Assi Ginzburg (Executive Vice President and Chief Financial Officer), 
 Frederec Green	title	Executive Vice President	Frederec Green (Executive Vice President), 
