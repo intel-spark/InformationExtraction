@@ -3,7 +3,7 @@ James R. Verrier	title	CEO	James R. Verrier,  President and CEO BorgWarner Inc. 
 Alexis P. Michas	title	Non-Executive Chairman	Alexis P. Michas,  Non-Executive Chairman of the Board, BorgWarner Inc. Managing Partner, Juniper Investment Company, LLC
 Jan Carlson	title	President	Jan Carlson,  President, CEO and Chairman of the Board of Autoliv, Inc.
 Dennis C. Cuneo	title	Partner	Dennis C. Cuneo,  Partner Fisher & Phillips LLP
-Ernest J. Novak, Jr.i	title	Managing Partner	Ernest J. Novak, Jr.i,  Managing Partner, Retired Ernst & Young
+Ernest J. Novak	title	Managing Partner	Ernest J. Novak, Jr.i,  Managing Partner, Retired Ernst & Young
 Vicki L. Sato	title	Professor of Management Practice	Vicki L. Sato,  Professor of Management Practice, Harvard Business School
 Richard O. Schaum	title	General Manager	Richard O. Schaum,  General Manager 3rd Horizon Associates LLC
 Steven G. Carlson	title	Vice President	Steven G. Carlson,  Vice President and Controller,   
@@ -26,11 +26,10 @@ Ronald T. Hundzinski	title	Vice President	  Ronald T. Hundzinski Vice President
 Ronald T. Hundzinski	title	Chief Financial Officer	  Ronald T. Hundzinski Vice President and  Chief Financial Officer, 
 Tonit Calaway	title	Vice President	Tonit Calaway,  Vice President, Chief Human Resources Officer
 Tonit Calaway	title	Chief Human Resources Officer	Tonit Calaway,  Vice President, Chief Human Resources Officer
-Tonit Calaway	title	Vice President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
-Tonit Calaway	title	Chief Human Resources Officer	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
-Tonit Calaway	title	Vice President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
-Tonit Calaway	title	President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
-Tonit Calaway	title	General Manager	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	Vice President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General, Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	Chief Human Resources Officer	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General, Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	Vice President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General, Manager, BorgWarner Transmission Systems    , 
+Tonit Calaway	title	President	  Tonit Calaway Vice President, Chief Human Resources Officer   Robin Kendrick Vice President and President and General, Manager, BorgWarner Transmission Systems    , 
 Frédéric Lissalde	title	Vice President	Frédéric Lissalde Vice President and President and General Manager, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  
 Frédéric Lissalde	title	President	Frédéric Lissalde Vice President and President and General Manager, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  
 Frédéric Lissalde	title	General Manager	Frédéric Lissalde Vice President and President and General Manager, BorgWarner Turbo Systems,    Thomas J. McGill Vice President and Treasurer  

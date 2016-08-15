@@ -59,6 +59,8 @@ William Ruh	title	SVP	William Ruh,  SVP& Chief Digital Officer GE CEO GE Digital
 William Ruh	title	Chief Digital Officer	William Ruh,  SVP& Chief Digital Officer GE CEO GE Digital
 William Ruh	title	CEO	William Ruh,  SVP& Chief Digital Officer GE CEO GE Digital
 William Ruh	employee_of	GE Digital	William Ruh,  SVP& Chief Digital Officer GE CEO GE Digital
+Keith S. Sherin	title	Vice Chairman	Keith S. Sherin,  Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital Vice Chairman GE and Chairman and CEOof GE Capital
+Keith S. Sherin	title	Chairman	Keith S. Sherin,  Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital Vice Chairman GE and Chairman and CEOof GE Capital
 Keith S. Sherin	title	CEO	Keith S. Sherin,  Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital Vice Chairman GE and Chairman and CEOof GE Capital
 Keith S. Sherin	title	CEO	Keith S. Sherin,  Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital Vice Chairman GE and Chairman and CEOof GE Capital
 Keith S. Sherin	title	CEO	Keith S. Sherin,  Vice Chairman, GE Chairman & CEO GE Capital

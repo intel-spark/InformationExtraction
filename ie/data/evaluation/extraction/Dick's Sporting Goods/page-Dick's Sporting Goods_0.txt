@@ -15,8 +15,9 @@ Ronald E. Baime	title	Senior Vice President	Ronald E. Baime,  Senior Vice Presid
 Ronald E. Baime	employee_of	GMM	Ronald E. Baime,  Senior Vice President – GMM
 George P. Giacobbe	title	Senior Vice President	George P. Giacobbe,  Senior Vice President – Supply Chain
 George P. Giacobbe	employee_of	Supply Chain	George P. Giacobbe,  Senior Vice President – Supply Chain
-John E. Hayes III	title	Senior Vice President	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
-John E. Hayes III	title	General Counsel and Secretary	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
+John E. Hayes	title	Senior Vice President	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
+John E. Hayes	title	General Counsel	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
+John E. Hayes	title	Secretary	John E. Hayes III,  Senior Vice President – General Counsel and Secretary
 George S. Hill	title	Senior Vice President	George S. Hill,  Senior Vice President – Retail
 George S. Hill	employee_of	Retail	George S. Hill,  Senior Vice President – Retail
 Joseph R. Oliver	title	Senior Vice President	Joseph R. Oliver,  Senior Vice President – Chief Accounting Officer

@@ -4,19 +4,17 @@ Sherry Aaholm	title	Vice President	Sherry Aaholm,  Vice President and Chief In
 Sherry Aaholm	title	Chief Information Officer	Sherry Aaholm,  Vice President and Chief Information Officer  
 Sharon Barner	title	Vice President	Sharon Barner,  Vice President and General Counsel  
 Sharon Barner	title	General Counsel	Sharon Barner,  Vice President and General Counsel  
-Steve Chapman	title	China and Russia ABO Leader	Steve Chapman,  China and Russia ABO Leader  
+Steve Chapman	title	Leader	Steve Chapman,  China and Russia ABO Leader  
 Jill Cook	title	Vice President	Jill Cook,  Vice President and Chief Human Resources Officer  
 Jill Cook	title	Chief Human Resources Officer	Jill Cook,  Vice President and Chief Human Resources Officer  
 Tracy Embree	title	Vice President	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
 Tracy Embree	title	President	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
 Tracy Embree	employee_of	Components Group	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
 Tracy Embree	employee_of	Business Development	Tracy Embree,  Vice President - Cummins Inc.; President - Components Group and Business Development  
-Vice President	title	President	Vice President,  - Cummins Inc.; President,  - Compone, nts Group and Business Developm, ent, 
 Thad Ewald	title	Vice President	Thad Ewald,  Vice President - Corporate Strategy,   
 Thad Ewald	employee_of	Corporate Strategy	Thad Ewald,  Vice President - Corporate Strategy,   
 Rich Freeland	title	President	Rich Freeland,  President and Chief Operating Officer  
 Rich Freeland	title	Chief Operating Officer	Rich Freeland,  President and Chief Operating Officer  
-Pr	title	Chief Operating Officer	Pr, esident and Chief Operating Officer, 
 Norbert Nusterer	title	Vice President	Norbert Nusterer,  Vice President and President – Power Systems  
 Norbert Nusterer	title	President	Norbert Nusterer,  Vice President and President – Power Systems  
 Norbert Nusterer	employee_of	Power Systems	Norbert Nusterer,  Vice President and President – Power Systems  
@@ -30,18 +28,14 @@ Marya Rose	title	Vice President	Marya Rose,  Vice President and Chief Administ
 Marya Rose	title	Chief Administrative Officer	Marya Rose,  Vice President and Chief Administrative Officer  
 Jennifer Rumsey	title	Vice President	Jennifer Rumsey,  Vice President - Chief Technical Officer  
 Jennifer Rumsey	title	Chief Technical Officer	Jennifer Rumsey,  Vice President - Chief Technical Officer  
-Mark Smith	title	President	Mark Smith,  Vice  President - Operations Finance  
-Mark Smith	employee_of	Operations Finance	Mark Smith,  Vice  President - Operations Finance  
+Mark Smith	title	Vice President	Mark Smith,  Vice President - Operations Finance  
+Mark Smith	employee_of	Operations Finance	Mark Smith,  Vice President - Operations Finance  
 Tony Satterthwaite	title	Vice President	Tony Satterthwaite,  Vice President - Cummins Inc.; President - Distribution Business  
 Tony Satterthwaite	title	President	Tony Satterthwaite,  Vice President - Cummins Inc.; President - Distribution Business  
 Tony Satterthwaite	employee_of	Distribution Business	Tony Satterthwaite,  Vice President - Cummins Inc.; President - Distribution Business  
-	title	Vice President	Vice President - Cummins Inc.; President - Distribution Busin, ess, 
-	title	President	Vice President - Cummins Inc.; President - Distribution Busin, ess, 
 Anant Talaulicar	title	Vice President	Anant Talaulicar,  Vice President - Cummins Inc.; Chairman and Managing Director - India ABO  
 Anant Talaulicar	title	Chairman	Anant Talaulicar,  Vice President - Cummins Inc.; Chairman and Managing Director - India ABO  
 Anant Talaulicar	title	Managing Director	Anant Talaulicar,  Vice President - Cummins Inc.; Chairman and Managing Director - India ABO  
-Vic	title	Chairman	Vic, e P, resident - Cummins Inc.; Chairman and Managing Director - India ABO, 
-Vic	title	Managing Director	Vic, e P, resident - Cummins Inc.; Chairman and Managing Director - India ABO, 
 Pat Ward	title	Vice President	Pat Ward,  Vice President and Chief Financial Officer  
 Pat Ward	title	Chief Financial Officer	Pat Ward,  Vice President and Chief Financial Officer  
 Lisa Yoder	title	Vice President	Lisa Yoder,  Vice President - Global Supply Chain and Manufacturing  
