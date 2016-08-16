@@ -20,7 +20,7 @@ Executive Profiles
 	1Richard Howarth	, 	2Vice President	 	3Industrial Design	
 	1Lisa Jackson	, 	2Vice President	 Environment, Policy and Social Initiatives
 	1Tor Myhren	, 	2Vice President	 	3Marketing Communications	
-	1Joel Podolny	, 	2Vice President	 Dean, Apple University
+	1Joel Podolny	, 	2Vice President	, Dean, Apple University
 	1Denise Young Smith	, 	2Vice President	 	3Worldwide Human Resources	
 	1Arthur D. Levinson	, Ph. D., 	2Chairman	 of the Board, Apple 	2Former Chairman	 and 	2CEO	 Genentech
 	1James A. Bell	, 	2Former CFO	 and 	2Corporate President	 The Boeing Company
@@ -28,6 +28,6 @@ Executive Profiles
 	1Albert Gore Jr.	, 	2Former Vice President	 of the United States
 	1Robert A. Iger	, 	2Chairman	 and CEO The Walt Disney Company
 	1Andrea Jung	, 	President	 and CEO Grameen America, Inc.
-	1Ronald D. Sugar	, Ph. D., 	2Former Chairman	 and CEO Northrop Grumman
+	1Ronald D. Sugar	, Ph. D., 	2Former Chairman	 and 	2CEO	 Northrop Grumman
 	1Susan L. Wagner	, 	2Co-founder	 and 	2Director	 BlackRock
 

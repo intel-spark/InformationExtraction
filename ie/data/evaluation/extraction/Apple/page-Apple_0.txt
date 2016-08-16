@@ -25,7 +25,7 @@ Richard Howarth	employee_of	Industrial Design	Richard Howarth, Vice President In
 Lisa Jackson	title	Vice President	Lisa Jackson, Vice President Environment, Policy and Social Initiatives
 Tor Myhren	title	Vice President	Tor Myhren, Vice President Marketing Communications
 Tor Myhren	employee_of	Marketing Communications	Tor Myhren, Vice President Marketing Communications
-Joel Podolny	title	Vice President	Joel Podolny, Vice President Dean, Apple University
+Joel Podolny	title	Vice President	Joel Podolny, Vice President, Dean, Apple University
 Denise Young Smith	title	Vice President	Denise Young Smith, Vice President Worldwide Human Resources
 Denise Young Smith	employee_of	Worldwide Human Resources	Denise Young Smith, Vice President Worldwide Human Resources
 Arthur D. Levinson	title	Chairman	Arthur D. Levinson, Ph. D., Chairman of the Board, Apple Former Chairman and CEO Genentech
@@ -37,5 +37,6 @@ Tim Cook	title	CEO	Tim Cook, CEO Apple
 Albert Gore Jr.	title	Former Vice President	Albert Gore Jr., Former Vice President of the United States
 Robert A. Iger	title	Chairman	Robert A. Iger, Chairman and CEO The Walt Disney Company
 Ronald D. Sugar	title	Former Chairman	Ronald D. Sugar, Ph. D., Former Chairman and CEO Northrop Grumman
+Ronald D. Sugar	title	CEO	Ronald D. Sugar, Ph. D., Former Chairman and CEO Northrop Grumman
 Susan L. Wagner	title	Co-founder	Susan L. Wagner, Co-founder and Director BlackRock
 Susan L. Wagner	title	Director	Susan L. Wagner, Co-founder and Director BlackRock
