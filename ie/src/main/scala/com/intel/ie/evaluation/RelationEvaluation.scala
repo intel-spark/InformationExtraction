@@ -46,11 +46,13 @@ object RelationEvaluation {
 
     val extractedRDD = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map {
       line => if (line.length > 500) line.substring(0, 500) else line
-    }.map(_.replaceAll("\u00a0", " ")))
+    }.map(_.replaceAll("\u00a0", " ")
+      //zero space
+      .replaceAll("\u200B|\u200C|\u200D|\uFEFF", "")))
 
     val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
     val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
-      val elements = line.replaceAll("\u00a0", " ").replace("  ", " ").split("\t")
+      val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF", "").replace("  ", " ").split("\t")
       RelationLine(elements(0), elements(1), elements(2), elements(3))
     }
 
@@ -104,9 +106,10 @@ object RelationEvaluation {
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
   val companyList =
-  //    Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
-    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
-  //    new File("data/evaluation/extraction").listFiles().map(f => f.getName).filter(filename => filename > "Disney" && filename <= "L Brands").sorted
+//    Array("Emerson Electric")
+//      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
+//    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+      new File("data/evaluation/extraction").listFiles().map(f => f.getName).filter(filename => filename > "Disney" && filename <= "L Brands").sorted
 
 }
 
