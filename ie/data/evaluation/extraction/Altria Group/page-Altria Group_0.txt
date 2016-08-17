@@ -2,7 +2,7 @@ Martin J. Barrington	title	Chairman	Martin J. Barrington,  ​Chairman ​Chief 
 Martin J. Barrington	title	Chief Executive Officer	Martin J. Barrington,  ​Chairman ​Chief Executive Officer ​President Altria Group, Inc.
 James E. Dillard III	title	Senior Vice President	James E. Dillard III,  ​Senior Vice President,  Research, Development and Regulatory Affairs, Chief Innovation Officer Altria Group, Inc​.
 James E. Dillard III	title	Chief Innovation Officer	James E. Dillard III,  ​Senior Vice President,  Research, Development and Regulatory Affairs, Chief Innovation Officer Altria Group, Inc​.
-William F. Gifford, Jr.	title	Chief Financial Officer	William F. Gifford, Jr.,  Chief Financial Officer Altria Group, Inc.
+William F. Gifford	title	Chief Financial Officer	William F. Gifford, Jr.,  Chief Financial Officer Altria Group, Inc.
 Craig A. Johnson	title	President Chief Executive Officer	Craig A. Johnson,  ​President Chief Executive Officer Altria Group Distribution Company
 Denise F. Keane	title	Executive Vice President	Denise F. Keane,  ​Executive Vice President General Counsel Altria Group, Inc.
 Denise F. Keane	title	General Counsel	Denise F. Keane,  ​Executive Vice President General Counsel Altria Group, Inc.
