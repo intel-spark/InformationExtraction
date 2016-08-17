@@ -13,7 +13,7 @@ Denise Johnson,  Thomas Bluth Gwenne Henricks Douglas Hoerr Jean Savage
 Thomas Bluth,  Gwenne Henricks,  Douglas Hoerr,  Jean Savage, 
 D. James (Jim) Umpleby,  William P. Ainsworth Tom Frake Pablo M. Koziner Steven W. Niehaus Tana L. Utley Ramin Younessi
 William P. Ainsworth,  Tom Frake,  Pablo M. Koziner,  Steven W. Niehaus,  Tana L. Utley,  Ramin Younessi, 
-James B. Buda,   - Executive Vice President,  Kathryn Dickey Karol, 
+	1James B. Buda	,   - 	2Executive Vice President	,  Kathryn Dickey Karol, 
 David P. Bozeman,  - Senior Vice President,  Frank J. Crespo, 
 R. B. (Rob) Charter is a group president of Caterpillar Inc. in Peoria, Illinois. He has administrative responsibility for Customer & Dealer Support, which includes Asia Pacific, CIS, Africa & Middle East and Americas & Europe distribution divisions, Global Aftermarket Solutions, Wear Components & Aftermarket Distribution, Marketing and Digital and the Sustainable Solutions Division. Learn More, 
 Brad Halverson is a group president and CFO of Caterpillar Inc. Halverson has responsibility for the Finance Services Division, Human Services Division, Global Information Services, Financial Products Division, Strategic Services Division, as well as Corporate Auditing. Learn More, 
