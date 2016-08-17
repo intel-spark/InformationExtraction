@@ -56,9 +56,12 @@ object RelationEvaluation {
 
     def getResultForOneRelation(relationType: String): PageResult = {
       val extractedRawDF = extractedRDD.where(col("relation").isin(relationType))
+
+      val extractedLowerDF = extractedRawDF
+        .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"), lower(extractedRawDF("entity")).alias("entity"), extractedRawDF("text"))
         .cache()
 
-      val extractedDF = extractedRawDF
+      val extractedDF = extractedLowerDF
         .select("name", "relation", "entity")
         .distinct()
         .cache()
@@ -66,8 +69,12 @@ object RelationEvaluation {
       val sqlContext = SQLContext.getOrCreate(sc)
       val labelledRawDF = sqlContext.createDataFrame(relationRDD)
         .where(col("relation").isin(relationType))
+
+      val labelledLowDF = labelledRawDF
+        .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"), lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
         .cache()
-      val labelledDF = labelledRawDF
+
+      val labelledDF = labelledLowDF
         .select("name", "relation", "entity")
         .distinct()
         .cache()
@@ -78,11 +85,11 @@ object RelationEvaluation {
       println(correctDF.showString(100, false))
 
       println(Console.RED + "missed:")
-      println(labelledDF.except(correctDF).join(labelledRawDF, Seq("name", "relation", "entity"))
+      println(labelledDF.except(correctDF).join(labelledLowDF, Seq("name", "relation", "entity"))
         .distinct().showString(100, false))
 
       println("wrong:")
-      println(Console.RED + extractedDF.except(correctDF).join(extractedRawDF, Seq("name", "relation", "entity"))
+      println(Console.RED + extractedDF.except(correctDF).join(extractedLowerDF, Seq("name", "relation", "entity"))
         .distinct().showString(100, false))
 
       val extractedCt = extractedDF.count()
@@ -94,6 +101,10 @@ object RelationEvaluation {
         s"extracted: ${extractedCt}; labelled: ${labelledCt}; correct: ${correctCt})")
       println(Console.RESET)
 
+      labelledLowDF.unpersist()
+      labelledDF.unpersist()
+      extractedLowerDF.unpersist()
+      extractedDF.unpersist()
       PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
     }
     
@@ -109,7 +120,6 @@ object RelationEvaluation {
 //      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
 //    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
       new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
-
 }
 
 case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
