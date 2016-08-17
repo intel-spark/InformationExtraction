@@ -67,17 +67,21 @@ object SparkBatchDriver {
     IntelKBPModel.extract(line).asScala.foreach(t => println(t._1))
   }
 
+  var fullNameCache = Map[String, String]()
+
   def getFullName(name: String): String = {
+    if (fullNameCache.contains(name)) return fullNameCache(name)
     fullNames.foreach(fullName => if (isFullName(name, fullName)) {
-      if (name != fullName) println(name + " is replaced with " + fullName);
+      if (name != fullName) println(Console.BLUE + name + Console.BLACK + " is replaced with " + Console.RED + fullName);
+      fullNameCache += (name -> fullName)
       return fullName
     })
-    println(name);
     return name
   }
 
   private def processRDD(data: RDD[String]): DataFrame = {
-    fullNames.clear()
+    fullNames.clear();
+    fullNameCache.empty;
     val relations = data.flatMap { s =>
       getWorkRelation(s)
     }.map(rl => RelationLine(getFullName(rl.name), rl.relation, rl.entity, rl.text))
@@ -100,7 +104,7 @@ object SparkBatchDriver {
         fullName
       }
     })
-    if (!isfull) fullNames += name
+    if (name.split("\\s+").length < 6 && !isfull) fullNames += name
   }
 
   private def getWorkRelation(line: String): Seq[RelationLine] = {
@@ -118,6 +122,7 @@ object SparkBatchDriver {
   var fullNames = new ListBuffer[String];
 
   private def isFullName(name: String, fullName: String): Boolean = {
+    if (name.split("\\s+").length > 6 || fullName.split("\\s+").length > 6) return false
     if (fullName.equals(name)) return true
     else if (fullName.contains(name)) {
       return true
