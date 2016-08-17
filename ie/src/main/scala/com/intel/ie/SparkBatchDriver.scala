@@ -69,7 +69,6 @@ object SparkBatchDriver {
 
   def getFullName(name: String): String = {
     fullNames.foreach(fullName => if (isFullName(name, fullName)) {
-      if (name != fullName) println(name + " is replaced with " + fullName);
       return fullName
     })
     println(name);
