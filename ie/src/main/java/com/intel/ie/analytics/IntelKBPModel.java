@@ -44,7 +44,9 @@ public class IntelKBPModel {
 
     public static HashMap<RelationTriple, String> extract(String doc) {
 
-        Annotation ann = new Annotation(doc);
+        Annotation ann = new Annotation(doc
+          .replaceAll("\u00a0", " ")
+          .replaceAll("\u200B|\u200C|\u200D|\uFEFF", ""));
         pipeline.annotate(ann);
         HashMap<RelationTriple, String> relations = new HashMap<RelationTriple, String>();
 

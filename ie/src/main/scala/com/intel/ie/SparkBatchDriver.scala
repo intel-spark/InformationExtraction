@@ -72,16 +72,16 @@ object SparkBatchDriver {
   def getFullName(name: String): String = {
     if (fullNameCache.contains(name)) return fullNameCache(name)
     fullNames.foreach(fullName => if (isFullName(name, fullName)) {
-      if (name != fullName) println(Console.BLUE + name + Console.BLACK + " is replaced with " + Console.RED + fullName);
+      // if (name != fullName) println(Console.BLUE + name + Console.BLACK + " is replaced with " + Console.RED + fullName);
       fullNameCache += (name -> fullName)
       return fullName
     })
-    return name
+    name
   }
 
   private def processRDD(data: RDD[String]): DataFrame = {
-    fullNames.clear();
-    fullNameCache.empty;
+    fullNames.clear()
+    fullNameCache.empty
     val relations = data.flatMap { s =>
       getWorkRelation(s)
     }.map(rl => RelationLine(getFullName(rl.name), rl.relation, rl.entity, rl.text))
@@ -123,15 +123,15 @@ object SparkBatchDriver {
 
   private def isFullName(name: String, fullName: String): Boolean = {
     if (name.split("\\s+").length > 6 || fullName.split("\\s+").length > 6) return false
-    if (fullName.equals(name)) return true
+    if (fullName.equals(name)) true
     else if (fullName.contains(name)) {
-      return true
+      true
     }
     else {
       name.split("\\s+|\\.").foreach(item => if (!fullName.contains(item)) {
         return false
       })
-      return true
+      true
     }
   }
 
