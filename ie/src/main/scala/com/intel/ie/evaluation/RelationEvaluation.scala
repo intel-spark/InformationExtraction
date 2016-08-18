@@ -37,18 +37,15 @@ object RelationEvaluation {
     }
     printResultForOneRelation("title", 0)
     println("\n")
-    printResultForOneRelation("employee_of", 1)
+//    printResultForOneRelation("employee_of", 1)
   }
 
   private def getResult(company: String, sc: SparkContext): Array[PageResult] = {
     val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
 
-
     val extractedRDD = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map {
       line => if (line.length > 500) line.substring(0, 500) else line
-    }.map(_.replaceAll("\u00a0", " ")
-      //zero space
-      .replaceAll("\u200B|\u200C|\u200D|\uFEFF", "")))
+    })
 
     val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
     val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
@@ -100,7 +97,9 @@ object RelationEvaluation {
       PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
     }
     
-    Array(getResultForOneRelation("title"), getResultForOneRelation("employee_of"))
+    Array(getResultForOneRelation("title")
+//      , getResultForOneRelation("employee_of")
+    )
   }
 
   val textPath = "data/evaluation/web"
@@ -109,7 +108,7 @@ object RelationEvaluation {
 //    Array("Emerson Electric")
 //      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
 //    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
-      new File("data/evaluation/extraction").listFiles().map(f => f.getName).filter(filename => filename > "Disney" && filename <= "L Brands").sorted
+      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 
 }
 
