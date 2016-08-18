@@ -1,4 +1,4 @@
-package Test;
+package com.intel.ie;
 
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.sequences.SeqClassifierFlags;
@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class TrainModel {
     public static void main(String[] args) {
-        String path = "ie/data/NERDepartment/department.prop";
+        String path = "data/NERDepartment/department.prop";
         Properties props = StringUtils.propFileToProperties(path);
 
         SeqClassifierFlags flags = new SeqClassifierFlags(props);
