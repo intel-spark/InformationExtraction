@@ -15,7 +15,7 @@ Tom Greco,  - Chief Executive Officer
 	1George Sherman	,  - 	2President	
 	1Mike Norona	,  - 	2Executive Vice President	, 	2Chief Financial Officer	
 	1Charles Tyson	,  - 	2Executive Vice President	, 	3Merchandising, Marketing and Supply Chain	
-	1Tammy Finley	,  - 	2Executive Vice President	, 	2General Counsel	 and 	2Corporate Secretary	
+	1Tammy Finley	,  - 	2Executive Vice President	, 	2General Counsel and Corporate Secretary	
 	1Bill Carter	,  - 	2Senior Vice President	, 	3Commercial and Operations Support	
 	1Jill Livesay	,  - 	2Senior Vice President	, 	2Controller	 and 	2Chief Accounting Officer	
 	1Natalie Rothman	,  - 	2Senior Vice President	, 	3Human Resources	
@@ -23,7 +23,7 @@ SENIOR LEADERSHIP,  Scott Bauhofer - Senior Vice President, E-Business Michael C
 	1Scott Bauhofer	,  - 	2Senior Vice President	, 	3E-Business	
 	1Michael Creedon	,  - 	2President	, 	3Autopart International	
 	1Bob Cushing	,  - 	2President	, 	3WORLDPAC	
-	1Jim Durkin	,  - 	2Division President	 – 	3Northern Division	
+	1Jim Durkin	,  - Division 	2President	 – 	3Northern Division	
 	1Todd Greener	,  - 	2Senior Vice President	, 	3Supply Chain	
 	1Steve Gushie	,  - 	2President	, CARQUEST Canada
 	1David McCartney	,  - 	2Division President	 – Southern Division
