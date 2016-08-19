@@ -18,7 +18,7 @@
 	1Barry Diller	, 	2Chairman	 and 	2Senior Executive	, IAC/InterActiveCorp, 
 	1Victor Kaufman		, 	2Vice Chairman		, IAC/InterActiveCorp , 
 	1Dara Khosrowshahi	, 	2President	 and 	2Chief Executive Officer	, Expedia, Inc.,  
-	1Susan C. Athey	, Economics of Technology 	3Professor	, Stanford Graduate School of Business, 
+	1Susan C. Athey	, 	3Economics of Technology	 	2Professor	, 	3Stanford Graduate School of Business	, 
 	1A. George ‘Skip’ Battle	, 	2Chairman	, Fair Isaac Corporation, 
 	1Pamela L. Coe	, 	2Senior Vice President	, 	2Deputy General Counsel and Secretary	, Liberty Interactive Corporation,  
 	1Jonathan L. Dolgen	, 	2Principal	, Wood River Ventures, LLC, 
