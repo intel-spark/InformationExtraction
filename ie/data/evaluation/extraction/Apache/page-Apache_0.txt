@@ -23,5 +23,4 @@ David Chi	title	General Manager	David Chi,  Region Vice President – Egypt Regi
 Gary T. Clark	title	Vice President	Gary T. Clark,  Vice President – Investor Relations
 Cory L. Loegering	title	Region Vice President	Cory L. Loegering,  Region Vice President – UK Region and Managing Director, Apache North Sea
 Cory L. Loegering	title	Director	Cory L. Loegering,  Region Vice President – UK Region and Managing Director, Apache North Sea
-Rajesh Sharma	title	Corporate Secretary	Rajesh Sharma,  Corporate Secretary and Assistant General Counsel – Governance
-Rajesh Sharma	title	Assistant General Counsel	Rajesh Sharma,  Corporate Secretary and Assistant General Counsel – Governance
+Rajesh Sharma	title	Corporate Secretary and Assistant General Counsel	Rajesh Sharma,  Corporate Secretary and Assistant General Counsel – Governance

@@ -24,7 +24,7 @@ Tamra Gregory Code Compliance Manager Greg Venette,  Rick Abelson Global Directo
 	1Joanna Bensz	,  	2Country Manager	, Poland Krakow, PL
 	1Tomasz Bernady	,  	2Highway Team Leader	 Warsaw, PL
 	1Witold Bonior	,  	2Design Manager	 Krakow, PL
-	1Katie Born	,  	2Environmental Consultant	 Glasgow, GB
+	1Katie Born	,  Environmental 	2Consultant	 Glasgow, GB
 	1Daniel Buonadonna	,  	2Global Technology Lead	
 
 http://www.ch2m.com/our-people
