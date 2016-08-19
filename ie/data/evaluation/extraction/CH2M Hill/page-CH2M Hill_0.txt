@@ -19,5 +19,5 @@ Tamra Gregory 	title	Code Compliance Manager	Tamra Gregory Code Compliance Manag
 Joanna Bensz	title	Country Manager	Joanna Bensz,  Country Manager, Poland Krakow, PL
 Tomasz Bernady	title	Highway Team Leader	Tomasz Bernady,  Highway Team Leader Warsaw, PL
 Witold Bonior	title	Design Manager	Witold Bonior,  Design Manager Krakow, PL
-Katie Born	title	Environmental Consultant	Katie Born,  Environmental Consultant Glasgow, GB
+Katie Born	title	Consultant	Katie Born,  Environmental Consultant Glasgow, GB
 Daniel Buonadonna	title	Global Technology Lead	Daniel Buonadonna,  Global Technology Lead
