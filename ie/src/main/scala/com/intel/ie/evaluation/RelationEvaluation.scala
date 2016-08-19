@@ -36,8 +36,6 @@ object RelationEvaluation {
       println(s"overall result for $relation --- recall: $recall. precision: $precision")
     }
     printResultForOneRelation("title", 0)
-    println("\n")
-//    printResultForOneRelation("employee_of", 1)
   }
 
   private def getResult(company: String, sc: SparkContext): Array[PageResult] = {
@@ -108,18 +106,12 @@ object RelationEvaluation {
       PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt)
     }
     
-    Array(getResultForOneRelation("title")
-//      , getResultForOneRelation("employee_of")
-    )
+    Array(getResultForOneRelation("title"))
   }
 
   val textPath = "data/evaluation/web"
   val labelPath = "data/evaluation/extraction"
-  val companyList =
-//    Array("Emerson Electric")
-//      Array("A-Mark Precious Metals", "Avis Budget Group", "Barnes & Noble", "Cigna", "US Foods", "Computer Sciences", "Crown Holdings", "Emerson Electric", "Kelly Services", "Kinder Morgan", "NRG Energy")
-//    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
-      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+  val companyList = new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 }
 
 case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
