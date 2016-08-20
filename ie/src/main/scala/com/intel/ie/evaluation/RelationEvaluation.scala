@@ -20,22 +20,37 @@ object RelationEvaluation {
         .setMaster("local[6]")
         .setAppName(this.getClass.getSimpleName)
     )
+    sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive","true")
     RelationExtractor.init()
+    
+    val files = sc.wholeTextFiles(textPath).sample(true, 0.01)
+    val extractionResult = files.flatMap { case (title, content) => 
+      val companyName = new File(new File(title).getParent).getName
+      content.split("\n")
+        .flatMap(line => SparkBatchDriver.getWorkRelation(line))
+        .map(rl => (companyName, rl))
+    }
 
-    val pageResults = companyList.toSeq.filter(_.nonEmpty).map { company =>
-      getResult(company, sc)
-    }
-    println(s"Overall results: ${pageResults.size} companies evaluated")
-    def printResultForOneRelation(relation: String, index: Int): Unit = {
-      SQLContext.getOrCreate(sc).createDataFrame(sc.parallelize(pageResults.map(_ (index)))).show(300, false)
-      val totalCorrect = pageResults.map(_ (index).correct).sum
-      val totalWrong = pageResults.map(_ (index).wrong).sum
-      val totalMissed = pageResults.map(_ (index).missed).sum
-      val recall = totalCorrect.toDouble / (totalCorrect + totalMissed)
-      val precision = totalCorrect.toDouble / (totalCorrect + totalWrong)
-      println(s"overall result for $relation --- recall: $recall. precision: $precision")
-    }
-    printResultForOneRelation("title", 0)
+    val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
+    val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
+      val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF", "").replace("  ", " ").split("\t")
+      RelationLine(elements(0), elements(1), elements(2), elements(3))
+    } 
+
+//    val pageResults = companyList.toSeq.filter(_.nonEmpty).map { company =>
+//      getResult(company, sc)
+//    }
+//    println(s"Overall results: ${pageResults.size} companies evaluated")
+//    def printResultForOneRelation(relation: String, index: Int): Unit = {
+//      SQLContext.getOrCreate(sc).createDataFrame(sc.parallelize(pageResults.map(_ (index)))).show(300, false)
+//      val totalCorrect = pageResults.map(_ (index).correct).sum
+//      val totalWrong = pageResults.map(_ (index).wrong).sum
+//      val totalMissed = pageResults.map(_ (index).missed).sum
+//      val recall = totalCorrect.toDouble / (totalCorrect + totalMissed)
+//      val precision = totalCorrect.toDouble / (totalCorrect + totalWrong)
+//      println(s"overall result for $relation --- recall: $recall. precision: $precision")
+//    }
+//    printResultForOneRelation("title", 0)
   }
 
   private def getResult(company: String, sc: SparkContext): Array[PageResult] = {
@@ -109,7 +124,7 @@ object RelationEvaluation {
     Array(getResultForOneRelation("title"))
   }
 
-  val textPath = "data/evaluation/web"
+  val textPath = "data/evaluation/web/"
   val labelPath = "data/evaluation/extraction"
   val companyList = new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 }

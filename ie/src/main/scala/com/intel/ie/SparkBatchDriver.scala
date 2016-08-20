@@ -14,10 +14,11 @@ import scala.collection.mutable.ListBuffer
 import scala.util.Try
 
 case class RelationLine(
-                         name: String,
-                         relation: String,
-                         entity: String,
-                         text: String)
+  name: String,
+  relation: String,
+  entity: String,
+  text: String
+)
 
 object SparkBatchDriver {
 
@@ -67,9 +68,40 @@ object SparkBatchDriver {
     IntelKBPModel.extract(line).asScala.foreach(t => println(t._1))
   }
 
-  var fullNameCache = Map[String, String]()
+  private def processRDD(data: RDD[String]): DataFrame = {
+    fullNames.clear()
+    fullNameCache.empty
+    val relations = data.flatMap { s =>
+      getWorkRelation(s)
+    }
 
-  def getFullName(name: String): String = {
+    val sqlContext = SQLContext.getOrCreate(data.sparkContext)
+    sqlContext.createDataFrame(relations)
+  }
+  
+  def getWorkRelation(line: String): Seq[RelationLine] = {
+    val raw = IntelKBPModel.extract(line)
+    raw.asScala.toSeq.map { case (r, sen) =>
+      if (r.relationGloss() == "org:top_members/employees") {
+        RelationLine(r.objectGloss(), "top member of", r.subjectGloss(), sen)
+      } else {
+        updateFullNames(r.subjectGloss())
+        RelationLine(r.subjectGloss(), r.relationGloss().split(":")(1), r.objectGloss(), sen)
+      }
+    }.map(rl => RelationLine(getFullName(rl.name), rl.relation, rl.entity, rl.text))
+  }
+
+  private def getDataset(sc: SparkContext, path: String): RDD[String] = {
+    val rdd = sc.textFile(path)
+    rdd.unpersist(true)
+    rdd.count()
+    rdd
+  }
+
+
+  private var fullNameCache = Map[String, String]()
+
+  private def getFullName(name: String): String = {
     if (fullNameCache.contains(name)) return fullNameCache(name)
     fullNames.foreach(fullName => if (isFullName(name, fullName)) {
       // if (name != fullName) println(Console.BLUE + name + Console.BLACK + " is replaced with " + Console.RED + fullName);
@@ -79,18 +111,7 @@ object SparkBatchDriver {
     name
   }
 
-  private def processRDD(data: RDD[String]): DataFrame = {
-    fullNames.clear()
-    fullNameCache.empty
-    val relations = data.flatMap { s =>
-      getWorkRelation(s)
-    }.map(rl => RelationLine(getFullName(rl.name), rl.relation, rl.entity, rl.text))
-
-    val sqlContext = SQLContext.getOrCreate(data.sparkContext)
-    sqlContext.createDataFrame(relations)
-  }
-
-  def updateFullNames(name: String): Unit = {
+  private def updateFullNames(name: String): Unit = {
     var isfull = false
     fullNames = fullNames.map(fullName => {
       if (isFullName(name, fullName)) {
@@ -107,19 +128,7 @@ object SparkBatchDriver {
     if (name.split("\\s+").length < 6 && !isfull) fullNames += name
   }
 
-  private def getWorkRelation(line: String): Seq[RelationLine] = {
-    val raw = IntelKBPModel.extract(line)
-    raw.asScala.toSeq.map { case (r, sen) =>
-      if (r.relationGloss() == "org:top_members/employees") {
-        RelationLine(r.objectGloss(), "top member of", r.subjectGloss(), sen)
-      } else {
-        updateFullNames(r.subjectGloss())
-        RelationLine(r.subjectGloss(), r.relationGloss().split(":")(1), r.objectGloss(), sen)
-      }
-    }
-  }
-
-  var fullNames = new ListBuffer[String];
+  private var fullNames = new ListBuffer[String];
 
   private def isFullName(name: String, fullName: String): Boolean = {
     if (name.split("\\s+").length > 6 || fullName.split("\\s+").length > 6) return false
@@ -135,13 +144,6 @@ object SparkBatchDriver {
     }
   }
 
-  private def getDataset(sc: SparkContext, path: String): RDD[String] = {
-
-    val rdd = sc.textFile(path)
-    rdd.unpersist(true)
-    rdd.count()
-    rdd
-  }
-
 }
+
 
