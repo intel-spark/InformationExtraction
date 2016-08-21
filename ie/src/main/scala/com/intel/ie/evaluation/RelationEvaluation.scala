@@ -27,7 +27,7 @@ object RelationEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[2]")
+        .setMaster("local[4]")
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive","true")
@@ -35,20 +35,21 @@ object RelationEvaluation {
 
     val sqlContext = SQLContext.getOrCreate(sc)
     val st = System.nanoTime()
-    val extractionResult = sc.wholeTextFiles(textPath, 24)
+    val extractionResult = sc.wholeTextFiles(textPath, 8)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)  
       }.flatMap { case (title, content) => 
         val companyName = new File(new File(title).getParent).getName
         content.split("\n")
+          .map(line => if (line.length > 500) line.substring(0, 500) else line)
           .flatMap(line => SparkBatchDriver.getWorkRelation(line))
           .map(rl => (companyName, rl))
           .map(t => RelationRow(t._1, t._2.name, t._2.relation, t._2.entity, t._2.text))
       }
     val extractedDF = sqlContext.createDataFrame(extractionResult).cache()    
     
-    val labelledResult = sc.wholeTextFiles(labelPath, 24)
+    val labelledResult = sc.wholeTextFiles(labelPath, 8)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
@@ -65,7 +66,10 @@ object RelationEvaluation {
     val pageResults = companyList.map { companyName =>
       val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
       val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
-      getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "title", sc)
+      val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "title", sc)
+      extractedFiltered.unpersist()
+      labelledFiltered.unpersist()
+      pageResult
     }.toSeq.toArray
 
     println(s"Overall results: ${pageResults.size} companies evaluated")
@@ -102,19 +106,21 @@ object RelationEvaluation {
     val extractedRawDF = extractedRDD.where(col("relation").isin(relationType))
     val extractedLowerDF = extractedRawDF
       .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"), lower(extractedRawDF("entity")).alias("entity"), extractedRawDF("text"))
-      .cache()
     val extractedDF = extractedLowerDF
       .select("name", "relation", "entity")
       .distinct()
+      .repartition(partitionSize)
+      .cache()
 
 
     val labelledRawDF = relationRDD.where(col("relation").isin(relationType))
     val labelledLowDF = labelledRawDF
       .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"), lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
-      .cache()
     val labelledDF = labelledLowDF
       .select("name", "relation", "entity")
       .distinct()
+      .repartition(partitionSize)
+      .cache()
 
     val correctDF = labelledDF.intersect(extractedDF).distinct().cache()
     println(company)
@@ -137,18 +143,17 @@ object RelationEvaluation {
     println(Console.YELLOW_B + s"recall: $recall. precision: $precision. (" +
       s"extracted: ${extractedCt}; labelled: ${labelledCt}; correct: ${correctCt})")
     println(Console.RESET)
-
-    labelledLowDF.unpersist()
+    
     labelledDF.unpersist()
-    extractedLowerDF.unpersist()
     extractedDF.unpersist()
     Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt))
   }
 
   val textPath = "data/evaluation/web/"
   val labelPath = "data/evaluation/extraction"
+  val partitionSize = 12
   val companyList = //Array("Apple", "Alcoa") 
-    new File("data/evaluation/extraction").listFiles().map(f => f.getName).take(20).sorted
+    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 }
 
 case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
