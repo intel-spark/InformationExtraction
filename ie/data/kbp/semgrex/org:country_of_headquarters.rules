@@ -1,2 +1,0 @@
-{ner:ORGANIZATION} >appos ( {} >/compound|nn|amod/ {ner:/COUNTRY|LOCATION/}=slot )
-{ner:ORGANIZATION} >/(prep_|nmod:)in/ {ner:/COUNTRY|LOCATION/}=slot
