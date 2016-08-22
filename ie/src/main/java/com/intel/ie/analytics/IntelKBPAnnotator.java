@@ -34,7 +34,7 @@ public class IntelKBPAnnotator implements Annotator {
     private static Redwood.RedwoodChannels log = Redwood.channels(IntelKBPAnnotator.class);
 
     @ArgumentParser.Option(name="model", gloss="The path to the model")
-    private String model = DefaultPaths.DEFAULT_KBP_CLASSIFIER;
+    private String model = IntelPaths.KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name="semgrex", gloss="Semgrex patterns directory")
     private String semgrexdir = IntelPaths.KBP_SEMGREX_DIR;
@@ -361,7 +361,7 @@ public class IntelKBPAnnotator implements Annotator {
                 int subjBegin = subj.get(CoreAnnotations.TokensAnnotation.class).get(0).index() - 1;
                 int subjEnd = subj.get(CoreAnnotations.TokensAnnotation.class).get(subj.get(CoreAnnotations.TokensAnnotation.class).size() - 1).index();
                 Optional<IntelKBPRelationExtractor.NERTag> subjNER = IntelKBPRelationExtractor.NERTag.fromString(subj.get(CoreAnnotations.NamedEntityTagAnnotation.class));
-                if (subjNER.isPresent() 
+                if (subjNER.isPresent()
                         && subjNER.get().equals(IntelKBPRelationExtractor.NERTag.PERSON)
                         ) {
                     for (int objI = 0; objI < candidates.size(); ++objI) {
@@ -376,7 +376,7 @@ public class IntelKBPAnnotator implements Annotator {
                         int objEnd = obj.get(CoreAnnotations.TokensAnnotation.class).get(obj.get(CoreAnnotations.TokensAnnotation.class).size() - 1).index();
                         Optional<IntelKBPRelationExtractor.NERTag> objNER = IntelKBPRelationExtractor.NERTag.fromString(obj.get(CoreAnnotations.NamedEntityTagAnnotation.class));
 
-                        if (objNER.isPresent() 
+                        if (objNER.isPresent()
                                 && (objNER.get().equals(IntelKBPRelationExtractor.NERTag.TITLE) || objNER.get().equals(IntelKBPRelationExtractor.NERTag.ORGANIZATION))
                                 && IntelKBPRelationExtractor.RelationType.plausiblyHasRelation(subjNER.get(), objNER.get())) {  // type check
                             IntelKBPRelationExtractor.KBPInput input = new IntelKBPRelationExtractor.KBPInput(

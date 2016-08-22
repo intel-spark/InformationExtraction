@@ -12,4 +12,6 @@ public class IntelPaths {
 
     public static String KBP_TOKENSREGEX_DIR = "data/kbp/tokensregex";
     public static String KBP_SEMGREX_DIR = "data/kbp/semgrex";
+
+    public static String KBP_CLASSIFIER = "data/kbp/tac-re-lr.ser.gz";
 }

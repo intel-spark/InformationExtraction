@@ -36,13 +36,13 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
     private static final long serialVersionUID = 1L;
 
     @ArgumentParser.Option(name = "train", gloss = "The dataset to train on")
-    public static File TRAIN_FILE = new File("train.conll");
+    public static File TRAIN_FILE = new File("data/kbp/train.conll");
 
     @ArgumentParser.Option(name = "test", gloss = "The dataset to test on")
     public static File TEST_FILE = new File("test.conll");
 
     @ArgumentParser.Option(name = "model", gloss = "The dataset to test on")
-    public static String MODEL_FILE = DefaultPaths.DEFAULT_KBP_CLASSIFIER;
+    public static String MODEL_FILE = IntelPaths.KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();
@@ -698,10 +698,10 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
         ArgumentParser.fillOptions(IntelKBPStatisticalExtractor.class, args);  // Fill command-line options
 
         // Load the test (or dev) data
-        forceTrack("Test data");
-        List<Pair<KBPInput, String>> testExamples = DatasetUtils.readDataset(TEST_FILE);
-        log.info("Read " + testExamples.size() + " examples");
-        endTrack("Test data");
+//        forceTrack("Test data");
+//        List<Pair<KBPInput, String>> testExamples = DatasetUtils.readDataset(TEST_FILE);
+//        log.info("Read " + testExamples.size() + " examples");
+//        endTrack("Test data");
 
         // If we can't find an existing model, train one
         if (!IOUtils.existsInClasspathOrFileSystem(MODEL_FILE)) {
@@ -749,13 +749,13 @@ public class IntelKBPStatisticalExtractor implements IntelKBPRelationExtractor, 
         }
 
         // Evaluate the model
-        classifier.computeAccuracy(testExamples.stream(), PREDICTIONS.map(x -> {
-            try {
-                return "stdout".equalsIgnoreCase(x) ? System.out : new PrintStream(new FileOutputStream(x));
-            } catch (IOException e) {
-                throw new RuntimeIOException(e);
-            }
-        }));
+//        classifier.computeAccuracy(testExamples.stream(), PREDICTIONS.map(x -> {
+//            try {
+//                return "stdout".equalsIgnoreCase(x) ? System.out : new PrintStream(new FileOutputStream(x));
+//            } catch (IOException e) {
+//                throw new RuntimeIOException(e);
+//            }
+//        }));
     }
 
 }
