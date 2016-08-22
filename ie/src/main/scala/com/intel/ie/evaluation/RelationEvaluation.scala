@@ -64,27 +64,31 @@ object RelationEvaluation {
 
     getResultForOneRelation("all", extractedDF, labelledDF, "title", sc)
     println((System.nanoTime() - st) / 1e9 + " seconds")
+    
+    if(args(0) == "-d"){
+      val pageResults = companyList.map { companyName =>
+        val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
+        val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
+        val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "title", sc)
+        extractedFiltered.unpersist()
+        labelledFiltered.unpersist()
+        pageResult
+      }.toSeq.toArray
 
-    val pageResults = companyList.map { companyName =>
-      val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
-      val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
-      val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "title", sc)
-      extractedFiltered.unpersist()
-      labelledFiltered.unpersist()
-      pageResult
-    }.toSeq.toArray
-
-    println(s"Overall results: ${pageResults.size} companies evaluated")
-    def printResultForOneRelation(relation: String, index: Int): Unit = {
-      SQLContext.getOrCreate(sc).createDataFrame(sc.parallelize(pageResults.map(_(index)))).show(300, false)
-      val totalCorrect = pageResults.map(_ (index).correct).sum
-      val totalWrong = pageResults.map(_ (index).wrong).sum
-      val totalMissed = pageResults.map(_ (index).missed).sum
-      val recall = totalCorrect.toDouble / (totalCorrect + totalMissed)
-      val precision = totalCorrect.toDouble / (totalCorrect + totalWrong)
-      println(s"overall result for $relation --- recall: $recall. precision: $precision")
+      println(s"Overall results: ${pageResults.size} companies evaluated")
+      def printResultForOneRelation(relation: String, index: Int): Unit = {
+        SQLContext.getOrCreate(sc).createDataFrame(sc.parallelize(pageResults.map(_(index)))).show(300, false)
+        val totalCorrect = pageResults.map(_ (index).correct).sum
+        val totalWrong = pageResults.map(_ (index).wrong).sum
+        val totalMissed = pageResults.map(_ (index).missed).sum
+        val recall = totalCorrect.toDouble / (totalCorrect + totalMissed)
+        val precision = totalCorrect.toDouble / (totalCorrect + totalWrong)
+        println(s"overall result for $relation --- recall: $recall. precision: $precision")
+      }
+      printResultForOneRelation("title", 0)
     }
-    printResultForOneRelation("title", 0)
+
+
   }
   
 
