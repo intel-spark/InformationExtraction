@@ -27,7 +27,7 @@ object RelationEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[4]")
+        .setMaster("local[2]")
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive","true")
@@ -109,7 +109,6 @@ object RelationEvaluation {
     val extractedDF = extractedLowerDF
       .select("name", "relation", "entity")
       .distinct()
-      .repartition(partitionSize)
       .cache()
 
 
@@ -119,7 +118,6 @@ object RelationEvaluation {
     val labelledDF = labelledLowDF
       .select("name", "relation", "entity")
       .distinct()
-      .repartition(partitionSize)
       .cache()
 
     val correctDF = labelledDF.intersect(extractedDF).distinct().cache()
@@ -153,7 +151,7 @@ object RelationEvaluation {
   val labelPath = "data/evaluation/extraction"
   val partitionSize = 12
   val companyList = //Array("Apple", "Alcoa") 
-    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+    new File("data/evaluation/extraction").listFiles().map(f => f.getName).take(100).sorted
 }
 
 case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
