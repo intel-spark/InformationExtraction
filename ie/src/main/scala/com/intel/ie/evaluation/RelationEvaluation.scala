@@ -5,7 +5,6 @@ import java.io.File
 import com.intel.ie.relation.RelationExtractor
 import com.intel.ie.{RelationLine, SparkBatchDriver}
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.functions._
 import org.apache.spark.{SparkConf, SparkContext}
 
@@ -27,7 +26,7 @@ object RelationEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[2]")
+        .setMaster("local[6]")
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive","true")
@@ -63,6 +62,9 @@ object RelationEvaluation {
     }
     val labelledDF = sqlContext.createDataFrame(labelledResult).cache()
 
+    getResultForOneRelation("all", extractedDF, labelledDF, "title", sc)
+    println((System.nanoTime() - st) / 1e9 + " seconds")
+
     val pageResults = companyList.map { companyName =>
       val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
       val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
@@ -83,24 +85,8 @@ object RelationEvaluation {
       println(s"overall result for $relation --- recall: $recall. precision: $precision")
     }
     printResultForOneRelation("title", 0)
-    println((System.nanoTime() - st) / 1e9 + " seconds")
   }
-
-//  private def getResult(company: String, sc: SparkContext): Array[PageResult] = {
-//    val rawTextFile = s"$textPath/${company}/page-${company}_0.txt"
-//
-//    val extractedRDD = SparkBatchDriver.processTextFiles(sc.textFile(rawTextFile).map {
-//      line => if (line.length > 500) line.substring(0, 500) else line
-//    })
-//
-//    val labelFile = s"$labelPath/${company}/page-${company}_0.txt"
-//    val relationRDD = sc.textFile(labelFile).filter(!_.startsWith("//")).filter(_.nonEmpty).map { line =>
-//      val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF", "").replace("  ", " ").split("\t")
-//      RelationLine(elements(0), elements(1), elements(2), elements(3))
-//    }
-//    
-////    Array(getResultForOneRelation("title"))
-//  }
+  
 
   def getResultForOneRelation(company: String, extractedRDD: DataFrame, relationRDD: DataFrame, relationType: String, sc: SparkContext): Array[PageResult] = {
     val extractedRawDF = extractedRDD.where(col("relation").isin(relationType))
@@ -151,7 +137,7 @@ object RelationEvaluation {
   val labelPath = "data/evaluation/extraction"
   val partitionSize = 12
   val companyList = //Array("Apple", "Alcoa") 
-    new File("data/evaluation/extraction").listFiles().map(f => f.getName).take(100).sorted
+    new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 }
 
 case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
