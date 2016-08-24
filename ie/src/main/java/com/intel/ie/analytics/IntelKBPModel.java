@@ -17,11 +17,11 @@ import java.util.Properties;
 public class IntelKBPModel {
 
     static Properties props = StringUtils.argsToProperties();
-    static StanfordCoreNLP pipeline = null;
+    static StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
     static {
 
-        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");        
+        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
         props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
                 "model/english.muc.7class.distsim.crf.ser.gz," +
