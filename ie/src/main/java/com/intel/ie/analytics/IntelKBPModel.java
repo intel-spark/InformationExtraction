@@ -17,7 +17,7 @@ import java.util.Properties;
 public class IntelKBPModel {
 
     static Properties props = StringUtils.argsToProperties();
-    static StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+    static StanfordCoreNLP pipeline = null;
 
     static {
 
