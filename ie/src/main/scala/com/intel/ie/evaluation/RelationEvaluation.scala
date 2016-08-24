@@ -30,8 +30,7 @@ object RelationEvaluation {
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive","true")
-    RelationExtractor.init()
-
+    
     val sqlContext = SQLContext.getOrCreate(sc)
     val st = System.nanoTime()
     val extractionResult = sc.wholeTextFiles(textPath, 8)
