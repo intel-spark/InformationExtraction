@@ -24,6 +24,7 @@ import static edu.stanford.nlp.util.logging.Redwood.Util.forceTrack;
  */
 @SuppressWarnings("FieldCanBeLocal")
 public class IntelKBPStatisticalExtractor extends KBPStatisticalExtractor {
+    private static final long serialVersionUID = 1L;
 
     @ArgumentParser.Option(name = "train", gloss = "The dataset to train on")
     public static File TRAIN_FILE = new File("data/kbp/train.conll");

@@ -58,25 +58,25 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         this.extractors = extractors;
     }
 
-    @Override
+//    @Override
+//    public Pair<String, Double> classify(KBPInput input) {
+//        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
+//        for (IntelKBPRelationExtractor extractor : extractors) {
+//            Pair<String, Double> classifierPrediction = extractor.classify(input);
+//            logger.info(extractor + ": " + classifierPrediction);
+//            if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
+//                    (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
+//                            classifierPrediction.second > prediction.second)
+//                    ) {
+//                // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
+//                prediction = classifierPrediction;
+//            }
+//        }
+//        return prediction;
+//    }
+
+
     public Pair<String, Double> classify(KBPInput input) {
-        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
-        for (IntelKBPRelationExtractor extractor : extractors) {
-            Pair<String, Double> classifierPrediction = extractor.classify(input);
-            logger.info(extractor + ": " + classifierPrediction);
-            if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
-                    (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
-                            classifierPrediction.second > prediction.second)
-                    ) {
-                // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
-                prediction = classifierPrediction;
-            }
-        }
-        return prediction;
-    }
-
-
-    public Pair<String, Double> classifyWithWeight(KBPInput input) {
         HashMap<String, Double> relation2Weights = new HashMap<>();
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 0.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
