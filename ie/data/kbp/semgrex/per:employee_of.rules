@@ -1,5 +1,5 @@
 macro JOB = lemma:/(p|P)resident|(E|e)x\-president|ceo|CEO|(S|s)tar|(P|p)rofessor|(o|O)rganizer|(m|M)anager|(c|C)oach|(E|e)mployee|(n|N)egotiator|(m|M)inister|(H|h)ead|(E|e)mployee|(S|s)enator|(G|g)overnor|(F|f)ounder|(C|c)o\-founder|(O|o)wner|(C|c)hancell?or|(V|v)ice-chancell?or|(M|m)ayor|(L|l)eader|(P|p)remier|(S|s)ecretary|(R|r)uler|[Mm]ember/
-macro ORG = ner:/ORGANIZATION|LOCATION|COUNTRY|STATE_OR_PROVINCE|CITY/
+macro ORG = ner:/ORGANIZATION/
 macro EMPLOY = lemma:/(S|s)ign|(E|e)mploy|(E|e)elect|(R|r)e\-elect/
 
 # Joe, CEO of IBM.

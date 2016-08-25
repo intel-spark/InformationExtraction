@@ -26,12 +26,11 @@ object RelationEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[6]")
+        .setMaster("local[*]")
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive","true")
-    RelationExtractor.init()
-
+    
     val sqlContext = SQLContext.getOrCreate(sc)
     val st = System.nanoTime()
     val extractionResult = sc.wholeTextFiles(textPath, 8)
@@ -65,11 +64,12 @@ object RelationEvaluation {
     getResultForOneRelation("all", extractedDF, labelledDF, "title", sc)
     println((System.nanoTime() - st) / 1e9 + " seconds")
     
-    if(args(0) == "-d"){
+    // details evaluation
+    if(args.nonEmpty && args(0) == "-d"){
       val pageResults = companyList.map { companyName =>
         val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
         val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
-        val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "title", sc)
+        val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "employee_of", sc)
         extractedFiltered.unpersist()
         labelledFiltered.unpersist()
         pageResult
@@ -87,23 +87,22 @@ object RelationEvaluation {
       }
       printResultForOneRelation("title", 0)
     }
-
-
   }
   
 
-  def getResultForOneRelation(company: String, extractedRDD: DataFrame, relationRDD: DataFrame, relationType: String, sc: SparkContext): Array[PageResult] = {
-    val extractedRawDF = extractedRDD.where(col("relation").isin(relationType))
+  def getResultForOneRelation(company: String, extractedRawDF: DataFrame, labelledRawDF: DataFrame, relationType: String, sc: SparkContext): Array[PageResult] = {
+
     val extractedLowerDF = extractedRawDF
+      .where(col("relation").isin(relationType))
       .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"), lower(extractedRawDF("entity")).alias("entity"), extractedRawDF("text"))
     val extractedDF = extractedLowerDF
       .select("name", "relation", "entity")
       .distinct()
       .cache()
-
-
-    val labelledRawDF = relationRDD.where(col("relation").isin(relationType))
+    
     val labelledLowDF = labelledRawDF
+      .where(col("relation").isin(relationType))
+      .where(col("relation").isin(relationType))
       .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"), lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
     val labelledDF = labelledLowDF
       .select("name", "relation", "entity")
