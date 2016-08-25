@@ -3,11 +3,8 @@ package com.intel.ie.analytics;
 
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
-import edu.stanford.nlp.ie.KBPRelationExtractor;
-import edu.stanford.nlp.ie.KBPSemgrexExtractor;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.io.RuntimeIOException;
-import edu.stanford.nlp.pipeline.DefaultPaths;
 import edu.stanford.nlp.util.ArgumentParser;
 import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.logging.Redwood;
@@ -17,6 +14,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,19 +29,19 @@ import java.util.Optional;
 public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     protected static final Redwood.RedwoodChannels logger = Redwood.channels(edu.stanford.nlp.ie.KBPRelationExtractor.class);
 
-    @ArgumentParser.Option(name="model", gloss="The path to the model")
+    @ArgumentParser.Option(name = "model", gloss = "The path to the model")
     private static String STATISTICAL_MODEL = IntelPaths.KBP_CLASSIFIER;
 
-    @ArgumentParser.Option(name="semgrex", gloss="Semgrex patterns directory")
+    @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
     private static String SEMGREX_DIR = IntelPaths.KBP_SEMGREX_DIR;
 
-    @ArgumentParser.Option(name="tokensregex", gloss="Tokensregex patterns directory")
+    @ArgumentParser.Option(name = "tokensregex", gloss = "Tokensregex patterns directory")
     private static String TOKENSREGEX_DIR = IntelPaths.KBP_TOKENSREGEX_DIR;
 
-    @ArgumentParser.Option(name="predictions", gloss="Dump model predictions to this file")
+    @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();
 
-    @ArgumentParser.Option(name="test", gloss="The dataset to test on")
+    @ArgumentParser.Option(name = "test", gloss = "The dataset to test on")
     public static File TEST_FILE = new File("test.conll");
 
     /**
@@ -53,6 +51,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
 
     /**
      * Creates a new ensemble extractor from the given argument extractors.
+     *
      * @param extractors A varargs list of extractors to union together.
      */
     public IntelKBPEnsembleExtractor(IntelKBPRelationExtractor... extractors) {
@@ -64,14 +63,30 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
             Pair<String, Double> classifierPrediction = extractor.classify(input);
-            logger.info(extractor  + ": " + classifierPrediction);
+            logger.info(extractor + ": " + classifierPrediction);
             if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
                     (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
                             classifierPrediction.second > prediction.second)
-                    ){
+                    ) {
                 // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
                 prediction = classifierPrediction;
             }
+        }
+        return prediction;
+    }
+
+
+    public Pair<String, Double> classifyWithWeight(KBPInput input) {
+        HashMap<String, Double> relation2Weights = new HashMap<>();
+        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 0.0);
+        for (IntelKBPRelationExtractor extractor : extractors) {
+            Pair<String, Double> classifierPrediction = extractor.classify(input);
+            logger.info(extractor + ": " + classifierPrediction);
+//            if (classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION)) continue;
+            Double weight = relation2Weights.get(classifierPrediction.first);
+            Double newWeight = weight == null ? 0.0 : weight + ModelWeight.getWeight(extractor);
+            relation2Weights.put(classifierPrediction.first, newWeight);
+            if (newWeight > prediction.second) prediction = Pair.makePair(classifierPrediction.first, newWeight);
         }
         return prediction;
     }
