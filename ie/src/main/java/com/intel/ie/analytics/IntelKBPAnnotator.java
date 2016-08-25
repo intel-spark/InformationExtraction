@@ -1,10 +1,7 @@
 package com.intel.ie.analytics;
 
-import edu.stanford.nlp.classify.Classifier;
-import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.hcoref.CorefCoreAnnotations;
 import edu.stanford.nlp.hcoref.data.CorefChain;
-import edu.stanford.nlp.ie.KBPStatisticalExtractor;
 import edu.stanford.nlp.ie.machinereading.structure.Span;
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;
@@ -30,22 +27,21 @@ import java.util.stream.Collectors;
  */
 @SuppressWarnings("FieldCanBeLocal")
 public class IntelKBPAnnotator implements Annotator {
-    /** A logger for this class */
+    /**
+     * A logger for this class
+     */
     private static Redwood.RedwoodChannels log = Redwood.channels(IntelKBPAnnotator.class);
 
-    @ArgumentParser.Option(name="model", gloss="The path to the model")
-    private String model = IntelPaths.KBP_CLASSIFIER;
-
-    @ArgumentParser.Option(name="semgrex", gloss="Semgrex patterns directory")
+    @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
     private String semgrexdir = IntelPaths.KBP_SEMGREX_DIR;
 
-    @ArgumentParser.Option(name="tokensregex", gloss="Tokensregex patterns directory")
+    @ArgumentParser.Option(name = "tokensregex", gloss = "Tokensregex patterns directory")
     private String tokensregexdir = IntelPaths.KBP_TOKENSREGEX_DIR;
 
-    @ArgumentParser.Option(name="regexner.cased", gloss="The tokensregexner cased path")
+    @ArgumentParser.Option(name = "regexner.cased", gloss = "The tokensregexner cased path")
     private String regexnerCasedPath = DefaultPaths.DEFAULT_KBP_REGEXNER_CASED;
 
-    @ArgumentParser.Option(name="regexner.caseless", gloss="The tokensregexner caseless path")
+    @ArgumentParser.Option(name = "regexner.caseless", gloss = "The tokensregexner caseless path")
     private String regexnerCaselessPath = DefaultPaths.DEFAULT_KBP_REGEXNER_CASELESS;
 
     /**
@@ -80,33 +76,21 @@ public class IntelKBPAnnotator implements Annotator {
      * @param props The properties to use when creating this extractor.
      */
     public IntelKBPAnnotator(String name, Properties props) {
-        // Parse standard properties
+        // Parse standard properties  
         ArgumentParser.fillOptions(this, name, props);
 
-        // Load the extractor
+        // Load the extractor 
         try {
-            log.info("Loading KBP classifier from " + model);
-            Object object = IOUtils.readObjectFromURLOrClasspathOrFileSystem(model);
-            IntelKBPRelationExtractor statisticalExtractor;
-            if (object instanceof LinearClassifier) {
-                //noinspection unchecked
-                statisticalExtractor = new IntelKBPStatisticalExtractor((Classifier<String, String>) object);
-            } else if (object instanceof IntelKBPStatisticalExtractor) {
-                statisticalExtractor = (IntelKBPStatisticalExtractor) object;
-            } else if (object instanceof KBPStatisticalExtractor) {
-                KBPStatisticalExtractor kbp = (KBPStatisticalExtractor)object;
-                statisticalExtractor = new IntelKBPStatisticalExtractor(kbp.classifier);
-            }else {
-                throw new ClassCastException(object.getClass() + " cannot be cast into a " + IntelKBPStatisticalExtractor.class);
-            }
             this.extractor = new IntelKBPEnsembleExtractor(
                     new IntelKBPTokensregexExtractor(tokensregexdir),
                     new IntelKBPSemgrexExtractor(semgrexdir),
-                    statisticalExtractor
+                    IntelKBPStatisticalExtractor.loadStatisticalExtractor(),
+                    DefaultKBPStatisticalExtractor.loadStatisticalExtractor()
             );
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeIOException(e);
         }
+
 
         // Load TokensRegexNER
     /*this.casedNER = new TokensRegexNERAnnotator(
@@ -123,9 +107,11 @@ public class IntelKBPAnnotator implements Annotator {
             setProperty("acronyms", "true");
         }});
     }
+    
 
-
-    /** @see IntelKBPAnnotator#IntelKBPAnnotator(String, Properties) */
+    /**
+     * @see IntelKBPAnnotator#IntelKBPAnnotator(String, Properties)
+     */
     @SuppressWarnings("unused")
     public IntelKBPAnnotator(Properties properties) {
         this(STANFORD_KBP, properties);
@@ -135,6 +121,7 @@ public class IntelKBPAnnotator implements Annotator {
 
     /**
      * Returns whether the given token counts as a valid pronominal mention for KBP.
+     *
      * @param word The token to classify.
      * @return True if this token is a pronoun that KBP should recognize.
      */
@@ -147,6 +134,7 @@ public class IntelKBPAnnotator implements Annotator {
 
     /**
      * Annotate all the pronominal mentions in the document.
+     *
      * @param ann The document.
      * @return The list of pronominal mentions in the document.
      */
@@ -242,6 +230,7 @@ public class IntelKBPAnnotator implements Annotator {
 
     /**
      * Annotate this document for KBP relations.
+     *
      * @param annotation The document to annotate.
      */
     public void annotate(Annotation annotation) {
@@ -416,7 +405,9 @@ public class IntelKBPAnnotator implements Annotator {
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Set<Class<? extends CoreAnnotation>> requirementsSatisfied() {
         Set<Class<? extends CoreAnnotation>> requirements = new HashSet<>(Arrays.asList(
@@ -426,7 +417,9 @@ public class IntelKBPAnnotator implements Annotator {
         return Collections.unmodifiableSet(requirements);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Set<Class<? extends CoreAnnotation>> requires() {
         Set<Class<? extends CoreAnnotation>> requirements = new HashSet<>(Arrays.asList(
@@ -447,6 +440,7 @@ public class IntelKBPAnnotator implements Annotator {
 
     /**
      * A debugging method to try relation extraction from the console.
+     *
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {

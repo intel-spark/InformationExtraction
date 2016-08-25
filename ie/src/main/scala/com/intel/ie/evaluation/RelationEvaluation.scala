@@ -69,7 +69,7 @@ object RelationEvaluation {
       val pageResults = companyList.map { companyName =>
         val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
         val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
-        val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "employee_of", sc)
+        val pageResult = getResultForOneRelation(companyName, extractedFiltered, labelledFiltered, "title", sc)
         extractedFiltered.unpersist()
         labelledFiltered.unpersist()
         pageResult
