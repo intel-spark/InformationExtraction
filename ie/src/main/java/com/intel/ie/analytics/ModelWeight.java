@@ -18,8 +18,8 @@ public class ModelWeight {
     static Double getWeight(IntelKBPRelationExtractor extractor) {
         if (extractor.getClass().equals(IntelKBPStatisticalExtractor.class)) return KBPStatisticalWeightIntel;
         else if (extractor.getClass().equals(DefaultKBPStatisticalExtractor.class)) return KBPStatisticalWeightDefault;
-        else if (extractor.getClass().equals(KBPSemgrexExtractor.class)) return KBPSemgrexWeight;
-        else if (extractor.getClass().equals(KBPTokensregexExtractor.class)) return KBPTokenWeight;
+        else if (extractor.getClass().equals(IntelKBPSemgrexExtractor.class)) return KBPSemgrexWeight;
+        else if (extractor.getClass().equals(IntelKBPTokensregexExtractor.class)) return KBPTokenWeight;
         else return 1.0;
     }
 }
