@@ -14,4 +14,6 @@ public class IntelPaths {
     public static String KBP_SEMGREX_DIR = "data/kbp/semgrex";
 
     public static String KBP_CLASSIFIER = "data/kbp/tac-re-lr.ser.gz";
+
+    public static IntelEnsembleStrategy ENSEMBLE_STRATEGY = IntelEnsembleStrategy.HIGH_PRECISION;
 }

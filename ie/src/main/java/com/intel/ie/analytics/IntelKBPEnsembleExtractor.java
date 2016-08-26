@@ -3,6 +3,7 @@ package com.intel.ie.analytics;
 
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
+import edu.stanford.nlp.ie.KBPTokensregexExtractor;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.util.ArgumentParser;
@@ -50,6 +51,11 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     public final IntelKBPRelationExtractor[] extractors;
 
     /**
+     * Ensemble strategy
+     */
+    public final IntelEnsembleStrategy ensembleStrategy = IntelPaths.ENSEMBLE_STRATEGY;
+
+    /**
      * Creates a new ensemble extractor from the given argument extractors.
      *
      * @param extractors A varargs list of extractors to union together.
@@ -58,25 +64,65 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         this.extractors = extractors;
     }
 
-//    @Override
-//    public Pair<String, Double> classify(KBPInput input) {
-//        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
-//        for (IntelKBPRelationExtractor extractor : extractors) {
-//            Pair<String, Double> classifierPrediction = extractor.classify(input);
-//            logger.info(extractor + ": " + classifierPrediction);
-//            if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
-//                    (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
-//                            classifierPrediction.second > prediction.second)
-//                    ) {
-//                // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
-//                prediction = classifierPrediction;
-//            }
-//        }
-//        return prediction;
-//    }
-
-
+    @Override
     public Pair<String, Double> classify(KBPInput input) {
+        switch (ensembleStrategy) {
+
+            case HIGHEST_SCORE:
+                return classifyWithHighestScore(input);
+            case VOTE:
+                return classifyWithVote(input);
+            case WEIGHTED_VOTE:
+                return classifyWithWeightedVote(input);
+            case HIGH_RECALL:
+                return classifyWithHighRecall(input);
+            case HIGH_PRECISION:
+                return classifyWithHighPrecision(input);
+            default:
+                throw new UnsupportedClassVersionError(ensembleStrategy + " not supported");
+        }
+    }
+
+    private Pair<String, Double> classifyWithHighPrecision(KBPInput input) {
+        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
+        for (IntelKBPRelationExtractor extractor : extractors) {
+            if (!extractor.getClass().equals(IntelKBPTokensregexExtractor.class)) continue;
+            return extractor.classify(input);
+        }
+        return prediction;
+    }
+
+    private Pair<String, Double> classifyWithHighRecall(KBPInput input) {
+        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
+        for (IntelKBPRelationExtractor extractor : extractors) {
+            Pair<String, Double> classifierPrediction = extractor.classify(input);
+            logger.info(extractor + ": " + classifierPrediction);
+            if (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION)) {
+                if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION))
+                    prediction = classifierPrediction;
+                else {
+                    prediction = classifierPrediction.second > prediction.second ? classifierPrediction : prediction;
+                }
+            }
+        }
+        return prediction;
+    }
+
+    private Pair<String, Double> classifyWithVote(KBPInput input) {
+        HashMap<String, Double> relation2Weights = new HashMap<>();
+        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 0.0);
+        for (IntelKBPRelationExtractor extractor : extractors) {
+            Pair<String, Double> classifierPrediction = extractor.classify(input);
+            logger.info(extractor + ": " + classifierPrediction);
+            Double weight = relation2Weights.get(classifierPrediction.first);
+            Double newWeight = weight == null ? 0.0 : weight + 1.0 / extractors.length;
+            relation2Weights.put(classifierPrediction.first, newWeight);
+            if (newWeight > prediction.second) prediction = Pair.makePair(classifierPrediction.first, newWeight);
+        }
+        return prediction;
+    }
+
+    private Pair<String, Double> classifyWithWeightedVote(KBPInput input) {
         HashMap<String, Double> relation2Weights = new HashMap<>();
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 0.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
@@ -87,6 +133,22 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
             Double newWeight = weight == null ? 0.0 : weight + ModelWeight.getWeight(extractor);
             relation2Weights.put(classifierPrediction.first, newWeight);
             if (newWeight > prediction.second) prediction = Pair.makePair(classifierPrediction.first, newWeight);
+        }
+        return prediction;
+    }
+
+    private Pair<String, Double> classifyWithHighestScore(KBPInput input) {
+        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
+        for (IntelKBPRelationExtractor extractor : extractors) {
+            Pair<String, Double> classifierPrediction = extractor.classify(input);
+            logger.info(extractor + ": " + classifierPrediction);
+            if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
+                    (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
+                            classifierPrediction.second > prediction.second)
+                    ) {
+                // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
+                prediction = classifierPrediction;
+            }
         }
         return prediction;
     }
