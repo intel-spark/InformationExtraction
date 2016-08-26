@@ -86,7 +86,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     private Pair<String, Double> classifyWithHighPrecision(KBPInput input) {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
-            if (!extractor.getClass().equals(KBPTokensregexExtractor.class)) continue;
+            if (!extractor.getClass().equals(IntelKBPTokensregexExtractor.class)) continue;
             return extractor.classify(input);
         }
         return prediction;
