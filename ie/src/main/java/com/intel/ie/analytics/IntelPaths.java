@@ -15,5 +15,5 @@ public class IntelPaths {
 
     public static String KBP_CLASSIFIER = "data/kbp/tac-re-lr.ser.gz";
 
-    public static IntelEnsembleStrategy ENSEMBLE_STRATEGY = IntelEnsembleStrategy.HIGH_PRECISION;
+    public static IntelEnsembleStrategy ENSEMBLE_STRATEGY = IntelEnsembleStrategy.HIGHEST_SCORE;
 }

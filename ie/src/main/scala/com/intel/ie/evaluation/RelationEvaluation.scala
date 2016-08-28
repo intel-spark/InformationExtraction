@@ -45,7 +45,9 @@ object RelationEvaluation {
           .map(rl => (companyName, rl))
           .map(t => RelationRow(t._1, t._2.name, t._2.relation, t._2.entity, t._2.text))
       }
-    val extractedDF = sqlContext.createDataFrame(extractionResult).cache()    
+    val extractedDF = sqlContext.createDataFrame(extractionResult).cache()
+
+    extractedDF.select("relation").distinct().show()
     
     val labelledResult = sc.wholeTextFiles(labelPath, 8)
       .filter { case (title, content) =>
