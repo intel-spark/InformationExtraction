@@ -1,19 +1,12 @@
 package Test;
 
-import edu.stanford.nlp.ie.util.RelationTriple;
+import com.intel.ie.analytics.IntelKBPConfig;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.NERCombinerAnnotator;
-import edu.stanford.nlp.pipeline.RegexNERAnnotator;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.sequences.SeqClassifierFlags;
-import edu.stanford.nlp.simple.Sentence;
 import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.ie.crf.CRFClassifier;
-import com.intel.ie.analytics.IntelPaths;
-import com.intel.ie.analytics.KBPModel;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -28,7 +21,7 @@ public class NerWithDepartmentTest {
     static StanfordCoreNLP pipeline;
     static {
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner");
-        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
+        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.combined);
         props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
                 "model/english.muc.7class.distsim.crf.ser.gz," +
                 "model/english.conll.4class.distsim.crf.ser.gz," +

@@ -6,7 +6,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
-import com.intel.ie.analytics.IntelPaths;
+import com.intel.ie.analytics.IntelKBPConfig;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class RegexNerTest {
     static StanfordCoreNLP pipeline;
     static {
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner");
-        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
+        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.combined);
         props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
                 "model/english.muc.7class.distsim.crf.ser.gz," +
                 "model/english.conll.4class.distsim.crf.ser.gz," +

@@ -1,0 +1,8 @@
+{ result: "per:former_title", pattern: ( $ENTITY  ","  "a"  "former"  $TITLE ) }
+{ result: "per:former_title", pattern: ( $ENTITY  ","  "an"  "a"  "former"  $TITLE ) }
+{ result: "per:former_title", pattern: ( $ENTITY  ","  "a"  $TITLE "before") }
+{ result: "per:former_title", pattern: ( $ENTITY  ","  "an"  $TITLE "before") }
+{ result: "per:former_title", pattern: ( $ENTITY  "," $TITLE "," $DATE "-" $DATE) }
+{ result: "per:former_title", pattern: ( $ENTITY  "," $TITLE $DATE "-" $DATE) }
+{ result: "per:former_title", pattern: ( $ENTITY  "," $TITLE "," "from" $DATE "to" $DATE) }
+{ result: "per:former_title", pattern: ( $ENTITY  "," $TITLE "from" $DATE "to" $DATE) }
