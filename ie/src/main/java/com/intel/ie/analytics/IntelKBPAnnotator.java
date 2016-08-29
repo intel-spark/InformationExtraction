@@ -33,10 +33,10 @@ public class IntelKBPAnnotator implements Annotator {
     private static Redwood.RedwoodChannels log = Redwood.channels(IntelKBPAnnotator.class);
 
     @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
-    private String semgrexdir = IntelPaths.KBP_SEMGREX_DIR;
+    private String semgrexdir = IntelKBPConfig.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name = "tokensregex", gloss = "Tokensregex patterns directory")
-    private String tokensregexdir = IntelPaths.KBP_TOKENSREGEX_DIR;
+    private String tokensregexdir = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name = "regexner.cased", gloss = "The tokensregexner cased path")
     private String regexnerCasedPath = DefaultPaths.DEFAULT_KBP_REGEXNER_CASED;

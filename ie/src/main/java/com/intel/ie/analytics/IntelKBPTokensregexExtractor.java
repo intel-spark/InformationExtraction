@@ -29,7 +29,7 @@ public class IntelKBPTokensregexExtractor implements IntelKBPRelationExtractor {
     protected static final Redwood.RedwoodChannels logger = Redwood.channels(IntelKBPTokensregexExtractor.class);
 
     @ArgumentParser.Option(name="dir", gloss="The tokensregex directory")
-    public static String DIR = IntelPaths.KBP_TOKENSREGEX_DIR;
+    public static String DIR = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name="test", gloss="The dataset to test on")
     public static File TEST_FILE = new File("test.conll");
@@ -57,7 +57,7 @@ public class IntelKBPTokensregexExtractor implements IntelKBPRelationExtractor {
         logger.log("Creating TokensRegexExtractor");
         // Create extractors        
         for (RelationType rel : RelationType.values()) {
-            if (IntelPaths.bSeprateFormerTitle || rel != RelationType.PER_FORMER_TITLE) {
+            if (IntelKBPConfig.bSeprateFormerTitle || rel != RelationType.PER_FORMER_TITLE) {
                 String path = tokensregexDir + File.separator + rel.canonicalName.replaceAll("/", "SLASH") + ".rules";
                 if (IOUtils.existsInClasspathOrFileSystem(path)) {
                     List<String> listFiles = new ArrayList<>();

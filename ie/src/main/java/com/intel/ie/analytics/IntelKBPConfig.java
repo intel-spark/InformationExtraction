@@ -1,6 +1,6 @@
 package com.intel.ie.analytics;
 
-public class IntelPaths {
+public class IntelKBPConfig {
 
     public static String Regex_NER_cased = "data/kbp/regexner_cased.tab";
     public static String Regex_NER_caseless = "data/kbp/regexner_caseless.tab";    

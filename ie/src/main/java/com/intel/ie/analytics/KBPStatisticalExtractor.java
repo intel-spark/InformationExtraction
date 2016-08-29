@@ -42,7 +42,7 @@ public class KBPStatisticalExtractor implements IntelKBPRelationExtractor, Seria
     public static File TEST_FILE = new File("test.conll");
 
     @ArgumentParser.Option(name = "model", gloss = "The dataset to test on")
-    public static String MODEL_FILE = IntelPaths.KBP_CLASSIFIER;
+    public static String MODEL_FILE = IntelKBPConfig.KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();
@@ -551,8 +551,8 @@ public class KBPStatisticalExtractor implements IntelKBPRelationExtractor, Seria
 
     public static Counter<String> features(KBPInput input) {
         // Ensure RegexNER Tags!
-        input.sentence.regexner(IntelPaths.Regex_NER_caseless, false);
-        input.sentence.regexner(IntelPaths.Regex_NER_cased, true);
+        input.sentence.regexner(IntelKBPConfig.Regex_NER_caseless, false);
+        input.sentence.regexner(IntelKBPConfig.Regex_NER_cased, true);
 
         // Get useful variables
         ClassicCounter<String> feats = new ClassicCounter<>();
