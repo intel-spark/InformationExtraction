@@ -54,7 +54,8 @@ public class IntelKBPModel {
             for(RelationTriple r : sentence.get(CoreAnnotations.KBPTriplesAnnotation.class)){
                 if(r.relationGloss().trim().equals("per:title")
                         || r.relationGloss().trim().equals("per:employee_of")
-                        || r.relationGloss().trim().equals("org:top_members/employees")){
+                        || r.relationGloss().trim().equals("org:top_members/employees")
+                        || r.relationGloss().trim().equals("per:former_title")){
                     relations.put(r, sentence.toString());
                 }
             }

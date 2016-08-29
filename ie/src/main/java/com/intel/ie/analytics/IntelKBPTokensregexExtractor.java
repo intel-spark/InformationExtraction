@@ -1,5 +1,4 @@
 package com.intel.ie.analytics;
-import edu.stanford.nlp.ie.KBPRelationExtractor;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotation;
@@ -9,7 +8,6 @@ import edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor;
 import edu.stanford.nlp.ling.tokensregex.Env;
 import edu.stanford.nlp.ling.tokensregex.MatchedExpression;
 import edu.stanford.nlp.ling.tokensregex.TokenSequencePattern;
-import edu.stanford.nlp.pipeline.DefaultPaths;
 import edu.stanford.nlp.simple.Sentence;
 import edu.stanford.nlp.util.ArgumentParser;
 import edu.stanford.nlp.util.CoreMap;
@@ -57,18 +55,20 @@ public class IntelKBPTokensregexExtractor implements IntelKBPRelationExtractor {
 
     public IntelKBPTokensregexExtractor(String tokensregexDir) {
         logger.log("Creating TokensRegexExtractor");
-        // Create extractors
+        // Create extractors        
         for (RelationType rel : RelationType.values()) {
-            String path = tokensregexDir + File.separator + rel.canonicalName.replaceAll("/", "SLASH") + ".rules";
-            if (IOUtils.existsInClasspathOrFileSystem(path)) {
-                List<String> listFiles = new ArrayList<>();
-                listFiles.add(tokensregexDir + File.separator + "defs.rules");
-                listFiles.add(path);
-                logger.log("Rule files for relation " + rel + " is " + path);
-                Env env = TokenSequencePattern.getNewEnv();
-                env.bind("collapseExtractionRules", true);
-                CoreMapExpressionExtractor extr = CoreMapExpressionExtractor.createExtractorFromFiles(env, listFiles).keepTemporaryTags();
-                rules.put(rel, extr);
+            if (IntelPaths.bSeprateFormerTitle || rel != RelationType.PER_FORMER_TITLE) {
+                String path = tokensregexDir + File.separator + rel.canonicalName.replaceAll("/", "SLASH") + ".rules";
+                if (IOUtils.existsInClasspathOrFileSystem(path)) {
+                    List<String> listFiles = new ArrayList<>();
+                    listFiles.add(tokensregexDir + File.separator + "defs.rules");
+                    listFiles.add(path);
+                    logger.log("Rule files for relation " + rel + " is " + path);
+                    Env env = TokenSequencePattern.getNewEnv();
+                    env.bind("collapseExtractionRules", true);
+                    CoreMapExpressionExtractor extr = CoreMapExpressionExtractor.createExtractorFromFiles(env, listFiles).keepTemporaryTags();
+                    rules.put(rel, extr);
+                }
             }
         }
     }
