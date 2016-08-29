@@ -27,5 +27,4 @@
 { result: "per:title", pattern: ( $TITLE $ENTITY  ) }
 { result: "per:title", pattern: ( $ENTITY  ","  $TITLE ) }
 { result: "per:title", pattern: ( $ENTITY  ","  []{0, 3} ","  $TITLE ) }
-{ result: "per:title", pattern: ( $ENTITY  ","  []{0, 10}  $TITLE ) }
-{ result: "per:employee_of", pattern: ( $ENTITY  []{0, 1000}  $SLOT_VALUE_DEP ) }
+{ result: "per:title", pattern: ( $ENTITY  ","  []{0, 10} $TITLE ) }

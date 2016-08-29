@@ -366,9 +366,7 @@ public class IntelKBPAnnotator implements Annotator {
                         Optional<IntelKBPRelationExtractor.NERTag> objNER = IntelKBPRelationExtractor.NERTag.fromString(obj.get(CoreAnnotations.NamedEntityTagAnnotation.class));
 
                         if (objNER.isPresent()
-                                && (objNER.get().equals(IntelKBPRelationExtractor.NERTag.TITLE) 
-                                    || objNER.get().equals(IntelKBPRelationExtractor.NERTag.ORGANIZATION)
-                                    || objNER.get().equals(IntelKBPRelationExtractor.NERTag.DEPARTMENT))
+                                && (objNER.get().equals(IntelKBPRelationExtractor.NERTag.TITLE) || objNER.get().equals(IntelKBPRelationExtractor.NERTag.ORGANIZATION))
                                 && IntelKBPRelationExtractor.RelationType.plausiblyHasRelation(subjNER.get(), objNER.get())) {  // type check
                             IntelKBPRelationExtractor.KBPInput input = new IntelKBPRelationExtractor.KBPInput(
                                     new Span(subjBegin, subjEnd),
