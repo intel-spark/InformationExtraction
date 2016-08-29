@@ -107,14 +107,15 @@ public class IntelKBPSemgrexExtractor implements IntelKBPRelationExtractor {
             try {
                 SemgrexMatcher n = p.matcher(graph);
                 while (n.find()) {
-                    IndexedWord entity = n.getNode("entity");
-                    IndexedWord slot = n.getNode("slot");
-                    boolean hasSubject = entity.index() >= input.subjectSpan.start() + 1 && entity.index() <= input.subjectSpan.end();
-                    boolean hasObject  = slot.index() >= input.objectSpan.start() + 1 && slot.index() <= input.objectSpan.end();
-
-                    if (hasSubject && hasObject) {
-                        return true;
-                    }
+                    return true;
+//                    IndexedWord entity = n.getNode("entity");
+//                    IndexedWord slot = n.getNode("slot");
+//                    boolean hasSubject = entity.index() >= input.subjectSpan.start() + 1 && entity.index() <= input.subjectSpan.end();
+//                    boolean hasObject  = slot.index() >= input.objectSpan.start() + 1 && slot.index() <= input.objectSpan.end();
+//
+//                    if (hasSubject && hasObject) {
+//                        return true;
+//                    }
                 }
             } catch (Exception e) {
                 //Happens when graph has no roots
