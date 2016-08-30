@@ -1,0 +1,24 @@
+[A-Z][a-z]+ Vice President	TITLE	MISC	3
+[Cc]hief .* [Oo]fficer	TITLE	MISC	3
+[Cc]hief .* .* [Oo]fficer	TITLE	MISC	3
+[Cc]hief .* .* .* [Oo]fficer	TITLE	MISC	3
+CEO	TITLE	MISC	1
+General Counsel	TITLE	MISC	1
+Secretary	TITLE	MISC	1
+[Cc]orporate [Cc]ontroller	TITLE	MISC	1
+Vice President	TITLE	MISC	3
+President	TITLE	MISC	2
+Co-Founder	TITLE	MISC	1
+Treasurer	TITLE	MISC	1
+SVP	TITLE	MISC	2
+EVP	TITLE	MISC	2
+VP	TITLE	MISC	1
+Chairman	TITLE	MISC	1
+GM	TITLE	MISC	1
+General Manager	TITLE	MISC	1
+COO	TITLE	MISC	1
+CIO	TITLE	MISC	1
+CMO	TITLE	MISC	1
+Controller	TITLE	MISC	1
+Deputy General Counsel	TITLE	MISC	1
+[Dd]eputy	TITLE	MISC	1
