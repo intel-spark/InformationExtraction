@@ -3,7 +3,6 @@ package com.intel.ie.analytics;
 
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
-import edu.stanford.nlp.ie.KBPTokensregexExtractor;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.util.ArgumentParser;
@@ -31,13 +30,13 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     protected static final Redwood.RedwoodChannels logger = Redwood.channels(edu.stanford.nlp.ie.KBPRelationExtractor.class);
 
     @ArgumentParser.Option(name = "model", gloss = "The path to the model")
-    private static String STATISTICAL_MODEL = IntelPaths.KBP_CLASSIFIER;
+    private static String STATISTICAL_MODEL = IntelKBPConfig.KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
-    private static String SEMGREX_DIR = IntelPaths.KBP_SEMGREX_DIR;
+    private static String SEMGREX_DIR = IntelKBPConfig.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name = "tokensregex", gloss = "Tokensregex patterns directory")
-    private static String TOKENSREGEX_DIR = IntelPaths.KBP_TOKENSREGEX_DIR;
+    private static String TOKENSREGEX_DIR = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     private static Optional<String> PREDICTIONS = Optional.empty();

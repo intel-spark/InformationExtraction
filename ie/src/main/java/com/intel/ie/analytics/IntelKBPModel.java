@@ -22,7 +22,7 @@ public class IntelKBPModel {
     static {
 
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
-        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelPaths.combined);
+        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.combined);
         props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
                 "model/english.muc.7class.distsim.crf.ser.gz," +
                 "model/english.conll.4class.distsim.crf.ser.gz," +
@@ -54,7 +54,8 @@ public class IntelKBPModel {
             for(RelationTriple r : sentence.get(CoreAnnotations.KBPTriplesAnnotation.class)){
                 if(r.relationGloss().trim().equals("per:title")
                         || r.relationGloss().trim().equals("per:employee_of")
-                        || r.relationGloss().trim().equals("org:top_members/employees")){
+                        || r.relationGloss().trim().equals("org:top_members/employees")
+                        || r.relationGloss().trim().equals("per:former_title")){
                     relations.put(r, sentence.toString());
                 }
             }
