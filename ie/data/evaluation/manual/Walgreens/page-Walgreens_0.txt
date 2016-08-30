@@ -4,9 +4,9 @@
 	1Ornella Barra	,  	2Co-Chief Operating Officer	 for 	3Walgreens Boots Alliance, Inc	.
 	1George Fairweather	,  	2Executive Vice President	 and 	2Global Chief Financial Officer	 of Walgreens Boots Alliance, Inc.
 	1Alex Gourlay	,  	2Co-Chief Operating Officer	 for Walgreens Boots Alliance, Inc.
-	1Ken Murphy	,  	2Executive Vice President	 of Walgreens Boots Alliance and 	2Chief Commercial Officer	 and President of Global Brands
-	1Marco Pagni	,  	2Executive Vice President	, Global Chief Administrative Officer and General Counsel of Walgreens Boots Alliance, Inc.
-	1Kimberly R. Scardino	,  	2Senior Vice President	, Global Controller and Chief Accounting Officer of Walgreens Boots Alliance, Inc.
-	1Kathleen Wilson-Thompson	,  	2Executive Vice President	 and Global 	2Chief Human Resources Officer	 of Walgreens Boots Alliance, Inc.
+	1Ken Murphy	,  	2Executive Vice President	 of Walgreens Boots Alliance and 	2Chief Commercial Officer	 and 	2President	 of Global Brands
+	1Marco Pagni	,  	2Executive Vice President	, 	2Global Chief Administrative Officer	 and 	2General Counsel	 of Walgreens Boots Alliance, Inc.
+	1Kimberly R. Scardino	,  	2Senior Vice President	, 	2Global Controller	 and 	2Chief Accounting Officer	 of Walgreens Boots Alliance, Inc.
+	1Kathleen Wilson-Thompson	,  	2Executive Vice President	 and 	2Global Chief Human Resources Officer	 of Walgreens Boots Alliance, Inc.
 Terms of use,  Online privacy and security,  Sitemap, 
 http://www.walgreensbootsalliance.com/about/senior-management/

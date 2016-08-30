@@ -9,7 +9,12 @@ George Fairweather	title	Global Chief Financial Officer	George Fairweather,  Exe
 Alex Gourlay	title	Co-Chief Operating Officer	Alex Gourlay,  Co-Chief Operating Officer for Walgreens Boots Alliance, Inc.
 Ken Murphy	title	Executive Vice President	Ken Murphy,  Executive Vice President of Walgreens Boots Alliance and Chief Commercial Officer and President of Global Brands
 Ken Murphy	title	Chief Commercial Officer	Ken Murphy,  Executive Vice President of Walgreens Boots Alliance and Chief Commercial Officer and President of Global Brands
+Ken Murphy	title	President	Ken Murphy,  Executive Vice President of Walgreens Boots Alliance and Chief Commercial Officer and President of Global Brands
 Marco Pagni	title	Executive Vice President	Marco Pagni,  Executive Vice President, Global Chief Administrative Officer and General Counsel of Walgreens Boots Alliance, Inc.
+Marco Pagni	title	Global Chief Administrative Officer	Marco Pagni,  Executive Vice President, Global Chief Administrative Officer and General Counsel of Walgreens Boots Alliance, Inc.
+Marco Pagni	title	General Counsel	Marco Pagni,  Executive Vice President, Global Chief Administrative Officer and General Counsel of Walgreens Boots Alliance, Inc.
 Kimberly R. Scardino	title	Senior Vice President	Kimberly R. Scardino,  Senior Vice President, Global Controller and Chief Accounting Officer of Walgreens Boots Alliance, Inc.
+Kimberly R. Scardino	title	Global Controller	Kimberly R. Scardino,  Senior Vice President, Global Controller and Chief Accounting Officer of Walgreens Boots Alliance, Inc.
+Kimberly R. Scardino	title	Chief Accounting Officer	Kimberly R. Scardino,  Senior Vice President, Global Controller and Chief Accounting Officer of Walgreens Boots Alliance, Inc.
 Kathleen Wilson-Thompson	title	Executive Vice President	Kathleen Wilson-Thompson,  Executive Vice President and Global Chief Human Resources Officer of Walgreens Boots Alliance, Inc.
-Kathleen Wilson-Thompson	title	Chief Human Resources Officer	Kathleen Wilson-Thompson,  Executive Vice President and Global Chief Human Resources Officer of Walgreens Boots Alliance, Inc.
+Kathleen Wilson-Thompson	title	Global Chief Human Resources Officer	Kathleen Wilson-Thompson,  Executive Vice President and Global Chief Human Resources Officer of Walgreens Boots Alliance, Inc.
