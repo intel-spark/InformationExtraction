@@ -23,5 +23,6 @@ $URL = ( [ { slotvalue::EXISTS } & ( { ner:"URL" } | { word:/(([A-Za-z]{3,9}:(?:
 #$URL = ( [ { slotvalue::EXISTS } & ( { ner:"URL" } ) ] )
 $TITLE = ( [ { slotvalue::EXISTS } & { ner:/.*TITLE.*/ } ]+ )
 $TOP_TITLE = ( [ { lemma:/[eE]xecutive|[cC]hairman|[pP]resident|[cC]hief|[hH]ead|[gG]eneral|[cC][eE][oO]|[oO]fficer|[lL]eader|[vV]ice|[kK]ing|[pP]rince|[mM]anager|[mM]inister|[aA]dviser|[bB]oss|[cC]hair|[aA]mbassador|[sS]tar|[gG]overnor|[iI]nvestor|[rR]epresentative|[dD]ean|[cC]ommissioner|[cC]ommander|[mM]idfielder|[sS]peaker|[Rr]esearcher|[eE]ditor|[Cc]hancellor|[fF]ellow|[lL]eadership|[dD]iplomat|[aA]ssociate|[sS]triker|[pP]ilot|[cC]aptain|[bB]anker|[mM]ayor|[pP]remier|[pP]roducer|[aA]rchitect|[dD]esigner|[mM]ajor|[aA]dvisor|[pP]resident|[sS]enator|[sS]pecialist|[fF]aculty|[cC]hairwoman|[mM]ediator|[pP]rosecutor|[eE]ntrepreneur|[cC]reator|[sS]uperstar|[cC]ommentator|[pP]rincipal|[oO]perative|[bB]usinessman|[pP]eacekeeper|[iI]nvestigator|[cC]oordinator|[kK]night|[lL]awmaker|[jJ]ustice|[pP]ublisher|[pP]laymaker|[mM]oderator|[nN]egotiator|[Dd]irector|[Jj]ustice/ } ] )
+$DATE = ( [ { ner:"DATE" } ] )
 
 ENV.defaults.weight = 1.0
