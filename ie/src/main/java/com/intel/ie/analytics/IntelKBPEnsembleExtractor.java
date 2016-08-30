@@ -95,7 +95,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
             Pair<String, Double> classifierPrediction = extractor.classify(input);
-            logger.info(extractor + ": " + classifierPrediction);
+            logger.info(extractor.getClass().getSimpleName() + ": " + classifierPrediction + " for " + input.getObjectText() + " - " + input.getSubjectText());
             if (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION)) {
                 if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION))
                     prediction = classifierPrediction;
@@ -112,7 +112,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 0.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
             Pair<String, Double> classifierPrediction = extractor.classify(input);
-            logger.info(extractor + ": " + classifierPrediction);
+            logger.info(extractor.getClass().getSimpleName() + ": " + classifierPrediction + " for " + input.getObjectText() + " - " + input.getSubjectText());
             Double weight = relation2Weights.get(classifierPrediction.first);
             Double newWeight = weight == null ? 1.0 / extractors.length : weight + 1.0 / extractors.length;
             relation2Weights.put(classifierPrediction.first, newWeight);
@@ -126,7 +126,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 0.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
             Pair<String, Double> classifierPrediction = extractor.classify(input);
-            logger.info(extractor + ": " + classifierPrediction);
+            logger.info(extractor.getClass().getSimpleName() + ": " + classifierPrediction + " for " + input.getObjectText() + " - " + input.getSubjectText());
 //            if (classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION)) continue;
             Double weight = relation2Weights.get(classifierPrediction.first);
             Double newWeight = weight == null ? ModelWeight.getWeight(extractor) : weight + ModelWeight.getWeight(extractor);
@@ -140,7 +140,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
         for (IntelKBPRelationExtractor extractor : extractors) {
             Pair<String, Double> classifierPrediction = extractor.classify(input);
-            logger.info(extractor + ": " + classifierPrediction);
+            logger.info(extractor.getClass().getSimpleName() + ": " + classifierPrediction + " for " + input.getObjectText() + " - " + input.getSubjectText());
             if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
                     (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
                             classifierPrediction.second > prediction.second)
