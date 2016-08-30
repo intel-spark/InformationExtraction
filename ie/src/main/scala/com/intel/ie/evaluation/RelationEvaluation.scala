@@ -33,7 +33,7 @@ object RelationEvaluation {
     
     val sqlContext = SQLContext.getOrCreate(sc)
     val st = System.nanoTime()
-    val extractionResult = sc.wholeTextFiles(textPath, 8)
+    val extractionResult = sc.wholeTextFiles(textPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)  
@@ -47,7 +47,7 @@ object RelationEvaluation {
       }
     val extractedDF = sqlContext.createDataFrame(extractionResult).cache()    
     
-    val labelledResult = sc.wholeTextFiles(labelPath, 8)
+    val labelledResult = sc.wholeTextFiles(labelPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
