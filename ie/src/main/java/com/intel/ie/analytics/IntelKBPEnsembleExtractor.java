@@ -39,30 +39,35 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     private static String TOKENSREGEX_DIR = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
-    public static Optional<String> PREDICTIONS = Optional.empty();
+    private static Optional<String> PREDICTIONS = Optional.empty();
 
     @ArgumentParser.Option(name = "test", gloss = "The dataset to test on")
-    public static File TEST_FILE = new File("test.conll");
+    private static File TEST_FILE = new File("test.conll");
 
     /**
      * The extractors to run, in the order of priority they should be run in.
      */
-    public final IntelKBPRelationExtractor[] extractors;
+    private final IntelKBPRelationExtractor[] extractors;
 
     /**
      * Ensemble strategy
      */
-    public final IntelEnsembleStrategy ensembleStrategy = IntelKBPConfig.ENSEMBLE_STRATEGY;
+    private IntelEnsembleStrategy ensembleStrategy = IntelEnsembleStrategy.HIGHEST_SCORE;
 
     /**
      * Creates a new ensemble extractor from the given argument extractors.
      *
      * @param extractors A varargs list of extractors to union together.
      */
-    public IntelKBPEnsembleExtractor(IntelKBPRelationExtractor... extractors) {
+    IntelKBPEnsembleExtractor(IntelKBPRelationExtractor... extractors) {
         this.extractors = extractors;
     }
 
+    public IntelKBPEnsembleExtractor setEnsembleStrategy(IntelEnsembleStrategy ensembleStrategy) {
+        this.ensembleStrategy = ensembleStrategy;
+        return this;
+    }
+    
     @Override
     public Pair<String, Double> classify(KBPInput input) {
         switch (ensembleStrategy) {
