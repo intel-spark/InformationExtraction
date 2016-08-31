@@ -11,7 +11,7 @@ Brad Feuer	title	General Counsel	Brad Feuer, , General Counsel, Barnes & Noble, 
 Rosa Hakala	title	V.P.	Rosa Hakala, , V.P. of Distribution and Logistics, Barnes & Noble, Inc.
 Rosa Hakala	employee_of	Distribution and Logistics	Rosa Hakala, , V.P. of Distribution and Logistics, Barnes & Noble, Inc.
 Peter Herpich	title	Vice President	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
-Peter Herpich	title	Controller	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
+Peter Herpich	title	Corporate Controller	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
 Peter Herpich	title	Principal Accounting Officer	Peter Herpich, , Vice President, Corporate Controller & Principal Accounting Officer, Barnes & Noble, Inc. 
 Mary Ellen Keating	title	Senior V.P.	Mary Ellen Keating, , Senior V.P. of Corporate Communications and Public Affairs, Barnes & Noble, Inc. 
 Mary Ellen Keating	employee_of	Corporate Communications and Public Affairs	Mary Ellen Keating, , Senior V.P. of Corporate Communications and Public Affairs, Barnes & Noble, Inc. 

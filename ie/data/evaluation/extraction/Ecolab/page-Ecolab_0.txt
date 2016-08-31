@@ -50,4 +50,5 @@ Stewart McCutcheon	title	Executive Vice President	Stewart McCutcheon Executive V
 Stewart McCutcheon	title	Chief Information Officer	Stewart McCutcheon Executive Vice President and Chief Information Officer,  More, 
 Daniel J. Schmechel	title	Chief Financial Officer	Daniel J. Schmechel Chief Financial Officer,  More, 
 James J. Seifert	title	Executive Vice President	James J. Seifert Executive Vice President, General Counsel and Secretary,  More, 
-James J. Seifert	employee_of	General Counsel and Secretary	James J. Seifert Executive Vice President, General Counsel and Secretary,  More, 
+James J. Seifert	title	General Counsel	James J. Seifert Executive Vice President, General Counsel and Secretary,  More, 
+James J. Seifert	title	Secretary	James J. Seifert Executive Vice President, General Counsel and Secretary,  More, 

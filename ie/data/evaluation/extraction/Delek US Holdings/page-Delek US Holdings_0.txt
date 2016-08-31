@@ -12,4 +12,4 @@ Anthony L. Miller	title	Executive Vice President	Anthony L. Miller (Executive V
 Avigal Soreq	title	Executive Vice President	Avigal Soreq (Executive Vice President), 
 Kent Thomas	title	Executive Vice President	Kent Thomas (Executive Vice President, General Counsel and Secretary), 
 Kent Thomas	title	General Counsel	Kent Thomas (Executive Vice President, General Counsel and Secretary), 
-Kent Thomas	employee_of	Secretary	Kent Thomas (Executive Vice President, General Counsel and Secretary), 
+Kent Thomas	title	Secretary	Kent Thomas (Executive Vice President, General Counsel and Secretary), 
