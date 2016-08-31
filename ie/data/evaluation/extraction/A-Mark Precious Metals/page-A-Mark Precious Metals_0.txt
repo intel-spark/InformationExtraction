@@ -25,4 +25,4 @@ Brian Aquilino	employee_of	Operations	Brian Aquilino,  Vice President of Operati
 Carol Meltzer	title	General Counsel	Carol Meltzer,  General Counsel, Executive Vice President and Secretary
 Carol Meltzer	title	Executive Vice President	Carol Meltzer,  General Counsel, Executive Vice President and Secretary
 Carol Meltzer	title	Secretary	Carol Meltzer,  General Counsel, Executive Vice President and Secretary
-Douglas J. Frye	title	General Counsel	Douglas J. Frye, Esq.,  Frye & Hsieh, LLP Outside General Counsel
+Douglas J. Frye	title	Outside General Counsel	Douglas J. Frye, Esq.,  Frye & Hsieh, LLP Outside General Counsel

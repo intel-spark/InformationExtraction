@@ -15,7 +15,7 @@ public class IntelKBPConfig {
 
     public static String KBP_CLASSIFIER = "data/kbp/tac-re-lr.ser.gz";
 
-    public static IntelEnsembleStrategy ENSEMBLE_STRATEGY = IntelEnsembleStrategy.HIGH_RECALL;
+    public static IntelEnsembleStrategy ENSEMBLE_STRATEGY = IntelEnsembleStrategy.WEIGHTED_VOTE;
 
     public static boolean bSeprateFormerTitle = false;
 }

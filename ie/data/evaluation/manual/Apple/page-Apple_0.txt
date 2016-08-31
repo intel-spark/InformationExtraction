@@ -26,8 +26,8 @@ Executive Profiles
 	1James A. Bell	, 	2Former CFO	 and 	2Corporate President	 The Boeing Company
 	1Tim Cook	, 	2CEO	 Apple
 	1Albert Gore Jr.	, 	2Former Vice President	 of the United States
-	1Robert A. Iger	, 	2Chairman	 and CEO The Walt Disney Company
-	1Andrea Jung	, 	President	 and CEO Grameen America, Inc.
+	1Robert A. Iger	, 	2Chairman	 and 	2CEO	 The Walt Disney Company
+	1Andrea Jung	, 		2President		 and 	2CEO	 Grameen America, Inc.
 	1Ronald D. Sugar	, Ph. D., 	2Former Chairman	 and 	2CEO	 Northrop Grumman
 	1Susan L. Wagner	, 	2Co-founder	 and 	2Director	 BlackRock
 
