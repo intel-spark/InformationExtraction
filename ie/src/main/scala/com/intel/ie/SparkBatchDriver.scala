@@ -38,7 +38,8 @@ object SparkBatchDriver {
 
     Iterator.continually(IOUtils.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
-        if (new File(line).exists()) {
+        if (new File(line).exists() || line.startsWith("hdfs")) {
+          println(s"processing $line")
           val data = getDataset(sc, line)
           if (line.endsWith(".csv")) {
             processCSVFiles(data)
