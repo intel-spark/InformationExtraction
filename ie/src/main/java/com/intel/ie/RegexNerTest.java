@@ -20,10 +20,7 @@ public class RegexNerTest {
     static {
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner");
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.combined);
-        props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
-                "model/english.muc.7class.distsim.crf.ser.gz," +
-                "model/english.conll.4class.distsim.crf.ser.gz," +
-                "model/intel-english.3class.distsim.crf.ser.gz,");
+        props.setProperty("ner.model",IntelKBPConfig.NER_MODELS);
         pipeline = new StanfordCoreNLP(props);
     }
 
