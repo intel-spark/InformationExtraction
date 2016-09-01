@@ -30,7 +30,7 @@ public class IntelKBPStatisticalExtractor extends KBPStatisticalExtractor {
     public static File TRAIN_FILE = new File("data/kbp/train.conll");
 
     @ArgumentParser.Option(name = "intel_model", gloss = "The path to the intel_model")
-    private static String MODEL = IntelKBPConfig.KBP_CLASSIFIER;
+    private static String MODEL = IntelKBPConfig.Intel_KBP_CLASSIFIER;
 
 
     @ArgumentParser.Option(name = "feature_threshold", gloss = "The minimum number of times to see a feature to count it")

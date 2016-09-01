@@ -21,16 +21,18 @@ case class RelationLine(
 )
 
 object SparkBatchDriver {
+  
+  private var partitionSize = 8
 
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.WARN)
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local")
         .setAppName(this.getClass.getSimpleName)
     )
     RelationExtractor.init()
+    this.partitionSize = args(0).toInt
 
     println("Initilization finished:")
 
@@ -92,7 +94,7 @@ object SparkBatchDriver {
   }
 
   private def getDataset(sc: SparkContext, path: String): RDD[String] = {
-    val rdd = sc.textFile(path)
+    val rdd = sc.textFile(path, this.partitionSize)
     rdd.unpersist(true)
     rdd.count()
     rdd

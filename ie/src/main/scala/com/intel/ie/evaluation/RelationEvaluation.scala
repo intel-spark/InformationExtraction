@@ -25,14 +25,18 @@ object RelationEvaluation {
     println("loading models...")
     val sc = SparkContext.getOrCreate(
       new SparkConf()
-        .setMaster("local[*]")
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive", "true")
 
+
+    val textPath = args(0) // "data/evaluation/web/"
+    val labelPath = args(1) // "data/evaluation/extraction"
+    val partitionSize = args(2).toInt
+    
     val sqlContext = SQLContext.getOrCreate(sc)
     val st = System.nanoTime()
-    val extractionResult = sc.wholeTextFiles(textPath, 8)
+    val extractionResult = sc.wholeTextFiles(textPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
@@ -47,7 +51,7 @@ object RelationEvaluation {
     }
     val extractedDF = sqlContext.createDataFrame(extractionResult).cache()
 
-    val labelledResult = sc.wholeTextFiles(labelPath, 8)
+    val labelledResult = sc.wholeTextFiles(labelPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
@@ -137,10 +141,7 @@ object RelationEvaluation {
     Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt))
   }
 
-  val textPath = "data/evaluation/web/"
-  val labelPath = "data/evaluation/extraction"
-  val partitionSize = 12
-  val companyList = //Array("NCR Corporation")
+  private val companyList = //Array("NCR Corporation")
       new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
 }
 

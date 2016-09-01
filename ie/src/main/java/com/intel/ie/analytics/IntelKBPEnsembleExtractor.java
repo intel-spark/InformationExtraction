@@ -30,7 +30,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     protected static final Redwood.RedwoodChannels logger = Redwood.channels(edu.stanford.nlp.ie.KBPRelationExtractor.class);
 
     @ArgumentParser.Option(name = "model", gloss = "The path to the model")
-    private static String STATISTICAL_MODEL = IntelKBPConfig.KBP_CLASSIFIER;
+    private static String STATISTICAL_MODEL = IntelKBPConfig.Intel_KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
     private static String SEMGREX_DIR = IntelKBPConfig.KBP_SEMGREX_DIR;
