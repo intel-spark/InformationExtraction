@@ -31,10 +31,10 @@ object SparkBatchDriver {
       new SparkConf()
         .setAppName(this.getClass.getSimpleName)
     )
-    RelationExtractor.init()
+//    RelationExtractor.init()
     this.partitionSize = args(0).toInt
 
-    println("Initilization finished:")
+//    println("Initilization finished:")
 
     Iterator.continually(IOUtils.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
@@ -91,13 +91,14 @@ object SparkBatchDriver {
         updateFullNames(r.subjectGloss())
         RelationLine(r.subjectGloss(), r.relationGloss().split(":")(1), r.objectGloss(), sen)
       }
-    }.map(rl => RelationLine(getFullName(rl.name), rl.relation, rl.entity, rl.text))
+    }
+      .map(rl => RelationLine(getFullName(rl.name), rl.relation, rl.entity, rl.text))
   }
 
   private def getDataset(sc: SparkContext, path: String): RDD[String] = {
     val rdd = sc.textFile(path, this.partitionSize)
-    rdd.unpersist(true)
-    rdd.count()
+//    rdd.unpersist(true)
+//    rdd.count()
     rdd
   }
 

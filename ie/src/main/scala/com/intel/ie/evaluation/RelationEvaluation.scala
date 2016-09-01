@@ -8,12 +8,12 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.{SparkConf, SparkContext}
 
 case class RelationRow(
-                        company: String,
-                        name: String,
-                        relation: String,
-                        entity: String,
-                        text: String
-                      )
+  company: String,
+  name: String,
+  relation: String,
+  entity: String,
+  text: String
+)
 
 
 object RelationEvaluation {
@@ -33,10 +33,9 @@ object RelationEvaluation {
     val textPath = args(0) // "data/evaluation/web/"
     val labelPath = args(1) // "data/evaluation/extraction"
     val partitionSize = args(2).toInt
-    
+    val bDetails = args(3).toBoolean
     val sqlContext = SQLContext.getOrCreate(sc)
-    val companyList = //Array("NCR Corporation")
-    //new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+    val companyList = //Array("NCR Corporation")    
     sc.wholeTextFiles(labelPath, partitionSize).map { case (title, content) =>
         new File(new File(title).getParent).getName        
     }.collect()
@@ -46,15 +45,15 @@ object RelationEvaluation {
     val extractionResult = sc.wholeTextFiles(textPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
-        companyList.contains(companyName)
+        companyList.contains(companyName)        
       }.flatMap { case (title, content) =>
       val companyName = new File(new File(title).getParent).getName
       content.split("\n")
         .map(line => if (line.length > 500) line.substring(0, 500) else line)
-        .map(line => line.replaceAll("\\(|\\)|\"|\"|``|''", ""))
+        .map(line => line.replaceAll("\\(|\\)|\"|\"|``|''", "").replace("  ", " "))
         .flatMap(line => SparkBatchDriver.getWorkRelation(line))
-        .map(rl => (companyName, rl))
-        .map(t => RelationRow(t._1, t._2.name, t._2.relation, t._2.entity, t._2.text))
+//        .map(rl => (companyName, rl))
+        .map(t => RelationRow(companyName, t.name, t.relation, t.entity, t.text))
     }
     val extractedDF = sqlContext.createDataFrame(extractionResult).cache()
 
@@ -66,7 +65,8 @@ object RelationEvaluation {
       .flatMap { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         content.split("\n").filter(_.nonEmpty).map { line =>
-          val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF|\\(|\\)|\"|\"|``|''", "").replace("  ", " ").split("\t")
+          val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF|\\(|\\)|\"|\"|``|''", "")
+            .replace("  ", " ").split("\t")
           RelationRow(companyName, elements(0), elements(1), elements(2), elements(3))
         }
       }
@@ -75,8 +75,8 @@ object RelationEvaluation {
     getResultForOneRelation("all", extractedDF, labelledDF, "title", sc)
     println((System.nanoTime() - st) / 1e9 + " seconds")
 
-    // details evaluation
-    if (args.nonEmpty && args(0) == "-d") {
+    // details evaluation    
+    if (bDetails) {
       val pageResults = companyList.map { companyName =>
         val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
         val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
@@ -97,15 +97,20 @@ object RelationEvaluation {
         println(s"overall result for $relation --- recall: $recall. precision: $precision")
       }
       printResultForOneRelation("title", 0)
+      
+      extractedDF.unpersist()
+      labelledDF.unpersist()
     }
   }
 
 
-  def getResultForOneRelation(company: String, extractedRawDF: DataFrame, labelledRawDF: DataFrame, relationType: String, sc: SparkContext): Array[PageResult] = {
+  def getResultForOneRelation(company: String, extractedRawDF: DataFrame, labelledRawDF: DataFrame, 
+    relationType: String, sc: SparkContext): Array[PageResult] = {
 
     val extractedLowerDF = extractedRawDF
       .where(col("relation").isin(relationType))
-      .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"), lower(extractedRawDF("entity")).alias("entity"), extractedRawDF("text"))
+      .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"), 
+        lower(extractedRawDF("entity")).alias("entity"), extractedRawDF("text"))
     val extractedDF = extractedLowerDF
       .select("name", "relation", "entity")
       .distinct()
@@ -113,8 +118,9 @@ object RelationEvaluation {
 
     val labelledLowDF = labelledRawDF
       .where(col("relation").isin(relationType))
-      .where(col("relation").isin(relationType))
-      .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"), lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
+//      .where(col("relation").isin(relationType))
+      .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"), 
+        lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
     val labelledDF = labelledLowDF
       .select("name", "relation", "entity")
       .distinct()
@@ -145,7 +151,9 @@ object RelationEvaluation {
 
     labelledDF.unpersist()
     extractedDF.unpersist()
-    Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt))
+    correctDF.unpersist()
+    Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, 
+      labelledDF.count() - correctCt))
   }  
 }
 
