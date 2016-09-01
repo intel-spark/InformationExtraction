@@ -35,7 +35,14 @@ object RelationEvaluation {
     val partitionSize = args(2).toInt
     
     val sqlContext = SQLContext.getOrCreate(sc)
-    val st = System.nanoTime()
+    val companyList = //Array("NCR Corporation")
+    //new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+    sc.wholeTextFiles(labelPath, partitionSize).map { case (title, content) =>
+        new File(new File(title).getParent).getName        
+    }.collect()
+    
+    val st = System.nanoTime()   
+    
     val extractionResult = sc.wholeTextFiles(textPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
@@ -139,10 +146,7 @@ object RelationEvaluation {
     labelledDF.unpersist()
     extractedDF.unpersist()
     Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, labelledDF.count() - correctCt))
-  }
-
-  private val companyList = //Array("NCR Corporation")
-      new File("data/evaluation/extraction").listFiles().map(f => f.getName).sorted
+  }  
 }
 
 case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
