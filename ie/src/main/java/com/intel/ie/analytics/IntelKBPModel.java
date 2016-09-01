@@ -4,7 +4,8 @@ import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.*;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 
@@ -23,10 +24,7 @@ public class IntelKBPModel {
 
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.combined);
-        props.setProperty("ner.model","model/english.all.3class.distsim.crf.ser.gz," +
-                "model/english.muc.7class.distsim.crf.ser.gz," +
-                "model/english.conll.4class.distsim.crf.ser.gz," +
-                "model/intel-english.3class.distsim.crf.ser.gz,");
+        props.setProperty("ner.model", IntelKBPConfig.NER_MODELS);
 
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));
@@ -36,7 +34,7 @@ public class IntelKBPModel {
 
         IOUtils.console("sentence> ", line -> {
             HashMap<RelationTriple, String> triple = extract(line);
-            for (RelationTriple s: triple.keySet()){
+            for (RelationTriple s : triple.keySet()) {
                 System.out.println(s);
             }
         });
@@ -45,17 +43,17 @@ public class IntelKBPModel {
     public static HashMap<RelationTriple, String> extract(String doc) {
 
         Annotation ann = new Annotation(doc
-          .replaceAll("\u00a0", " ")
-          .replaceAll("\u200B|\u200C|\u200D|\uFEFF", ""));
+                .replaceAll("\u00a0", " ")
+                .replaceAll("\u200B|\u200C|\u200D|\uFEFF", ""));
         pipeline.annotate(ann);
         HashMap<RelationTriple, String> relations = new HashMap<RelationTriple, String>();
 
         for (CoreMap sentence : ann.get(CoreAnnotations.SentencesAnnotation.class)) {
-            for(RelationTriple r : sentence.get(CoreAnnotations.KBPTriplesAnnotation.class)){
-                if(r.relationGloss().trim().equals("per:title")
+            for (RelationTriple r : sentence.get(CoreAnnotations.KBPTriplesAnnotation.class)) {
+                if (r.relationGloss().trim().equals("per:title")
                         || r.relationGloss().trim().equals("per:employee_of")
                         || r.relationGloss().trim().equals("org:top_members/employees")
-                        || r.relationGloss().trim().equals("per:former_title")){
+                        || r.relationGloss().trim().equals("per:former_title")) {
                     relations.put(r, sentence.toString());
                 }
             }
@@ -63,9 +61,9 @@ public class IntelKBPModel {
         return relations;
     }
 
-    private static String getOriginalText(List<CoreLabel> list){
+    private static String getOriginalText(List<CoreLabel> list) {
         String str = "";
-        for(CoreLabel cl: list){
+        for (CoreLabel cl : list) {
             str += cl.originalText() + " ";
         }
         return str;

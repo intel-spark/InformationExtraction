@@ -52,7 +52,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     /**
      * Ensemble strategy
      */
-    private IntelEnsembleStrategy ensembleStrategy = IntelEnsembleStrategy.HIGHEST_SCORE;
+    private IntelEnsembleStrategy ensembleStrategy = IntelKBPConfig.ENSEMBLE_STRATEGY;
 
     /**
      * Creates a new ensemble extractor from the given argument extractors.
@@ -67,7 +67,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
         this.ensembleStrategy = ensembleStrategy;
         return this;
     }
-    
+
     @Override
     public Pair<String, Double> classify(KBPInput input) {
         switch (ensembleStrategy) {

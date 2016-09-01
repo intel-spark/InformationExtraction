@@ -86,7 +86,7 @@ public class IntelKBPAnnotator implements Annotator {
                     new IntelKBPSemgrexExtractor(semgrexdir),
                     IntelKBPStatisticalExtractor.loadStatisticalExtractor(),
                     DefaultKBPStatisticalExtractor.loadStatisticalExtractor()
-            ).setEnsembleStrategy(IntelEnsembleStrategy.VOTE);
+            ).setEnsembleStrategy(IntelKBPConfig.ENSEMBLE_STRATEGY);
             
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeIOException(e);
