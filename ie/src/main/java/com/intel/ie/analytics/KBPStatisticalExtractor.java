@@ -4,7 +4,6 @@ package com.intel.ie.analytics;
 import edu.stanford.nlp.classify.*;
 import edu.stanford.nlp.ie.NumberNormalizer;
 import edu.stanford.nlp.ie.machinereading.structure.Span;
-import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.Datum;
 import edu.stanford.nlp.ling.RVFDatum;
@@ -15,18 +14,14 @@ import edu.stanford.nlp.stats.Counter;
 import edu.stanford.nlp.stats.Counters;
 import edu.stanford.nlp.util.*;
 import edu.stanford.nlp.util.logging.Redwood;
-import edu.stanford.nlp.util.logging.RedwoodConfiguration;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static edu.stanford.nlp.util.logging.Redwood.Util.endTrack;
-import static edu.stanford.nlp.util.logging.Redwood.Util.forceTrack;
 
 /**
  * A relation extractor to work with Victor's new KBP data.
@@ -42,7 +37,7 @@ public class KBPStatisticalExtractor implements IntelKBPRelationExtractor, Seria
     public static File TEST_FILE = new File("test.conll");
 
     @ArgumentParser.Option(name = "model", gloss = "The dataset to test on")
-    public static String MODEL_FILE = IntelKBPConfig.KBP_CLASSIFIER;
+    public static String MODEL_FILE = IntelKBPConfig.Intel_KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();

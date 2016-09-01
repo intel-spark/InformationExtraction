@@ -13,7 +13,7 @@ public class IntelKBPConfig {
     public static String KBP_TOKENSREGEX_DIR = "data/kbp/tokensregex";
     public static String KBP_SEMGREX_DIR = "data/kbp/semgrex";
 
-    public static String KBP_CLASSIFIER = "data/kbp/tac-re-lr.ser.gz";
+    public static String Intel_KBP_CLASSIFIER = "model/tac-re-lr.ser.gz";
 
     public static IntelEnsembleStrategy ENSEMBLE_STRATEGY = IntelEnsembleStrategy.WEIGHTED_VOTE;
 
