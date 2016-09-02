@@ -61,8 +61,7 @@ object RelationEvaluation {
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
-      }
-      .flatMap { case (title, content) =>
+      }.flatMap { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         content.split("\n").filter(_.nonEmpty).map { line =>
           val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF|\\(|\\)|\"|\"|``|''", "")
