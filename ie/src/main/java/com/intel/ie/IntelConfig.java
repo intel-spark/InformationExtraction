@@ -67,6 +67,7 @@ public class IntelConfig {
 
     // Filter Model
     public static String BAD_WORDS_FILE = getPath("BAD_WORDS_FILE");
-
-
+    
+    //get annotators
+    public static String annotators = prop.getProperty("ANNOTATORS");
 }

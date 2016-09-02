@@ -22,8 +22,7 @@ public class IntelKBPModel {
     static StanfordCoreNLP pipeline = null;
 
     static {
-
-        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
+        props.setProperty("annotators", IntelConfig.annotators);
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelConfig.combined);
         props.setProperty("ner.model", IntelConfig.NER_MODELS);
 

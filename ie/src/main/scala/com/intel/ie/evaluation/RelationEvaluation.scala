@@ -6,6 +6,7 @@ import com.intel.ie.SparkBatchDriver
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
 import org.apache.spark.{SparkConf, SparkContext}
+import scopt.OptionParser
 
 case class RelationRow(
   company: String,
@@ -15,44 +16,78 @@ case class RelationRow(
   text: String
 )
 
+case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
 
 object RelationEvaluation {
+  case class Params(
+   textPath: String = null,
+   labelPath: String = null,
+   partitionSize: Int = 8,
+   withDetail: Boolean = false)
   
   def main(args: Array[String]) {
+    val defaultParams = Params()
+
+    val parser = new OptionParser[Params]("RelationEvaluation") {
+      head("Relation Revaluation System")
+      opt[Int]("partitionSize")
+        .text(s"partition size, default: ${defaultParams.partitionSize}")
+        .action((x, c) => c.copy(partitionSize = x))
+      opt[Boolean]("withDetail")
+        .text(s"whether to show detailed evaluation result for each company, default: ${defaultParams.withDetail}")
+        .action((x, c) => c.copy(withDetail = x))
+      arg[String]("<textPath>")
+        .text("input path to extract relations")
+        .required()
+        .action((x, c) => c.copy(textPath = x))
+      arg[String]("<labelPath>")
+        .text("input path which has already labeled entity")
+        .required()
+        .action((x, c) => c.copy(labelPath = x))
+    }
+
+    parser.parse(args, defaultParams) match {
+      case Some(params) => run(params)
+      case _ => sys.exit(1)
+    }
+  }
+
+  def run(params: Params): Unit = {
+    println(s"RelationEvaluation with parameters:\n$params")
+
     Logger.getLogger("org").setLevel(Level.WARN)
     Logger.getLogger("intel").setLevel(Level.WARN)
     Logger.getLogger("edu").setLevel(Level.WARN)
-    println("loading models...")
+    
     val sc = SparkContext.getOrCreate(
       new SparkConf()
         .setAppName(this.getClass.getSimpleName)
     )
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive", "true")
 
-
-    val textPath = args(0) // "data/evaluation/web/"
-    val labelPath = args(1) // "data/evaluation/extraction"
-    val partitionSize = args(2).toInt
-    val bDetails = args(3).toBoolean
+    val textPath = params.textPath // "data/evaluation/web/"
+    val labelPath = params.labelPath // "data/evaluation/extraction"
+    val partitionSize = params.partitionSize
+    
     val sqlContext = SQLContext.getOrCreate(sc)
     val companyList = //Array("NCR Corporation")    
-    sc.wholeTextFiles(labelPath, partitionSize).map { case (title, content) =>
-        new File(new File(title).getParent).getName        
-    }.collect()
-    
-    val st = System.nanoTime()   
-    
+      sc.wholeTextFiles(labelPath, partitionSize).map { case (title, content) =>
+        new File(new File(title).getParent).getName
+      }.collect()
+
+    val st = System.nanoTime()
+
     val extractionResult = sc.wholeTextFiles(textPath, partitionSize)
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
-        companyList.contains(companyName)        
+        companyList.contains(companyName)
       }.flatMap { case (title, content) =>
       val companyName = new File(new File(title).getParent).getName
       content.split("\n")
         .map(line => if (line.length > 500) line.substring(0, 500) else line)
         .map(line => line.replaceAll("\\(|\\)|\"|\"|``|''", "").replace("  ", " "))
         .flatMap(line => SparkBatchDriver.getWorkRelation(line))
-//        .map(rl => (companyName, rl))
+        //        .map(rl => (companyName, rl))
         .map(t => RelationRow(companyName, t.name, t.relation, t.entity, t.text))
     }
     val extractedDF = sqlContext.createDataFrame(extractionResult).cache()
@@ -61,22 +96,21 @@ object RelationEvaluation {
       .filter { case (title, content) =>
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
+      }.flatMap { case (title, content) =>
+      val companyName = new File(new File(title).getParent).getName
+      content.split("\n").filter(_.nonEmpty).map { line =>
+        val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF|\\(|\\)|\"|\"|``|''", "")
+          .replace("  ", " ").split("\t")
+        RelationRow(companyName, elements(0), elements(1), elements(2), elements(3))
       }
-      .flatMap { case (title, content) =>
-        val companyName = new File(new File(title).getParent).getName
-        content.split("\n").filter(_.nonEmpty).map { line =>
-          val elements = line.replaceAll("\u00a0", " ").replaceAll("\u200B|\u200C|\u200D|\uFEFF|\\(|\\)|\"|\"|``|''", "")
-            .replace("  ", " ").split("\t")
-          RelationRow(companyName, elements(0), elements(1), elements(2), elements(3))
-        }
-      }
+    }
     val labelledDF = sqlContext.createDataFrame(labelledResult).cache()
 
     getResultForOneRelation("all", extractedDF, labelledDF, "title", sc)
     println((System.nanoTime() - st) / 1e9 + " seconds")
 
     // details evaluation    
-    if (bDetails) {
+    if (params.withDetail) {
       val pageResults = companyList.map { companyName =>
         val extractedFiltered = extractedDF.where(col("company") === companyName).cache()
         val labelledFiltered = labelledDF.where(col("company") === companyName).cache()
@@ -97,19 +131,18 @@ object RelationEvaluation {
         println(s"overall result for $relation --- recall: $recall. precision: $precision")
       }
       printResultForOneRelation("title", 0)
-      
+
       extractedDF.unpersist()
       labelledDF.unpersist()
     }
   }
 
-
-  def getResultForOneRelation(company: String, extractedRawDF: DataFrame, labelledRawDF: DataFrame, 
-    relationType: String, sc: SparkContext): Array[PageResult] = {
+  def getResultForOneRelation(company: String, extractedRawDF: DataFrame, labelledRawDF: DataFrame,
+                              relationType: String, sc: SparkContext): Array[PageResult] = {
 
     val extractedLowerDF = extractedRawDF
       .where(col("relation").isin(relationType))
-      .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"), 
+      .select(lower(extractedRawDF("name")).alias("name"), extractedRawDF("relation"),
         lower(extractedRawDF("entity")).alias("entity"), extractedRawDF("text"))
     val extractedDF = extractedLowerDF
       .select("name", "relation", "entity")
@@ -118,16 +151,16 @@ object RelationEvaluation {
 
     val labelledLowDF = labelledRawDF
       .where(col("relation").isin(relationType))
-//      .where(col("relation").isin(relationType))
-      .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"), 
-        lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
+      //      .where(col("relation").isin(relationType))
+      .select(lower(labelledRawDF("name")).alias("name"), labelledRawDF("relation"),
+      lower(labelledRawDF("entity")).alias("entity"), labelledRawDF("text"))
     val labelledDF = labelledLowDF
       .select("name", "relation", "entity")
       .distinct()
       .cache()
 
     val correctDF = labelledDF.intersect(extractedDF).distinct().cache()
-    
+
     println(company)
     println(Console.BLUE + "correct:")
     println(correctDF.showString(100, false))
@@ -152,10 +185,7 @@ object RelationEvaluation {
     labelledDF.unpersist()
     extractedDF.unpersist()
     correctDF.unpersist()
-    Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt, 
+    Array(PageResult(company, extractedCt, labelledCt, correctCt, extractedDF.count() - correctCt,
       labelledDF.count() - correctCt))
-  }  
+  }
 }
-
-case class PageResult(company: String, extracted: Long, labelled: Long, correct: Long, wrong: Long, missed: Long)
-
