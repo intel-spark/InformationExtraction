@@ -2,7 +2,7 @@ package com.intel.ie.evaluation.preparation
 
 import java.util.Properties
 
-import com.intel.ie.analytics.IntelKBPConfig
+import com.intel.ie.IntelConfig
 import edu.stanford.nlp.pipeline.StanfordCoreNLP
 
 /**
@@ -13,7 +13,7 @@ object NerHelper {
   val props: Properties = new Properties
   var pipeline: StanfordCoreNLP = null
   props.put("annotators", "tokenize, ssplit, pos, lemma, ner, regexner")
-  val options2 = "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.Regex_NER_caseless + ";" + IntelKBPConfig.Regex_NER_cased
+  val options2 = "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelConfig.Regex_NER_caseless + ";" + IntelConfig.Regex_NER_cased
 
   props.setProperty("regexner.mapping", options2)
   pipeline = new StanfordCoreNLP(props)

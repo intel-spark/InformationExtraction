@@ -2,13 +2,13 @@ package com.intel.ie.evaluation.preparation.label
 
 import java.io.{BufferedWriter, FileWriter}
 
+import com.intel.ie.analytics.IOUtils
+import com.intel.ie.evaluation.EvalPaths
+import com.intel.ie.evaluation.preparation.NerHelper
 import edu.stanford.nlp.ling.CoreAnnotations
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation
 import edu.stanford.nlp.pipeline.Annotation
 import edu.stanford.nlp.util.CoreMap
-import com.intel.ie.evaluation.EvalPaths
-import com.intel.ie.evaluation.preparation.NerHelper
-import com.intel.ie.analytics.IOUtils
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
@@ -32,7 +32,6 @@ object Label {
     val bw = new BufferedWriter(new FileWriter(EvalPaths.labeledPath(company)))
     bw.write(result)
     bw.close()
-    Extraction.extract(company)
   }
 
   class FixedList[A](max: Int) extends Traversable[A] {

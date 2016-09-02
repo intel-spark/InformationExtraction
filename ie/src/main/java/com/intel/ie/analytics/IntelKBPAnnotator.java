@@ -1,5 +1,6 @@
 package com.intel.ie.analytics;
 
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.hcoref.CorefCoreAnnotations;
 import edu.stanford.nlp.hcoref.data.CorefChain;
 import edu.stanford.nlp.ie.machinereading.structure.Span;
@@ -33,10 +34,10 @@ public class IntelKBPAnnotator implements Annotator {
     private static Redwood.RedwoodChannels log = Redwood.channels(IntelKBPAnnotator.class);
 
     @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
-    private String semgrexdir = IntelKBPConfig.KBP_SEMGREX_DIR;
+    private String semgrexdir = IntelConfig.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name = "tokensregex", gloss = "Tokensregex patterns directory")
-    private String tokensregexdir = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
+    private String tokensregexdir = IntelConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name = "regexner.cased", gloss = "The tokensregexner cased path")
     private String regexnerCasedPath = DefaultPaths.DEFAULT_KBP_REGEXNER_CASED;
@@ -86,7 +87,7 @@ public class IntelKBPAnnotator implements Annotator {
                     new IntelKBPSemgrexExtractor(semgrexdir),
                     IntelKBPStatisticalExtractor.loadStatisticalExtractor(),
                     DefaultKBPStatisticalExtractor.loadStatisticalExtractor()
-            ).setEnsembleStrategy(IntelKBPConfig.ENSEMBLE_STRATEGY);
+            ).setEnsembleStrategy(IntelConfig.ENSEMBLE_STRATEGY);
             
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeIOException(e);

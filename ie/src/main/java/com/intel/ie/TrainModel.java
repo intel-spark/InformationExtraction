@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class TrainModel {
     public static void main(String[] args) {
-        String path = "data/NERDepartment/department.prop";
+        String path = IntelConfig.DEPARTMENT_TRAIN_PROPERTY;
         Properties props = StringUtils.propFileToProperties(path);
 
         SeqClassifierFlags flags = new SeqClassifierFlags(props);

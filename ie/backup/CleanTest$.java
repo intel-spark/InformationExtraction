@@ -1,11 +1,4 @@
-package com.intel.ie.evaluation.preparation.crawl
-
-import java.io.{BufferedWriter, FileWriter}
-
-import com.intel.ie.evaluation.EvalPaths
-
-import scala.io.Source
-import scala.reflect.io.File
+package com.intel.ie.evaluation.preparation.crawl;
 
 /**
   * Created by xianyan on 7/28/16.
@@ -13,17 +6,15 @@ import scala.reflect.io.File
 object CleanTest {
 
   def webContentPath(label: String, i: Int): String = {
-    val root = "data/evaluation/web4/"
-    val dir = File(s"${root}${label}/")
+    val dir = File(s"${IntelConfig.COMPANY_PAGE_PATH}${label}/")
     if (!dir.exists) dir.createDirectory()
-    s"${root}$label/page-${label}_${i}.txt"
+    s"${dir}page-${label}_${i}.txt"
   }
 
   def webSavePath(label: String, i: Int): String = {
-    val root = "data/evaluation/web/"
-    val dir = File(s"${root}${label}/")
+    val dir = File(s"${IntelConfig.COMPANY_PAGE_PATH}${label}/")
     if (!dir.exists) dir.createDirectory()
-    s"${root}$label/page-${label}_${i}.txt"
+    s"${dir}page-${label}_${i}.txt"
   }
 
   def reviseLine(line: String): String =
@@ -31,7 +22,6 @@ object CleanTest {
 
 
   def main(args: Array[String]): Unit = {
-    val crawler = new Crawler()
     val urlMap = EvalPaths.urlMap()
     for ((label, urlStr) <- urlMap) {
       println(webContentPath(label, 0))

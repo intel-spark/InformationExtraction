@@ -2,6 +2,7 @@ package com.intel.ie.evaluation.preparation.label
 
 import java.io.{File, PrintWriter}
 
+import com.intel.ie.IntelConfig
 import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.collection.mutable.ArrayBuffer
@@ -14,7 +15,7 @@ object TabConverter {
     val conf = new SparkConf().setMaster("local").setAppName("ss")
     val sc = new SparkContext(conf)
 
-    val path = "data/evaluation/manual/"
+    val path = IntelConfig.MANUAL_LABEL_PATH
     new File(path).listFiles().foreach { folder =>
       val company = folder.getName
       folder.listFiles().foreach { file =>
@@ -61,7 +62,7 @@ object TabConverter {
 
         relations.collect().foreach(println)
 
-        val outputFolder = "data/evaluation/extraction/" + company
+        val outputFolder = IntelConfig.RELATION_EXTRACTION_PATH + company
         new File(outputFolder).mkdir()
         val pw = new PrintWriter(outputFolder + "/" + file.getName)
         relations.collect().foreach( line => pw.println(line))

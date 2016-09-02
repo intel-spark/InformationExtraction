@@ -3,7 +3,7 @@ package com.intel.ie
 import java.io.File
 
 import com.intel.ie.analytics.{IOUtils, IntelKBPModel}
-import com.intel.ie.relation.RelationExtractor
+import com.intel.ie.evaluation.preparation.crawl.Crawler
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
@@ -14,15 +14,16 @@ import scala.collection.mutable.ListBuffer
 import scala.util.Try
 
 case class RelationLine(
-  name: String,
-  relation: String,
-  entity: String,
-  text: String
-)
+                         name: String,
+                         relation: String,
+                         entity: String,
+                         text: String
+                       )
 
 object SparkBatchDriver {
-  
+
   private var partitionSize = 8
+
 
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.WARN)
@@ -31,10 +32,10 @@ object SparkBatchDriver {
       new SparkConf()
         .setAppName(this.getClass.getSimpleName)
     )
-//    RelationExtractor.init()
+    //    RelationExtractor.init()
     this.partitionSize = args(0).toInt
 
-//    println("Initilization finished:")
+    //    println("Initilization finished:")
 
     Iterator.continually(IOUtils.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
@@ -46,7 +47,11 @@ object SparkBatchDriver {
           } else {
             processTextFiles(data).show(100, false)
           }
-        } else {
+        } else if (line.startsWith("http") || line.startsWith("www")) {
+          val data = sc.parallelize(Crawler.crawlContent(line), this.partitionSize)
+          processTextFiles(data).show(100, false)
+        }
+        else {
           processSentence(line)
         }
       }
@@ -66,6 +71,7 @@ object SparkBatchDriver {
     relations.show(100, false)
   }
 
+
   private def processSentence(line: String): Unit = {
     println(RegexNerTest.extractNER(line).asScala.mkString(", "))
     IntelKBPModel.extract(line).asScala.foreach(t => println(t._1))
@@ -81,7 +87,7 @@ object SparkBatchDriver {
     val sqlContext = SQLContext.getOrCreate(data.sparkContext)
     sqlContext.createDataFrame(relations)
   }
-  
+
   def getWorkRelation(line: String): Seq[RelationLine] = {
     val raw = IntelKBPModel.extract(line)
     raw.asScala.toSeq.map { case (r, sen) =>
@@ -97,8 +103,8 @@ object SparkBatchDriver {
 
   private def getDataset(sc: SparkContext, path: String): RDD[String] = {
     val rdd = sc.textFile(path, this.partitionSize)
-//    rdd.unpersist(true)
-//    rdd.count()
+    //    rdd.unpersist(true)
+    //    rdd.count()
     rdd
   }
 
