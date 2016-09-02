@@ -1,6 +1,7 @@
 package com.intel.ie.analytics;
 
 
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.classify.RVFDataset;
@@ -27,10 +28,10 @@ public class IntelKBPStatisticalExtractor extends KBPStatisticalExtractor {
     private static final long serialVersionUID = 1L;
 
     @ArgumentParser.Option(name = "train", gloss = "The dataset to train on")
-    public static File TRAIN_FILE = new File("data/kbp/train.conll");
+    public static File TRAIN_FILE = new File(IntelConfig.INTEL_RELATION_CORP);
 
     @ArgumentParser.Option(name = "intel_model", gloss = "The path to the intel_model")
-    private static String MODEL = IntelKBPConfig.Intel_KBP_CLASSIFIER;
+    private static String MODEL = IntelConfig.Intel_KBP_CLASSIFIER;
 
 
     @ArgumentParser.Option(name = "feature_threshold", gloss = "The minimum number of times to see a feature to count it")

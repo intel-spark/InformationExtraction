@@ -2,7 +2,7 @@ package com.intel.ie.evaluation
 
 import java.io.File
 
-import com.intel.ie.RegexNerTest
+import com.intel.ie.{IntelConfig, RegexNerTest}
 import com.intel.ie.analytics.KBPModel
 import com.intel.ie.analytics._
 
@@ -27,7 +27,7 @@ object NerEvaluationTest {
     var fn = 0
     var tn = 0
 
-    val files = new File("data/evaluation/labeled").listFiles()
+    val files = new File(IntelConfig.NER_LABELED_PATH).listFiles()
     var res = List(List("Company", "Precision", "Recall", "F1"))
 
     println("please input the entity type you want to test, separated by \",\", \ne.g. PERSON, TITLE\n>")

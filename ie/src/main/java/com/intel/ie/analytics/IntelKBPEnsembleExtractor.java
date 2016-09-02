@@ -1,6 +1,7 @@
 package com.intel.ie.analytics;
 
 
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.io.IOUtils;
@@ -30,13 +31,13 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     protected static final Redwood.RedwoodChannels logger = Redwood.channels(edu.stanford.nlp.ie.KBPRelationExtractor.class);
 
     @ArgumentParser.Option(name = "model", gloss = "The path to the model")
-    private static String STATISTICAL_MODEL = IntelKBPConfig.Intel_KBP_CLASSIFIER;
+    private static String STATISTICAL_MODEL = IntelConfig.Intel_KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "semgrex", gloss = "Semgrex patterns directory")
-    private static String SEMGREX_DIR = IntelKBPConfig.KBP_SEMGREX_DIR;
+    private static String SEMGREX_DIR = IntelConfig.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name = "tokensregex", gloss = "Tokensregex patterns directory")
-    private static String TOKENSREGEX_DIR = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
+    private static String TOKENSREGEX_DIR = IntelConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     private static Optional<String> PREDICTIONS = Optional.empty();
@@ -52,7 +53,7 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     /**
      * Ensemble strategy
      */
-    private IntelEnsembleStrategy ensembleStrategy = IntelKBPConfig.ENSEMBLE_STRATEGY;
+    private IntelEnsembleStrategy ensembleStrategy = IntelConfig.ENSEMBLE_STRATEGY;
 
     /**
      * Creates a new ensemble extractor from the given argument extractors.

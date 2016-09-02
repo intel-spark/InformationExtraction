@@ -1,6 +1,7 @@
 package com.intel.ie.analytics;
 
 
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.*;
 import edu.stanford.nlp.ie.NumberNormalizer;
 import edu.stanford.nlp.ie.machinereading.structure.Span;
@@ -31,13 +32,13 @@ public class KBPStatisticalExtractor implements IntelKBPRelationExtractor, Seria
     private static final long serialVersionUID = 1L;
 
     @ArgumentParser.Option(name = "train", gloss = "The dataset to train on")
-    public static File TRAIN_FILE = new File("data/kbp/train.conll");
+    public static File TRAIN_FILE = new File(IntelConfig.INTEL_RELATION_CORP);
 
     @ArgumentParser.Option(name = "test", gloss = "The dataset to test on")
     public static File TEST_FILE = new File("test.conll");
 
     @ArgumentParser.Option(name = "model", gloss = "The dataset to test on")
-    public static String MODEL_FILE = IntelKBPConfig.Intel_KBP_CLASSIFIER;
+    public static String MODEL_FILE = IntelConfig.Intel_KBP_CLASSIFIER;
 
     @ArgumentParser.Option(name = "predictions", gloss = "Dump model predictions to this file")
     public static Optional<String> PREDICTIONS = Optional.empty();
@@ -546,8 +547,8 @@ public class KBPStatisticalExtractor implements IntelKBPRelationExtractor, Seria
 
     public static Counter<String> features(KBPInput input) {
         // Ensure RegexNER Tags!
-        input.sentence.regexner(IntelKBPConfig.Regex_NER_caseless, false);
-        input.sentence.regexner(IntelKBPConfig.Regex_NER_cased, true);
+        input.sentence.regexner(IntelConfig.Regex_NER_caseless, false);
+        input.sentence.regexner(IntelConfig.Regex_NER_cased, true);
 
         // Get useful variables
         ClassicCounter<String> feats = new ClassicCounter<>();

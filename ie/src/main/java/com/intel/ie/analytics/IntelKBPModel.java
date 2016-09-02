@@ -1,5 +1,6 @@
 package com.intel.ie.analytics;
 
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -23,8 +24,8 @@ public class IntelKBPModel {
     static {
 
         props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,regexner,parse,mention,coref");
-        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelKBPConfig.combined);
-        props.setProperty("ner.model", IntelKBPConfig.NER_MODELS);
+        props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelConfig.combined);
+        props.setProperty("ner.model", IntelConfig.NER_MODELS);
 
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));

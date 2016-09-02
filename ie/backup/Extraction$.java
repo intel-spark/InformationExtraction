@@ -1,11 +1,4 @@
-package com.intel.ie.evaluation.preparation.label
-
-import java.io.{BufferedWriter, FileWriter}
-
-import au.com.bytecode.opencsv.CSVWriter
-import com.intel.ie.evaluation.EvalPaths
-
-import scala.io.Source
+package com.intel.ie.evaluation.preparation.label;
 
 /**
   * extract entities from labeled files

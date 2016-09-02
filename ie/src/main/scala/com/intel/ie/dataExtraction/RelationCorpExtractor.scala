@@ -2,6 +2,7 @@ package com.intel.ie.dataExtraction
 
 import java.io.{BufferedWriter, File, FileWriter}
 
+import com.intel.ie.IntelConfig
 import com.intel.ie.evaluation.preparation.NerHelper
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation
 import edu.stanford.nlp.ling.{CoreAnnotations, CoreLabel}
@@ -22,13 +23,13 @@ object RelationCorpExtractor {
 
 
   def main(args: Array[String]): Unit = {
-    val savePath = s"data/kbp/train.conll"
+    val savePath = IntelConfig.INTEL_RELATION_CORP
     var writer = new BufferedWriter(new FileWriter(savePath))
     writer.write("# relation corp for model training\n");
-    new File("data/evaluation/manual/").listFiles().map(f => f.getName).foreach {
+    new File(IntelConfig.MANUAL_LABEL_PATH).listFiles().map(f => f.getName).foreach {
       company =>
         //    val company = "A-Mark Precious Metals"
-        val path = s"data/evaluation/manual/${company}/page-${company}_0.txt"
+        val path = IntelConfig.MANUAL_LABEL_PATH + s"${company}/page-${company}_0.txt"
 
         Source.fromFile(path).getLines().filter(!_.trim.isEmpty).zipWithIndex.foreach { case (originText, i) =>
           var line = originText

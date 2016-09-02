@@ -1,5 +1,6 @@
 package com.intel.ie.analytics;
 
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -28,7 +29,7 @@ public class IntelKBPSemgrexExtractor implements IntelKBPRelationExtractor {
     protected final Redwood.RedwoodChannels logger = Redwood.channels(IntelKBPSemgrexExtractor.class);
 
     @ArgumentParser.Option(name="dir", gloss="The tokensregex directory")
-    public static String DIR = IntelKBPConfig.KBP_SEMGREX_DIR;
+    public static String DIR = IntelConfig.KBP_SEMGREX_DIR;
 
     @ArgumentParser.Option(name="test", gloss="The dataset to test on")
     public static File TEST_FILE = new File("test.conll");

@@ -1,4 +1,5 @@
 package com.intel.ie.analytics;
+import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreAnnotation;
@@ -29,7 +30,7 @@ public class IntelKBPTokensregexExtractor implements IntelKBPRelationExtractor {
     protected static final Redwood.RedwoodChannels logger = Redwood.channels(IntelKBPTokensregexExtractor.class);
 
     @ArgumentParser.Option(name="dir", gloss="The tokensregex directory")
-    public static String DIR = IntelKBPConfig.KBP_TOKENSREGEX_DIR;
+    public static String DIR = IntelConfig.KBP_TOKENSREGEX_DIR;
 
     @ArgumentParser.Option(name="test", gloss="The dataset to test on")
     public static File TEST_FILE = new File("test.conll");
@@ -57,7 +58,7 @@ public class IntelKBPTokensregexExtractor implements IntelKBPRelationExtractor {
         logger.log("Creating TokensRegexExtractor");
         // Create extractors        
         for (RelationType rel : RelationType.values()) {
-            if (IntelKBPConfig.bSeprateFormerTitle || rel != RelationType.PER_FORMER_TITLE) {
+            if (IntelConfig.bSeprateFormerTitle || rel != RelationType.PER_FORMER_TITLE) {
                 String path = tokensregexDir + File.separator + rel.canonicalName.replaceAll("/", "SLASH") + ".rules";
                 if (IOUtils.existsInClasspathOrFileSystem(path)) {
                     List<String> listFiles = new ArrayList<>();

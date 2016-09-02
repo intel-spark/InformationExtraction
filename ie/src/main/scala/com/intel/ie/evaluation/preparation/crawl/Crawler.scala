@@ -15,7 +15,7 @@ import scala.collection.JavaConversions._
 import scala.util.control.Exception._
 
 
-class Crawler() {
+object Crawler {
   val proxy = EvalPaths.proxy()
   if (proxy != null) {
     System.setProperty("http.proxyHost", proxy.host)
@@ -26,20 +26,25 @@ class Crawler() {
 
   type JDoc = org.jsoup.nodes.Document
 
-  def get(url: String, label: String): JDoc = {
+  def get(url: String): JDoc = {
     var newUrl = ""
     if (url.startsWith("http://"))
       newUrl = url;
 
     if (url.startsWith("www"))
       newUrl = "http://" + url;
+    Jsoup.connect(newUrl)
+      .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+      .timeout(30000)
+      .get()
+  }
+
+  def getAndSave(url: String, label: String): JDoc = {
+
     val file = new File(EvalPaths.rawPage(label))
 
     if (!file.exists()) {
-      val doc = Jsoup.connect(newUrl)
-        .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
-        .timeout(30000)
-        .get()
+      val doc = get(url)
       val writer = new BufferedWriter(new FileWriter(file))
       writer.write(doc.toString)
       writer.close()
@@ -122,33 +127,29 @@ class Crawler() {
       parent = parent.parent()
     }
     if (isElementTooBroad(parent)) {
-      println(s"${parent.text()} is filtered due to too broad")
       return element
     }
     parent
   }
 
-  def save2File(path: File, doc: JDoc, uRL: String) = {
-    val bw = new BufferedWriter(new FileWriter(path))
-    bw.write(Cleaner.clean(bodyText(doc)))
-    bw.newLine()
-    bw.write(uRL)
-    bw.close()
-  }
 
-  def save2File2(saveFile: File, strings: List[String], url: String) = {
+  def save2File(saveFile: File, strings: List[String], url: String) = {
     val bw = new BufferedWriter(new FileWriter(saveFile))
     bw.write(Cleaner.clean(strings.mkString("\n")))
     bw.write("\n" + url)
     bw.close()
   }
 
+  def crawlContent(url: String): List[String] = {
+    extract(Jsoup.parse(get(url).html().replaceAll("<br>", ",")))
+  }
+
   def crawlAndSave(url: String, label: String, i: Int): Boolean = {
     try {
       val saveFile = new File(EvalPaths.webContentPath(label, i))
       if (!saveFile.exists()) {
-        val doc = Jsoup.parse(get(url, label).html().replaceAll("<br>", ","))
-        save2File2(saveFile, extract(doc), url)
+        val doc = Jsoup.parse(getAndSave(url, label).html().replaceAll("<br>", ","))
+        save2File(saveFile, extract(doc), url)
         println(url + " done")
         return true
       }

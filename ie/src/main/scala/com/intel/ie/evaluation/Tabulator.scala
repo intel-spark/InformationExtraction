@@ -26,10 +26,7 @@ object Tabulator {
     cells.mkString("|", "|", "|")
   }
 
-  def rowSeparator(colSizes: Seq[Int]) = colSizes map { "-" * _ } mkString("+", "+", "+")
-
-  def main(args: Array[String]): Unit = {
-    println(Tabulator.format(List(List("head123457667", "head2", "head3","test"),
-      List("one", 0.3423434.formatted("%.3f"), "three","test"), List("four", "five", "six","test"), List("four", "five", "six","test"))))
-  }
+  def rowSeparator(colSizes: Seq[Int]) = colSizes map {
+    "-" * _
+  } mkString("+", "+", "+")
 }
