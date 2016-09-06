@@ -24,7 +24,6 @@ object SparkBatchDriver {
 
   private var partitionSize = 8
 
-
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.WARN)
     println("loading models...")
