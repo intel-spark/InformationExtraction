@@ -1,0 +1,41 @@
+[A-Z][a-zA-Z]+ activist	TITLE	MISC	1
+CEO	TITLE	1
+Superior	TITLE	1
+Primate	TITLE	1
+Gen\.? [Oo]f [Tt]he Army	TITLE	1
+Gen\.?	TITLE	1
+Lt\.? Gen\.?	TITLE	2
+Maj\.? Gen\.?	TITLE	2
+Brig\.? Gen\.?	TITLE	2
+Col\.	TITLE	1
+Lt\. Col\.	TITLE	2
+Maj\.?	TITLE	1
+Major	TITLE	1
+Capt\.?	TITLE	1
+Captain	TITLE	1
+1st Lt\.?	TITLE	1
+2nd Lt\.?	TITLE	1
+Sgt\. Maj\.	TITLE	2
+1st Sgt\.?	TITLE	2
+Sgt\.? 1st Class	TITLE	3
+Sgt\.?	TITLE	1
+Cpl\.?	TITLE	1
+Pvt\.?	TITLE	1
+Pvt\.? [0-9].?.? [Cc]lass	TITLE	3
+P[fF][cC]	TITLE	1
+Private	TITLE	1
+Private [0-9].?.? [Cc]lass	TITLE	3
+Private [Ff]irst [Cc]lass	TITLE	3
+Private [Ss]econd [Cc]lass	TITLE	3
+Fleet Adm\.?	TITLE	2
+Adm\.?	TITLE	1
+Vice Adm\.?	TITLE	1
+Rear Adm\.?	TITLE	1
+Capt\.?	TITLE	1
+Captain	TITLE	1
+Cmdr\.?	TITLE	1
+Lt\.? Cmdr\.?	TITLE	2
+Lt\.?	TITLE	1
+Rev\.?	TITLE	1
+Rep\.?	TITLE	1
+Speaker	TITLE	1
