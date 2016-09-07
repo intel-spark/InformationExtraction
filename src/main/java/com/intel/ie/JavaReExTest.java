@@ -1,4 +1,4 @@
-package test;
+package com.intel.ie;
 
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.Annotator;

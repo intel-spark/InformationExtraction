@@ -1,4 +1,4 @@
-package Test;
+package com.intel.ie;
 
 import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.ling.CoreAnnotations;
