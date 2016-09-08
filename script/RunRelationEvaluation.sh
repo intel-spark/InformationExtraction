@@ -2,6 +2,8 @@
 
 TargetJar=target/ie-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 MainClass=org.apache.spark.sql.RelationEvaluation
+dataPath=data/evaluation/RelationEvaluation/web
+labelPath=data/evaluation/RelationEvaluation/extraction
 
 spark-submit \
   --master yarn \
@@ -11,4 +13,9 @@ spark-submit \
   --class $MainClass \
   --jars lib/stanford-english-corenlp-models-current.jar,intel-resources.jar \
   --files config.properties \
-  $TargetJar data/evaluation/web/ data/evaluation/extraction/ 8
+  $TargetJar \
+  --partitionSize 8 \
+  --withDetail false \
+  $dataPath \
+  $labelPath
+  
