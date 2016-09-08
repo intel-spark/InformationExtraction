@@ -1,0 +1,1 @@
+To use the project, please download the Stanford CoreNLP model from [here](https://drive.google.com/open?id=0B9zID9CU9HQeMEt6clEwT2dFdms).

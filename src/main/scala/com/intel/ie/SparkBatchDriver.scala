@@ -33,8 +33,7 @@ object SparkBatchDriver {
     )
     //    RelationExtractor.init()
     this.partitionSize = args(0).toInt
-
-    //    println("Initilization finished:")
+    processSentence("")
 
     Iterator.continually(IOUtils.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
