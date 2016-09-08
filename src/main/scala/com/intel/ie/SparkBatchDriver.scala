@@ -46,8 +46,9 @@ object SparkBatchDriver {
             processTextFiles(data).show(100, false)
           }
         } else if (line.startsWith("http") || line.startsWith("www")) {
-          val data = sc.parallelize(Crawler.crawlContent(line), this.partitionSize)
-          processTextFiles(data).show(100, false)
+            val webContent = Crawler.crawlContent(line)
+            val data = sc.parallelize(webContent, this.partitionSize)
+            processTextFiles(data).show(100, false)
         }
         else {
           processSentence(line)
