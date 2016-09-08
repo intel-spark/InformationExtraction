@@ -106,7 +106,7 @@
                      <configuration>
                        <target name="copy files">
                          <copy file="${project.basedir}/config.properties" todir="${project.basedir}/ie-dist" />
-                         <copy file="${project.basedir}/stanford-english-corenlp-models-current.jar" todir="${project.basedir}/ie-dist" />
+                         <copy file="${project.basedir}/lib/stanford-english-corenlp-models-current.jar" todir="${project.basedir}/ie-dist" />
                          <copy file="${project.build.directory}/ie-project-${project.version}-jar-with-dependencies.jar" todir="${project.basedir}/ie-dist" />
                        </target>
                      </configuration>                       
