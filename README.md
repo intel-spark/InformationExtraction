@@ -14,6 +14,7 @@ How to run on Spark cluster:
 3. RunSparkBatchDriver.sh
 
 Setup development env with Intellij:
+
 1. Download latest stanford coreNLP model from [here](https://drive.google.com/open?id=0B9zID9CU9HQeMEt6clEwT2dFdms).
 2. Put the downloaded model file into lib folder.
 3. Open/import the project as Maven project.
