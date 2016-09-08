@@ -1,9 +1,8 @@
 #!/bin/bash
 
 SPARK_HOME=/opt/spark-1.6.2-bin-hadoop2.6
-TargetJar=target/ie-project-1.0-SNAPSHOT-jar-with-dependencies.jar
+TargetJar=ie-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 MainClass=com.intel.ie.SparkBatchDriver
-
 
 $SPARK_HOME/bin/spark-submit \
   --master yarn \
@@ -11,6 +10,7 @@ $SPARK_HOME/bin/spark-submit \
   --executor-memory 20g \
   --num-executors 4 \
   --class $MainClass \
-  --jars lib/stanford-english-corenlp-models-current.jar,intel-resources.jar \
+  --jars stanford-english-corenlp-models-current.jar \
   --files config.properties \
   $TargetJar 8
+  
