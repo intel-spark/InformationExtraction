@@ -33,8 +33,7 @@ object SparkBatchDriver {
     )
     //    RelationExtractor.init()
     this.partitionSize = args(0).toInt
-
-    //    println("Initilization finished:")
+    processSentence("")
 
     Iterator.continually(IOUtils.readLine("dataset path>")).foreach { line =>
       if (line.nonEmpty) Try {
@@ -47,8 +46,9 @@ object SparkBatchDriver {
             processTextFiles(data).show(100, false)
           }
         } else if (line.startsWith("http") || line.startsWith("www")) {
-          val data = sc.parallelize(Crawler.crawlContent(line), this.partitionSize)
-          processTextFiles(data).show(100, false)
+            val webContent = Crawler.crawlContent(line)
+            val data = sc.parallelize(webContent, this.partitionSize)
+            processTextFiles(data).show(100, false)
         }
         else {
           processSentence(line)

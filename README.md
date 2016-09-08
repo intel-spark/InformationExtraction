@@ -1,8 +1,23 @@
 # InformationExtraction
 
-How to run:
+How to build:
 
-1. Download latest stanford coreNLP model from [here](http://nlp.stanford.edu/software/stanford-english-corenlp-models-current.jar).
-2. Uncompress the downloaded jar file, and replace the edu folder in project ie.
-3. The project needs Scala 2.10.4 and Spark 1.6. If using intellij, add the lib folder, Spark assembly jar file and scale SDK to the project library. If using Spark 2.0+, please use Scala 2.11.8.
-4. Run SparkBatchTest, input data file paths or sentences to test.
+1. Download latest stanford coreNLP model from [here](https://drive.google.com/open?id=0B9zID9CU9HQeMEt6clEwT2dFdms).
+2. Put the downloaded model file into lib folder.
+3. Run "mvn clean package" in the project directory.
+4. The deployment package will be ready at ie-dist folder.
+
+How to run on Spark cluster:
+
+1. Finish the build process.
+2. Copy the ie-dist folder to your spark cluster.
+3. RunSparkBatchDriver.sh
+
+Setup development env with Intellij:
+
+1. Download latest stanford coreNLP model from [here](https://drive.google.com/open?id=0B9zID9CU9HQeMEt6clEwT2dFdms).
+2. Put the downloaded model file into lib folder.
+3. Open/import the project as Maven project.
+4. Add lib folder to the project library. File/project structure, and click Build.
+
+How to customize/extend:
