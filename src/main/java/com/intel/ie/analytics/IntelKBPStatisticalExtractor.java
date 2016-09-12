@@ -102,11 +102,5 @@ public class IntelKBPStatisticalExtractor extends KBPStatisticalExtractor {
     }
 
 
-    public static void main(String[] args) {
-        try {
-            trainModel();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 }
