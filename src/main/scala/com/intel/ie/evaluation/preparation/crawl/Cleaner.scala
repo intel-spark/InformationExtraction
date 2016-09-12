@@ -1,6 +1,6 @@
 package com.intel.ie.evaluation.preparation.crawl
 
-import com.intel.ie.RegexNerTest
+import com.intel.ie.devUtils.RegexNerTest
 
 import scala.collection.JavaConverters._
 

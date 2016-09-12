@@ -1,8 +1,4 @@
-package com.intel.ie.dataExtraction
-
-import java.io.PrintWriter
-
-import org.apache.spark.{SparkConf, SparkContext}
+package com.intel.ie.dataExtraction;
 
 /**
   * Created by yuhao on 7/8/16.

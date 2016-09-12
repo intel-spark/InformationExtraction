@@ -1,7 +1,4 @@
-package com.intel.ie.dataExtraction
-
-import scala.io.Source
-
+package com.intel.ie.dataExtraction;
 
 object DirectExtraction {
 

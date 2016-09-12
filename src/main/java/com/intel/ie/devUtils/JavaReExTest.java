@@ -1,28 +1,14 @@
-package com.intel.ie;
+package com.intel.ie.devUtils;
 
 import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.Annotator;
 import edu.stanford.nlp.pipeline.RelationExtractorAnnotator;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.logging.Redwood;
 
 import java.util.*;
 
-import edu.stanford.nlp.ie.machinereading.BasicRelationExtractor;
-import edu.stanford.nlp.ie.machinereading.Extractor;
-import edu.stanford.nlp.ie.machinereading.MachineReading;
-import edu.stanford.nlp.ie.machinereading.domains.roth.RothCONLL04Reader;
-import edu.stanford.nlp.ie.machinereading.domains.roth.RothEntityExtractor;
-import edu.stanford.nlp.ie.machinereading.structure.EntityMention;
-import edu.stanford.nlp.ie.machinereading.structure.MachineReadingAnnotations;
 import edu.stanford.nlp.ie.machinereading.structure.MachineReadingAnnotations.RelationMentionsAnnotation;
 import edu.stanford.nlp.ie.machinereading.structure.RelationMention;
-import edu.stanford.nlp.ling.CoreAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
-import edu.stanford.nlp.trees.TreeCoreAnnotations;
-import edu.stanford.nlp.util.ArraySet;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 

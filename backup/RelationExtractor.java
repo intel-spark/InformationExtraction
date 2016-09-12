@@ -14,9 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by yuhao on 6/10/16.
- */
 public class RelationExtractor {
 
   static Properties props = StringUtils.argsToProperties();

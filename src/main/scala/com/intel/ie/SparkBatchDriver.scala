@@ -2,6 +2,7 @@ package com.intel.ie
 
 import java.io.File
 
+import com.intel.ie.devUtils.RegexNerTest
 import com.intel.ie.analytics.{IOUtils, IntelKBPModel}
 import com.intel.ie.evaluation.preparation.crawl.Crawler
 import org.apache.log4j.{Level, Logger}
@@ -102,8 +103,6 @@ object SparkBatchDriver {
 
   private def getDataset(sc: SparkContext, path: String): RDD[String] = {
     val rdd = sc.textFile(path, this.partitionSize)
-    //    rdd.unpersist(true)
-    //    rdd.count()
     rdd
   }
 

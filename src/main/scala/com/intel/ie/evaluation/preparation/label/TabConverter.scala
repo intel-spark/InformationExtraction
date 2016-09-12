@@ -2,7 +2,7 @@ package com.intel.ie.evaluation.preparation.label
 
 import java.io.{File, PrintWriter}
 
-import com.intel.ie.IntelConfig
+import com.intel.ie.analytics.IntelConfig
 import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.collection.mutable.ArrayBuffer

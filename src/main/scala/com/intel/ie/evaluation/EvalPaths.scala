@@ -1,6 +1,6 @@
 package com.intel.ie.evaluation
 
-import com.intel.ie.IntelConfig
+import com.intel.ie.analytics.IntelConfig
 import com.intel.ie.evaluation.preparation.crawl.ProxyConfig
 
 import scala.io.Source

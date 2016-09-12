@@ -2,7 +2,7 @@ package com.intel.ie.dataExtraction
 
 import java.io.{BufferedWriter, File, FileWriter}
 
-import com.intel.ie.IntelConfig
+import com.intel.ie.analytics.IntelConfig
 import com.intel.ie.evaluation.preparation.NerHelper
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation
 import edu.stanford.nlp.ling.{CoreAnnotations, CoreLabel}

@@ -1,6 +1,6 @@
 package com.intel.ie.training;
 
-import com.intel.ie.IntelConfig;
+import com.intel.ie.analytics.IntelConfig;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.sequences.SeqClassifierFlags;
 import edu.stanford.nlp.util.StringUtils;

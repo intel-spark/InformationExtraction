@@ -1,7 +1,6 @@
 package com.intel.ie.analytics;
 
 
-import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.io.IOUtils;

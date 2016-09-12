@@ -5,9 +5,6 @@ import edu.stanford.nlp.ie.KBPTokensregexExtractor;
 
 import java.io.IOException;
 
-/**
- * Created by xianyan on 8/25/16.
- */
 public class ModelWeight {
 
     static Double KBPStatisticalWeightIntel = 0.5289;

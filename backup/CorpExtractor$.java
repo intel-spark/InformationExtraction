@@ -1,10 +1,4 @@
-package com.intel.ie.dataExtraction
-
-import java.io.PrintWriter
-
-import org.apache.spark.{SparkConf, SparkContext}
-
-import scala.collection.mutable.ArrayBuffer
+package com.intel.ie.dataExtraction;
 
 /**
  * Created by yuhao on 6/29/16.

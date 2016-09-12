@@ -1,4 +1,4 @@
-package com.intel.ie;
+package com.intel.ie.analytics;
 
 import com.intel.ie.analytics.IntelEnsembleStrategy;
 

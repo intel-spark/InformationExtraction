@@ -2,7 +2,7 @@ package com.intel.ie.evaluation.preparation
 
 import java.util.Properties
 
-import com.intel.ie.IntelConfig
+import com.intel.ie.analytics.IntelConfig
 import edu.stanford.nlp.pipeline.StanfordCoreNLP
 
 /**

@@ -2,9 +2,8 @@ package com.intel.ie.evaluation
 
 import java.io.File
 
-import com.intel.ie.{IntelConfig, RegexNerTest}
-import com.intel.ie.analytics.KBPModel
-import com.intel.ie.analytics._
+import com.intel.ie.devUtils.RegexNerTest
+import com.intel.ie.analytics.{IntelConfig, KBPModel, _}
 
 import scala.collection.JavaConverters._
 import scala.io.Source

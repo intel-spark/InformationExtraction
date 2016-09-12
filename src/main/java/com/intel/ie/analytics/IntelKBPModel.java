@@ -1,6 +1,5 @@
 package com.intel.ie.analytics;
 
-import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;

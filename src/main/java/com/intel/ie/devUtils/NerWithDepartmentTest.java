@@ -1,18 +1,21 @@
-package com.intel.ie;
+package com.intel.ie.devUtils;
 
-import edu.stanford.nlp.io.IOUtils;
+import com.intel.ie.analytics.IntelConfig;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class RegexNerTest {
+public class NerWithDepartmentTest {
 
     static Properties props = new Properties();
     static StanfordCoreNLP pipeline;
@@ -23,15 +26,27 @@ public class RegexNerTest {
         pipeline = new StanfordCoreNLP(props);
     }
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args){
+        File file = new File(args[0]);
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(file));
+            String line = null;
 
-        IOUtils.console("sentence> ", line -> {
-            List<String> ners = extractNER(line);
-            for (String ner : ners) {
-                System.out.print(ner + ",");
+            while ((line = reader.readLine()) != null) {
+                extractNER(line);
             }
-            System.out.println();
-        });
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e1) {
+                }
+            }
+        }
     }
 
     public static List<String> extractNER(String doc){
@@ -46,11 +61,10 @@ public class RegexNerTest {
             for (CoreLabel token: sentence.get(CoreAnnotations.TokensAnnotation.class)) {
                 // this is the text of the token
                 String word = token.get(CoreAnnotations.TextAnnotation.class);
-                // this is the POS tag of the token
-                String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
                 // this is the NER label of the token
                 String ne = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
                 result.add(ne);
+                System.out.println(word + "\t" + ne);
             }
         }
         return result;
