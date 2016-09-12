@@ -82,14 +82,14 @@ object RelationEvaluation {
         val companyName = new File(new File(title).getParent).getName
         companyList.contains(companyName)
       }.flatMap { case (title, content) =>
-      val companyName = new File(new File(title).getParent).getName
-      content.split("\n")
-        .map(line => if (line.length > 500) line.substring(0, 500) else line)
-        .map(line => line.replaceAll("\\(|\\)|\"|\"|``|''", "").replace("  ", " "))
-        .flatMap(line => SparkBatchDriver.getWorkRelation(line))
-        //        .map(rl => (companyName, rl))
-        .map(t => RelationRow(companyName, t.name, t.relation, t.entity, t.text))
-    }
+        val companyName = new File(new File(title).getParent).getName
+        content.split("\n")
+//          .map(line => if (line.length > 500) line.substring(0, 500) else line)
+          .map(line => line.replaceAll("\\(|\\)|\"|\"|``|''", "").replace("  ", " "))
+          .flatMap(line => SparkBatchDriver.getWorkRelation(line))
+          //        .map(rl => (companyName, rl))
+          .map(t => RelationRow(companyName, t.name, t.relation, t.entity, t.text))
+      }
     val extractedDF = sqlContext.createDataFrame(extractionResult).cache()
 
     val labelledResult = sc.wholeTextFiles(labelPath, partitionSize)
