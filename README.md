@@ -26,3 +26,4 @@
 ### How to customize/extend:
 
 1. Refer to config.properties for configuration change, such like pipeline components, NER models, dictionary and regex rules;
+2. Cutomized training for NER and Relation Extractor can be supported by com.intel.ie.training package.
