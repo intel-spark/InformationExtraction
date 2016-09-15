@@ -2,7 +2,7 @@ package org.apache.spark.sql
 
 import java.io.File
 
-import com.intel.ie.SparkBatchDriver
+import com.intel.ie.SparkInteractiveDriver
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
 import org.apache.spark.{SparkConf, SparkContext}
@@ -86,7 +86,7 @@ object RelationEvaluation {
         content.split("\n")
 //          .map(line => if (line.length > 500) line.substring(0, 500) else line)
           .map(line => line.replaceAll("\\(|\\)|\"|\"|``|''", "").replace("  ", " "))
-          .flatMap(line => SparkBatchDriver.getWorkRelation(line))
+          .flatMap(line => SparkInteractiveDriver.getWorkRelation(line))
           //        .map(rl => (companyName, rl))
           .map(t => RelationRow(companyName, t.name, t.relation, t.entity, t.text))
       }
