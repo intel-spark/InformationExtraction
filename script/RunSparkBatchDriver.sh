@@ -4,6 +4,7 @@
 SPARK_HOME=/opt/spark-1.6.2-bin-hadoop2.6
 TargetJar=ie-project-1.0-SNAPSHOT-jar-with-dependencies.jar
 MainClass=com.intel.ie.SparkBatchDriver
+FilePath=hdfs://172.168.2.181:9000/user/yuhao/JPMC/data/evaluation/web/
 
 $SPARK_HOME/bin/spark-submit \
   --master yarn \
@@ -13,5 +14,5 @@ $SPARK_HOME/bin/spark-submit \
   --class $MainClass \
   --jars stanford-english-corenlp-models-current.jar \
   --files config.properties \
-  $TargetJar 8
+  $TargetJar $FilePath 8
   
