@@ -1,7 +1,6 @@
 package com.intel.ie.analytics;
 
 
-import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.classify.RVFDataset;
@@ -102,11 +101,5 @@ public class IntelKBPStatisticalExtractor extends KBPStatisticalExtractor {
     }
 
 
-    public static void main(String[] args) {
-        try {
-            trainModel();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 }

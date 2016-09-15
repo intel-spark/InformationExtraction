@@ -1,12 +1,9 @@
 package com.intel.ie.filter
 
-import com.intel.ie.IntelConfig
+import com.intel.ie.analytics.IntelConfig
 
 import scala.io.Source
 
-/**
-  * Created by xianyan on 8/3/16.
-  */
 object Filter {
   private val badWords = Source.fromFile(IntelConfig.BAD_WORDS_FILE).getLines().toSet
 

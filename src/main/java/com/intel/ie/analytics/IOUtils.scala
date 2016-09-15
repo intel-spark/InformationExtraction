@@ -1,8 +1,6 @@
 package com.intel.ie.analytics
 
-/**
-  * Created by yuhao on 8/2/16.
-  */
+
 object IOUtils {
   import scala.Console._
 

@@ -1,7 +1,6 @@
 package com.intel.ie.analytics;
 
 
-import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.io.IOUtils;
@@ -72,7 +71,9 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
     @Override
     public Pair<String, Double> classify(KBPInput input) {
         switch (ensembleStrategy) {
-
+            
+            case DEFAULT:
+                return classifyDefault(input);
             case HIGHEST_SCORE:
                 return classifyWithHighestScore(input);
             case VOTE:
@@ -151,6 +152,22 @@ public class IntelKBPEnsembleExtractor implements IntelKBPRelationExtractor {
                     (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
                             classifierPrediction.second > prediction.second)
                     ) {
+                // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
+                prediction = classifierPrediction;
+            }
+        }
+        return prediction;
+    }
+
+
+    private Pair<String, Double> classifyDefault(KBPInput input) {
+        Pair<String, Double> prediction = Pair.makePair(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION, 1.0);
+        for (IntelKBPRelationExtractor extractor : extractors) {
+            Pair<String, Double> classifierPrediction = extractor.classify(input);
+            if (prediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) ||
+                    (!classifierPrediction.first.equals(edu.stanford.nlp.ie.KBPRelationExtractor.NO_RELATION) &&
+                            classifierPrediction.second > prediction.second)
+                    ){
                 // The last prediction was NO_RELATION, or this is not NO_RELATION and has a higher score
                 prediction = classifierPrediction;
             }

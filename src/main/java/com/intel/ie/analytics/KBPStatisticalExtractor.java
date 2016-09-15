@@ -1,7 +1,6 @@
 package com.intel.ie.analytics;
 
 
-import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.classify.*;
 import edu.stanford.nlp.ie.NumberNormalizer;
 import edu.stanford.nlp.ie.machinereading.structure.Span;

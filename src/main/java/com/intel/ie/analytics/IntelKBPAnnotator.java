@@ -1,6 +1,5 @@
 package com.intel.ie.analytics;
 
-import com.intel.ie.IntelConfig;
 import edu.stanford.nlp.hcoref.CorefCoreAnnotations;
 import edu.stanford.nlp.hcoref.data.CorefChain;
 import edu.stanford.nlp.ie.machinereading.structure.Span;
