@@ -2,7 +2,7 @@
 # Change the SPARK_HOME according to your setting.
 
 SPARK_HOME=/opt/spark-1.6.2-bin-hadoop2.6
-TargetJar=ie-project-1.0-SNAPSHOT-jar-with-dependencies.jar
+TargetJar=InformationExtraction-1.0-SNAPSHOT-jar-with-dependencies.jar
 MainClass=com.intel.ie.SparkBatchDriver
 FilePath=hdfs://172.168.2.181:9000/user/yuhao/JPMC/data/evaluation/web/
 
