@@ -1,9 +1,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.intel.ie</groupId>
-  <artifactId>ie-project</artifactId>
+  <groupId>com.intel.ie.analytics</groupId>
+  <artifactId>InformationExtraction</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <name>com.intel.ie.analytics:InformationExtraction</name>
+  <description> Entity and Relation Extraction</description>
+  <url>https://github.com/intel-analytics/InformationExtraction</url>
+  <licenses>
+    <license>
+      <name>GNU General Public License (GPL) v3</name>
+      <url>http://www.gnu.org/licenses/gpl.txt</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git@github.com/intel-analytics/InformationExtraction.git</connection>
+    <developerConnection>scm:git:git@github.com/intel-analytics/InformationExtraction.git</developerConnection>
+    <url>https://github.com/intel-analytics/InformationExtraction</url>
+    <tag>HEAD</tag>
+  </scm>
+  <developers>
+    <developer>
+      <id>yuhaoy</id>
+      <name>Yuhao Yang</name>
+      <email>yuhao.yang@intel.com</email>
+      <url>https://github.com/hhbyyh</url>
+      <organization>Intel</organization>
+      <organizationUrl>www.intel.com</organizationUrl>
+    </developer>
+  </developers>
 
  <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -107,7 +132,7 @@
                        <target name="copy files">
                          <copy file="${project.basedir}/config.properties" todir="${project.basedir}/ie-dist" />
                          <copy file="${project.basedir}/lib/stanford-english-corenlp-models-current.jar" todir="${project.basedir}/ie-dist" />
-                         <copy file="${project.build.directory}/ie-project-${project.version}-jar-with-dependencies.jar" todir="${project.basedir}/ie-dist" />
+                         <copy file="${project.build.directory}/InformationExtraction-${project.version}-jar-with-dependencies.jar" todir="${project.basedir}/ie-dist" />
                          <copy file="${project.basedir}/script/RunSparkBatchDriver.sh" todir="${project.basedir}/ie-dist" />
                          <copy file="${project.basedir}/script/RunRelationEvaluation.sh" todir="${project.basedir}/ie-dist" />
                        </target>
@@ -127,6 +152,35 @@
                         </fileset>
                     </filesets>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
