@@ -9,6 +9,11 @@
 3. Run "mvn clean package" in the project directory.
 4. The deployment package should be ready at ie-dist folder.
 
+### How to get the zip distribution of ie-dist:
+
+1. Run "cd ie-dist-module && mvn clean package && cd .." in the projct directory.
+2. The target assembly file is named as "ie-dist-1.0-assembly.zip" in the project directory.
+
 ### How to run on Spark cluster:
 
 1. Finish the build process.

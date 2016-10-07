@@ -13,6 +13,9 @@ project/boot/
 project/plugins/project/
 
 # Scala-IDE specific
+ie-dist-1.0-assembly.zip
+lib/stanford-english-corenlp-models-current.jar
+ie/out/
 .scala_dependencies
 .worksheet
 .idea
