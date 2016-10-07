@@ -11,7 +11,7 @@
 
 ### How to get the zip distribution of ie-dist:
 
-1. Run "cd ie-dist-module && mvn clean package && cd .." in the projct directory.
+1. Run "cd ie-dist-module && mvn clean package && cd .." in the project directory.
 2. The target assembly file is named as "ie-dist-1.0-assembly.zip" in the project directory.
 
 ### How to run on Spark cluster:
