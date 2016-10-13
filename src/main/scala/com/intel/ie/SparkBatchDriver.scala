@@ -27,9 +27,9 @@ object SparkBatchDriver {
     sc.hadoopConfiguration.set("mapreduce.input.fileinputformat.input.dir.recursive", "true")
     val rdd = sc.textFile(path).coalesce(partitionSize, false)
     val relations = SparkInteractiveDriver.processRDD(rdd).cache()
-
-    relations.show(100, false)
+    
     relations.write.format("json").mode(SaveMode.Overwrite).save("outputTable")
+    relations.show(100, false)
   }
 
 }

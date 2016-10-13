@@ -80,7 +80,7 @@ object SparkInteractiveDriver {
   private[intel] def processRDD(data: RDD[String]): DataFrame = {
     fullNames.clear()
     fullNameCache.empty
-    val relations = data.flatMap { s =>
+    val relations = data.flatMap(_.grouped(1000)).flatMap { s =>
       getWorkRelation(s)
     }
 
