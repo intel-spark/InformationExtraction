@@ -24,6 +24,7 @@ public class IntelKBPModel {
         props.setProperty("annotators", IntelConfig.annotators);
         props.setProperty("regexner.mapping", "ignorecase=true,validpospattern=^(NN|JJ).*," + IntelConfig.combined);
         props.setProperty("ner.model", IntelConfig.NER_MODELS);
+        props.setProperty("parser.maxLength", "200");
 
         pipeline = new StanfordCoreNLP(props);
         pipeline.addAnnotator(new IntelKBPAnnotator("kbp", props));

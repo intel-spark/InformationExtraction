@@ -7,10 +7,10 @@ MainClass=com.intel.ie.SparkBatchDriver
 FilePath=hdfs://172.168.2.181:9000/user/yuhao/JPMC/data/evaluation/web/
 
 $SPARK_HOME/bin/spark-submit \
-  --master yarn \
-  --driver-memory 20g \
-  --executor-memory 20g \
-  --num-executors 4 \
+  --master local[*] \
+#  --driver-memory 20g \
+#  --executor-memory 20g \
+#  --num-executors 4 \
   --class $MainClass \
   --jars stanford-english-corenlp-models-current.jar \
   --files config.properties \
