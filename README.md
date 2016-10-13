@@ -13,8 +13,8 @@
 
 1. Finish the build process.
 2. Copy the ie-dist folder to your spark cluster.
-3. RunSparkBatchDriver.sh will start the interactive processing terminal, where you can input sentences or (hdfs) file paths.
-4. To run Relation Evaluation, please refer to RunRelationEvaluation.sh, where you might need to change the file location according to your cluster setttings. Please copy the data folder to your cluster and upload to hdfs before running evaluation (This only need to be performed once).
+3. RunSparkBatchDriver.sh will start the batch processing, where you can input sentences or (hdfs) file paths.
+4. To run Relation Evaluation, please refer to RunRelationEvaluation.sh, where you might need to change the file location according to your cluster settings. Please copy the data folder to your cluster and upload to hdfs before running evaluation (This only need to be performed once).
 
 ### Setup development env with Intellij:
 
